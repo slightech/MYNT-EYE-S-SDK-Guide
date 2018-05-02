@@ -10,3 +10,4 @@ MYNT® EYE SDK
    install_windows
    install_macos
    install_ros
+   without_opencv
