@@ -3,18 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to MYNT® EYE SDK Guide!
-===============================================
+MYNT® EYE SDK 指导
+==================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   src/mynteye/contents
+   src/sdk/contents
+   src/firmware/contents
+   src/data/contents
+   src/control/contents
+   src/wrapper/contents
+   src/analytics/contents
+   src/slam/contents

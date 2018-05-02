@@ -6,19 +6,37 @@
 pip install -r requirements.txt
 ```
 
-## Build HTML
+## Build HTML (zh-Hans)
 
 ```bash
 make html
 open _build/html/index.html
 ```
 
-## Build PDF
+## Build PDF (zh-Hans)
 
 ```bash
 make latexpdf
 open _build/latex/mynt-eye-sdk-guide.pdf
 ```
+
+## i18n (TODO: en)
+
+```bash
+# Extract document’s translatable messages into pot files
+make gettext
+
+# Setup/Update your locale_dir
+sphinx-intl update -p _build/gettext -l en
+
+# Translate your po files under ./locale/<lang>/LC_MESSAGES/
+
+# Build mo files and make translated document
+sphinx-intl build
+make -e SPHINXOPTS="-D language='en'" html
+```
+
+* [Internationalization](http://www.sphinx-doc.org/en/master/intl.html)
 
 ## How to Edit
 
