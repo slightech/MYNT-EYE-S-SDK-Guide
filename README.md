@@ -10,14 +10,30 @@ pip install -r requirements.txt
 
 ```bash
 make html
+
+# Linux
+xdg-open _build/html/index.html
+
+# MacOS
 open _build/html/index.html
+
+# Windows
+start _build/html/index.html
 ```
 
 ## Build PDF (zh-Hans)
 
 ```bash
 make latexpdf
+
+# Linux
+xdg-open _build/latex/mynt-eye-sdk-guide.pdf
+
+# MacOS
 open _build/latex/mynt-eye-sdk-guide.pdf
+
+# Windows
+start _build/latex/mynt-eye-sdk-guide.pdf
 ```
 
 ## i18n (TODO: en)

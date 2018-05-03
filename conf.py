@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'MYNT® EYE SDK Guide'
+project = u'MYNT® EYE SDK Guide'
 copyright = '2018, JohnZhao'
 author = 'JohnZhao'
 
@@ -156,7 +156,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'mynt-eye-sdk-guide.tex', 'MYNT® EYE SDK Guide',
+    (master_doc, 'mynt-eye-sdk-guide.tex', u'MYNT® EYE SDK Guide',
      'JohnZhao', 'manual'),
 ]
 
@@ -166,7 +166,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mynt-eye-sdk-guide', 'MYNT® EYE SDK Guide',
+    (master_doc, 'mynt-eye-sdk-guide', u'MYNT® EYE SDK Guide',
      [author], 1)
 ]
 
@@ -177,7 +177,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'mynt-eye-sdk-guide', 'MYNT® EYE SDK Guide',
+    (master_doc, 'mynt-eye-sdk-guide', u'MYNT® EYE SDK Guide',
      author, 'mynt-eye-sdk-guide', 'One line description of project.',
      'Miscellaneous'),
 ]
