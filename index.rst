@@ -15,6 +15,7 @@ MYNT® EYE SDK 指导
    src/firmware/contents
    src/data/contents
    src/control/contents
+   src/log/contents
    src/wrapper/contents
    src/analytics/contents
    src/slam/contents
