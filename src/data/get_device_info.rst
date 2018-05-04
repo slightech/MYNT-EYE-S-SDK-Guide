@@ -3,32 +3,24 @@
 获取设备信息 ✓
 ==============
 
-通过 API 的 ``GetInfo()`` 函数，你可以获取到当前打开设备的各类信息字段值。
+通过 API 的 ``GetInfo()`` 函数，就可以获取当前打开设备的各类信息值。
+
+参考代码片段：
 
 .. code-block:: c++
 
-  #include <glog/logging.h>
+  auto &&api = API::Create(argc, argv);
 
-  #include "mynteye/api.h"
+  LOG(INFO) << "Device name: " << api->GetInfo(Info::DEVICE_NAME);
+  LOG(INFO) << "Serial number: " << api->GetInfo(Info::SERIAL_NUMBER);
+  LOG(INFO) << "Firmware version: " << api->GetInfo(Info::FIRMWARE_VERSION);
+  LOG(INFO) << "Hardware version: " << api->GetInfo(Info::HARDWARE_VERSION);
+  LOG(INFO) << "Spec version: " << api->GetInfo(Info::SPEC_VERSION);
+  LOG(INFO) << "Lens type: " << api->GetInfo(Info::LENS_TYPE);
+  LOG(INFO) << "IMU type: " << api->GetInfo(Info::IMU_TYPE);
+  LOG(INFO) << "Nominal baseline: " << api->GetInfo(Info::NOMINAL_BASELINE);
 
-  MYNTEYE_USE_NAMESPACE
-
-  int main(int argc, char *argv[]) {
-    auto &&api = API::Create(argc, argv);
-
-    LOG(INFO) << "Device name: " << api->GetInfo(Info::DEVICE_NAME);
-    LOG(INFO) << "Serial number: " << api->GetInfo(Info::SERIAL_NUMBER);
-    LOG(INFO) << "Firmware version: " << api->GetInfo(Info::FIRMWARE_VERSION);
-    LOG(INFO) << "Hardware version: " << api->GetInfo(Info::HARDWARE_VERSION);
-    LOG(INFO) << "Spec version: " << api->GetInfo(Info::SPEC_VERSION);
-    LOG(INFO) << "Lens type: " << api->GetInfo(Info::LENS_TYPE);
-    LOG(INFO) << "IMU type: " << api->GetInfo(Info::IMU_TYPE);
-    LOG(INFO) << "Nominal baseline: " << api->GetInfo(Info::NOMINAL_BASELINE);
-
-    return 0;
-  }
-
-Linux 上运行参考如下：
+参考运行结果，于 Linux 上 ：
 
 .. code-block:: bash
 
@@ -46,4 +38,4 @@ Linux 上运行参考如下：
   I0503 16:40:21.615164 32106 get_device_info.cc:16] IMU type: 0000
   I0503 16:40:21.615171 32106 get_device_info.cc:17] Nominal baseline: 120
 
-代码请见 `get_device_info.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/get_device_info.cc>`_ 。
+完整代码样例，请见 `get_device_info.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_device_info.cc>`_ 。
