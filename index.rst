@@ -8,6 +8,7 @@ MYNT® EYE SDK 指导
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
 
    src/mynteye/contents
    src/sdk/contents
