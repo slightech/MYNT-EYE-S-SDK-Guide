@@ -43,4 +43,37 @@ API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。
 
 最终，和之前一样调用 API 获取数据就行了。
 
+运行前，请执行如下命令，以确保能搜索到插件的依赖库：
+
+.. code-block:: bash
+
+  # Linux
+  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+  # /usr/local/lib 指依赖库所在路径
+
+  # macOS
+  export DYLD_LIBRARY_PATH=/usr/local/lib:$DYLD_LIBRARY_PATH
+  # /usr/local/lib 指依赖库所在路径
+
+  # Windows
+  set PATH=C:\opencv\x64\vc14\bin;%PATH%
+  # 或者，添加进系统环境变量 Path 里。
+
+此外，可执行如下命令，检查是否能搜索到插件的依赖库：
+
+.. code-block:: bash
+
+  # Linux
+  ldd *.so
+  # *.so 指具体插件路径
+
+  # macOS
+  otool -L *.dylib
+  # *.dylib 指具体插件路径
+
+  # Windows
+  # 请下载如 Dependency Walker ，打开 DLL 。
+
+如果找不到插件的依赖库，加载时将会报错 "Open plugin failed" 。
+
 完整代码样例，请见 `get_with_plugin.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_with_plugin.cc>`_ 。
