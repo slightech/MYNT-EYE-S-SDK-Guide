@@ -16,5 +16,6 @@ MYNT® EYE 数据
    get_imu
    get_from_callbacks
    get_with_plugin
+   save_params
    write_img_params
    write_imu_params
