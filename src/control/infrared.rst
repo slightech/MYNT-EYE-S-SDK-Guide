@@ -41,6 +41,8 @@
 
 此时，如果显示了图像，就能够看到图像上会有 IR 光斑。
 
-注意：硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备后，一定要设定下 IR 值。
+.. attention::
+
+  硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备后，一定要设定下 IR 值。
 
 完整代码样例，请见 `infrared.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_ 。
