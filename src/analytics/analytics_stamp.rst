@@ -49,3 +49,7 @@ SDK 提供了时间戳分析的脚本 ``stamp_analytics.py`` 。工具详情可�
 .. code-block:: bash
 
   $ python tools/analytics/stamp_analytics.py -h
+
+.. tip::
+
+  录制数据集时建议 ``record.cc`` 里注释显示图像 ``cv::imshow()``， ``dataset.cc`` 里注释存储图像 ``cv::imwrite()`` 。因为此些操作都比较耗时，可能会导致丢弃图像。换句话说就是消费赶不上生产，所以丢弃了部分图像。 ``record.cc`` 里用的 ``GetStreamDatas()`` 仅缓存最新的 4 张图像。
