@@ -11,3 +11,4 @@ MYNT® EYE SDK
    install_macos
    install_ros
    without_opencv
+   from_v1
