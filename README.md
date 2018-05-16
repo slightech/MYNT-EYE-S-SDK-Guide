@@ -61,6 +61,10 @@ make -e SPHINXOPTS="-D language='en'" html
 * [reStructuredText](http://docutils.sourceforge.net/rst.html)
 * [Quick reStructuredText](http://docutils.sourceforge.net/docs/user/rst/quickref.html)
 
+## Mirrors
+
+国内镜像：[码云](https://gitee.com/mynt/MYNT-EYE-SDK-2-Guide)。
+
 ## License
 
 This project is licensed under the Apache License, Version 2.0. Copyright 2018 Slightech Co., Ltd.
