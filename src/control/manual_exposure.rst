@@ -20,7 +20,7 @@
   // manual-exposure: 1
   api->SetOptionValue(Option::EXPOSURE_MODE, 1);
 
-  // gain: range [0.48], default 24
+  // gain: range [0,48], default 24
   api->SetOptionValue(Option::GAIN, 24);
   // brightness/exposure_time: range [0,240], default 120
   api->SetOptionValue(Option::BRIGHTNESS, 120);
