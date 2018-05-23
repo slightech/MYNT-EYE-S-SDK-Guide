@@ -3,13 +3,23 @@
 Ubuntu 安装 ✓
 =============
 
-=============== ===============
-Ubuntu 16.04    Ubuntu 14.04
-=============== ===============
-|build_passing| |build_passing|
-=============== ===============
+.. only:: html
 
-.. |build_passing| image:: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat
+  =============== ===============
+  Ubuntu 16.04    Ubuntu 14.04
+  =============== ===============
+  |build_passing| |build_passing|
+  =============== ===============
+
+  .. |build_passing| image:: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat
+
+.. only:: latex
+
+  =============== ===============
+  Ubuntu 16.04    Ubuntu 14.04
+  =============== ===============
+  ✓               ✓
+  =============== ===============
 
 获取代码
 --------

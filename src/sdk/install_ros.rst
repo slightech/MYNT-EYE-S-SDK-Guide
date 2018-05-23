@@ -3,13 +3,23 @@
 ROS 安装 ✓
 ==========
 
-=============== ===============
-ROS Kinetic     ROS Indigo
-=============== ===============
-|build_passing| |build_passing|
-=============== ===============
+.. only:: html
 
-.. |build_passing| image:: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat
+  =============== ===============
+  ROS Kinetic     ROS Indigo
+  =============== ===============
+  |build_passing| |build_passing|
+  =============== ===============
+
+  .. |build_passing| image:: https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat
+
+.. only:: latex
+
+  =============== ===============
+  ROS Kinetic     ROS Indigo
+  =============== ===============
+  ✓               ✓
+  =============== ===============
 
 环境准备
 --------
