@@ -6,9 +6,10 @@
 ============================ ========================
 Firmwares                    SDK Version
 ============================ ========================
-MYNTEYE_S_2.0.0_rc0.img      2.0.0-rc0 (2.0.0-rc0 ~ 2.0.0-alpha1)
-MYNTEYE_S_2.0.0_alpha1.1.img 2.0.0-alpha1 (2.0.0-rc0 ~ 2.0.0-alpha1)
-MYNTEYE_S_2.0.0_alpha1.img   2.0.0-alpha1 (2.0.0-rc0 ~ 2.0.0-alpha1)
+MYNTEYE_S_2.0.0_rc1.img      2.0.0-rc1
+MYNTEYE_S_2.0.0_rc0.img      2.0.0-rc0 (2.0.0-rc1 ~ 2.0.0-alpha1)
+MYNTEYE_S_2.0.0_alpha1.1.img 2.0.0-alpha1 (2.0.0-rc1 ~ 2.0.0-alpha1)
+MYNTEYE_S_2.0.0_alpha1.img   2.0.0-alpha1 (2.0.0-rc1 ~ 2.0.0-alpha1)
 MYNTEYE_S_2.0.0_alpha0.img   2.0.0-alpha0
 ============================ ========================
 
