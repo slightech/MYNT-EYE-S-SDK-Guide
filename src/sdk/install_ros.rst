@@ -65,6 +65,23 @@ ROS Indigo (Ubuntu 14.04)
   source wrappers/ros/devel/setup.bash
   roslaunch mynt_eye_ros_wrapper display.launch
 
+测试服务
+--------
+
+运行节点，有提供获取设备信息服务，如下测试：
+
+.. code-block:: bash
+
+  $ source wrappers/ros/devel/setup.bash
+  $ rosrun mynt_eye_ros_wrapper get_device_info.py
+  LENS_TYPE: 0000
+  SPEC_VERSION: 1.0
+  NOMINAL_BASELINE: 120
+  HARDWARE_VERSION: 2.0
+  IMU_TYPE: 0000
+  SERIAL_NUMBER: 0610243700090720
+  FIRMWARE_VERSION: 2.0
+  DEVICE_NAME: MYNT-EYE-S1000
 
 常见问题 - ROS Indigo
 ----------------------
