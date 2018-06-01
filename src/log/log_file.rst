@@ -1,9 +1,11 @@
 .. _log_file:
 
-日志文件
-==========
+启用日志文件
+==============
 
-运行日志默认保存到当前工作目录。例如运行 ``camera_a`` 后，日志文件如下：
+日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。
+
+取消注释的 ``FLAGS_log_dir = ".";`` 重新编译，即可保存日志到当前工作目录。例如运行 ``camera_a`` 后，日志文件如下：
 
 .. code-block:: none
 
