@@ -1,6 +1,6 @@
 .. _wrapper_ros:
 
-ROS 如何使用 ✓
+ROS 如何使用
 ==============
 
 按照 :ref:`sdk_install_ros` ，编译再运行节点。

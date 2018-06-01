@@ -1,6 +1,6 @@
 .. _sdk_install_ros:
 
-ROS 安装 ✓
+ROS 安装
 ==========
 
 .. only:: html

@@ -1,6 +1,6 @@
 .. _get_from_callbacks:
 
-从回调接口获取数据 ✓
+从回调接口获取数据
 ====================
 
 API 提供了 ``SetStreamCallback()`` ``SetMotionCallback()`` 函数，来设定各类数据的回调。

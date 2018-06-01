@@ -1,6 +1,6 @@
 .. _get_img_params:
 
-获取图像标定参数 ✓
+获取图像标定参数
 ==================
 
 通过 API 的 ``GetIntrinsics()`` ``GetExtrinsics()`` 函数，就可以获取当前打开设备的图像标定参数。

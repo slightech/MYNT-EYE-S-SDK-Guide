@@ -1,6 +1,6 @@
 .. _get_imu_params:
 
-获取 IMU 标定参数 ✓
+获取 IMU 标定参数
 ====================
 
 通过 API 的 ``GetMotionIntrinsics()`` ``GetMotionExtrinsics()`` 函数，就可以获取当前打开设备的 IMU 标定参数。

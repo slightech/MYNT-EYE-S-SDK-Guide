@@ -1,6 +1,6 @@
 .. _sdk_install_ubuntu:
 
-Ubuntu 安装 ✓
+Ubuntu 安装
 =============
 
 .. only:: html

@@ -1,6 +1,6 @@
 .. _dataset:
 
-录制数据集 ✓
+录制数据集
 ============
 
 SDK 提供了录制数据集的工具 ``record`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。

@@ -1,6 +1,6 @@
 .. _get_imu_data:
 
-获取 IMU 数据 ✓
+获取 IMU 数据
 ===============
 
 API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据。要捕获 IMU 数据的话，参数用 ``Source::MOTION_TRACKING`` 。或者 ``Source::ALL`` 同时捕获图像和 IMU 数据。

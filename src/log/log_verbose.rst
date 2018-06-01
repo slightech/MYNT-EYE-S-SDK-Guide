@@ -1,6 +1,6 @@
 .. _log_verbose:
 
-启用详细级别 ✓
+启用详细级别
 ==============
 
 日志文件的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。

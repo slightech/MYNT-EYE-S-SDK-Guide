@@ -1,6 +1,6 @@
 .. _save_params:
 
-保存设备信息和参数 ✓
+保存设备信息和参数
 ====================
 
 SDK 提供了保存信息和参数的工具 ``save_all_infos`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。

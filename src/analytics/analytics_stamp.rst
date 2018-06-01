@@ -1,6 +1,6 @@
 .. _analytics_stamp:
 
-分析时间戳 ✓
+分析时间戳
 ============
 
 SDK 提供了时间戳分析的脚本 ``stamp_analytics.py`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。

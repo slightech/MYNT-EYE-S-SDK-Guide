@@ -1,6 +1,6 @@
 .. _sdk_without_opencv:
 
-OpenCV 不依赖 ✓
+OpenCV 不依赖
 ===============
 
 SDK 提供了三层接口，其 OpenCV 依赖情况如下：

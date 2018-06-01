@@ -1,6 +1,6 @@
 .. _write_img_params:
 
-写入图像标定参数 ✓
+写入图像标定参数
 ==================
 
 SDK 提供了写入图像标定参数的工具 ``img_params_writer`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。
