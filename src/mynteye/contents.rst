@@ -5,5 +5,6 @@ MYNT® EYE
 
 .. toctree::
 
-   spec
+   intro
    surface
+   imu_coord
