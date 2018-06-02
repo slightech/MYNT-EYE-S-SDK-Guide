@@ -54,6 +54,34 @@ Ubuntu 安装
 
 * `OpenCV <https://opencv.org/>`_
 
+.. tip::
+
+  OpenCV 如何编译安装，请见官方文档 `Installation in Linux <https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ 。或参考如下命令：
+
+  .. code-block:: bat
+
+    $ git clone https://github.com/opencv/opencv.git
+    $ cd opencv/
+    $ git checkout tags/3.4.1
+
+    $ mkdir _build
+    $ cd _build/
+
+    $ cmake \
+    -DCMAKE_BUILD_TYPE=RELEASE \
+    -DCMAKE_INSTALL_PREFIX=/usr/local \
+    \
+    -DWITH_CUDA=OFF \
+    \
+    -DBUILD_DOCS=OFF \
+    -DBUILD_EXAMPLES=OFF \
+    -DBUILD_TESTS=OFF \
+    -DBUILD_PERF_TESTS=OFF \
+    ..
+
+    $ make -j4
+    $ sudo make install
+
 编译代码
 --------
 
@@ -91,9 +119,6 @@ Ubuntu 安装
 
   ./samples/_output/bin/api/camera_a
 
-  # Windows
-  .\samples\_output\bin\api\camera_a.bat
-
 教程样例，请阅读 :ref:`data` 和 :ref:`ctrl` 。
 
 编译工具
@@ -111,7 +136,7 @@ Ubuntu 安装
   cd <sdk>/tools/
   sudo pip install -r requirements.txt
 
-工具和脚本的使用，后续会有介绍。
+工具和脚本的使用，可见 :ref:`analytics` 。
 
 结语
 ----
