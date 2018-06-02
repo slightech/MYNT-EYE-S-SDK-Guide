@@ -21,6 +21,22 @@ Ubuntu 安装
   ✓               ✓
   =============== ===============
 
+.. tip::
+
+  如果是其他 Linux 发行版，不是用的 ``apt-get`` 包管理工具，那你准备依赖时不能 ``make init`` 自动安装，得自己手动安装了。必要安装项如下：
+
+  ============= =====================================================================
+  Linux         How to install required packages
+  ============= =====================================================================
+  Debian based  sudo apt-get install build-essential cmake git libv4l-dev
+  Red Hat based sudo yum install make gcc gcc-c++ kernel-devel cmake git libv4l-devel
+  Arch Linux    sudo pacman -S base-devel cmake git v4l-utils
+  ============= =====================================================================
+
+.. ::
+
+  `Installation of System Dependencies <https://github.com/LuaDist/Repository/wiki/Installation-of-System-Dependencies>`_
+
 获取代码
 --------
 
@@ -41,17 +57,18 @@ Ubuntu 安装
 编译代码
 --------
 
-编译前，可在系统终端（Windows 命令提示符）里如下指定 OpenCV 路径，其为 ``OpenCVConfig.cmake`` 目录：
+.. tip::
 
-.. code-block:: bash
+  如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径：
 
-  # Linux, macOS
-  export OpenCV_DIR=~/opencv
+  .. code-block:: bash
 
-  # Windows
-  set OpenCV_DIR=C:\opencv
+    # OpenCV_DIR 为 OpenCVConfig.cmake 所在目录
+    export OpenCV_DIR=~/opencv
 
-然后，编译并安装：
+  不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:`sdk_without_opencv` 。
+
+编译并安装：
 
 .. code-block:: bash
 
