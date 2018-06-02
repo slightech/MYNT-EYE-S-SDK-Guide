@@ -233,14 +233,18 @@ MSYS2（提供 Linux 命令）
   cd <sdk>
   make tools
 
-安装脚本依赖：
+工具和脚本的使用，后续会有介绍。
 
-.. code-block:: bat
+.. tip::
 
-  cd <sdk>/tools/
-  sudo pip install -r requirements.txt
+  脚本为 Python 实现，需要先安装 Python 及其包管理工具 pip ，然后再如下安装依赖：
 
-工具和脚本的使用，可见 :ref:`analytics` 。
+  .. code-block:: bat
+
+    cd <sdk>\tools
+    pip install -r requirements.txt
+
+  注：MSYS2 里也带了 Python ，但测试未能安装上 matplotlib 。
 
 结语
 ----

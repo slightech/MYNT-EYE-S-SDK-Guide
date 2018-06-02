@@ -136,7 +136,7 @@ Ubuntu 安装
   cd <sdk>/tools/
   sudo pip install -r requirements.txt
 
-工具和脚本的使用，可见 :ref:`analytics` 。
+工具和脚本的使用，后续会有介绍。
 
 结语
 ----
