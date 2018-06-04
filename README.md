@@ -1,5 +1,9 @@
 # MYNT® EYE SDK Guide
 
+MYNT® EYE SDK Guide is the documentation about how to install and start using the SDK.
+
+Download the latest doc [here](https://github.com/slightech/MYNT-EYE-SDK-2-Guide/releases). Besides, you could build the doc according to the following content.
+
 ## Prerequisites
 
 ```bash
