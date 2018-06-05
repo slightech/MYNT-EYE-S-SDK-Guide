@@ -43,6 +43,12 @@ API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。
 
 最终，和之前一样调用 API 获取数据就行了。
 
+.. tip::
+
+  如果没有启用插件的话， ``api->Start(Source::VIDEO_STREAMING);`` 时会自动在 ``<sdk>/plugins/<platform>`` 目录里找合适的插件去加载。
+
+  换句话说，可以把当前平台的插件目录整个搬进 ``<sdk>/plugins`` 目录内。安装好对应的 ``CUDA`` ``OpenCV`` 等插件依赖后重编译，此后运行 ``API`` 层接口程序，就会自动加载官方插件了。
+
 运行前，请执行如下命令，以确保能搜索到插件的依赖库：
 
 .. code-block:: bash
@@ -77,3 +83,13 @@ API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。
 如果找不到插件的依赖库，加载时将会报错 "Open plugin failed" 。
 
 完整代码样例，请见 `get_with_plugin.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_with_plugin.cc>`_ 。
+
+.. tip::
+
+  Linux 上也可以把依赖库路径加入系统环境，编译出的程序就可以直接运行了（不需要于终端里 ``export LD_LIBRARY_PATH`` 再运行）。
+
+  * 新建 ``/etc/ld.so.conf.d/libmynteye.conf`` 文件，写入依赖库路径。
+  * 终端里执行 ``sudo /sbin/ldconfig`` 命令，刷新缓存。
+
+  .. literalinclude:: ../../files/libmynteye.conf
+    :caption: e.g. libmynteye.conf
