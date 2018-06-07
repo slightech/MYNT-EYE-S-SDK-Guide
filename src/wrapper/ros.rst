@@ -10,25 +10,26 @@ ROS 如何使用
 .. code-block:: bash
 
   $ rostopic list
-  /mynteye/camera_info
-  /mynteye/depth
-  /mynteye/disparity
-  /mynteye/disparity_norm
-  /mynteye/imu
-  /mynteye/left
-  /mynteye/left_rect
-  /mynteye/points
-  /mynteye/right
-  /mynteye/right_rect
-  /mynteye/temp
+  /mynteye/depth/image_raw
+  /mynteye/disparity/image_norm
+  /mynteye/disparity/image_raw
+  /mynteye/imu/data_raw
+  /mynteye/left/camera_info
+  /mynteye/left/image_raw
+  /mynteye/left/image_rect
+  /mynteye/points/data_raw
+  /mynteye/right/camera_info
+  /mynteye/right/image_raw
+  /mynteye/right/image_rect
+  /mynteye/temp/data_raw
   ...
 
 ``rostopic hz <topic>`` 可以检查是否有数据：
 
 .. code-block:: bash
 
-  $ rostopic hz /mynteye/imu
-  subscribed to [/mynteye/imu]
+  $ rostopic hz /mynteye/imu/data_raw
+  subscribed to [/mynteye/imu/data_raw]
   average rate: 505.953
     min: 0.000s max: 0.018s std dev: 0.00324s window: 478
   average rate: 500.901
