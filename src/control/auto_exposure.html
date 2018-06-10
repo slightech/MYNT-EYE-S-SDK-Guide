@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>启用自动曝光及其调节 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
+        <link rel="up" title="MYNT® EYE 控制" href="contents.html"/>
+        <link rel="next" title="启用手动曝光及其调节" href="manual_exposure.html"/>
+        <link rel="prev" title="设定图像帧率和 IMU 频率" href="framerate.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 控制</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="framerate.html">设定图像帧率和 IMU 频率</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">启用自动曝光及其调节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual_exposure.html">启用手动曝光及其调节</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infrared.html">启用 IR 及其调节</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">MYNT® EYE 控制</a> &raquo;</li>
+        
+      <li>启用自动曝光及其调节</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/control/auto_exposure.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="auto-exposure">
+<span id="id1"></span><h1>启用自动曝光及其调节<a class="headerlink" href="#auto-exposure" title="Permalink to this headline">¶</a></h1>
+<p>通过 API 的 <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> 函数，就可以设定当前打开设备的各类控制值。</p>
+<p>启用自动曝光，就是设定 <code class="docutils literal notranslate"><span class="pre">Option::EXPOSURE_MODE</span></code> 为 <code class="docutils literal notranslate"><span class="pre">0</span></code> 。自动曝光时，可调节的设定有：</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Option::MAX_GAIN</span></code> 最大增益。</li>
+<li><code class="docutils literal notranslate"><span class="pre">Option::MAX_EXPOSURE_TIME</span></code> 最大曝光时间。</li>
+<li><code class="docutils literal notranslate"><span class="pre">Option::DESIRED_BRIGHTNESS</span></code> 期望亮度。</li>
+</ul>
+<p>参考代码片段：</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+
+<span class="c1">// auto-exposure: 0</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">EXPOSURE_MODE</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+<span class="c1">// max_gain: range [0,48], default 48</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">MAX_GAIN</span><span class="p">,</span> <span class="mi">48</span><span class="p">);</span>
+<span class="c1">// max_exposure_time: range [0,240], default 240</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">MAX_EXPOSURE_TIME</span><span class="p">,</span> <span class="mi">240</span><span class="p">);</span>
+<span class="c1">// desired_brightness: range [0,255], default 192</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">DESIRED_BRIGHTNESS</span><span class="p">,</span> <span class="mi">192</span><span class="p">);</span>
+
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Enable auto-exposure&quot;</span><span class="p">;</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set MAX_GAIN to &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">MAX_GAIN</span><span class="p">);</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set MAX_EXPOSURE_TIME to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">MAX_EXPOSURE_TIME</span><span class="p">);</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set DESIRED_BRIGHTNESS to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">DESIRED_BRIGHTNESS</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>参考运行结果，于 Linux 上 ：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_auto_exposure
+I0513 <span class="m">14</span>:07:57.963943 <span class="m">31845</span> utils.cc:26<span class="o">]</span> Detecting MYNT EYE devices
+I0513 <span class="m">14</span>:07:58.457536 <span class="m">31845</span> utils.cc:33<span class="o">]</span> MYNT EYE devices:
+I0513 <span class="m">14</span>:07:58.457563 <span class="m">31845</span> utils.cc:37<span class="o">]</span>   index: <span class="m">0</span>, name: MYNT-EYE-S1000
+I0513 <span class="m">14</span>:07:58.457567 <span class="m">31845</span> utils.cc:43<span class="o">]</span> Only one MYNT EYE device, <span class="k">select</span> index: <span class="m">0</span>
+I0513 <span class="m">14</span>:07:58.474916 <span class="m">31845</span> auto_exposure.cc:37<span class="o">]</span> Enable auto-exposure
+I0513 <span class="m">14</span>:07:58.491058 <span class="m">31845</span> auto_exposure.cc:38<span class="o">]</span> Set MAX_GAIN to <span class="m">48</span>
+I0513 <span class="m">14</span>:07:58.505131 <span class="m">31845</span> auto_exposure.cc:39<span class="o">]</span> Set MAX_EXPOSURE_TIME to <span class="m">240</span>
+I0513 <span class="m">14</span>:07:58.521375 <span class="m">31845</span> auto_exposure.cc:41<span class="o">]</span> Set DESIRED_BRIGHTNESS to <span class="m">192</span>
+</pre></div>
+</div>
+<p>样例程序会显示图像，左上角有真实曝光时间，单位毫秒。</p>
+<p>完整代码样例，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/auto_exposure.cc">auto_exposure.cc</a> 。</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="manual_exposure.html" class="btn btn-neutral float-right" title="启用手动曝光及其调节" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="framerate.html" class="btn btn-neutral" title="设定图像帧率和 IMU 频率" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, JohnZhao.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2.0.0-rc',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

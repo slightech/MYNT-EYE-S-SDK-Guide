@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Windows 安装 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
+        <link rel="up" title="MYNT® EYE SDK" href="contents.html"/>
+        <link rel="next" title="MacOS 安装 x" href="install_macos.html"/>
+        <link rel="prev" title="Ubuntu 安装" href="install_ubuntu.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="platform.html">支持平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu 安装</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Windows 安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS 安装 x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS 安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV 不依赖</a></li>
+<li class="toctree-l2"><a class="reference internal" href="from_v1.html">从 1.x 换到 2.x</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">MYNT® EYE SDK</a> &raquo;</li>
+        
+      <li>Windows 安装</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/sdk/install_windows.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="windows">
+<span id="sdk-install-windows"></span><h1>Windows 安装<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Windows 10</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="build_passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat" /></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Windows 不直接提供 Visual Studio <code class="docutils literal notranslate"><span class="pre">*.sln</span></code> 工程文件，需要用 CMake 来构建生成。一是 CMake 跨平台、易配置、可持续维护，二是第三方代码（glog, OpenCV）也都是用的 CMake 构建。</p>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">目前暂未提供二进制安装程序，需要你从源码编译。也是配置开发环境的过程。</p>
+</div>
+<div class="section" id="id1">
+<h2>前提条件<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cmake">
+<h3>CMake（提供构建）<a class="headerlink" href="#cmake" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://cmake.org/download/">CMake</a>，用于构建编译（必要）。</li>
+<li><a class="reference external" href="https://git-scm.com/downloads">Git</a>，用于获取代码（可选）。</li>
+<li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/download.html">Doxygen</a>，用于生成文档（可选）。</li>
+</ul>
+<p>安装好上述工具后，在命令提示符（Command Prompt）里确认可运行此些命令：</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>cmake --version
+cmake version 3.10.1
+
+<span class="p">&gt;</span>git --version
+git version 2.11.1.windows.1
+
+<span class="p">&gt;</span>doxygen --version
+1.8.13
+</pre></div>
+</div>
+</div>
+<div class="section" id="visual-studio">
+<h3>Visual Studio（提供编译）<a class="headerlink" href="#visual-studio" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.visualstudio.com/">Visual Studio</a><ul>
+<li><a class="reference external" href="https://my.visualstudio.com/Downloads?q=VisualStudio2017">Visual Studio 2017</a></li>
+<li><a class="reference external" href="https://my.visualstudio.com/Downloads?q=VisualStudio2015">Visual Studio 2015</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">Windows 10 SDK</a></li>
+</ul>
+<p>安装好 Visual Studio 后，在其 Visual Studio Command Prompt 里确认可运行如下命令：</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>cl
+Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26429.4 for x86
+
+<span class="p">&gt;</span>msbuild
+Microsoft (R) 生成引擎版本 15.7.179.6572
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>Visual Studio Command Prompt 可以从开始菜单打开，</p>
+<a class="reference internal image-reference" href="../../_images/vs_cmd_menu.png"><img alt="../../_images/vs_cmd_menu.png" src="../../_images/vs_cmd_menu.png" style="width: 30%;" /></a>
+<p>也可以从 Visual Studio 的工具菜单里打开，</p>
+<a class="reference internal image-reference" href="../../_images/vs_cmd.png"><img alt="../../_images/vs_cmd.png" src="../../_images/vs_cmd.png" style="width: 40%;" /></a>
+<p>但如 Visual Studio 2015 工具菜单里可能没有，可以自己添加个。</p>
+<p>打开 Tools 的 External Tools… ，然后 Add 如下内容：</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Value</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Title</td>
+<td>Visual Studio Command Prompt</td>
+</tr>
+<tr class="row-odd"><td>Command</td>
+<td><code class="docutils literal notranslate"><span class="pre">C:\Windows\System32\cmd.exe</span></code></td>
+</tr>
+<tr class="row-even"><td>Arguments</td>
+<td><code class="docutils literal notranslate"><span class="pre">/k</span> <span class="pre">&quot;C:\Program</span> <span class="pre">Files</span> <span class="pre">(x86)\Microsoft</span> <span class="pre">Visual</span> <span class="pre">Studio</span> <span class="pre">14.0\Common7\Tools\VsDevCmd.bat&quot;</span></code></td>
+</tr>
+<tr class="row-odd"><td>Initial Directory</td>
+<td><code class="docutils literal notranslate"><span class="pre">$(SolutionDir)</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Visual Studio Command Prompt 里就可以用编译命令 <code class="docutils literal notranslate"><span class="pre">cl</span></code> <code class="docutils literal notranslate"><span class="pre">link</span></code> <code class="docutils literal notranslate"><span class="pre">lib</span></code> <code class="docutils literal notranslate"><span class="pre">msbuild</span></code> 等，</p>
+<img alt="../../_images/vs_cmd_test.png" class="last" src="../../_images/vs_cmd_test.png" />
+</div>
+</div>
+<div class="section" id="msys2-linux">
+<h3>MSYS2（提供 Linux 命令）<a class="headerlink" href="#msys2-linux" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="http://www.msys2.org/">MSYS2</a><ul>
+<li><a class="reference external" href="https://lug.ustc.edu.cn/wiki/mirrors/help/msys2">国内镜像</a></li>
+<li><a class="reference external" href="https://wiki.archlinux.org/index.php/pacman">pacman</a></li>
+</ul>
+</li>
+</ul>
+<p>安装后，确认系统环境变量 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 里添加了如下路径：</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\msys64\usr\bin
+</pre></div>
+</div>
+<p>然后，打开 MSYS2 MSYS ，执行更新并安装 <code class="docutils literal notranslate"><span class="pre">make</span></code> ：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pacman -Syu
+$ pacman -S make
+</pre></div>
+</div>
+<p>最终，命令提示符（Command Prompt）里可运行如下命令：</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>make --version
+GNU Make 4.2.1
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>获取代码<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/slightech/MYNT-EYE-SDK-2.git
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>准备依赖<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>cd <span class="p">&lt;</span>sdk&gt;
+<span class="p">&gt;</span>make init
+Make init
+Init deps
+Install cmd: pacman -S
+Install deps: git clang-format
+pacman -S clang-format (not exists)
+error: target not found: clang-format
+pip install --upgrade autopep8 cpplint pylint requests
+...
+Init git hooks
+ERROR: clang-format-diff is not installed!
+Expect cmake version <span class="p">&gt;</span>= 3.0
+cmake version 3.10.1
+</pre></div>
+</div>
+<ul class="simple">
+<li><a class="reference external" href="https://opencv.org/">OpenCV</a></li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>OpenCV 官方提供了 <code class="docutils literal notranslate"><span class="pre">exe</span></code> 进行安装。如果想从源码编译，请见官方文档 <a class="reference external" href="https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html">Installation in Windows</a> 。或参考如下命令：</p>
+<div class="last highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>git clone https://github.com/opencv/opencv.git
+<span class="p">&gt;</span>cd opencv
+<span class="p">&gt;</span>git checkout tags/3.4.1
+
+<span class="p">&gt;</span>cd opencv
+<span class="p">&gt;</span>mkdir _build
+<span class="p">&gt;</span>cd _build
+
+<span class="p">&gt;</span>cmake <span class="se">^</span>
+<span class="se">-</span>D CMAKE_BUILD_TYPE=RELEASE <span class="se">^</span>
+<span class="se">-</span>D CMAKE_INSTALL_PREFIX=C:/opencv <span class="se">^</span>
+<span class="se">-</span>D WITH_CUDA=OFF <span class="se">^</span>
+<span class="se">-</span>D BUILD_DOCS=OFF <span class="se">^</span>
+<span class="se">-</span>D BUILD_EXAMPLES=OFF <span class="se">^</span>
+<span class="se">-</span>D BUILD_TESTS=OFF <span class="se">^</span>
+<span class="se">-</span>D BUILD_PERF_TESTS=OFF <span class="se">^</span>
+<span class="se">-</span>G <span class="s2">&quot;Visual Studio 15 2017 Win64&quot;</span> <span class="se">^</span>
+<span class="se">.</span>.
+
+<span class="p">&gt;</span>msbuild ALL_BUILD.vcxproj /property:Configuration=Release
+<span class="p">&gt;</span>msbuild INSTALL.vcxproj /property:Configuration=Release
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>编译代码<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径：</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span># OpenCV_DIR 为 OpenCVConfig.cmake 所在目录
+<span class="k">set</span> <span class="nv">OpenCV_DIR</span><span class="p">=</span>C:\opencv
+</pre></div>
+</div>
+<p class="last">不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV 不依赖</span></a> 。</p>
+</div>
+<p>编译并安装：</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> <span class="p">&lt;</span>sdk&gt;
+make install
+</pre></div>
+</div>
+<p>最终，默认会安装在 <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/_install</span></code> 目录。</p>
+</div>
+<div class="section" id="id8">
+<h2>编译样例<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> <span class="p">&lt;</span>sdk&gt;
+make samples
+</pre></div>
+</div>
+<p>运行样例：</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>.\samples\_output\bin\api\camera_a.bat
+</pre></div>
+</div>
+<p>教程样例，请阅读 <a class="reference internal" href="../data/contents.html#data"><span class="std std-ref">MYNT® EYE 数据</span></a> 和 <a class="reference internal" href="../control/contents.html#ctrl"><span class="std std-ref">MYNT® EYE 控制</span></a> 。</p>
+</div>
+<div class="section" id="id9">
+<h2>编译工具<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> <span class="p">&lt;</span>sdk&gt;
+make tools
+</pre></div>
+</div>
+<p>工具和脚本的使用，后续会有介绍。</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p>脚本为 Python 实现，需要先安装 Python 及其包管理工具 pip ，然后再如下安装依赖：</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> <span class="p">&lt;</span>sdk<span class="p">&gt;</span>\tools
+pip install -r requirements.txt
+</pre></div>
+</div>
+<p class="last">注：MSYS2 里也带了 Python ，但测试未能安装上 matplotlib 。</p>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>结语<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>工程要引入 SDK 的话，CMake 可参考 <code class="docutils literal notranslate"><span class="pre">samples/CMakeLists.txt</span></code> 里的配置。不然，就是直接引入安装目录里的头文件和动态库。</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install_macos.html" class="btn btn-neutral float-right" title="MacOS 安装 x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install_ubuntu.html" class="btn btn-neutral" title="Ubuntu 安装" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, JohnZhao.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2.0.0-rc',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

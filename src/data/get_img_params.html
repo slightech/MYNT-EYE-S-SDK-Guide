@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>获取图像标定参数 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
+        <link rel="up" title="MYNT® EYE 数据" href="contents.html"/>
+        <link rel="next" title="获取 IMU 标定参数" href="get_imu_params.html"/>
+        <link rel="prev" title="获取设备信息" href="get_device_info.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 数据</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">获取设备信息</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">获取图像标定参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">获取 IMU 标定参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">获取双目原始图像</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">获取双目纠正图像</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">获取视差图像</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">获取深度图像</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_points.html">获取点云图像</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu.html">获取 IMU 数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">从回调接口获取数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">使用插件获取数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save_params.html">保存设备信息和参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">写入图像标定参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">写入 IMU 标定参数</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">MYNT® EYE 数据</a> &raquo;</li>
+        
+      <li>获取图像标定参数</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/data/get_img_params.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="get-img-params">
+<span id="id1"></span><h1>获取图像标定参数<a class="headerlink" href="#get-img-params" title="Permalink to this headline">¶</a></h1>
+<p>通过 API 的 <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> 函数，就可以获取当前打开设备的图像标定参数。</p>
+<p>参考代码片段：</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Intrinsics left: {&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetIntrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Intrinsics right: {&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetIntrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">RIGHT</span><span class="p">)</span>
+          <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Extrinsics left to right: {&quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetExtrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">Stream</span><span class="o">::</span><span class="n">RIGHT</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>参考运行结果，于 Linux 上 ：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/get_img_params
+I0510 <span class="m">15</span>:00:22.643263  <span class="m">6980</span> utils.cc:26<span class="o">]</span> Detecting MYNT EYE devices
+I0510 <span class="m">15</span>:00:23.138811  <span class="m">6980</span> utils.cc:33<span class="o">]</span> MYNT EYE devices:
+I0510 <span class="m">15</span>:00:23.138849  <span class="m">6980</span> utils.cc:37<span class="o">]</span>   index: <span class="m">0</span>, name: MYNT-EYE-S1000
+I0510 <span class="m">15</span>:00:23.138855  <span class="m">6980</span> utils.cc:43<span class="o">]</span> Only one MYNT EYE device, <span class="k">select</span> index: <span class="m">0</span>
+I0510 <span class="m">15</span>:00:23.210491  <span class="m">6980</span> get_img_params.cc:23<span class="o">]</span> Intrinsics left: <span class="o">{</span>width: <span class="m">752</span>, height: <span class="m">480</span>, fx: <span class="m">736</span>.38305001095545776, fy: <span class="m">723</span>.50066150722432212, cx: <span class="m">356</span>.91961817119693023, cy: <span class="m">217</span>.27271340923883258, model: <span class="m">0</span>, coeffs: <span class="o">[</span>-0.54898645145016478, <span class="m">0</span>.52837141203888638, <span class="m">0</span>.00000000000000000, <span class="m">0</span>.00000000000000000, <span class="m">0</span>.00000000000000000<span class="o">]}</span>
+I0510 <span class="m">15</span>:00:23.210551  <span class="m">6980</span> get_img_params.cc:24<span class="o">]</span> Intrinsics right: <span class="o">{</span>width: <span class="m">752</span>, height: <span class="m">480</span>, fx: <span class="m">736</span>.38305001095545776, fy: <span class="m">723</span>.50066150722432212, cx: <span class="m">456</span>.68367112303980093, cy: <span class="m">250</span>.70083335536796199, model: <span class="m">0</span>, coeffs: <span class="o">[</span>-0.51012886039889305, <span class="m">0</span>.38764476500996770, <span class="m">0</span>.00000000000000000, <span class="m">0</span>.00000000000000000, <span class="m">0</span>.00000000000000000<span class="o">]}</span>
+I0510 <span class="m">15</span>:00:23.210577  <span class="m">6980</span> get_img_params.cc:26<span class="o">]</span> Extrinsics left to right: <span class="o">{</span>rotation: <span class="o">[</span><span class="m">0</span>.99701893306553813, -0.00095378124886237, -0.07715139279485062, <span class="m">0</span>.00144939967628305, <span class="m">0</span>.99997867219985104, <span class="m">0</span>.00636823256494144, <span class="m">0</span>.07714367342455503, -0.00646107164115277, <span class="m">0</span>.99699905125522237<span class="o">]</span>, translation: <span class="o">[</span>-118.88991734400046596, -0.04560580387053091, -3.95313736911933855<span class="o">]}</span>
+</pre></div>
+</div>
+<p>完整代码样例，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_img_params.cc">get_img_params.cc</a> 。</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="get_imu_params.html" class="btn btn-neutral float-right" title="获取 IMU 标定参数" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="get_device_info.html" class="btn btn-neutral" title="获取设备信息" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, JohnZhao.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2.0.0-rc',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

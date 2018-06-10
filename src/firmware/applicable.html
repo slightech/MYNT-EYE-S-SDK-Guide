@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>固件与 SDK 适配性 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
+        <link rel="up" title="MYNT® EYE 固件" href="contents.html"/>
+        <link rel="next" title="固件如何进行升级" href="upgrade.html"/>
+        <link rel="prev" title="MYNT® EYE 固件" href="contents.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 固件</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">固件与 SDK 适配性</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html">固件如何进行升级</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">MYNT® EYE 固件</a> &raquo;</li>
+        
+      <li>固件与 SDK 适配性</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/firmware/applicable.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sdk">
+<span id="firmware-applicable"></span><h1>固件与 SDK 适配性<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="42%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Firmwares</th>
+<th class="head">SDK Version</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>MYNTEYE_S_2.0.0_rc.img</td>
+<td>2.0.0-rc (2.0.0-rc ~ 2.0.0-rc2)</td>
+</tr>
+<tr class="row-odd"><td>MYNTEYE_S_2.0.0_rc2.img</td>
+<td>2.0.0-rc2 (2.0.0-rc ~ 2.0.0-rc2)</td>
+</tr>
+<tr class="row-even"><td>MYNTEYE_S_2.0.0_rc1.img</td>
+<td>2.0.0-rc1</td>
+</tr>
+<tr class="row-odd"><td>MYNTEYE_S_2.0.0_rc0.img</td>
+<td>2.0.0-rc0 (2.0.0-rc1 ~ 2.0.0-alpha1)</td>
+</tr>
+<tr class="row-even"><td>MYNTEYE_S_2.0.0_alpha1.1.img</td>
+<td>2.0.0-alpha1 (2.0.0-rc1 ~ 2.0.0-alpha1)</td>
+</tr>
+<tr class="row-odd"><td>MYNTEYE_S_2.0.0_alpha1.img</td>
+<td>2.0.0-alpha1 (2.0.0-rc1 ~ 2.0.0-alpha1)</td>
+</tr>
+<tr class="row-even"><td>MYNTEYE_S_2.0.0_alpha0.img</td>
+<td>2.0.0-alpha0</td>
+</tr>
+</tbody>
+</table>
+<p><code class="docutils literal notranslate"><span class="pre">Firmwares</span></code> 表明固件文件名称。其在 <a class="reference external" href="https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f">Google Drive</a> 或 <a class="reference external" href="https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ">百度网盘</a> 的 <code class="docutils literal notranslate"><span class="pre">Firmwares</span></code> 目录内。</p>
+<p><code class="docutils literal notranslate"><span class="pre">SDK</span> <span class="pre">Version</span></code> 表明该固件适配的 SDK 版本，括号内指可用版本范围。</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="upgrade.html" class="btn btn-neutral float-right" title="固件如何进行升级" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contents.html" class="btn btn-neutral" title="MYNT® EYE 固件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, JohnZhao.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2.0.0-rc',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

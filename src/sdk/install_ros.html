@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ROS 安装 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
+        <link rel="up" title="MYNT® EYE SDK" href="contents.html"/>
+        <link rel="next" title="OpenCV 不依赖" href="without_opencv.html"/>
+        <link rel="prev" title="MacOS 安装 x" href="install_macos.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="platform.html">支持平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu 安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows 安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS 安装 x</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ROS 安装</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV 不依赖</a></li>
+<li class="toctree-l2"><a class="reference internal" href="from_v1.html">从 1.x 换到 2.x</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">MYNT® EYE SDK</a> &raquo;</li>
+        
+      <li>ROS 安装</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/sdk/install_ros.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ros">
+<span id="sdk-install-ros"></span><h1>ROS 安装<a class="headerlink" href="#ros" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">ROS Kinetic</th>
+<th class="head">ROS Indigo</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="build_passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat" /></td>
+<td><img alt="build_passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat" /></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id1">
+<h2>环境准备<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://www.ros.org/">ROS</a></li>
+</ul>
+<div class="section" id="ros-kinetic-ubuntu-16-04">
+<h3>ROS Kinetic (Ubuntu 16.04)<a class="headerlink" href="#ros-kinetic-ubuntu-16-04" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://raw.githubusercontent.com/oroca/oroca-ros-pkg/master/ros_install.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
+chmod <span class="m">755</span> ./ros_install.sh <span class="o">&amp;&amp;</span> bash ./ros_install.sh catkin_ws kinetic
+</pre></div>
+</div>
+</div>
+<div class="section" id="ros-indigo-ubuntu-14-04">
+<h3>ROS Indigo (Ubuntu 14.04)<a class="headerlink" href="#ros-indigo-ubuntu-14-04" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://raw.githubusercontent.com/oroca/oroca-ros-pkg/master/ros_install.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
+chmod <span class="m">755</span> ./ros_install.sh <span class="o">&amp;&amp;</span> bash ./ros_install.sh catkin_ws indigo
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>编译代码<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
+make ros
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>运行节点<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> wrappers/ros/devel/setup.bash
+roslaunch mynt_eye_ros_wrapper mynteye.launch
+</pre></div>
+</div>
+<p>运行节点，同时打开 RViz 预览：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> wrappers/ros/devel/setup.bash
+roslaunch mynt_eye_ros_wrapper display.launch
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>测试服务<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>运行节点，有提供获取设备信息服务，如下测试：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">source</span> wrappers/ros/devel/setup.bash
+$ rosrun mynt_eye_ros_wrapper get_device_info.py
+LENS_TYPE: <span class="m">0000</span>
+SPEC_VERSION: <span class="m">1</span>.0
+NOMINAL_BASELINE: <span class="m">120</span>
+HARDWARE_VERSION: <span class="m">2</span>.0
+IMU_TYPE: <span class="m">0000</span>
+SERIAL_NUMBER: <span class="m">0610243700090720</span>
+FIRMWARE_VERSION: <span class="m">2</span>.0
+DEVICE_NAME: MYNT-EYE-S1000
+</pre></div>
+</div>
+</div>
+<div class="section" id="ros-indigo">
+<h2>常见问题 - ROS Indigo<a class="headerlink" href="#ros-indigo" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="make-ros-libopencv">
+<h3><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> 时 <code class="docutils literal notranslate"><span class="pre">libopencv</span></code> 找不到<a class="headerlink" href="#make-ros-libopencv" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make[3]: *** No rule to make target `/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8&#39;, needed by `/home/john/Workspace/mynt-eye-sdk-2/wrappers/ros/devel/lib/libmynteye_wrapper.so&#39;.  Stop.
+</pre></div>
+</div>
+<p><strong>Solution 1)</strong> 安装 OpenCV 2:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get install libcv-dev
+</pre></div>
+</div>
+<p><strong>Solution 2)</strong> 安装 OpenCV 3 并重编 <code class="docutils literal notranslate"><span class="pre">cv_bridge</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install ros-indigo-opencv3
+
+git clone https://github.com/ros-perception/vision_opencv.git
+mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
+</pre></div>
+</div>
+<p>然后，重新 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> 。</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>结语<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>关于如何使用，请阅读 <a class="reference internal" href="../wrapper/ros.html#wrapper-ros"><span class="std std-ref">ROS 如何使用</span></a> 。</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="without_opencv.html" class="btn btn-neutral float-right" title="OpenCV 不依赖" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install_macos.html" class="btn btn-neutral" title="MacOS 安装 x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, JohnZhao.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2.0.0-rc',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
