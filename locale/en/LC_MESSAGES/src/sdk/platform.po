@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/sdk/platform.rst:4
+msgid "支持平台"
+msgstr ""
+
+#: ../../src/sdk/platform.rst:6
+msgid ""
+"SDK 是基于 CMake 构建的，用以跨 Linux, Windows, macOS "
+"等多个平台。而从源码编译安装，也可以适配您的平台架构，并应用本地优化。"
+msgstr ""
+
+#: ../../src/sdk/platform.rst:8
+msgid "已测试可用的平台有："
+msgstr ""
+
+#: ../../src/sdk/platform.rst:10
+msgid "Windows 10"
+msgstr ""
+
+#: ../../src/sdk/platform.rst:11
+msgid "Ubuntu 16.04 / 14.04"
+msgstr ""
+
+#: ../../src/sdk/platform.rst:12
+msgid "Jetson TX2"
+msgstr ""
+
+#: ../../src/sdk/platform.rst:16
+msgid "由于硬件传输速率要求，务必使用 USB 3.0 接口。另外，虚拟机因其大多存在 USB 驱动兼容性问题，不建议使用。"
+msgstr ""
+

@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/sdk/install_ros.rst:4
+msgid "ROS 安装"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:9 ../../src/sdk/install_ros.rst:19
+msgid "ROS Kinetic"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:9 ../../src/sdk/install_ros.rst:19
+msgid "ROS Indigo"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:11
+msgid "|build_passing|"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:21
+msgid "✓"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:25
+msgid "环境准备"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:27
+msgid "`ROS <http://www.ros.org/>`_"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:30
+msgid "ROS Kinetic (Ubuntu 16.04)"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:38
+msgid "ROS Indigo (Ubuntu 14.04)"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:46
+msgid "编译代码"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:54
+msgid "运行节点"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:61
+msgid "运行节点，同时打开 RViz 预览："
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:69
+msgid "测试服务"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:71
+msgid "运行节点，有提供获取设备信息服务，如下测试："
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:87
+msgid "常见问题 - ROS Indigo"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:90
+msgid "``make ros`` 时 ``libopencv`` 找不到"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:96
+msgid "**Solution 1)** 安装 OpenCV 2:"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:103
+msgid "**Solution 2)** 安装 OpenCV 3 并重编 ``cv_bridge``:"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:112
+msgid "然后，重新 ``make ros`` 。"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:115
+msgid "结语"
+msgstr ""
+
+#: ../../src/sdk/install_ros.rst:117
+msgid "关于如何使用，请阅读 :ref:`wrapper_ros` 。"
+msgstr ""
+

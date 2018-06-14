@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/data/get_stereo_rectified.rst:4
+msgid "获取双目纠正图像"
+msgstr ""
+
+#: ../../src/data/get_stereo_rectified.rst:6
+msgid "API 提供的 ``GetStreamData()`` 默认仅能获取到硬件的原始数据，例如双目原始图像。"
+msgstr ""
+
+#: ../../src/data/get_stereo_rectified.rst:8
+msgid ""
+"而双目纠正图像，属于上层合成数据。此类数据，需要事先 ``EnableStreamData()`` 启用，然后 "
+"``GetStreamData()`` 才能获取到。"
+msgstr ""
+
+#: ../../src/data/get_stereo_rectified.rst:10
+msgid "另外，``WaitForStreams()`` 等待的是关键原始数据。刚开始时，合成数据可能还在处理，取出的是空值，所以需要判断下不为空。"
+msgstr ""
+
+#: ../../src/data/get_stereo_rectified.rst:14
+msgid "如果想要合成数据一生成就立即获取到，请参阅 :ref:`get_from_callbacks` 。"
+msgstr ""
+
+#: ../../src/data/get_stereo_rectified.rst:16
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/data/get_stereo_rectified.rst:49
+msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
+msgstr ""
+
+#: ../../src/data/get_stereo_rectified.rst:51
+msgid ""
+"完整代码样例，请见 `get_stereo_rectified.cc <https://github.com/slightech/MYNT-"
+"EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc>`_ 。"
+msgstr ""
+

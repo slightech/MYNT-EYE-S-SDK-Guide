@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/mynteye/surface.rst:4
+msgid "尺寸与结构"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:7
+msgid "外壳(mm)"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:7
+msgid "PCBA板(mm)"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:9
+msgid "165x31.5x29.6"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:9
+msgid "149x24"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:14
+msgid "摄像头：摄像头传感器镜头，在使用中请注意保护，以避免成像质量下降。"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:15
+msgid "红外结构光发射器及开孔：通过红外结构光可有效解决白墙等无纹理表面的视觉计算。(非 IR 版，此孔保留，但内部无结构光发射装置)"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:16
+msgid ""
+"USB Micro-B 接口及固定孔：使用中，插上 USB Micro-B "
+"数据线后，请使用接口端的螺丝紧固接口，以避免使用中损坏接口，也保证数据连接的稳定性。"
+msgstr ""
+
+#: ../../src/mynteye/surface.rst:17
+msgid "1/4 英寸标准固定螺孔：用于将双目摄像头固定于摄影三角架等装置。"
+msgstr ""
+

@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/control/framerate.rst:4
+msgid "设定图像帧率和 IMU 频率"
+msgstr ""
+
+#: ../../src/control/framerate.rst:6
+msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
+msgstr ""
+
+#: ../../src/control/framerate.rst:8
+msgid "设定图像帧率和 IMU 频率，就是设定 ``Option::FRAME_RATE`` 和 ``Option::IMU_FREQUENCY`` 。"
+msgstr ""
+
+#: ../../src/control/framerate.rst:12
+msgid "图像帧率和 IMU 频率必须同时设定才能生效。"
+msgstr ""
+
+#: ../../src/control/framerate.rst:13
+msgid "图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60 。"
+msgstr ""
+
+#: ../../src/control/framerate.rst:14
+msgid "IMU 频率有效值： 100, 200, 250, 333, 500 。"
+msgstr ""
+
+#: ../../src/control/framerate.rst:16
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/control/framerate.rst:34
+msgid "参考运行结果，于 Linux 上 ："
+msgstr ""
+
+#: ../../src/control/framerate.rst:49
+msgid "样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率和 IMU 频率。"
+msgstr ""
+
+#: ../../src/control/framerate.rst:51
+msgid ""
+"完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_ 。"
+msgstr ""
+

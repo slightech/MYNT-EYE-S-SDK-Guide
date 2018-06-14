@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/log/log_verbose.rst:4
+msgid "启用详细级别"
+msgstr ""
+
+#: ../../src/log/log_verbose.rst:6
+msgid ""
+"日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。"
+msgstr ""
+
+#: ../../src/log/log_verbose.rst:8
+msgid "取消注释的 ``FLAGS_v = 2;`` 重新编译，即可启用详细级别，指 ``VLOG(n)`` 打印的日志。"
+msgstr ""
+
+#: ../../src/log/log_verbose.rst:10
+msgid "关于如何使用日志库，即如何配置、打印等，请如下打开其文档进行了解："
+msgstr ""
+

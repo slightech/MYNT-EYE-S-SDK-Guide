@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/analytics/dataset.rst:4
+msgid "录制数据集"
+msgstr ""
+
+#: ../../src/analytics/dataset.rst:6
+msgid ""
+"SDK 提供了录制数据集的工具 ``record`` 。工具详情可见 `tools/README.md "
+"<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。"
+msgstr ""
+
+#: ../../src/analytics/dataset.rst:8
+msgid "参考运行命令："
+msgstr ""
+
+#: ../../src/analytics/dataset.rst:17
+msgid "参考运行结果，于 Linux 上 ："
+msgstr ""
+
+#: ../../src/analytics/dataset.rst:42
+msgid "默认录制进 ``<workdir>/dataset`` 目录。你也可以加参数，指定录制到其他目录。"
+msgstr ""
+
+#: ../../src/analytics/dataset.rst:44
+msgid "录制内容如下："
+msgstr ""
+

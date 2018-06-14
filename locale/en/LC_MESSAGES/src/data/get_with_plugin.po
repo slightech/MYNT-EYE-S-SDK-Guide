@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/data/get_with_plugin.rst:4
+msgid "使用插件获取数据"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:6
+msgid "API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:8
+msgid ""
+"官方目前提供了些计算双目视差的插件，在 `Google Drive "
+"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
+" 或 `百度网盘 <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 "
+"``Plugins`` 目录内。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:20
+msgid "目录 ``linux-x86_64`` 表明了系统和架构。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:22
+msgid "可从系统信息或 ``uname -a`` 得知你的 CPU 架构。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:24
+msgid "库名 ``libplugin_*`` 表明了插件标识和第三方依赖。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:26
+msgid "``b`` ``g`` 是插件标识，说明用了不同算法。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:27
+msgid "``ocl1.2`` 表明依赖了 ``OpenCL 1.2`` ，如果存在。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:28
+msgid "``cuda9.1`` 表明依赖了 ``CUDA 9.1`` ，如果存在。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:29
+msgid "``opencv3.4.0`` 表明依赖了 ``OpenCV 3.4.0`` ，如果存在。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:30
+msgid "``mynteye2.0.0`` 表明依赖了 ``MYNT EYE SDK 2.0.0`` ，如果存在。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:32
+msgid "首先，根据具体情况，选择你想测试使用的插件。如果依赖了第三方，那么请安装一致的版本。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:34
+msgid "然后，参考如下代码启用插件："
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:42
+msgid "路径可以是绝对路径，也可以是相对路径（相对于当前工作目录）。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:44
+msgid "最终，和之前一样调用 API 获取数据就行了。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:48
+msgid ""
+"如果没有启用插件的话， ``api->Start(Source::VIDEO_STREAMING);`` 时会自动在 "
+"``<sdk>/plugins/<platform>`` 目录里找合适的插件去加载。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:50
+msgid ""
+"换句话说，可以把当前平台的插件目录整个搬进 ``<sdk>/plugins`` 目录内。安装好对应的 ``CUDA`` ``OpenCV`` "
+"等插件依赖后重编译，此后运行 ``API`` 层接口程序，就会自动加载官方插件了。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:52
+msgid "运行前，请执行如下命令，以确保能搜索到插件的依赖库："
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:68
+msgid "此外，可执行如下命令，检查是否能搜索到插件的依赖库："
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:83
+msgid "如果找不到插件的依赖库，加载时将会报错 \"Open plugin failed\" 。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:85
+msgid ""
+"完整代码样例，请见 `get_with_plugin.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/data/get_with_plugin.cc>`_ 。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:89
+msgid ""
+"Linux 上也可以把依赖库路径加入系统环境，编译出的程序就可以直接运行了（不需要于终端里 ``export LD_LIBRARY_PATH`` "
+"再运行）。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:91
+msgid "新建 ``/etc/ld.so.conf.d/libmynteye.conf`` 文件，写入依赖库路径。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:92
+msgid "终端里执行 ``sudo /sbin/ldconfig`` 命令，刷新缓存。"
+msgstr ""
+
+#: ../../src/data/get_with_plugin.rst:94
+msgid "e.g. libmynteye.conf"
+msgstr ""
+

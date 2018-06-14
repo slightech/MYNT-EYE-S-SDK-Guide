@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/control/infrared.rst:4
+msgid "启用 IR 及其调节"
+msgstr ""
+
+#: ../../src/control/infrared.rst:6
+msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
+msgstr ""
+
+#: ../../src/control/infrared.rst:8
+msgid "启用 IR ，就是设定 ``Option::IR_CONTROL`` 大于 0 的值。值越大，强度越高。"
+msgstr ""
+
+#: ../../src/control/infrared.rst:10
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/control/infrared.rst:29
+msgid "参考运行结果，于 Linux 上 ："
+msgstr ""
+
+#: ../../src/control/infrared.rst:42
+msgid "此时，如果显示了图像，就能够看到图像上会有 IR 光斑。"
+msgstr ""
+
+#: ../../src/control/infrared.rst:46
+msgid "硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备后，一定要设定下 IR 值。"
+msgstr ""
+
+#: ../../src/control/infrared.rst:48
+msgid ""
+"完整代码样例，请见 `infrared.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_ 。"
+msgstr ""
+

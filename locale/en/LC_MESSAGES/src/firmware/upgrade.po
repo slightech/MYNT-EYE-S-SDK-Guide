@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/firmware/upgrade.rst:4
+msgid "固件如何进行升级"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:6
+msgid "固件升级，需要使用我们提供的固件升级程序。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:8
+msgid ""
+"固件及其升级程序，都在 `Google Drive "
+"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
+" 或 `百度网盘 <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 "
+"``Firmwares`` 目录内。文件结构如下："
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:18
+msgid "固件升级程序，目前仅支持 Windows ，所以需要你在 Windows 下进行操作。步骤如下："
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:21
+msgid "下载准备"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:23
+msgid "下载固件升级程序 ``upgrader-setup.exe`` 。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:24
+msgid "下载固件，如 ``MYNTEYE_S_2.0.0_rc0.img`` 。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:26
+msgid "请见 :ref:`firmware_applicable` 选择适合当前 SDK 版本的固件。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:27
+msgid "请见 ``Checksum.txt`` 找到下载固件的校验码，如下获取并比对："
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:29
+msgid "命令提示符（CMD）里运行 ``certutil -hashfile <*.img> MD5`` 。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:30
+msgid "校验码不正确的话，说明下载有误，请重新下载！"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:33
+msgid "安装程序"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:35
+msgid "双击 ``upgrader-setup.exe`` 安装固件升级程序。完成后，桌面会有程序快捷。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:38
+msgid "升级固件"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:40
+msgid "USB 口插上 MYNT® EYE 设备。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:42
+msgid "打开固件升级程序，选择 ``Options/FirmwareUpdate`` 。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:46
+msgid "打开窗口里，``Device`` 选中 ``MYNTEYE`` ，然后点击 ``Update`` 。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:51
+msgid "弹出警告对话框，直接 ``是`` 即可。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:53
+msgid "其提示为初次使用时确保安装了驱动程序，详情见 README 。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:55
+msgid "驱动程序在安装升级程序时，正常情况都会安装好的。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:56
+msgid "如果升级遇到问题，一般都是驱动未安装好，可见 README 解决。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:64
+msgid "在打开的文件选择框里，选择要升级的固件，开始升级。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:68
+msgid "升级完成时，会有提示音“嘀”，同时状态变为 ``Succeeded`` 。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:73
+msgid "关闭升级程序，结束。"
+msgstr ""
+
+#: ../../src/firmware/upgrade.rst:77
+msgid ""
+"固件升级后，初次打开 MYNT® EYE 设备时，请先放置于桌面静止 3 秒，其会有一个零漂补偿过程。或者，请主动调用控制接口 "
+"``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来进行零漂补偿。"
+msgstr ""
+

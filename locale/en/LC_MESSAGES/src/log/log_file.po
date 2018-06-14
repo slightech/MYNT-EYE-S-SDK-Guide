@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/log/log_file.rst:4
+msgid "启用日志文件"
+msgstr ""
+
+#: ../../src/log/log_file.rst:6
+msgid ""
+"日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。"
+msgstr ""
+
+#: ../../src/log/log_file.rst:8
+msgid ""
+"取消注释的 ``FLAGS_log_dir = \".\";`` 重新编译，即可保存日志到当前工作目录。例如运行 ``camera_a`` "
+"后，日志文件如下："
+msgstr ""
+
+#: ../../src/log/log_file.rst:22
+msgid ""
+"``camera_a.INFO`` 表明了哪个程序、什么日志级别。但它只是一个链接，指向真实的日志文件，如 ``camera_a.john-"
+"ubuntu.john.log.INFO.20180513-141832.519`` 。运行多次后， ``camera_a.INFO`` "
+"仍只会有一个，指向最新的那个日志文件，便于你查看。"
+msgstr ""
+
+#: ../../src/log/log_file.rst:24
+msgid "执行 ``make cleanlog`` 可以清理所有日志文件。"
+msgstr ""
+

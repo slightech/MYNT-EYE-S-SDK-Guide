@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/control/auto_exposure.rst:4
+msgid "启用自动曝光及其调节"
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:6
+msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:8
+msgid "启用自动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``0`` 。自动曝光时，可调节的设定有："
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:10
+msgid "``Option::MAX_GAIN`` 最大增益。"
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:11
+msgid "``Option::MAX_EXPOSURE_TIME`` 最大曝光时间。"
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:12
+msgid "``Option::DESIRED_BRIGHTNESS`` 期望亮度。"
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:14
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:37
+msgid "参考运行结果，于 Linux 上 ："
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:51
+msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
+msgstr ""
+
+#: ../../src/control/auto_exposure.rst:53
+msgid ""
+"完整代码样例，请见 `auto_exposure.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/control/auto_exposure.cc>`_ 。"
+msgstr ""
+

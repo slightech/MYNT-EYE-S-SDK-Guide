@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/data/get_disparity.rst:4
+msgid "获取视差图像"
+msgstr ""
+
+#: ../../src/data/get_disparity.rst:6
+msgid ""
+"视差图像，属于上层合成数据。需要事先 ``EnableStreamData()`` 启用，然后 ``GetStreamData()`` "
+"获取。另外，判断不为空后再使用。"
+msgstr ""
+
+#: ../../src/data/get_disparity.rst:8
+msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
+msgstr ""
+
+#: ../../src/data/get_disparity.rst:10
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/data/get_disparity.rst:53
+msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
+msgstr ""
+
+#: ../../src/data/get_disparity.rst:55
+msgid ""
+"完整代码样例，请见 `get_disparity.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/data/get_disparity.cc>`_ 。"
+msgstr ""
+

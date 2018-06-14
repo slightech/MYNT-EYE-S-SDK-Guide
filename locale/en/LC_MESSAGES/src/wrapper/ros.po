@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/wrapper/ros.rst:4
+msgid "ROS 如何使用"
+msgstr ""
+
+#: ../../src/wrapper/ros.rst:6
+msgid "按照 :ref:`sdk_install_ros` ，编译再运行节点。"
+msgstr ""
+
+#: ../../src/wrapper/ros.rst:8
+msgid "``rostopic list`` 可以列出发布的节点："
+msgstr ""
+
+#: ../../src/wrapper/ros.rst:27
+msgid "``rostopic hz <topic>`` 可以检查是否有数据："
+msgstr ""
+
+#: ../../src/wrapper/ros.rst:41
+msgid ""
+"``rostopic echo <topic>`` 可以打印发布数据等。了解更多，请阅读 `rostopic "
+"<http://wiki.ros.org/rostopic>`_ 。"
+msgstr ""
+
+#: ../../src/wrapper/ros.rst:43
+msgid "ROS 封装的文件结构，如下所示："
+msgstr ""
+
+#: ../../src/wrapper/ros.rst:63
+msgid ""
+"其中 ``mynteye.launch`` 里，可以配置发布的 topics 与 frame_ids "
+"、决定启用哪些数据、以及设定控制选项。其中，``gravity`` 请配置成当地重力加速度。"
+msgstr ""
+
+#: ../../src/wrapper/ros.rst:69
+msgid "如果想要打印调试信息，请编辑 ``wrapper_node.cc`` ，修改 ``Info`` 为 ``Debug`` 即可："
+msgstr ""
+

@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/analytics/analytics_imu.rst:4
+msgid "分析 IMU"
+msgstr ""
+
+#: ../../src/analytics/analytics_imu.rst:6
+msgid ""
+"SDK 提供了 IMU 分析的脚本 ``imu_analytics.py`` 。工具详情可见 `tools/README.md "
+"<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。"
+msgstr ""
+
+#: ../../src/analytics/analytics_imu.rst:8
+msgid "参考运行命令及结果，于 Linux 上："
+msgstr ""
+
+#: ../../src/analytics/analytics_imu.rst:31
+msgid "分析结果图会保存进数据集目录，参考如下："
+msgstr ""
+
+#: ../../src/analytics/analytics_imu.rst:35
+msgid "另外，脚本具体选项可执行 ``-h`` 了解："
+msgstr ""
+

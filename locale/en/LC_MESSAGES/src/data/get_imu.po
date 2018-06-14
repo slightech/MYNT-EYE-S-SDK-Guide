@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/data/get_imu.rst:4
+msgid "获取 IMU 数据"
+msgstr ""
+
+#: ../../src/data/get_imu.rst:6
+msgid ""
+"API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据。要捕获 IMU 数据的话，参数用 "
+"``Source::MOTION_TRACKING`` 。或者 ``Source::ALL`` 同时捕获图像和 IMU 数据。"
+msgstr ""
+
+#: ../../src/data/get_imu.rst:8
+msgid ""
+"开始捕获数据后，需要 ``EnableMotionDatas()`` 启用缓存，才能通过 ``GetMotionDatas()`` 函数获取到 "
+"IMU 数据。否则，只能通过回调接口得到 IMU 数据，请参阅 :ref:`get_from_callbacks` 。"
+msgstr ""
+
+#: ../../src/data/get_imu.rst:10
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/data/get_imu.rst:64
+msgid "上述代码，用了 OpenCV 来显示图像和数据。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
+msgstr ""
+
+#: ../../src/data/get_imu.rst:66
+msgid ""
+"完整代码样例，请见 `get_imu.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/data/get_imu.cc>`_ 。"
+msgstr ""
+

@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/data/get_from_callbacks.rst:4
+msgid "从回调接口获取数据"
+msgstr ""
+
+#: ../../src/data/get_from_callbacks.rst:6
+msgid "API 提供了 ``SetStreamCallback()`` ``SetMotionCallback()`` 函数，来设定各类数据的回调。"
+msgstr ""
+
+#: ../../src/data/get_from_callbacks.rst:10
+msgid "一定不要阻塞回调。如果需要长时间处理数据，请将回调作为数据生产者。"
+msgstr ""
+
+#: ../../src/data/get_from_callbacks.rst:12
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/data/get_from_callbacks.rst:117
+msgid "上述代码，用了 OpenCV 来显示图像和数据。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
+msgstr ""
+
+#: ../../src/data/get_from_callbacks.rst:119
+msgid ""
+"完整代码样例，请见 `get_from_callbacks.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/data/get_from_callbacks.cc>`_ 。"
+msgstr ""
+

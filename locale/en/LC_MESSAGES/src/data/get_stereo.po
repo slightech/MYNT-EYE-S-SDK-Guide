@@ -1,0 +1,50 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/data/get_stereo.rst:4
+msgid "获取双目原始图像"
+msgstr ""
+
+#: ../../src/data/get_stereo.rst:6
+msgid ""
+"API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据。如果只捕获图像数据的话，参数用 "
+"``Source::VIDEO_STREAMING`` 即可。"
+msgstr ""
+
+#: ../../src/data/get_stereo.rst:8
+msgid ""
+"开始捕获数据后，首先调用 ``WaitForStreams()`` 函数，等待捕获到数据。接着，通过 ``GetStreamData()`` "
+"函数，就能获取想要的数据了。"
+msgstr ""
+
+#: ../../src/data/get_stereo.rst:10
+msgid "参考代码片段："
+msgstr ""
+
+#: ../../src/data/get_stereo.rst:38
+msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
+msgstr ""
+
+#: ../../src/data/get_stereo.rst:40
+msgid ""
+"完整代码样例，请见 `get_stereo.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/data/get_stereo.cc>`_ 。"
+msgstr ""
+
