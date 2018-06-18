@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../../index.rst:7
 msgid "MYNT® EYE SDK 指导"
-msgstr ""
+msgstr "MYNT® EYE SDK Guide"
 
