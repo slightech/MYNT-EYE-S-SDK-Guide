@@ -14,7 +14,7 @@ SDK 提供了录制数据集的工具 ``record`` 。工具详情可见 `tools/RE
   # Windows
   .\tools\_output\bin\dataset\record.bat
 
-参考运行结果，于 Linux 上 ：
+参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 
