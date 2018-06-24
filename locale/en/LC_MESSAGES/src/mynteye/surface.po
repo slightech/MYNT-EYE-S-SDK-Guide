@@ -20,39 +20,39 @@ msgstr ""
 
 #: ../../src/mynteye/surface.rst:4
 msgid "尺寸与结构"
-msgstr ""
+msgstr "Size and structure"
 
 #: ../../src/mynteye/surface.rst:7
 msgid "外壳(mm)"
-msgstr ""
+msgstr "Shell(mm)"
 
 #: ../../src/mynteye/surface.rst:7
 msgid "PCBA板(mm)"
-msgstr ""
+msgstr "PCBA board(mm)"
 
 #: ../../src/mynteye/surface.rst:9
 msgid "165x31.5x29.6"
-msgstr ""
+msgstr "165x31.5x29.6"
 
 #: ../../src/mynteye/surface.rst:9
 msgid "149x24"
-msgstr ""
+msgstr "149x24"
 
 #: ../../src/mynteye/surface.rst:14
 msgid "摄像头：摄像头传感器镜头，在使用中请注意保护，以避免成像质量下降。"
-msgstr ""
+msgstr "Camera:Please pay attention to protecting camera lens when using, so as to avoid the deterioration of imaging quality."
 
 #: ../../src/mynteye/surface.rst:15
 msgid "红外结构光发射器及开孔：通过红外结构光可有效解决白墙等无纹理表面的视觉计算。(非 IR 版，此孔保留，但内部无结构光发射装置)"
-msgstr ""
+msgstr "B.nfrared structured light transmitter:Infrared structured light can effectively solve the visual calculation of non-textured surfaces such as white walls.(Non-IR version, this hole is reserved, but the internal unstructured light emitting device)"
 
 #: ../../src/mynteye/surface.rst:16
 msgid ""
 "USB Micro-B 接口及固定孔：使用中，插上 USB Micro-B "
 "数据线后，请使用接口端的螺丝紧固接口，以避免使用中损坏接口，也保证数据连接的稳定性。"
-msgstr ""
+msgstr "C.USB Micro-B port and fixing hole：When using, after inserting the USB Micro-B data cable, use the screw on the interface to fasten the connector to avoid damage to the connector during use and to ensure the stability of the data connection."
 
 #: ../../src/mynteye/surface.rst:17
 msgid "1/4 英寸标准固定螺孔：用于将双目摄像头固定于摄影三角架等装置。"
-msgstr ""
+msgstr "D.1/4 inch standard fixing screw hole：It is used for fixing binocular camera to photo tripod and other devices."
 

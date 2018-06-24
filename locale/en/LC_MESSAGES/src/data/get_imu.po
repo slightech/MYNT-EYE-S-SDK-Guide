@@ -20,31 +20,40 @@ msgstr ""
 
 #: ../../src/data/get_imu.rst:4
 msgid "获取 IMU 数据"
-msgstr ""
+msgstr "Get IMU data"
 
 #: ../../src/data/get_imu.rst:6
 msgid ""
-"API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据。要捕获 IMU 数据的话，参数用 "
-"``Source::MOTION_TRACKING`` 。或者 ``Source::ALL`` 同时捕获图像和 IMU 数据。"
+"API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据。要捕获 IMU 数据的话，参数"
+"用 ``Source::MOTION_TRACKING`` 。或者 ``Source::ALL`` 同时捕获图像和 IMU 数据。"
 msgstr ""
+"API offers ``Start()`` / ``Stop()`` function to start/stop capturing data. You can use "
+"``Source::MOTION_TRACKING`` as argument to capture IMU data only while use ``Source::ALL`` "
+"to capture both IMU data and images."
 
 #: ../../src/data/get_imu.rst:8
 msgid ""
-"开始捕获数据后，需要 ``EnableMotionDatas()`` 启用缓存，才能通过 ``GetMotionDatas()`` 函数获取到 "
-"IMU 数据。否则，只能通过回调接口得到 IMU 数据，请参阅 :ref:`get_from_callbacks` 。"
+"开始捕获数据后，需要 ``EnableMotionDatas()`` 启用缓存，才能通过 ``GetMotionDatas()`` 函数获"
+"取到 IMU 数据。否则，只能通过回调接口得到 IMU 数据，请参阅 :ref:`get_from_callbacks` 。"
 msgstr ""
+"During capturing data, you need ``EnableMotionDatas()`` to enable caching to get IMU data "
+"from ``GetMotionDatas()`` . Otherwise, IMU data is only available through callback, see :"
+"ref:`get_from_callbacks` ."
 
 #: ../../src/data/get_imu.rst:10
 msgid "参考代码片段："
-msgstr ""
+msgstr "Sample code fragment: "
 
 #: ../../src/data/get_imu.rst:64
 msgid "上述代码，用了 OpenCV 来显示图像和数据。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
 msgstr ""
+"In sample code, we use OpenCV to display images and data. When window is selected, "
+"pressing ``ESC/Q`` will end program."
 
 #: ../../src/data/get_imu.rst:66
 msgid ""
-"完整代码样例，请见 `get_imu.cc <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/data/get_imu.cc>`_ 。"
+"完整代码样例，请见 `get_imu.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/"
+"samples/tutorials/data/get_imu.cc>`_ 。"
 msgstr ""
-
+"For complete sample code, see `get_imu.cc <https://github.com/slightech/MYNT-EYE-SDK-2/"
+"blob/master/samples/tutorials/data/get_imu.cc>`_ ."

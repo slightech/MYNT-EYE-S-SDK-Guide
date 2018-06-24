@@ -20,132 +20,145 @@ msgstr ""
 
 #: ../../src/sdk/install_ubuntu.rst:4
 msgid "Ubuntu 安装"
-msgstr ""
+msgstr "Ubuntu Installation"
 
 #: ../../src/sdk/install_ubuntu.rst:9 ../../src/sdk/install_ubuntu.rst:19
 msgid "Ubuntu 16.04"
-msgstr ""
+msgstr "Ubuntu 16.04"
 
 #: ../../src/sdk/install_ubuntu.rst:9 ../../src/sdk/install_ubuntu.rst:19
 msgid "Ubuntu 14.04"
-msgstr ""
+msgstr "Ubuntu 14.04"
 
 #: ../../src/sdk/install_ubuntu.rst:11
 msgid "|build_passing|"
-msgstr ""
+msgstr "|build_passing|"
 
 #: ../../src/sdk/install_ubuntu.rst:21
 msgid "✓"
-msgstr ""
+msgstr "✓"
 
 #: ../../src/sdk/install_ubuntu.rst:26
 msgid ""
-"如果是其他 Linux 发行版，不是用的 ``apt-get`` 包管理工具，那你准备依赖时不能 ``make init`` "
-"自动安装，得自己手动安装了。必要安装项如下："
+"如果是其他 Linux 发行版，不是用的 ``apt-get`` 包管理工具，那你准备依赖时不能 "
+"``make init`` 自动安装，得自己手动安装了。必要安装项如下："
 msgstr ""
+"If you used any other Linux distributions that without apt-get package "
+"manager, you'd better install required packages manaully instead of using "
+"\"make init\"."
 
 #: ../../src/sdk/install_ubuntu.rst:29
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../src/sdk/install_ubuntu.rst:29
 msgid "How to install required packages"
-msgstr ""
+msgstr "How to install required packages"
 
 #: ../../src/sdk/install_ubuntu.rst:31
 msgid "Debian based"
-msgstr ""
+msgstr "Debian based"
 
 #: ../../src/sdk/install_ubuntu.rst:31
 msgid "sudo apt-get install build-essential cmake git libv4l-dev"
-msgstr ""
+msgstr "sudo apt-get install build-essential cmake git libv4l-dev"
 
 #: ../../src/sdk/install_ubuntu.rst:32
 msgid "Red Hat based"
-msgstr ""
+msgstr "Red Hat based"
 
 #: ../../src/sdk/install_ubuntu.rst:32
 msgid "sudo yum install make gcc gcc-c++ kernel-devel cmake git libv4l-devel"
-msgstr ""
+msgstr "sudo yum install make gcc gcc-c++ kernel-devel cmake git libv4l-devel"
 
 #: ../../src/sdk/install_ubuntu.rst:33
 msgid "Arch Linux"
-msgstr ""
+msgstr "Arch Linux"
 
 #: ../../src/sdk/install_ubuntu.rst:33
 msgid "sudo pacman -S base-devel cmake git v4l-utils"
-msgstr ""
+msgstr "sudo pacman -S base-devel cmake git v4l-utils"
 
 #: ../../src/sdk/install_ubuntu.rst:41
 msgid "获取代码"
-msgstr ""
+msgstr "Getting Source Code"
 
 #: ../../src/sdk/install_ubuntu.rst:49
 msgid "准备依赖"
-msgstr ""
+msgstr "Required Packages"
 
 #: ../../src/sdk/install_ubuntu.rst:56
 msgid "`OpenCV <https://opencv.org/>`_"
-msgstr ""
+msgstr "`OpenCV <https://opencv.org/>`_"
 
 #: ../../src/sdk/install_ubuntu.rst:60
 msgid ""
-"OpenCV 如何编译安装，请见官方文档 `Installation in Linux "
-"<https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ "
-"。或参考如下命令："
+"OpenCV 如何编译安装，请见官方文档 `Installation in Linux <https://docs."
+"opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ 。或参考如下命令："
 msgstr ""
+"To build and install Opencv, Please refer to `Installation in Linux <https://"
+"docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ . Or reference "
+"below command:"
 
 #: ../../src/sdk/install_ubuntu.rst:91
 msgid "编译代码"
-msgstr ""
+msgstr "Building Code"
 
 #: ../../src/sdk/install_ubuntu.rst:95
 msgid "如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径："
 msgstr ""
+"If opencv is installed in custom directory or you want to specify version, "
+"you should set the path before building:"
 
 #: ../../src/sdk/install_ubuntu.rst:102
-msgid "不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:`sdk_without_opencv` 。"
+msgid ""
+"不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:"
+"`sdk_without_opencv` 。"
 msgstr ""
+"Otherwise, CMake will prompt cannot find Opencv. If you need sdk without "
+"OpenCV, please read :ref:`sdk_without_opencv` ."
 
 #: ../../src/sdk/install_ubuntu.rst:104
 msgid "编译并安装："
-msgstr ""
+msgstr "Build and install:"
 
 #: ../../src/sdk/install_ubuntu.rst:111
 msgid "最终，默认会安装在 ``<sdk>/_install`` 目录。"
-msgstr ""
+msgstr "Finally, sdk will install in ``<sdk>/_install`` by default."
 
 #: ../../src/sdk/install_ubuntu.rst:114
 msgid "编译样例"
-msgstr ""
+msgstr "Building samples"
 
 #: ../../src/sdk/install_ubuntu.rst:121
 msgid "运行样例："
-msgstr ""
+msgstr "Run samples:"
 
 #: ../../src/sdk/install_ubuntu.rst:127
 msgid "教程样例，请阅读 :ref:`data` 和 :ref:`ctrl` 。"
-msgstr ""
+msgstr "Tutorial samples, please read :ref:`data` and :ref:`ctrl` ."
 
 #: ../../src/sdk/install_ubuntu.rst:130
 msgid "编译工具"
-msgstr ""
+msgstr "Building tools"
 
 #: ../../src/sdk/install_ubuntu.rst:137
 msgid "安装脚本依赖："
-msgstr ""
+msgstr "Install requirement:"
 
 #: ../../src/sdk/install_ubuntu.rst:144
 msgid "工具和脚本的使用，后续会有介绍。"
-msgstr ""
+msgstr "the usage of tools and scripts will be introduced later."
 
 #: ../../src/sdk/install_ubuntu.rst:147
 msgid "结语"
-msgstr ""
+msgstr "Conclusion"
 
 #: ../../src/sdk/install_ubuntu.rst:149
 msgid ""
-"工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` "
-"里的配置。不然，就是直接引入安装目录里的头文件和动态库。"
+"工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` 里的配置。不然，"
+"就是直接引入安装目录里的头文件和动态库。"
 msgstr ""
-
+"If your project will use SDK, you can reference the settings in ``samples/"
+"CMakeLists.txt`` for CMake. Or just import the head file and dynamic library "
+"in installation directory."

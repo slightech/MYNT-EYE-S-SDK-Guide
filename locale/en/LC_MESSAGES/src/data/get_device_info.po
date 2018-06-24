@@ -31,7 +31,7 @@ msgid "参考代码片段："
 msgstr ""
 
 #: ../../src/data/get_device_info.rst:23
-msgid "参考运行结果，于 Linux 上 ："
+msgid "参考运行结果，于 Linux 上："
 msgstr ""
 
 #: ../../src/data/get_device_info.rst:41

@@ -20,43 +20,54 @@ msgstr ""
 
 #: ../../src/control/manual_exposure.rst:4
 msgid "启用手动曝光及其调节"
-msgstr ""
+msgstr "Enable manual exposure and its adjustment function"
 
 #: ../../src/control/manual_exposure.rst:6
-msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
+msgid ""
+"通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
 msgstr ""
+"Using the ``SetOptionValue()`` function of the API, you can set various "
+"control values ​​for the current device."
 
 #: ../../src/control/manual_exposure.rst:8
-msgid "启用手动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``1`` 。手动曝光时，可调节的设定有："
+msgid ""
+"启用手动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``1`` 。手动曝光时，可调"
+"节的设定有："
 msgstr ""
+"Enabling manual exposure is setting ``Option::EXPOSURE_MODE`` to ``1``. "
+"During manual exposure, the settings available for adjustment are:"
 
 #: ../../src/control/manual_exposure.rst:10
 msgid "``Option::GAIN`` 增益。"
-msgstr ""
+msgstr "``Option::GAIN`` Gain."
 
 #: ../../src/control/manual_exposure.rst:11
 msgid "``Option::BRIGHTNESS`` 亮度，或者说曝光时间。"
-msgstr ""
+msgstr "``Option::BRIGHTNESS`` Brightness（Exposure time）"
 
 #: ../../src/control/manual_exposure.rst:12
 msgid "``Option::CONTRAST`` 对比度，或者说黑电平校准。"
-msgstr ""
+msgstr "``Option::CONTRAST`` Contrast (Black level calibration)"
 
 #: ../../src/control/manual_exposure.rst:14
 msgid "参考代码片段："
-msgstr ""
+msgstr "Reference Code:"
 
 #: ../../src/control/manual_exposure.rst:35
-msgid "参考运行结果，于 Linux 上 ："
-msgstr ""
+msgid "参考运行结果，于 Linux 上："
+msgstr "Reference running results on Linux:"
 
 #: ../../src/control/manual_exposure.rst:49
 msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
 msgstr ""
+"The sample program displays the image with a real exposure time "
+"(millisecond) in the upper left corner"
 
 #: ../../src/control/manual_exposure.rst:51
 msgid ""
-"完整代码样例，请见 `manual_exposure.cc <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc>`_ 。"
+"完整代码样例，请见 `manual_exposure.cc <https://github.com/slightech/MYNT-"
+"EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc>`_ 。"
 msgstr ""
-
+"For a complete code sample, see  `manual_exposure.cc <https://github.com/"
+"slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/"
+"manual_exposure.cc>`_"

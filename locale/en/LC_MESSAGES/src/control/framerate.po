@@ -20,43 +20,54 @@ msgstr ""
 
 #: ../../src/control/framerate.rst:4
 msgid "设定图像帧率和 IMU 频率"
-msgstr ""
+msgstr "Set the fps of the image and the frequency of the IMU"
 
 #: ../../src/control/framerate.rst:6
 msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
 msgstr ""
+"Using the ``SetOptionValue()`` function of the API, you can set various "
+"control values ​​for the current device."
 
 #: ../../src/control/framerate.rst:8
 msgid "设定图像帧率和 IMU 频率，就是设定 ``Option::FRAME_RATE`` 和 ``Option::IMU_FREQUENCY`` 。"
 msgstr ""
+"Set the fps of the image and the frequency of the IMU, which is setting "
+"``Option::FRAME_RATE`` and ``Option::IMU_FREQUENCY``"
 
 #: ../../src/control/framerate.rst:12
 msgid "图像帧率和 IMU 频率必须同时设定才能生效。"
 msgstr ""
+"The fps of the image and the frequency of the IMU must be set at the same"
+" time to take effect."
 
 #: ../../src/control/framerate.rst:13
 msgid "图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60 。"
-msgstr ""
+msgstr "The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60"
 
 #: ../../src/control/framerate.rst:14
 msgid "IMU 频率有效值： 100, 200, 250, 333, 500 。"
-msgstr ""
+msgstr "The effective frequency of IMU: 100, 200, 250, 333, 500"
 
 #: ../../src/control/framerate.rst:16
 msgid "参考代码片段："
-msgstr ""
+msgstr "Reference Code:"
 
 #: ../../src/control/framerate.rst:34
-msgid "参考运行结果，于 Linux 上 ："
-msgstr ""
+msgid "参考运行结果，于 Linux 上："
+msgstr "Reference running results on Linux:"
 
 #: ../../src/control/framerate.rst:49
 msgid "样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率和 IMU 频率。"
 msgstr ""
+"After the sample program finishes running with ``ESC/Q``, it will output "
+"the calculated value of the fps of the image and the frequency of the IMU"
 
 #: ../../src/control/framerate.rst:51
 msgid ""
 "完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_ 。"
 msgstr ""
+"For a complete code sample, see `framerate.cc "
+"<https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_"
 

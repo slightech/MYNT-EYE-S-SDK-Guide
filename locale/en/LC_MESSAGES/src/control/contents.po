@@ -20,5 +20,4 @@ msgstr ""
 
 #: ../../src/control/contents.rst:4
 msgid "MYNT® EYE 控制"
-msgstr ""
-
+msgstr "MYNT® EYE Control"

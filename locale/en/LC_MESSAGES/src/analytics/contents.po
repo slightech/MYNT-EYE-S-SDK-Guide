@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../../src/analytics/contents.rst:4
 msgid "数据分析"
-msgstr ""
+msgstr "Data Analytics"
 

@@ -20,189 +20,218 @@ msgstr ""
 
 #: ../../src/sdk/install_windows.rst:4
 msgid "Windows 安装"
-msgstr ""
+msgstr "Windows Installation"
 
 #: ../../src/sdk/install_windows.rst:9 ../../src/sdk/install_windows.rst:19
 msgid "Windows 10"
-msgstr ""
+msgstr "Windows 10"
 
 #: ../../src/sdk/install_windows.rst:11
 msgid "|build_passing|"
-msgstr ""
+msgstr "|build_passing|"
 
 #: ../../src/sdk/install_windows.rst:21
 msgid "✓"
-msgstr ""
+msgstr "✓"
 
 #: ../../src/sdk/install_windows.rst:26
 msgid ""
 "Windows 不直接提供 Visual Studio ``*.sln`` 工程文件，需要用 CMake 来构建生成。一是 CMake "
 "跨平台、易配置、可持续维护，二是第三方代码（glog, OpenCV）也都是用的 CMake 构建。"
 msgstr ""
+"Windows does not provide Visual Studio ``*.sln`` file directly and "
+"requires CMake to build. First, CMake is cross-platform, easy to "
+"configure, and sustainable maintenance, and the second is the third party"
+" code (Glog, OpenCV) are also used CMake to build."
 
 #: ../../src/sdk/install_windows.rst:30
 msgid "目前暂未提供二进制安装程序，需要你从源码编译。也是配置开发环境的过程。"
 msgstr ""
+"Currently we do not provide a binary installer, you need to compile from "
+"the source code. It is also the process of configuring the development "
+"environment."
 
 #: ../../src/sdk/install_windows.rst:33
 msgid "前提条件"
-msgstr ""
+msgstr "Prerequisites"
 
 #: ../../src/sdk/install_windows.rst:36
 msgid "CMake（提供构建）"
-msgstr ""
+msgstr "CMake (provide build）"
 
 #: ../../src/sdk/install_windows.rst:38
 msgid "`CMake <https://cmake.org/download/>`_，用于构建编译（必要）。"
 msgstr ""
+"`CMake <https://cmake.org/download/>`_，used to build and compile "
+"(necessary)."
 
 #: ../../src/sdk/install_windows.rst:39
 msgid "`Git <https://git-scm.com/downloads>`_，用于获取代码（可选）。"
-msgstr ""
+msgstr "`Git <https://git-scm.com/downloads>`_, used to get code (optional)."
 
 #: ../../src/sdk/install_windows.rst:40
 msgid ""
 "`Doxygen "
 "<http://www.stack.nl/~dimitri/doxygen/download.html>`_，用于生成文档（可选）。"
 msgstr ""
+"`Doxygen <http://www.stack.nl/~dimitri/doxygen/download.html>`_, used to"
+" generate documents (optional)."
 
 #: ../../src/sdk/install_windows.rst:42
 msgid "安装好上述工具后，在命令提示符（Command Prompt）里确认可运行此些命令："
 msgstr ""
+"After you install the above tools, confirm that you can run this command "
+"in CMD (Command Prompt):"
 
 #: ../../src/sdk/install_windows.rst:56
 msgid "Visual Studio（提供编译）"
-msgstr ""
+msgstr "Visual Studio (provide compilation)"
 
 #: ../../src/sdk/install_windows.rst:58
 msgid "`Visual Studio <https://www.visualstudio.com/>`_"
-msgstr ""
+msgstr "`Visual Studio <https://www.visualstudio.com/>`_"
 
 #: ../../src/sdk/install_windows.rst:60
 msgid ""
 "`Visual Studio 2017 <https://my.visualstudio.com/Downloads?q=Visual "
 "Studio 2017>`_"
 msgstr ""
+"`Visual Studio 2017 <https://my.visualstudio.com/Downloads?q=Visual "
+"Studio 2017>`_"
 
 #: ../../src/sdk/install_windows.rst:61
 msgid ""
 "`Visual Studio 2015 <https://my.visualstudio.com/Downloads?q=Visual "
 "Studio 2015>`_"
 msgstr ""
+"`Visual Studio 2015 <https://my.visualstudio.com/Downloads?q=Visual "
+"Studio 2015>`_"
 
 #: ../../src/sdk/install_windows.rst:63
 msgid ""
 "`Windows 10 SDK <https://developer.microsoft.com/en-"
 "US/windows/downloads/windows-10-sdk>`_"
 msgstr ""
+"`Windows 10 SDK <https://developer.microsoft.com/en-"
+"US/windows/downloads/windows-10-sdk>`_"
 
 #: ../../src/sdk/install_windows.rst:65
 msgid "安装好 Visual Studio 后，在其 Visual Studio Command Prompt 里确认可运行如下命令："
 msgstr ""
+"After installing Visual Studio, confirm that in Visual Studio Command "
+"Prompt the following command can be run:"
 
 #: ../../src/sdk/install_windows.rst:77
 msgid "Visual Studio Command Prompt 可以从开始菜单打开，"
-msgstr ""
+msgstr "Visual Studio Command Prompt can be opened from the Start menu,"
 
 #: ../../src/sdk/install_windows.rst:82
 msgid "也可以从 Visual Studio 的工具菜单里打开，"
-msgstr ""
+msgstr "You can also open it from the Visual Studio Tools menu."
 
 #: ../../src/sdk/install_windows.rst:87
 msgid "但如 Visual Studio 2015 工具菜单里可能没有，可以自己添加个。"
 msgstr ""
+"However, if you do not have the Visual Studio 2015 Tools menu, you can "
+"add one yourself."
 
 #: ../../src/sdk/install_windows.rst:89
 msgid "打开 Tools 的 External Tools… ，然后 Add 如下内容："
-msgstr ""
+msgstr "Open Tools's External Tools... and Add the following:"
 
 #: ../../src/sdk/install_windows.rst:92
 msgid "Field"
-msgstr ""
+msgstr "Field"
 
 #: ../../src/sdk/install_windows.rst:92
 msgid "Value"
-msgstr ""
+msgstr "Value"
 
 #: ../../src/sdk/install_windows.rst:94
 msgid "Title"
-msgstr ""
+msgstr "Title"
 
 #: ../../src/sdk/install_windows.rst:94
 msgid "Visual Studio Command Prompt"
-msgstr ""
+msgstr "Visual Studio Command Prompt"
 
 #: ../../src/sdk/install_windows.rst:95
 msgid "Command"
-msgstr ""
+msgstr "Command"
 
 #: ../../src/sdk/install_windows.rst:95
 msgid "``C:\\Windows\\System32\\cmd.exe``"
-msgstr ""
+msgstr "``C:\\Windows\\System32\\cmd.exe``"
 
 #: ../../src/sdk/install_windows.rst:96
 msgid "Arguments"
-msgstr ""
+msgstr "Arguments"
 
 #: ../../src/sdk/install_windows.rst:96
 msgid ""
 "``/k \"C:\\Program Files (x86)\\Microsoft Visual Studio "
 "14.0\\Common7\\Tools\\VsDevCmd.bat\"``"
 msgstr ""
+"``/k \"C:\\Program Files (x86)\\Microsoft Visual Studio "
+"14.0\\Common7\\Tools\\VsDevCmd.bat\"``"
 
 #: ../../src/sdk/install_windows.rst:97
 msgid "Initial Directory"
-msgstr ""
+msgstr "Initial Directory"
 
 #: ../../src/sdk/install_windows.rst:97
 msgid "``$(SolutionDir)``"
-msgstr ""
+msgstr "``$(SolutionDir)``"
 
 #: ../../src/sdk/install_windows.rst:100
 msgid ""
 "Visual Studio Command Prompt 里就可以用编译命令 ``cl`` ``link`` ``lib`` "
 "``msbuild`` 等，"
 msgstr ""
+"In Visual Studio command Prompt, you can use the compile command ``cl`` "
+"``link`` ``lib`` ``msbuild``, etc.,"
 
 #: ../../src/sdk/install_windows.rst:105
 msgid "MSYS2（提供 Linux 命令）"
-msgstr ""
+msgstr "MSYS2 (provide Linux command)"
 
 #: ../../src/sdk/install_windows.rst:107
 msgid "`MSYS2 <http://www.msys2.org/>`_"
-msgstr ""
+msgstr "`MSYS2 <http://www.msys2.org/>`_"
 
 #: ../../src/sdk/install_windows.rst:109
 msgid "`国内镜像 <https://lug.ustc.edu.cn/wiki/mirrors/help/msys2>`_"
-msgstr ""
+msgstr "`mirror <https://lug.ustc.edu.cn/wiki/mirrors/help/msys2>`_"
 
 #: ../../src/sdk/install_windows.rst:110
 msgid "`pacman <https://wiki.archlinux.org/index.php/pacman>`_"
-msgstr ""
+msgstr "`pacman <https://wiki.archlinux.org/index.php/pacman>`_"
 
 #: ../../src/sdk/install_windows.rst:112
 msgid "安装后，确认系统环境变量 ``PATH`` 里添加了如下路径："
 msgstr ""
+"After installation, verify that the system environment variable ``PATH`` "
+"has added the following path:"
 
 #: ../../src/sdk/install_windows.rst:118
 msgid "然后，打开 MSYS2 MSYS ，执行更新并安装 ``make`` ："
-msgstr ""
+msgstr "Then, open MSYS2 MSYS, perform the update and install ``make``:"
 
 #: ../../src/sdk/install_windows.rst:125
 msgid "最终，命令提示符（Command Prompt）里可运行如下命令："
-msgstr ""
+msgstr "Finally, the CMD (Command Prompt) can run the following command:"
 
 #: ../../src/sdk/install_windows.rst:133
 msgid "获取代码"
-msgstr ""
+msgstr "Getting Source Code"
 
 #: ../../src/sdk/install_windows.rst:140
 msgid "准备依赖"
-msgstr ""
+msgstr "Required Packages"
 
 #: ../../src/sdk/install_windows.rst:159
 msgid "`OpenCV <https://opencv.org/>`_"
-msgstr ""
+msgstr "`OpenCV <https://opencv.org/>`_"
 
 #: ../../src/sdk/install_windows.rst:163
 msgid ""
@@ -210,50 +239,65 @@ msgid ""
 "<https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html>`_ "
 "。或参考如下命令："
 msgstr ""
+"OpenCV official provided the ``exe`` for installation. If you want to "
+"compile from the source code, see the Official document `Installation in "
+"Windows "
+"<https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html>`_ ."
+" or refer to the following command:"
 
 #: ../../src/sdk/install_windows.rst:190
 msgid "编译代码"
-msgstr ""
+msgstr "Building Code"
 
 #: ../../src/sdk/install_windows.rst:194
 msgid "如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径："
 msgstr ""
+"If opencv is installed in custom directory or you want to specify "
+"version, you should set the path before building:"
 
 #: ../../src/sdk/install_windows.rst:201
 msgid "不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:`sdk_without_opencv` 。"
 msgstr ""
+"Otherwise, CMake will prompt cannot find Opencv. If you need sdk without "
+"OpenCV, please read :ref:`sdk_without_opencv` ."
 
 #: ../../src/sdk/install_windows.rst:203
 msgid "编译并安装："
-msgstr ""
+msgstr "Build and install:"
 
 #: ../../src/sdk/install_windows.rst:210
 msgid "最终，默认会安装在 ``<sdk>/_install`` 目录。"
-msgstr ""
+msgstr "Finally, sdk will install in ``<sdk>/_install`` by default."
 
 #: ../../src/sdk/install_windows.rst:213
 msgid "编译样例"
-msgstr ""
+msgstr "Building samples"
 
 #: ../../src/sdk/install_windows.rst:220
 msgid "运行样例："
-msgstr ""
+msgstr "Run samples:"
 
 #: ../../src/sdk/install_windows.rst:226
 msgid "教程样例，请阅读 :ref:`data` 和 :ref:`ctrl` 。"
-msgstr ""
+msgstr "Tutorial samples,please read :ref:`data` 和 :ref:`ctrl` ."
 
 #: ../../src/sdk/install_windows.rst:230
 msgid ""
 "所有编译出的样例程序 ``exe`` 都会有个相应的 ``bat`` 。 ``bat`` 会临时设定下系统环境变量，然后再运行 ``exe`` "
 "。所以建议执行 ``bat`` 运行程序。"
 msgstr ""
+"All compiled sample programs ``exe`` will have a corresponding ``bat``. "
+"``bat`` will temporarily set system environment variables and then run "
+"``exe``. So it is recommended to run ``bat``."
 
 #: ../../src/sdk/install_windows.rst:232
 msgid ""
 "如果直接运行 ``exe`` 的话，可能会报 ``dll`` 找不到。说明你需要将 ``<sdk>\\_install\\bin`` "
 "``%OPENCV_DIR%\\bin`` 加入到系统环境变量 ``PATH`` 里。"
 msgstr ""
+"If you run``exe`` directly, it may prompt that cannot find ``dll``. Then "
+"you should add ``<sdk>\\_install\\bin`` ``%OPENCV_DIR%\\bin`` to ``PATH``"
+" in system environment variable."
 
 #: ../../src/sdk/install_windows.rst:234
 msgid ""
@@ -262,30 +306,40 @@ msgid ""
 "<https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html#tutorial_windows_install_path>`_"
 " 。"
 msgstr ""
+"How to set the environment variable for OpenCV, refer to official "
+"document `Set the OpenCV environment variable and add it to the systems "
+"path "
+"<https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html#tutorial_windows_install_path>`_"
+" ."
 
 #: ../../src/sdk/install_windows.rst:237
 msgid "编译工具"
-msgstr ""
+msgstr "Building tools"
 
 #: ../../src/sdk/install_windows.rst:244
 msgid "工具和脚本的使用，后续会有介绍。"
-msgstr ""
+msgstr "the usage of tools and scripts will be introduced later."
 
 #: ../../src/sdk/install_windows.rst:248
 msgid "脚本为 Python 实现，需要先安装 Python 及其包管理工具 pip ，然后再如下安装依赖："
 msgstr ""
+"The script is based-on Python. You need to install Python and its package"
+" management tool pip first, and then install the dependencies as follows:"
 
 #: ../../src/sdk/install_windows.rst:255
 msgid "注：MSYS2 里也带了 Python ，但测试未能安装上 matplotlib 。"
-msgstr ""
+msgstr "Note: Python is also in MSYS2, but testing install Matplotlib failed."
 
 #: ../../src/sdk/install_windows.rst:258
 msgid "结语"
-msgstr ""
+msgstr "Conclusion"
 
 #: ../../src/sdk/install_windows.rst:260
 msgid ""
 "工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` "
 "里的配置。不然，就是直接引入安装目录里的头文件和动态库。"
 msgstr ""
+"If your project will use SDK, you can reference the settings in "
+"``samples/CMakeLists.txt`` for CMake. Or just import the head file and "
+"dynamic library in installation directory."
 

@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../../src/firmware/contents.rst:4
 msgid "MYNT® EYE 固件"
-msgstr ""
+msgstr "MYNT® EYE Firmware"
 

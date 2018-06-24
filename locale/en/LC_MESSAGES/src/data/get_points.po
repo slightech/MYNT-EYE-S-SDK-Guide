@@ -20,41 +20,50 @@ msgstr ""
 
 #: ../../src/data/get_points.rst:4
 msgid "获取点云图像"
-msgstr ""
+msgstr "Get point images"
 
 #: ../../src/data/get_points.rst:6
 msgid ""
-"点云图像，属于上层合成数据。需要事先 ``EnableStreamData()`` 启用，然后 ``GetStreamData()`` "
-"获取。另外，判断不为空后再使用。"
+"点云图像，属于上层合成数据。需要事先 ``EnableStreamData()`` 启用，然后 ``GetStreamData()`` 获取。另"
+"外，判断不为空后再使用。"
 msgstr ""
+"Point images is synthetic data which belongs to upper layer. Above all, ``EnableStreamData()`` "
+"should be invoked. Then, you can get images from ``GetStreamData()`` . Before use it, you must check "
+"it is not null."
 
 #: ../../src/data/get_points.rst:8
 msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
-msgstr ""
+msgstr "For detail process, please check :ref:`get_stereo` :ref:`get_stereo_rectified` ."
 
 #: ../../src/data/get_points.rst:10
 msgid "参考代码片段："
-msgstr ""
+msgstr "Sample code fragment: "
 
 #: ../../src/data/get_points.rst:49
 msgid ""
-"上述代码，用了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ "
-"来显示点云。关闭点云窗口时，也会结束程序。"
+"上述代码，用了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 来显示点云。关闭点云窗口时，也会结束"
+"程序。"
 msgstr ""
+"`PCL <https://github.com/PointCloudLibrary/pcl>`_ is used to display point images in sample code. "
+"Program exits when window of point images is closed."
 
 #: ../../src/data/get_points.rst:51
 msgid ""
-"完整代码样例，请见 `get_points.cc <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/data/get_points.cc>`_ 。"
+"完整代码样例，请见 `get_points.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/"
+"tutorials/data/get_points.cc>`_ 。"
 msgstr ""
+"For complete sample code, see `get_points.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/"
+"master/samples/tutorials/data/get_points.cc>`_ ."
 
 #: ../../src/data/get_points.rst:55
 msgid ""
-"准备好了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库，编译教程样例时才会有此例子。如果"
-" `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库安装到了自定义目录，那么请打开 "
-"`tutorials/CMakeLists.txt <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/CMakeLists.txt>`_ ，找到 "
-"``find_package(PCL)`` ，把 ``PCLConfig.cmake`` 所在目录添加进 "
-"``CMAKE_PREFIX_PATH`` 。"
+"准备好了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库，编译教程样例时才会有此例子。如果 `PCL "
+"<https://github.com/PointCloudLibrary/pcl>`_ 库安装到了自定义目录，那么请打开 `tutorials/CMakeLists."
+"txt <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/CMakeLists.txt>`_ ，找"
+"到 ``find_package(PCL)`` ，把 ``PCLConfig.cmake`` 所在目录添加进 ``CMAKE_PREFIX_PATH`` 。"
 msgstr ""
-
+"Sample code only works when `PCL <https://github.com/PointCloudLibrary/pcl>`_ is ready. If you "
+"install `PCL <https://github.com/PointCloudLibrary/pcl>`_ to different directory, please set "
+"``CMAKE_PREFIX_PATH`` in `tutorials/CMakeLists.txt <https://github.com/slightech/MYNT-EYE-SDK-2/blob/"
+"master/samples/tutorials/CMakeLists.txt>`_ to the path of ``PCLConfig.cmake`` . You can search "
+"``CMAKE_PREFIX_PATH`` by ``find_package(PCL)`` ."

@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../../src/data/contents.rst:4
 msgid "MYNT® EYE 数据"
-msgstr ""
+msgstr "MYNT® EYE Data"
 

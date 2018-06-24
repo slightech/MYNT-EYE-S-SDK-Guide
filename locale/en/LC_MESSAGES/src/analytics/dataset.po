@@ -33,7 +33,7 @@ msgid "参考运行命令："
 msgstr ""
 
 #: ../../src/analytics/dataset.rst:17
-msgid "参考运行结果，于 Linux 上 ："
+msgid "参考运行结果，于 Linux 上："
 msgstr ""
 
 #: ../../src/analytics/dataset.rst:42

@@ -20,9 +20,9 @@ msgstr ""
 
 #: ../../src/mynteye/imu_coord.rst:4
 msgid "IMU 坐标系统"
-msgstr ""
+msgstr "IMU COORDINATA SYSTEM"
 
 #: ../../src/mynteye/imu_coord.rst:6
 msgid "IMU 坐标系统为右手系，坐标轴方向如下："
-msgstr ""
+msgstr "IMU coordinate system is right-handed,the axis directions are as follows:"
 
