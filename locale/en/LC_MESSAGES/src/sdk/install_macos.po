@@ -20,9 +20,9 @@ msgstr ""
 
 #: ../../src/sdk/install_macos.rst:4
 msgid "MacOS 安装 x"
-msgstr ""
+msgstr "MacOS Installation"
 
 #: ../../src/sdk/install_macos.rst:6
 msgid "TODO"
-msgstr ""
+msgstr "TODO"
 

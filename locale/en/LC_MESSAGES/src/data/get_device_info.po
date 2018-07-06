@@ -9,34 +9,38 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-07-05 19:03+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/data/get_device_info.rst:4
 msgid "获取设备信息"
-msgstr ""
+msgstr "Get device information"
 
 #: ../../src/data/get_device_info.rst:6
 msgid "通过 API 的 ``GetInfo()`` 函数，就可以获取当前打开设备的各类信息值。"
-msgstr ""
+msgstr "Use ``GetInfo()`` function, get current various information values."
 
 #: ../../src/data/get_device_info.rst:8
 msgid "参考代码片段："
-msgstr ""
+msgstr "Reference"
 
 #: ../../src/data/get_device_info.rst:23
+#, fuzzy
 msgid "参考运行结果，于 Linux 上："
-msgstr ""
+msgstr "Reference - Linux"
 
 #: ../../src/data/get_device_info.rst:41
 msgid ""
 "完整代码样例，请见 `get_device_info.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_device_info.cc>`_ 。"
 msgstr ""
+"View sample, check the `get_device_info.cc <https://github.com/slightech"
+"/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_device_info.cc>`_ "
+"."
 

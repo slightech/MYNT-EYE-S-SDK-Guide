@@ -20,67 +20,67 @@ msgstr ""
 
 #: ../../src/firmware/applicable.rst:4
 msgid "固件与 SDK 适配性"
-msgstr ""
+msgstr "Compatibility"
 
 #: ../../src/firmware/applicable.rst:7
 msgid "Firmwares"
-msgstr ""
+msgstr "Firmwares"
 
 #: ../../src/firmware/applicable.rst:7
 msgid "SDK Version"
-msgstr ""
+msgstr "SDK Version"
 
 #: ../../src/firmware/applicable.rst:9
 msgid "MYNTEYE_S_2.0.0_rc.img"
-msgstr ""
+msgstr "MYNTEYE_S_2.0.0_rc.img"
 
 #: ../../src/firmware/applicable.rst:9
 msgid "2.0.0-rc (2.0.0-rc ~ 2.0.0-rc2)"
-msgstr ""
+msgstr "2.0.0-rc (2.0.0-rc ~ 2.0.0-rc2)"
 
 #: ../../src/firmware/applicable.rst:10
 msgid "MYNTEYE_S_2.0.0_rc2.img"
-msgstr ""
+msgstr "MYNTEYE_S_2.0.0_rc2.img"
 
 #: ../../src/firmware/applicable.rst:10
 msgid "2.0.0-rc2 (2.0.0-rc ~ 2.0.0-rc2)"
-msgstr ""
+msgstr "2.0.0-rc2 (2.0.0-rc ~ 2.0.0-rc2)"
 
 #: ../../src/firmware/applicable.rst:11
 msgid "MYNTEYE_S_2.0.0_rc1.img"
-msgstr ""
+msgstr "MYNTEYE_S_2.0.0_rc1.img"
 
 #: ../../src/firmware/applicable.rst:11
 msgid "2.0.0-rc1"
-msgstr ""
+msgstr "2.0.0-rc1"
 
 #: ../../src/firmware/applicable.rst:12
 msgid "MYNTEYE_S_2.0.0_rc0.img"
-msgstr ""
+msgstr "MYNTEYE_S_2.0.0_rc0.img"
 
 #: ../../src/firmware/applicable.rst:12
 msgid "2.0.0-rc0 (2.0.0-rc1 ~ 2.0.0-alpha1)"
-msgstr ""
+msgstr "2.0.0-rc0 (2.0.0-rc1 ~ 2.0.0-alpha1)"
 
 #: ../../src/firmware/applicable.rst:13
 msgid "MYNTEYE_S_2.0.0_alpha1.1.img"
-msgstr ""
+msgstr "MYNTEYE_S_2.0.0_alpha1.1.img"
 
 #: ../../src/firmware/applicable.rst:13 ../../src/firmware/applicable.rst:14
 msgid "2.0.0-alpha1 (2.0.0-rc1 ~ 2.0.0-alpha1)"
-msgstr ""
+msgstr "2.0.0-alpha1 (2.0.0-rc1 ~ 2.0.0-alpha1)"
 
 #: ../../src/firmware/applicable.rst:14
 msgid "MYNTEYE_S_2.0.0_alpha1.img"
-msgstr ""
+msgstr "MYNTEYE_S_2.0.0_alpha1.img"
 
 #: ../../src/firmware/applicable.rst:15
 msgid "MYNTEYE_S_2.0.0_alpha0.img"
-msgstr ""
+msgstr "MYNTEYE_S_2.0.0_alpha0.img"
 
 #: ../../src/firmware/applicable.rst:15
 msgid "2.0.0-alpha0"
-msgstr ""
+msgstr "2.0.0-alpha0"
 
 #: ../../src/firmware/applicable.rst:18
 msgid ""
@@ -88,9 +88,12 @@ msgid ""
 "<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
 " 或 `百度网盘 <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 "
 "``Firmwares`` 目录内。"
-msgstr ""
+msgstr "``Firmwares`` means firmwares name. You could check the folder ``Firmwares``  in `Google Drive "
+"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_ ."
+
+
 
 #: ../../src/firmware/applicable.rst:20
 msgid "``SDK Version`` 表明该固件适配的 SDK 版本，括号内指可用版本范围。"
-msgstr ""
+msgstr "``SDK Version`` Indicates the version of the SDK that the firmware is adapted to, and the range of available versions is indicated in parentheses."
 

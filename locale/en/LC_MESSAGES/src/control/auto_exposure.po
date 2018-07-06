@@ -26,13 +26,13 @@ msgstr "Enable auto exposure and its adjustment function"
 msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
 msgstr ""
 "Using the ``SetOptionValue()`` function of the API, you can set various "
-"control values ​​for the current device."
+"control values of the current open device."
 
 #: ../../src/control/auto_exposure.rst:8
 msgid "启用自动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``0`` 。自动曝光时，可调节的设定有："
 msgstr ""
 "Enabling auto exposure is setting ``Option::EXPOSURE_MODE`` to ``0``. The"
-" settings that can be adjusted during auto exposure are:"
+" settings available for adjustment during auto exposure are:"
 
 #: ../../src/control/auto_exposure.rst:10
 msgid "``Option::MAX_GAIN`` 最大增益。"
@@ -65,7 +65,7 @@ msgid ""
 "完整代码样例，请见 `auto_exposure.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/control/auto_exposure.cc>`_ 。"
 msgstr ""
-"For a complete code sample, see `auto_exposure.cc "
+"For complete code sample, see `auto_exposure.cc "
 "<https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/control/auto_exposure.cc>`_ "
 

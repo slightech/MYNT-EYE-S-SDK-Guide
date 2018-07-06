@@ -26,7 +26,7 @@ msgstr "Enable IR and its adjustments function"
 msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
 msgstr ""
 "Using the ``SetOptionValue()`` function of the API, you can set various "
-"control values ​​for the current device."
+"control values ​​for the current open device."
 
 #: ../../src/control/infrared.rst:8
 msgid "启用 IR ，就是设定 ``Option::IR_CONTROL`` 大于 0 的值。值越大，强度越高。"
@@ -51,15 +51,15 @@ msgstr ""
 #: ../../src/control/infrared.rst:46
 msgid "硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备后，一定要设定下 IR 值。"
 msgstr ""
-"The hardware will not record the value of IR and it will be lost after "
+"The hardware will not record the value of IR and it will lost after "
 "power off. If you need to keep IR enabled, you must set the value of IR "
-"after starting the device"
+"after opening the device"
 
 #: ../../src/control/infrared.rst:48
 msgid ""
 "完整代码样例，请见 `infrared.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_ 。"
 msgstr ""
-"For a complete code sample,  `infrared.cc <https://github.com/slightech"
+"For complete code sample,  `infrared.cc <https://github.com/slightech"
 "/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_"
 

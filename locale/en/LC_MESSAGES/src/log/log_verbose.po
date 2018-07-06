@@ -20,19 +20,21 @@ msgstr ""
 
 #: ../../src/log/log_verbose.rst:4
 msgid "启用详细级别"
-msgstr ""
+msgstr "Enabled detailed level"
 
 #: ../../src/log/log_verbose.rst:6
 msgid ""
 "日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。"
 msgstr ""
+"General configuration of log in the head of `glog_init.h <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/include/mynteye/glog_init.h>`_ ."
 
 #: ../../src/log/log_verbose.rst:8
 msgid "取消注释的 ``FLAGS_v = 2;`` 重新编译，即可启用详细级别，指 ``VLOG(n)`` 打印的日志。"
-msgstr ""
+msgstr "Uncomment ``FLAGS_v = 2;`` recompiled it and can enabled detailed levels, it refers printed log of ``VLOG(n)`` "
 
 #: ../../src/log/log_verbose.rst:10
 msgid "关于如何使用日志库，即如何配置、打印等，请如下打开其文档进行了解："
-msgstr ""
+msgstr "With regard to how to use log library, That is how to setting and print it, please open its document and learn more:"
 

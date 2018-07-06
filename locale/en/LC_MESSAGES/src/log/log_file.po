@@ -20,19 +20,23 @@ msgstr ""
 
 #: ../../src/log/log_file.rst:4
 msgid "启用日志文件"
-msgstr ""
+msgstr "Enable log file"
 
 #: ../../src/log/log_file.rst:6
 msgid ""
 "日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。"
 msgstr ""
+"General configuration of the log in the head of `glog_init.h <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/include/mynteye/glog_init.h>`_  。"
 
 #: ../../src/log/log_file.rst:8
 msgid ""
 "取消注释的 ``FLAGS_log_dir = \".\";`` 重新编译，即可保存日志到当前工作目录。例如运行 ``camera_a`` "
 "后，日志文件如下："
 msgstr ""
+"uncomment ``FLAGS_log_dir = \".\";`` recompiled it and save log to current work directory. As to run ``camera_a`` "
+"log file as follows:"
 
 #: ../../src/log/log_file.rst:22
 msgid ""
@@ -40,8 +44,12 @@ msgid ""
 "ubuntu.john.log.INFO.20180513-141832.519`` 。运行多次后， ``camera_a.INFO`` "
 "仍只会有一个，指向最新的那个日志文件，便于你查看。"
 msgstr ""
+"``camera_a.INFO`` shows which program and levers of log it is. But it is only a link, which link to real log file, as ``camera_a.john-"
+"ubuntu.john.log.INFO.20180513-141832.519``. Run several times, ``camera_a.INFO`` "
+"still leaves one to link the lastes log file, so can be checked easily"
+
 
 #: ../../src/log/log_file.rst:24
 msgid "执行 ``make cleanlog`` 可以清理所有日志文件。"
 msgstr ""
-
+"Excute `make cleanlog` to clean all log files"

@@ -20,85 +20,85 @@ msgstr ""
 
 #: ../../src/sdk/install_ros.rst:4
 msgid "ROS 安装"
-msgstr ""
+msgstr "ROS Installation"
 
 #: ../../src/sdk/install_ros.rst:9 ../../src/sdk/install_ros.rst:19
 msgid "ROS Kinetic"
-msgstr ""
+msgstr "ROS Kinetic"
 
 #: ../../src/sdk/install_ros.rst:9 ../../src/sdk/install_ros.rst:19
 msgid "ROS Indigo"
-msgstr ""
+msgstr "ROS Indigo"
 
 #: ../../src/sdk/install_ros.rst:11
 msgid "|build_passing|"
-msgstr ""
+msgstr "|build_passing|"
 
 #: ../../src/sdk/install_ros.rst:21
 msgid "✓"
-msgstr ""
+msgstr "✓"
 
 #: ../../src/sdk/install_ros.rst:25
 msgid "环境准备"
-msgstr ""
+msgstr "Prepare Environment"
 
 #: ../../src/sdk/install_ros.rst:27
 msgid "`ROS <http://www.ros.org/>`_"
-msgstr ""
+msgstr "`ROS <http://www.ros.org/>`_"
 
 #: ../../src/sdk/install_ros.rst:30
 msgid "ROS Kinetic (Ubuntu 16.04)"
-msgstr ""
+msgstr "ROS Kinetic (Ubuntu 16.04)"
 
 #: ../../src/sdk/install_ros.rst:38
 msgid "ROS Indigo (Ubuntu 14.04)"
-msgstr ""
+msgstr "ROS Indigo (Ubuntu 14.04)"
 
 #: ../../src/sdk/install_ros.rst:46
 msgid "编译代码"
-msgstr ""
+msgstr "Compiled"
 
 #: ../../src/sdk/install_ros.rst:54
 msgid "运行节点"
-msgstr ""
+msgstr "Running node"
 
 #: ../../src/sdk/install_ros.rst:61
 msgid "运行节点，同时打开 RViz 预览："
-msgstr ""
+msgstr "Run the node，and preview by RViz:"
 
 #: ../../src/sdk/install_ros.rst:69
 msgid "测试服务"
-msgstr ""
+msgstr "Testing Services"
 
 #: ../../src/sdk/install_ros.rst:71
 msgid "运行节点，有提供获取设备信息服务，如下测试："
-msgstr ""
+msgstr "Run the node as follows, make sure that device information service is same:"
 
 #: ../../src/sdk/install_ros.rst:87
 msgid "常见问题 - ROS Indigo"
-msgstr ""
+msgstr "Common issues - ROS Indigo"
 
 #: ../../src/sdk/install_ros.rst:90
 msgid "``make ros`` 时 ``libopencv`` 找不到"
-msgstr ""
+msgstr "Cann't find``libopencv`` while ``make ros``"
 
 #: ../../src/sdk/install_ros.rst:96
 msgid "**Solution 1)** 安装 OpenCV 2:"
-msgstr ""
+msgstr "**Solution 1)** Install OpenCV 2:"
 
 #: ../../src/sdk/install_ros.rst:103
 msgid "**Solution 2)** 安装 OpenCV 3 并重编 ``cv_bridge``:"
-msgstr ""
+msgstr "**Solution 2)** Install OpenCV 3  & re-compiled ``cv_bridge``:"
 
 #: ../../src/sdk/install_ros.rst:112
 msgid "然后，重新 ``make ros`` 。"
-msgstr ""
+msgstr "Than run ``make ros`` again"
 
 #: ../../src/sdk/install_ros.rst:115
 msgid "结语"
-msgstr ""
+msgstr "Conclusion"
 
 #: ../../src/sdk/install_ros.rst:117
 msgid "关于如何使用，请阅读 :ref:`wrapper_ros` 。"
-msgstr ""
+msgstr "About more details, check the :ref:`wrapper_ros` ."
 

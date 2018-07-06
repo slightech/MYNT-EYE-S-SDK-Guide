@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../src/sdk/without_opencv.rst:4
 msgid "OpenCV 不依赖"
-msgstr ""
+msgstr "OpenCV dependency"
 
 #: ../../src/sdk/without_opencv.rst:6
 msgid "SDK 提供了三层接口，其 OpenCV 依赖情况如下："
-msgstr ""
+msgstr "SDK provides a three-tier interface with OpenCV dependencies:"
 
 #: ../../src/sdk/without_opencv.rst:8
 msgid "``api``， 上层接口，依赖 OpenCV 。"

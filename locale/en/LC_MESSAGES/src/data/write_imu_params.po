@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../src/data/write_imu_params.rst:4
 msgid "写入 IMU 标定参数"
-msgstr "Write IMU parameters"
+msgstr " Write IMU parameters"
 
 #: ../../src/data/write_imu_params.rst:6
 msgid ""
@@ -47,5 +47,6 @@ msgstr "For attention, the path of parameters file is `tools/writer/config/img.p
 
 #: ../../src/data/write_imu_params.rst:23
 msgid "请不要随意覆写参数。另外 ``save_all_infos`` 工具可帮你备份参数。"
-msgstr "Please don't override parameters optionally. In addition, you can use ``save_all_infos`` to backup parameters."
+msgstr "Please  don't override parameters optionally. In addition, you can use ``save_all_infos``"
+"to backup parameters."
 
