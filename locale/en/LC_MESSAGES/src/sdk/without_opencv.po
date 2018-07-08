@@ -28,25 +28,26 @@ msgstr "SDK provides a three-tier interface with OpenCV dependencies:"
 
 #: ../../src/sdk/without_opencv.rst:8
 msgid "``api``， 上层接口，依赖 OpenCV 。"
-msgstr ""
+msgstr "``api``, Upper interface，with OpenCV dependencies"
 
 #: ../../src/sdk/without_opencv.rst:9
 msgid "``device``，中间层接口，不依赖 OpenCV 。"
-msgstr ""
+msgstr "``device``,Interlayer interface,without OpenCV dependencies"
 
 #: ../../src/sdk/without_opencv.rst:10
 msgid "``uvc``，底层接口，不依赖 OpenCV 。"
-msgstr ""
+msgstr "``uvc``,Bottom interface,without OpenCV dependencies"
 
 #: ../../src/sdk/without_opencv.rst:12
 msgid ""
 "如果不想使用 OpenCV ，你可编辑 ``<sdk>/cmake/Option.cmake`` 里的 ``WITH_API`` 选项，设为 "
 "``OFF`` 就能关闭 ``api`` 层代码编译："
-msgstr ""
-
+msgstr "If you don't want to use OpenCV,edit``<sdk>/cmake/Option.cmake``and set ``WITH_API`` to ``OFF``."
+       "That will not compile ``api``"
 #: ../../src/sdk/without_opencv.rst:18
 msgid ""
 "``device`` 层接口使用样例，请见 `device/camera.cc <https://github.com/slightech"
 "/MYNT-EYE-SDK-2/blob/master/samples/device/camera.cc>`_ 。"
-msgstr ""
+msgstr "Use samples for the interface ``device``, please refer to `device/camera.cc "
+       "<https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/device/camera.cc>`_ ."
 

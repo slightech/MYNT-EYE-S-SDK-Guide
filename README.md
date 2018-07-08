@@ -53,7 +53,11 @@ sphinx-intl update -p _build/gettext -l en
 
 # Build mo files and make translated document
 sphinx-intl build
+# Linux
 make -e SPHINXOPTS="-D language='en'" html
+# Windows
+set SPHINXOPTS=-D language=de
+.\make.bat html
 ```
 
 * [Internationalization](http://www.sphinx-doc.org/en/master/intl.html)

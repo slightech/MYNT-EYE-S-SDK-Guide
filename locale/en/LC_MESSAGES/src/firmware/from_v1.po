@@ -18,23 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
 
-#: ../../src/sdk/from_v1.rst:4
+#: ../../src/firmware/from_v1.rst:4
 msgid "从 1.x 换到 2.x"
 msgstr "Change SDK 1.x to 2.x"
 
-#: ../../src/sdk/from_v1.rst:6
+#: ../../src/firmware/from_v1.rst:6
 msgid "SDK 如果要从 1.x 换到 2.x 版本，你需要做的几件事："
 msgstr "A few things needs to do，to replace the SDK version 1.x to 2.x :"
 
-#: ../../src/sdk/from_v1.rst:8
+#: ../../src/firmware/from_v1.rst:8
 msgid "1） 安装 SDK 2 ，见 :ref:`sdk` 。"
 msgstr "1） Install SDK 2, Check the :ref:`sdk` ."
 
-#: ../../src/sdk/from_v1.rst:10
+#: ../../src/firmware/from_v1.rst:10
 msgid "2） 升级固件到 2.x 版本，见 :ref:`firmware` 。"
 msgstr "2）Upgrade firmware to 2.x version，Check the :ref:`firmware` ."
 
-#: ../../src/sdk/from_v1.rst:12
+#: ../../src/firmware/from_v1.rst:12
 msgid ""
 "3） SDK 1.x 运行后，图像标定参数会保存到 ``<MYNTEYE_SDK_ROOT>/settings/SN*.conf`` 。请按照 "
 ":ref:`write_img_params` 将 ``SN*.conf`` 写入设备。"
