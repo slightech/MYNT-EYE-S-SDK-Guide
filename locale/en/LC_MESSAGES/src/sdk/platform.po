@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../src/sdk/platform.rst:4
 msgid "支持平台"
-msgstr "SUPPORTED PLATFORMS"
+msgstr "Supported platforms"
 
 #: ../../src/sdk/platform.rst:6
 msgid ""

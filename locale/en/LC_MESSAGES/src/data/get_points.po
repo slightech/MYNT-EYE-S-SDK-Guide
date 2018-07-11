@@ -35,10 +35,17 @@ msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectifi
 msgstr "For detail process description, please see :ref:`get_stereo` :ref:`get_stereo_rectified` ."
 
 #: ../../src/data/get_points.rst:10
+msgid "另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。"
+msgstr ""
+"In addition, it is recommended to use plugin to calculate depth: depth "
+"map will be better and frame rate is higher.Please see "
+":ref:`get_with_plugin` for detail. "
+
+#: ../../src/data/get_points.rst:12
 msgid "参考代码片段："
 msgstr "Sample code snippet: "
 
-#: ../../src/data/get_points.rst:49
+#: ../../src/data/get_points.rst:51
 msgid ""
 "上述代码，用了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 来显示点云。关闭点云窗口时，也会结束"
 "程序。"
@@ -46,7 +53,7 @@ msgstr ""
 "`PCL <https://github.com/PointCloudLibrary/pcl>`_ is used to display point images above. "
 "Program will exit when point image window close."
 
-#: ../../src/data/get_points.rst:51
+#: ../../src/data/get_points.rst:53
 msgid ""
 "完整代码样例，请见 `get_points.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/"
 "tutorials/data/get_points.cc>`_ 。"
@@ -54,7 +61,7 @@ msgstr ""
 "For complete code sample, see `get_points.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/"
 "master/samples/tutorials/data/get_points.cc>`_ ."
 
-#: ../../src/data/get_points.rst:55
+#: ../../src/data/get_points.rst:57
 msgid ""
 "准备好了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库，编译教程样例时才会有此例子。如果 `PCL "
 "<https://github.com/PointCloudLibrary/pcl>`_ 库安装到了自定义目录，那么请打开 `tutorials/CMakeLists."

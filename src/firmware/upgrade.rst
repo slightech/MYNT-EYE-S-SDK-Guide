@@ -5,7 +5,7 @@
 
 固件升级，需要使用我们提供的固件升级程序：MYNT EYE TOOL。
 
-固件及MYNT EYE TOOL的安装包，都在 `MYNT EYE Developer Center <http://dev.myntai.com>`_的 ``Firmwares`` 目录内。文件结构如下：
+固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX <http://files.slightech.com/dfiles/downfiles>`_ 的 ``Firmwares`` 目录内。文件结构如下：
 
 .. code-block:: none
 

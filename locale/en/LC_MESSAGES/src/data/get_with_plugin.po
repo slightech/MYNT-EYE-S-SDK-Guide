@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-06 20:53+0800\n"
+"POT-Creation-Date: 2018-07-11 21:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,79 +31,75 @@ msgstr ""
 #: ../../src/data/get_with_plugin.rst:8
 #, fuzzy
 msgid ""
-"官方目前提供了些计算双目视差的插件，在 `Google Drive "
-"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
-" 或 `百度网盘 <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 "
-"``Plugins`` 目录内。"
+"官方目前提供了些计算双目视差的插件，在 `MYNTEYE_BOX "
+"<http://files.slightech.com/dfiles/downfiles>`_ 的 ``Plugins`` 目录内。"
 msgstr ""
 "Now officials have provided some plug-ins for calculating binocular "
-"parallax, in `Google "
-"Drive<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
-" or `Baidu SkyDrive <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ "
-"location within the ``Plugins`` directory."
+"parallax, in `MYNTEYE_BOX <http://files.slightech.com/dfiles/downfiles>`_"
+" location within the ``Plugins`` directory."
 
-#: ../../src/data/get_with_plugin.rst:20
+#: ../../src/data/get_with_plugin.rst:21
 msgid "目录 ``linux-x86_64`` 表明了系统和架构。"
 msgstr "The ``linux-x86_64`` directory shows the system and architecture."
 
-#: ../../src/data/get_with_plugin.rst:22
+#: ../../src/data/get_with_plugin.rst:23
 msgid "可从系统信息或 ``uname -a`` 得知你的 CPU 架构。"
 msgstr ""
 "You can find your CPU architecture from system information or \"uname "
 "-a\"."
 
-#: ../../src/data/get_with_plugin.rst:24
+#: ../../src/data/get_with_plugin.rst:25
 msgid "库名 ``libplugin_*`` 表明了插件标识和第三方依赖。"
 msgstr ""
 "The library name ``libplugin_*`` shows the plug-in identity and the third"
 " party dependency."
 
-#: ../../src/data/get_with_plugin.rst:26
+#: ../../src/data/get_with_plugin.rst:27
 msgid "``b`` ``g`` 是插件标识，说明用了不同算法。"
 msgstr ""
 "``b`` ``g`` is a plugin identifier, indicating that different algorithms "
 "are used."
 
-#: ../../src/data/get_with_plugin.rst:27
+#: ../../src/data/get_with_plugin.rst:28
 msgid "``ocl1.2`` 表明依赖了 ``OpenCL 1.2`` ，如果存在。"
 msgstr "``ocl1.2`` shows it dependence on ``OpenCL 1.2`` if it exists."
 
-#: ../../src/data/get_with_plugin.rst:28
+#: ../../src/data/get_with_plugin.rst:29
 msgid "``cuda9.1`` 表明依赖了 ``CUDA 9.1`` ，如果存在。"
 msgstr "``cuda9.1`` shows it dependence on ``CUDA 9.1``,if it exists."
 
-#: ../../src/data/get_with_plugin.rst:29
+#: ../../src/data/get_with_plugin.rst:30
 msgid "``opencv3.4.0`` 表明依赖了 ``OpenCV 3.4.0`` ，如果存在。"
 msgstr "``opencv3.4.0`` shows it dependence on ``OpenCV 3.4.0``,if it exists."
 
-#: ../../src/data/get_with_plugin.rst:30
+#: ../../src/data/get_with_plugin.rst:31
 msgid "``mynteye2.0.0`` 表明依赖了 ``MYNT EYE SDK 2.0.0`` ，如果存在。"
 msgstr ""
 "``mynteye2.0.0`` shows it dependency on ``MYNT EYE SDK 2.0.0``,if it "
 "exists."
 
-#: ../../src/data/get_with_plugin.rst:32
+#: ../../src/data/get_with_plugin.rst:33
 msgid "首先，根据具体情况，选择你想测试使用的插件。如果依赖了第三方，那么请安装一致的版本。"
 msgstr ""
 "First, select the plug-ins that you are going to use for testing "
 "according to the situation. If you rely on third parties, please install "
 "a consistent version."
 
-#: ../../src/data/get_with_plugin.rst:34
+#: ../../src/data/get_with_plugin.rst:35
 msgid "然后，参考如下代码启用插件："
 msgstr "Then, enable the plug-in with the following code:"
 
-#: ../../src/data/get_with_plugin.rst:42
+#: ../../src/data/get_with_plugin.rst:43
 msgid "路径可以是绝对路径，也可以是相对路径（相对于当前工作目录）。"
 msgstr ""
 "The path can be an absolute path or a relative path (relative to the "
 "current working directory)."
 
-#: ../../src/data/get_with_plugin.rst:44
+#: ../../src/data/get_with_plugin.rst:45
 msgid "最终，和之前一样调用 API 获取数据就行了。"
 msgstr "Finally, just call the API to get the data as before."
 
-#: ../../src/data/get_with_plugin.rst:48
+#: ../../src/data/get_with_plugin.rst:49
 msgid ""
 "如果没有启用插件的话， ``api->Start(Source::VIDEO_STREAMING);`` 时会自动在 "
 "``<sdk>/plugins/<platform>`` 目录里找合适的插件去加载。"
@@ -112,7 +108,7 @@ msgstr ""
 "will automatically find the appropriate plug-in in the "
 "\"\"``<sdk>/plugins/<platform>`` directory to load."
 
-#: ../../src/data/get_with_plugin.rst:50
+#: ../../src/data/get_with_plugin.rst:51
 msgid ""
 "换句话说，可以把当前平台的插件目录整个搬进 ``<sdk>/plugins`` 目录内。安装好对应的 ``CUDA`` ``OpenCV`` "
 "等插件依赖后重编译，此后运行 ``API`` 层接口程序，就会自动加载官方插件了。"
@@ -123,25 +119,25 @@ msgstr ""
 "dependency, then run `` API `` layer interface program, the official "
 "plug-in will be automatically loaded."
 
-#: ../../src/data/get_with_plugin.rst:52
+#: ../../src/data/get_with_plugin.rst:53
 msgid "运行前，请执行如下命令，以确保能搜索到插件的依赖库："
 msgstr ""
 "Before running, please execute the following commands to ensure that you "
 "can search the plug-in's dependency Library:"
 
-#: ../../src/data/get_with_plugin.rst:68
+#: ../../src/data/get_with_plugin.rst:69
 msgid "此外，可执行如下命令，检查是否能搜索到插件的依赖库："
 msgstr ""
 "In addition, the following command can be executed to check whether the "
 "dependency Library of the plug-in can be searched:"
 
-#: ../../src/data/get_with_plugin.rst:83
+#: ../../src/data/get_with_plugin.rst:84
 msgid "如果找不到插件的依赖库，加载时将会报错 \"Open plugin failed\" 。"
 msgstr ""
 "If the plugin's dependent library is not found, it will report an error "
 "\"Open plugin failed\" when loading."
 
-#: ../../src/data/get_with_plugin.rst:85
+#: ../../src/data/get_with_plugin.rst:86
 msgid ""
 "完整代码样例，请见 `get_with_plugin.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_with_plugin.cc>`_ 。"
@@ -150,7 +146,7 @@ msgstr ""
 "<https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_with_plugin.cc>`_ ."
 
-#: ../../src/data/get_with_plugin.rst:89
+#: ../../src/data/get_with_plugin.rst:90
 msgid ""
 "Linux 上也可以把依赖库路径加入系统环境，编译出的程序就可以直接运行了（不需要于终端里 ``export LD_LIBRARY_PATH`` "
 "再运行）。"
@@ -159,19 +155,19 @@ msgstr ""
 " that the compiled program can run directly. (does not require ``export "
 "LD_LIBRARY_PATH`` in the terminal then run again)."
 
-#: ../../src/data/get_with_plugin.rst:91
+#: ../../src/data/get_with_plugin.rst:92
 msgid "新建 ``/etc/ld.so.conf.d/libmynteye.conf`` 文件，写入依赖库路径。"
 msgstr ""
 "Create a ``/etc/ld.so.conf.d/libmynteye.conf`` file and write the "
 "dependent library path."
 
-#: ../../src/data/get_with_plugin.rst:92
+#: ../../src/data/get_with_plugin.rst:93
 msgid "终端里执行 ``sudo /sbin/ldconfig`` 命令，刷新缓存。"
 msgstr ""
 "Execute the ``sudo /sbin/ldconfig`` command in the terminal and refresh "
 "the cache."
 
-#: ../../src/data/get_with_plugin.rst:94
+#: ../../src/data/get_with_plugin.rst:95
 msgid "e.g. libmynteye.conf"
 msgstr "e.g. libmynteye.conf"
 

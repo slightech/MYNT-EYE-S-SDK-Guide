@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-07-11 21:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/firmware/applicable.rst:4
 msgid "固件与 SDK 适配性"
@@ -84,16 +84,27 @@ msgstr "2.0.0-alpha0"
 
 #: ../../src/firmware/applicable.rst:18
 msgid ""
-"``Firmwares`` 表明固件文件名称。其在 `Google Drive "
-"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
-" 或 `百度网盘 <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 "
-"``Firmwares`` 目录内。"
-msgstr "``Firmwares`` means firmwares name. You could check the folder ``Firmwares``  in `Google Drive "
-"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_ ."
-
-
+"``Firmwares`` 表明固件文件名称。其在 `MYNT EYE Developer Center <dev.myntai.com>`_ 的"
+" ``Firmwares`` 目录内。"
+msgstr ""
 
 #: ../../src/firmware/applicable.rst:20
 msgid "``SDK Version`` 表明该固件适配的 SDK 版本，括号内指可用版本范围。"
-msgstr "``SDK Version`` Indicates the version of the SDK that the firmware is adapted to, and the range of available versions is indicated in parentheses."
+msgstr ""
+"``SDK Version`` Indicates the version of the SDK that the firmware is "
+"adapted to, and the range of available versions is indicated in "
+"parentheses."
+
+#~ msgid ""
+#~ "``Firmwares`` 表明固件文件名称。其在 `Google Drive "
+#~ "<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
+#~ " 或 `百度网盘 "
+#~ "<https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 "
+#~ "``Firmwares`` 目录内。"
+#~ msgstr ""
+#~ "``Firmwares`` means firmwares name. You "
+#~ "could check the folder ``Firmwares``  in"
+#~ " `Google Drive "
+#~ "<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
+#~ " ."
 

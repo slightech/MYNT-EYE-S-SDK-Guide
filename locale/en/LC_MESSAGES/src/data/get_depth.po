@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-07-11 21:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/data/get_depth.rst:4
 msgid "获取深度图像"
@@ -27,34 +27,48 @@ msgid ""
 "深度图像，属于上层合成数据。需要事先 ``EnableStreamData()`` 启用，然后 ``GetStreamData()`` "
 "获取。另外，判断不为空后再使用。"
 msgstr ""
-"Depth images is synthetic data which belong to upper layer. You need to start the ``EnableStreamData()`` beforehand, then you can get it through ``GetStreamData()``"
-". In addition, it should be check not empty before use."
+"Depth images is synthetic data which belong to upper layer. You need to "
+"start the ``EnableStreamData()`` beforehand, then you can get it through "
+"``GetStreamData()``. In addition, it should be check not empty before "
+"use."
 
 #: ../../src/data/get_depth.rst:8
 msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
-msgstr "Please see :ref:`get_stereo` :ref:`get_stereo_rectified` for detail process description. "
+msgstr ""
+"Please see :ref:`get_stereo` :ref:`get_stereo_rectified` for detail "
+"process description. "
 
 #: ../../src/data/get_depth.rst:10
+msgid "另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。"
+msgstr ""
+"In addition, it is recommended to use plugin to calculate depth: depth "
+"map will be better and frame rate is higher.Please see "
+":ref:`get_with_plugin` for detail. "
+
+#: ../../src/data/get_depth.rst:12
 msgid "参考代码片段："
 msgstr "Reference code snippet:"
 
-#: ../../src/data/get_depth.rst:46
-msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
-msgstr "OpenCV is used to display image above. Select the display window, press ``ESC/Q`` to exit program."
-
 #: ../../src/data/get_depth.rst:48
+msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
+msgstr ""
+"OpenCV is used to display image above. Select the display window, press "
+"``ESC/Q`` to exit program."
+
+#: ../../src/data/get_depth.rst:50
 msgid ""
 "完整代码样例，请见 `get_depth.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_depth.cc>`_ 。"
 msgstr ""
-"For complete code sample, see `get_depth.cc <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/data/get_depth.cc>`_ ."
+"For complete code sample, see `get_depth.cc <https://github.com/slightech"
+"/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_depth.cc>`_ ."
 
-#: ../../src/data/get_depth.rst:52
+#: ../../src/data/get_depth.rst:54
 msgid ""
 "预览深度图某区域的值，请见 `get_depth_with_region.cc <https://github.com/slightech"
 "/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc>`_ 。"
 msgstr ""
-"Preview the value of an area in the depth image, see `get_depth_with_region.cc <https://github.com/slightech"
-"/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc>`_ ."
+"Preview the value of an area in the depth image, see "
+"`get_depth_with_region.cc <https://github.com/slightech/MYNT-EYE-"
+"SDK-2/blob/master/samples/api/get_depth_with_region.cc>`_ ."
 

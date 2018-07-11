@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-07-11 21:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/firmware/upgrade.rst:4
 msgid "固件如何进行升级"
@@ -27,21 +27,21 @@ msgid "固件升级，需要使用我们提供的固件升级程序：MYNT EYE T
 msgstr "Please use MYNT EYE TOOL upgrade the firmware"
 
 #: ../../src/firmware/upgrade.rst:8
+#, fuzzy
 msgid ""
-"固件及MYNT EYE TOOL的安装包，都在 `Google Drive "
-"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
-" 或 `百度网盘 <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 "
-"``Firmwares`` 目录内。文件结构如下："
+"固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX "
+"<http://files.slightech.com/dfiles/downfiles>`_ 的 ``Firmwares`` "
+"目录内。文件结构如下："
 msgstr ""
-"You can download firmware and MYNT EYE TOOL installation package in `Google Drive "
-"<https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_"
-"or 'Baidu SkyDrive <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>'_"
-"They are in the ``Firmwares`` folder, the file structure is as follows: "
+"You can download firmware and MYNT EYE TOOL installation package in "
+"`MYNTEYE_BOX <http://files.slightech.com/dfiles/downfiles>`_ They are in "
+"the ``Firmwares`` folder, the file structure is as follows: "
 
 #: ../../src/firmware/upgrade.rst:18
 msgid "固件升级程序，目前仅支持 Windows ，所以需要你在 Windows 下进行操作。步骤如下："
-msgstr "MYNT EYE Tool is only supported in Windows system, "
-"so you need to do the following steps in Winodws. "
+msgstr ""
+"MYNT EYE Tool is only supported in Windows system, so you need to do the "
+"following steps in Winodws. "
 
 #: ../../src/firmware/upgrade.rst:21
 msgid "下载准备"
@@ -57,7 +57,9 @@ msgstr "Download firmware, such as ``MYNTEYE_S_2.0.0_rc0.img`` "
 
 #: ../../src/firmware/upgrade.rst:26
 msgid "请见 :ref:`firmware_applicable` 选择适合当前 SDK 版本的固件。"
-msgstr "Please refer to :ref:`firmware_applicable` select the firmware suitable for the SDK version"
+msgstr ""
+"Please refer to :ref:`firmware_applicable` select the firmware suitable "
+"for the SDK version"
 
 #: ../../src/firmware/upgrade.rst:27
 msgid "请见 ``Checksum.txt`` 找到下载固件的校验码，如下获取并比对："
@@ -69,7 +71,9 @@ msgstr "Run the command in CMD ``certutil -hashfile <*.img> MD5`` ."
 
 #: ../../src/firmware/upgrade.rst:30
 msgid "校验码不正确的话，说明下载有误，请重新下载！"
-msgstr "If the check code is incorrect, it means that the download is wrong. Please download it again!"
+msgstr ""
+"If the check code is incorrect, it means that the download is wrong. "
+"Please download it again!"
 
 #: ../../src/firmware/upgrade.rst:33
 msgid "安装MYNT EYE TOOL"
@@ -105,7 +109,9 @@ msgstr "This operation will erase the firmware, for details see README"
 
 #: ../../src/firmware/upgrade.rst:55
 msgid "通常在升级过程中，MYNT EYE TOOL会自动安装驱动。"
-msgstr "Usually, MYNT EYE TOOL automatically installs the driver during the upgrade process."
+msgstr ""
+"Usually, MYNT EYE TOOL automatically installs the driver during the "
+"upgrade process."
 
 #: ../../src/firmware/upgrade.rst:56
 msgid "如果升级遇到问题，参考 README 解决。"
@@ -113,7 +119,9 @@ msgstr "If the upgrade fails, refer to READEME."
 
 #: ../../src/firmware/upgrade.rst:64
 msgid "在打开的文件选择框里，选择要升级的固件，开始升级。"
-msgstr "In the open file selection box, select the firmware you want to upgrade and start upgrading."
+msgstr ""
+"In the open file selection box, select the firmware you want to upgrade "
+"and start upgrading."
 
 #: ../../src/firmware/upgrade.rst:68
 msgid "升级完成后，状态变为 ``Succeeded`` 。"
@@ -127,7 +135,10 @@ msgstr "Closing MYNT EYE TOOL，finish."
 msgid ""
 "固件升级后，初次打开 MYNT® EYE 设备时，请静置 3 秒，其会有一个零漂补偿过程。或者，请主动调用控制接口 "
 "``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来进行零漂补偿。"
-msgstr "When the firmware is upgraded, the first time you open the MYNT® EYE camera, please put it "
-"steadily  for 3 seconds, and there will be a zero drift compensation process.Alternatively, "
-"call the API``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` for zero drift correction.please "
+msgstr ""
+"When the firmware is upgraded, the first time you open the MYNT® EYE "
+"camera, please put it steadily  for 3 seconds, and there will be a zero "
+"drift compensation process.Alternatively, call the "
+"API``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` for zero drift "
+"correction.please "
 

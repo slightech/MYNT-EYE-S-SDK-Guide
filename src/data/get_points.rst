@@ -7,6 +7,8 @@
 
 详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。
 
+另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。
+
 参考代码片段：
 
 .. code-block:: c++
