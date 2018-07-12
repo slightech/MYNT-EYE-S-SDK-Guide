@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../../src/slam/maplab.rst:4
 msgid "`Maplab <https://github.com/ethz-asl/maplab>`_ 如何整合 x"
-msgstr "How to integrate `Maplab <https://github.com/ethz-asl/maplab>`_ x"
+msgstr "How to use in `Maplab <https://github.com/ethz-asl/maplab>`_ x"
 

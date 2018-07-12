@@ -44,15 +44,15 @@ msgstr "Camera:Please pay attention to protecting camera lens when using, so as 
 
 #: ../../src/mynteye/surface.rst:15
 msgid "红外结构光发射器及开孔：通过红外结构光可有效解决白墙等无纹理表面的视觉计算。(非 IR 版，此孔保留，但内部无结构光发射装置)"
-msgstr "B.nfrared structured light transmitter:Infrared structured light can effectively solve the visual calculation of non-textured surfaces such as white walls.(Non-IR version, this hole is reserved, but the internal unstructured light emitting device)"
+msgstr "Infrared structured light & transmitter:Infrared structured light can effectively solve the visual calculation of non-textured surfaces such as white walls.(Non-IR version, this hole is reserved, but the internal unstructured light emitting device)"
 
 #: ../../src/mynteye/surface.rst:16
 msgid ""
 "USB Micro-B 接口及固定孔：使用中，插上 USB Micro-B "
 "数据线后，请使用接口端的螺丝紧固接口，以避免使用中损坏接口，也保证数据连接的稳定性。"
-msgstr "C.USB Micro-B port and fixing hole：When using, after inserting the USB Micro-B data cable, use the screw on the interface to fasten the connector to avoid damage to the connector during use and to ensure the stability of the data connection."
+msgstr "USB Micro-B port and fixing hole：When using, after inserting the USB Micro-B data cable, use the screw on the interface to fasten the connector to avoid damage to the connector during use and to ensure the stability of the data connection."
 
 #: ../../src/mynteye/surface.rst:17
 msgid "1/4 英寸标准固定螺孔：用于将双目摄像头固定于摄影三角架等装置。"
-msgstr "D.1/4 inch standard fixing screw hole：It is used for fixing binocular camera to photo tripod and other devices."
+msgstr "1/4 inch standard fixing screw hole：It is used for fixing binocular camera to photo tripod and other devices."
 

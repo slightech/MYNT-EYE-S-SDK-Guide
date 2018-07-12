@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../../src/slam/vins.rst:4
 msgid "`VINS <https://github.com/HKUST-Aerial-Robotics/VINS-Mono>`_ 如何整合 x"
-msgstr "How to integrate `VINS <https://github.com/HKUST-Aerial-Robotics/VINS-Mono>`_ x"
+msgstr "How to use in `VINS <https://github.com/HKUST-Aerial-Robotics/VINS-Mono>`_ x"
 

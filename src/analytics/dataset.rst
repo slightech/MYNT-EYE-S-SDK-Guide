@@ -48,11 +48,11 @@ SDK 提供了录制数据集的工具 ``record`` 。工具详情可见 `tools/RE
   <workdir>/
   └─dataset/
      ├─left/
-     │  ├─stream.txt  # 图像信息
-     │  ├─000000.png  # 图像，序号 0
+     │  ├─stream.txt  # Image infomation
+     │  ├─000000.png  # Image，index 0
      │  └─...
      ├─right/
-     │  ├─stream.txt  # 图像信息
-     │  ├─000000.png  # 图像，序号 0
+     │  ├─stream.txt  # Image information
+     │  ├─000000.png  # Image，index 0
      │  └─...
-     └─motion.txt  # IMU 信息
+     └─motion.txt  # IMU information
