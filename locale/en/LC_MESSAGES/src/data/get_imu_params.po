@@ -30,7 +30,7 @@ msgstr "Use ``GetMotionIntrinsics()`` &  ``GetMotionExtrinsics()`` to get curren
 
 #: ../../src/data/get_imu_params.rst:8
 msgid "参考代码片段："
-msgstr "Reference commands"
+msgstr "Reference commands:"
 
 #: ../../src/data/get_imu_params.rst:18
 msgid ""

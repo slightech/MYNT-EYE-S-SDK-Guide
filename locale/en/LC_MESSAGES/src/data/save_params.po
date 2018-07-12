@@ -35,7 +35,7 @@ msgstr "Reference commands: "
 
 #: ../../src/data/save_params.rst:17
 msgid "参考运行结果，于 Linux 上："
-msgstr "Reference result in Linux"
+msgstr "Reference result in Linux:"
 
 #: ../../src/data/save_params.rst:28
 msgid "默认会保存进 ``<workdir>/config`` 目录。你也可以加参数，指定保存到其他目录。"

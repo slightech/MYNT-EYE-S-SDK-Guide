@@ -30,12 +30,11 @@ msgstr ""
 
 #: ../../src/data/get_img_params.rst:8
 msgid "参考代码片段："
-msgstr "Reference"
+msgstr "Reference: "
 
 #: ../../src/data/get_img_params.rst:20
-#, fuzzy
 msgid "参考运行结果，于 Linux 上："
-msgstr "Reference - Liunx"
+msgstr "Reference - Liunx:"
 
 #: ../../src/data/get_img_params.rst:33
 msgid ""

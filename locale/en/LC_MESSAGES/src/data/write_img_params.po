@@ -31,11 +31,11 @@ msgstr "SDK provides a tool ``img_params_writer`` to write the image parameters.
 
 #: ../../src/data/write_img_params.rst:8
 msgid "有关如何获取，请阅读 :ref:`get_img_params` 。此参数会用于计算纠正、视差等。"
-msgstr " About how to get, please read :ref:`get_img_params`, This is used to calculate the deviation."
+msgstr "About how to get, please read :ref:`get_img_params`, This is used to calculate the deviation."
 
 #: ../../src/data/write_img_params.rst:10
 msgid "参考运行命令："
-msgstr "Reference commands"
+msgstr "Reference commands:"
 
 #: ../../src/data/write_img_params.rst:19
 msgid ""

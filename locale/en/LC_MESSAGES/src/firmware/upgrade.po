@@ -27,9 +27,7 @@ msgid "固件升级，需要使用我们提供的固件升级程序：MYNT EYE T
 msgstr "Please use MYNT EYE TOOL upgrade the firmware"
 
 #: ../../src/firmware/upgrade.rst:8
-#, fuzzy
-msgid ""
-"固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX "
+msgid "固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX "
 "<http://files.slightech.com/dfiles/downfiles>`_ 的 ``Firmwares`` "
 "目录内。文件结构如下："
 msgstr ""
@@ -139,6 +137,6 @@ msgstr ""
 "When the firmware is upgraded, the first time you open the MYNT® EYE "
 "camera, please put it steadily  for 3 seconds, and there will be a zero "
 "drift compensation process.Alternatively, call the "
-"API``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` for zero drift "
+"API ``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` for zero drift "
 "correction.please "
 

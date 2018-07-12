@@ -28,12 +28,11 @@ msgstr "Use ``GetInfo()`` function, get current various information values."
 
 #: ../../src/data/get_device_info.rst:8
 msgid "参考代码片段："
-msgstr "Reference"
+msgstr "Reference:"
 
 #: ../../src/data/get_device_info.rst:23
-#, fuzzy
 msgid "参考运行结果，于 Linux 上："
-msgstr "Reference - Linux"
+msgstr "Reference - Linux:"
 
 #: ../../src/data/get_device_info.rst:41
 msgid ""

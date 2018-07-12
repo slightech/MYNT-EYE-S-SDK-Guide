@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../src/data/get_with_plugin.rst:4
 msgid "使用插件获取数据"
-msgstr "Using the plug-in to get the data"
+msgstr "Using the plugin to get the data"
 
 #: ../../src/data/get_with_plugin.rst:6
 msgid "API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。"
@@ -29,7 +29,6 @@ msgstr ""
 "path."
 
 #: ../../src/data/get_with_plugin.rst:8
-#, fuzzy
 msgid ""
 "官方目前提供了些计算双目视差的插件，在 `MYNTEYE_BOX "
 "<http://files.slightech.com/dfiles/downfiles>`_ 的 ``Plugins`` 目录内。"

@@ -54,7 +54,6 @@ msgid "参考代码片段："
 msgstr "Reference Code:"
 
 #: ../../src/control/framerate.rst:34
-#, fuzzy
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
