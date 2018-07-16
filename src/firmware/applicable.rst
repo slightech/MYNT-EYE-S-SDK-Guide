@@ -15,6 +15,6 @@ MYNTEYE_S_2.0.0_alpha1.img   2.0.0-alpha1 (2.0.0-rc1 ~ 2.0.0-alpha1)
 MYNTEYE_S_2.0.0_alpha0.img   2.0.0-alpha0
 ============================ ========================
 
-``Firmwares`` 表明固件文件名称。其在 `MYNTEYE_BOX <http://files.slightech.com/dfiles/downfiles>`_  的 ``Firmwares`` 目录内。
+``Firmwares`` 表明固件文件名称。其在 `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_  的 ``Firmwares`` 目录内。
 
 ``SDK Version`` 表明该固件适配的 SDK 版本，括号内指可用版本范围。

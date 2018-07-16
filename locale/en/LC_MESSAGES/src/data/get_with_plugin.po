@@ -31,10 +31,10 @@ msgstr ""
 #: ../../src/data/get_with_plugin.rst:8
 msgid ""
 "官方目前提供了些计算双目视差的插件，在 `MYNTEYE_BOX "
-"<http://files.slightech.com/dfiles/downfiles>`_ 的 ``Plugins`` 目录内。"
+"<http://www.myntai.com/mynteye/s/download>`_ 的 ``Plugins`` 目录内。"
 msgstr ""
 "Now officials have provided some plug-ins for calculating binocular "
-"parallax, in `MYNTEYE_BOX <http://files.slightech.com/dfiles/downfiles>`_"
+"parallax, in `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_"
 " location within the ``Plugins`` directory."
 
 #: ../../src/data/get_with_plugin.rst:21

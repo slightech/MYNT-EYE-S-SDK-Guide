@@ -5,7 +5,7 @@
 
 API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。
 
-官方目前提供了些计算双目视差的插件，在 `MYNTEYE_BOX <http://files.slightech.com/dfiles/downfiles>`_ 的 ``Plugins`` 目录内。
+官方目前提供了些计算双目视差的插件，在 `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_ 的 ``Plugins`` 目录内。
 
 .. code-block:: none
 
