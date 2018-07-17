@@ -28,11 +28,11 @@ msgstr "Please use MYNT EYE TOOL upgrade the firmware"
 
 #: ../../src/firmware/upgrade.rst:8
 msgid "固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX "
-"<http://www.myntai.com/mynteye/s/download>`_ 的 ``Firmwares`` "
+"<http://doc.myntai.com/mynteye/s/download>`_ 的 ``Firmwares`` "
 "目录内。文件结构如下："
 msgstr ""
 "You can download firmware and MYNT EYE TOOL installation package in "
-"`MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_ They are in "
+"`MYNTEYE_BOX <http://doc.myntai.com/mynteye/s/download>`_ They are in "
 "the ``Firmwares`` folder, the file structure is as follows: "
 
 #: ../../src/firmware/upgrade.rst:18

@@ -84,11 +84,11 @@ msgstr "2.0.0-alpha0"
 
 #: ../../src/firmware/applicable.rst:18
 msgid ""
-"``Firmwares`` 表明固件文件名称。其在 `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_  的"
+"``Firmwares`` 表明固件文件名称。其在 `MYNTEYE_BOX <http://doc.myntai.com/mynteye/s/download>`_  的"
 " ``Firmwares`` 目录内。"
 msgstr ""
 "``Firmwares`` means firmwares name. You could check the folder ``Firmwares`` "
-"in `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_ "
+"in `MYNTEYE_BOX <http://doc.myntai.com/mynteye/s/download>`_ "
 
 #: ../../src/firmware/applicable.rst:20
 msgid "``SDK Version`` 表明该固件适配的 SDK 版本，括号内指可用版本范围。"
