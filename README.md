@@ -56,8 +56,7 @@ sphinx-intl build
 # Linux
 make -e SPHINXOPTS="-D language='en'" html
 # Windows
-set SPHINXOPTS=-D language=en
-.\make.bat html
+set SPHINXOPTS=-D language=en & .\make.bat html
 ```
 
 * [Internationalization](http://www.sphinx-doc.org/en/master/intl.html)
