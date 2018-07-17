@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>产品介绍 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Product description &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE" href="contents.html"/>
-        <link rel="next" title="尺寸与结构" href="surface.html"/>
-        <link rel="prev" title="MYNT® EYE" href="contents.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Size and structure" href="surface.html" />
+    <link rel="prev" title="MYNT® EYE" href="contents.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -93,18 +84,18 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">产品介绍</a></li>
-<li class="toctree-l2"><a class="reference internal" href="surface.html">尺寸与结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="imu_coord.html">IMU 坐标系统</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Product description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surface.html">Size and structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imu_coord.html">IMU coordinata system</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -117,7 +108,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -125,9 +116,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -152,7 +144,7 @@
         
           <li><a href="contents.html">MYNT® EYE</a> &raquo;</li>
         
-      <li>产品介绍</li>
+      <li>Product description</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,26 +164,24 @@
            <div itemprop="articleBody">
             
   <div class="section" id="mynteye-intro">
-<span id="id1"></span><h1>产品介绍<a class="headerlink" href="#mynteye-intro" title="Permalink to this headline">¶</a></h1>
-<p>小觅双目摄像头（MYNT® EYE）标准版，利用摄像头和运动传感器的互补性，可为视觉 SLAM 的研究提供精度更高、成本更低、布置简单、同时可以实现人脸和物体识别的视觉 SLAM 研发硬件。就目前而言，“双目+IMU”的结合方式，是目前 SLAM 的前沿方向。</p>
-<p>作为一款针对立体视觉计算应用进行深入研发的硬件产品，小觅双目摄像头（MYNT® EYE）标准版可广泛应用于视觉定位导航（vSLAM）领域，包括：无人车和机器人的视觉实时定位导航系统、无人机视觉定位系统、无人驾驶避障导航系统、增强现实（AR）、虚拟现实（VR）等；同时，双目也可应用于视觉识别领域，包括：立体人脸识别、三维物体识别、空间运动追踪、三维手势与体感识别等；亦可应用于测量领域，包括：辅助驾驶系统（ADAS）、双目体积计算、工业视觉筛检等。</p>
-<p>结合自研的帧同步、自动曝光及白平衡控制等摄像头技术，小觅双目摄像头（MYNT® EYE）标准版可以输出高精度同步的图像源，帮助降低算法研发难度，加快算法研发效率。同时，标准版产品标配六轴传感器（IMU）和红外主动光探测器（IR）。其中，六轴传感器（IMU）可为视觉定位算法的研究提供数据的互补和校正，适用于视觉惯性里程计（VIO）的算法研究，帮助提升定位精度；红外主动光探测器（IR）可以帮助解决室内白墙和无纹理物体的识别难题，提升图像源的识别精度。</p>
-<p>为保证摄像头产品输出数据质量，产品出厂时，我们已对双目以及 IMU 进行标定。同时，产品通过权威顶尖实验室高温高湿持续工作、高温高湿持续操作、低温动态老化、高温工作、低温存储、整机冷热冲击、正弦振动、随机振动等多项硬件稳定性测试，保证品质的稳定和可靠。除了产品和技术的研发，亦可直接应用于产品量产，加速从研发到产品化的过程。</p>
-<p>产品推出至今，获得了国内外诸多知名企业认可，除了已经面世的标准版“S”系列，未来还将推出内置深度计算能力的“D”系列产品。客户可根据目标平台的算力、运算架构等因素，选择合适的产品。</p>
-<p>以成为全球顶尖的立体视觉计算技术解决方案供应商为目标，我们一直在不断优化与完善软硬件，让小觅双目摄像头成为最优的立体视觉技术研发与应用平台。</p>
+<span id="id1"></span><h1>Product description<a class="headerlink" href="#mynteye-intro" title="Permalink to this headline">¶</a></h1>
+<p>By taking advantage of the complementarity between camera and motion sensor, MYNT® EYE standard version provides the develpment hardware which has higher precision, lower cost, easy way of deployment and the ability to recognize faces and objects.So far, [Binocular + IMU] is still at the leading edge of SLAM development.</p>
+<p>As a hardware product for in-depth research and development of stereo vision computing applications, MYNT® EYE standard version can be widely used in the field of Visual positioning navigation (vSLAM), including Visual real-time positioning navigation system of Driverless Vehicle and Robot, Visual positioning system of UAV, Obstacle avoidance navigation system for Driverless Vehicle, Augmented Reality (AR), Virtual Reality (VR), etc. At the same time, it can be used in field of Visual recognition, including Stereoscopic face recognition, Three-dimensional object recognition, space motion tracking, 3D gestures and somatosensory recognition. And of course, you can use it for measurement which includes Assisted driving system (ADAS), Binocular volume calculation, Industrial visual screening, etc.</p>
+<p>With self-development camera techniques, such as frame synchronization, automatic exposure, and white balance control, etc. MYNT® EYE standard version can output high-precision synchronized image source, and help reduce the difficulty of algorithms development。At the same time, it is equipped with six axis sensor (IMU) and Infrared active light detector (IR). Six axis sensor (IMU) can provides complementary and correction for the research of visual positioning algorithms, also be applicable for the research of Visual inertial mileage algorithms (VIO), it helps improve positioning precision. Infrared active light detector (IR) can help to resolve the problem that it is difficult to recognize the indoor white wall and no-textured objects, and improve the precision of image source recognition,</p>
+<p>To guarantee the data quality of the camera product, we have done calibration for binocular before they left the factory. Also, the product have passed lots of hardware stability tests, such as high temperature and humidity continuous work, high temperature and humidity continuous operation, low temperature dynamic aging, high temperature work, low temperature storage, cold and heat shock of the whole machine, sinusoidal vibration and random vibration,  to ensure the stability and reliability of the quality. It not only can be used for the development of product and techniques, but also can be used in product mass production which will shorten the time from development to production.</p>
+<p>MYNT® EYE has been recognized by many well-known companies at home and abroad since it was introduced. In addition to the standard version of the [S] series that has already been released, the [D] product with built-in deep computing power will also be launched in the future. Clients can choose suitable products based on the computing power and computing architecture of the target platform.</p>
+<p>To become the world’s top Stereo Vision Computing Technology solution provider, We have been constantly optimizing and improving our hardware and software to make MYNT® EYE  be the best platform for stereo vision technology development and application.</p>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="surface.html" class="btn btn-neutral float-right" title="尺寸与结构" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="surface.html" class="btn btn-neutral float-right" title="Size and structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="contents.html" class="btn btn-neutral" title="MYNT® EYE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -207,7 +197,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -225,7 +215,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -238,19 +229,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

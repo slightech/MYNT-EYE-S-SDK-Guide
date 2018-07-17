@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>启用详细级别 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Enabled detailed level &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="运行日志" href="contents.html"/>
-        <link rel="next" title="封装接口" href="../wrapper/contents.html"/>
-        <link rel="prev" title="启用日志文件" href="log_file.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Wrappers" href="../wrapper/contents.html" />
+    <link rel="prev" title="Enable log file" href="log_file.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,16 +85,16 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="contents.html">运行日志</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="log_file.html">启用日志文件</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">启用详细级别</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">Log</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="log_file.html">Enable log file</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Enabled detailed level</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -116,7 +107,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -124,9 +115,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -149,9 +141,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="contents.html">运行日志</a> &raquo;</li>
+          <li><a href="contents.html">Log</a> &raquo;</li>
         
-      <li>启用详细级别</li>
+      <li>Enabled detailed level</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -171,10 +163,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="log-verbose">
-<span id="id1"></span><h1>启用详细级别<a class="headerlink" href="#log-verbose" title="Permalink to this headline">¶</a></h1>
-<p>日志的通用配置，在头文件 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/include/mynteye/glog_init.h">glog_init.h</a> 里 。</p>
-<p>取消注释的 <code class="docutils literal notranslate"><span class="pre">FLAGS_v</span> <span class="pre">=</span> <span class="pre">2;</span></code> 重新编译，即可启用详细级别，指 <code class="docutils literal notranslate"><span class="pre">VLOG(n)</span></code> 打印的日志。</p>
-<p>关于如何使用日志库，即如何配置、打印等，请如下打开其文档进行了解：</p>
+<span id="id1"></span><h1>Enabled detailed level<a class="headerlink" href="#log-verbose" title="Permalink to this headline">¶</a></h1>
+<p>General configuration of log in the head of <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/include/mynteye/glog_init.h">glog_init.h</a> .</p>
+<p>Uncomment <code class="docutils literal notranslate"><span class="pre">FLAGS_v</span> <span class="pre">=</span> <span class="pre">2;</span></code> recompiled it and can enabled detailed levels, it refers printed log of <code class="docutils literal notranslate"><span class="pre">VLOG(n)</span></code></p>
+<p>With regard to how to use log library, That is how to setting and print it, please open its document and learn more:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./scripts/open.sh third_party/glog/doc/glog.html
 </pre></div>
 </div>
@@ -182,18 +174,16 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../wrapper/contents.html" class="btn btn-neutral float-right" title="封装接口" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../wrapper/contents.html" class="btn btn-neutral float-right" title="Wrappers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="log_file.html" class="btn btn-neutral" title="启用日志文件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="log_file.html" class="btn btn-neutral" title="Enable log file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -206,7 +196,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -224,7 +214,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -237,19 +228,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

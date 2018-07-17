@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>IMU 坐标系统 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>IMU coordinata system &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE" href="contents.html"/>
-        <link rel="next" title="MYNT® EYE SDK" href="../sdk/contents.html"/>
-        <link rel="prev" title="尺寸与结构" href="surface.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="MYNT® EYE SDK" href="../sdk/contents.html" />
+    <link rel="prev" title="Size and structure" href="surface.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -93,18 +84,18 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="intro.html">产品介绍</a></li>
-<li class="toctree-l2"><a class="reference internal" href="surface.html">尺寸与结构</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">IMU 坐标系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html">Product description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surface.html">Size and structure</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">IMU coordinata system</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -117,7 +108,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -125,9 +116,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -152,7 +144,7 @@
         
           <li><a href="contents.html">MYNT® EYE</a> &raquo;</li>
         
-      <li>IMU 坐标系统</li>
+      <li>IMU coordinata system</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,16 +164,14 @@
            <div itemprop="articleBody">
             
   <div class="section" id="imu">
-<span id="mynteye-imu-coord"></span><h1>IMU 坐标系统<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
-<p>IMU 坐标系统为右手系，坐标轴方向如下：</p>
+<span id="mynteye-imu-coord"></span><h1>IMU coordinata system<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
+<p>IMU coordinate system is right-handed,the axis directions are as follows:</p>
 <img alt="../../_images/mynteye_imu_coord.jpg" src="../../_images/mynteye_imu_coord.jpg" />
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -190,7 +180,7 @@
         <a href="../sdk/contents.html" class="btn btn-neutral float-right" title="MYNT® EYE SDK" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="surface.html" class="btn btn-neutral" title="尺寸与结构" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="surface.html" class="btn btn-neutral" title="Size and structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -203,7 +193,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -221,7 +211,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -234,19 +225,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

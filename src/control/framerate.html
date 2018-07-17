@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>设定图像帧率和 IMU 频率 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE 控制" href="contents.html"/>
-        <link rel="next" title="启用自动曝光及其调节" href="auto_exposure.html"/>
-        <link rel="prev" title="MYNT® EYE 控制" href="contents.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Enable auto exposure and its adjustment function" href="auto_exposure.html" />
+    <link rel="prev" title="MYNT® EYE Control" href="contents.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,18 +85,18 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 控制</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">设定图像帧率和 IMU 频率</a></li>
-<li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">启用自动曝光及其调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manual_exposure.html">启用手动曝光及其调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="infrared.html">启用 IR 及其调节</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Control</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Set the frame rate of image &amp; IMU frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">Enable auto exposure and its adjustment function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual_exposure.html">Enable manual exposure and its adjustment function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infrared.html">Enable IR and its adjustments function</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -118,7 +109,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -126,9 +117,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -151,9 +143,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="contents.html">MYNT® EYE 控制</a> &raquo;</li>
+          <li><a href="contents.html">MYNT® EYE Control</a> &raquo;</li>
         
-      <li>设定图像帧率和 IMU 频率</li>
+      <li>Set the frame rate of image &amp; IMU frequency</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -173,18 +165,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="imu">
-<span id="framerate"></span><h1>设定图像帧率和 IMU 频率<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
-<p>通过 API 的 <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> 函数，就可以设定当前打开设备的各类控制值。</p>
-<p>设定图像帧率和 IMU 频率，就是设定 <code class="docutils literal notranslate"><span class="pre">Option::FRAME_RATE</span></code> 和 <code class="docutils literal notranslate"><span class="pre">Option::IMU_FREQUENCY</span></code> 。</p>
+<span id="framerate"></span><h1>Set the frame rate of image &amp; IMU frequency<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function in the API, you can set various control values ​​for the current device.</p>
+<p>Set the frame rate of image &amp; IMU frequency, which is setting <code class="docutils literal notranslate"><span class="pre">Option::FRAME_RATE</span></code> and <code class="docutils literal notranslate"><span class="pre">Option::IMU_FREQUENCY</span></code></p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
 <ul class="last simple">
-<li>图像帧率和 IMU 频率必须同时设定才能生效。</li>
-<li>图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60 。</li>
-<li>IMU 频率有效值： 100, 200, 250, 333, 500 。</li>
+<li>The frame rate of image &amp; IMU frequency must be set at the same time to take effect.</li>
+<li>The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60</li>
+<li>The effective frequency of IMU: 100, 200, 250, 333, 500</li>
 </ul>
 </div>
-<p>参考代码片段：</p>
+<p>Reference Code:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
 <span class="c1">// Attention: must set FRAME_RATE and IMU_FREQUENCY together, otherwise won&#39;t</span>
@@ -200,7 +192,7 @@
           <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">IMU_FREQUENCY</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>参考运行结果，于 Linux 上 ：</p>
+<p>Reference running results on Linux:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_framerate
 I0513 <span class="m">14</span>:05:57.218222 <span class="m">31813</span> utils.cc:26<span class="o">]</span> Detecting MYNT EYE devices
 I0513 <span class="m">14</span>:05:57.899404 <span class="m">31813</span> utils.cc:33<span class="o">]</span> MYNT EYE devices:
@@ -213,24 +205,22 @@ I0513 <span class="m">14</span>:06:21.702388 <span class="m">31813</span> framer
 I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framerate.cc:87<span class="o">]</span> Imu count: <span class="m">11509</span>, hz: <span class="m">494</span>.348
 </pre></div>
 </div>
-<p>样例程序按 <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> 结束运行后，会输出计算得的图像帧率和 IMU 频率。</p>
-<p>完整代码样例，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/framerate.cc">framerate.cc</a> 。</p>
+<p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, it will output the calculated value of the frame rate of image &amp; IMU frequency</p>
+<p>For a complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/framerate.cc">framerate.cc</a></p>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="auto_exposure.html" class="btn btn-neutral float-right" title="启用自动曝光及其调节" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="auto_exposure.html" class="btn btn-neutral float-right" title="Enable auto exposure and its adjustment function" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="contents.html" class="btn btn-neutral" title="MYNT® EYE 控制" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="contents.html" class="btn btn-neutral" title="MYNT® EYE Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -243,7 +233,7 @@ I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framer
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -261,7 +251,8 @@ I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framer
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -274,19 +265,13 @@ I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framer
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

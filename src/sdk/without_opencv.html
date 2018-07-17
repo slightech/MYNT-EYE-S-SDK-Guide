@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>OpenCV 不依赖 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>OpenCV dependency &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE SDK" href="contents.html"/>
-        <link rel="next" title="从 1.x 换到 2.x" href="from_v1.html"/>
-        <link rel="prev" title="ROS 安装" href="install_ros.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="MYNT® EYE Firmware" href="../firmware/contents.html" />
+    <link rel="prev" title="ROS Installation" href="install_ros.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,21 +85,20 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE SDK</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="platform.html">支持平台</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS 安装 x</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS 安装</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">OpenCV 不依赖</a></li>
-<li class="toctree-l2"><a class="reference internal" href="from_v1.html">从 1.x 换到 2.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform.html">Supported platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">OpenCV dependency</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -121,7 +111,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -129,9 +119,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -156,7 +147,7 @@
         
           <li><a href="contents.html">MYNT® EYE SDK</a> &raquo;</li>
         
-      <li>OpenCV 不依赖</li>
+      <li>OpenCV dependency</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -176,34 +167,32 @@
            <div itemprop="articleBody">
             
   <div class="section" id="opencv">
-<span id="sdk-without-opencv"></span><h1>OpenCV 不依赖<a class="headerlink" href="#opencv" title="Permalink to this headline">¶</a></h1>
-<p>SDK 提供了三层接口，其 OpenCV 依赖情况如下：</p>
+<span id="sdk-without-opencv"></span><h1>OpenCV dependency<a class="headerlink" href="#opencv" title="Permalink to this headline">¶</a></h1>
+<p>SDK provides a three-tier interface with OpenCV dependencies:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">api</span></code>， 上层接口，依赖 OpenCV 。</li>
-<li><code class="docutils literal notranslate"><span class="pre">device</span></code>，中间层接口，不依赖 OpenCV 。</li>
-<li><code class="docutils literal notranslate"><span class="pre">uvc</span></code>，底层接口，不依赖 OpenCV 。</li>
+<li><code class="docutils literal notranslate"><span class="pre">api</span></code>,Upper interface, with OpenCV dependencies</li>
+<li><code class="docutils literal notranslate"><span class="pre">device</span></code>,Interlayer interface, without OpenCV dependencies</li>
+<li><code class="docutils literal notranslate"><span class="pre">uvc</span></code>,Bottom interface, without OpenCV dependencies</li>
 </ul>
-<p>如果不想使用 OpenCV ，你可编辑 <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/cmake/Option.cmake</span></code> 里的 <code class="docutils literal notranslate"><span class="pre">WITH_API</span></code> 选项，设为 <code class="docutils literal notranslate"><span class="pre">OFF</span></code> 就能关闭 <code class="docutils literal notranslate"><span class="pre">api</span></code> 层代码编译：</p>
+<p>If you don’t want to use OpenCV,edit <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/cmake/Option.cmake</span></code> and set <code class="docutils literal notranslate"><span class="pre">WITH_API</span></code> to <code class="docutils literal notranslate"><span class="pre">OFF``That</span> <span class="pre">will</span> <span class="pre">not</span> <span class="pre">compile</span> <span class="pre">``api</span></code>:</p>
 <div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">option</span><span class="p">(</span><span class="s">WITH_API</span> <span class="s2">&quot;Build with API layer, need OpenCV&quot;</span> <span class="s">ON</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">device</span></code> 层接口使用样例，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/device/camera.cc">device/camera.cc</a> 。</p>
+<p>Use samples for the interface <code class="docutils literal notranslate"><span class="pre">device</span></code>, please refer to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/device/camera.cc">device/camera.cc</a> .</p>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="from_v1.html" class="btn btn-neutral float-right" title="从 1.x 换到 2.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../firmware/contents.html" class="btn btn-neutral float-right" title="MYNT® EYE Firmware" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="install_ros.html" class="btn btn-neutral" title="ROS 安装" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="install_ros.html" class="btn btn-neutral" title="ROS Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -216,7 +205,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -234,7 +223,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -247,19 +237,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

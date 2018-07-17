@@ -225,6 +225,14 @@ MSYS2（提供 Linux 命令）
 
 教程样例，请阅读 :ref:`data` 和 :ref:`ctrl` 。
 
+.. tip::
+
+  所有编译出的样例程序 ``exe`` 都会有个相应的 ``bat`` 。 ``bat`` 会临时设定下系统环境变量，然后再运行 ``exe`` 。所以建议执行 ``bat`` 运行程序。
+
+  如果直接运行 ``exe`` 的话，可能会报 ``dll`` 找不到。说明你需要将 ``<sdk>\_install\bin`` ``%OPENCV_DIR%\bin`` 加入到系统环境变量 ``PATH`` 里。
+
+  OpenCV 如何设定环境变量，可见官方文档 `Set the OpenCV environment variable and add it to the systems path <https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html#tutorial_windows_install_path>`_ 。
+
 编译工具
 --------
 

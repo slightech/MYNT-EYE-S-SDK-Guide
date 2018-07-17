@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MYNT® EYE SDK 指导 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>MYNT® EYE SDK Guide &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,26 +24,18 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="#"/>
-        <link rel="next" title="MYNT® EYE" href="src/mynteye/contents.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MYNT® EYE" href="src/mynteye/contents.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -65,7 +57,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -92,12 +84,12 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="src/mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="src/sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src/firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src/data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src/control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src/log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src/wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src/analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="src/slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -110,7 +102,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="#">MYNT® EYE SDK Guide</a>
@@ -118,9 +110,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -143,7 +136,7 @@
     
       <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>MYNT® EYE SDK 指导</li>
+      <li>MYNT® EYE SDK Guide</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -163,72 +156,72 @@
            <div itemprop="articleBody">
             
   <div class="section" id="mynt-eye-sdk">
-<h1>MYNT® EYE SDK 指导<a class="headerlink" href="#mynt-eye-sdk" title="Permalink to this headline">¶</a></h1>
+<h1>MYNT® EYE SDK Guide<a class="headerlink" href="#mynt-eye-sdk" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="src/mynteye/contents.html">MYNT® EYE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/mynteye/intro.html">产品介绍</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/mynteye/surface.html">尺寸与结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/mynteye/imu_coord.html">IMU 坐标系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/mynteye/intro.html">Product description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/mynteye/surface.html">Size and structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/mynteye/imu_coord.html">IMU coordinata system</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/sdk/contents.html">MYNT® EYE SDK</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/platform.html">支持平台</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_ubuntu.html">Ubuntu 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_windows.html">Windows 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_macos.html">MacOS 安装 x</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_ros.html">ROS 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/without_opencv.html">OpenCV 不依赖</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/from_v1.html">从 1.x 换到 2.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sdk/platform.html">Supported platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_ubuntu.html">Ubuntu Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_windows.html">Windows Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_macos.html">MacOS Installation x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sdk/install_ros.html">ROS Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sdk/without_opencv.html">OpenCV dependency</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="src/firmware/contents.html">MYNT® EYE 固件</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/firmware/applicable.html">固件与 SDK 适配性</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/firmware/upgrade.html">固件如何进行升级</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/firmware/contents.html">MYNT® EYE Firmware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/firmware/applicable.html">Compatibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/firmware/upgrade.html">How to upgrade the firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/firmware/from_v1.html">Change SDK 1.x to 2.x</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="src/data/contents.html">MYNT® EYE 数据</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_device_info.html">获取设备信息</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_img_params.html">获取图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_imu_params.html">获取 IMU 标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_stereo.html">获取双目原始图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_stereo_rectified.html">获取双目纠正图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_disparity.html">获取视差图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_depth.html">获取深度图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_points.html">获取点云图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_imu.html">获取 IMU 数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_from_callbacks.html">从回调接口获取数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_with_plugin.html">使用插件获取数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/save_params.html">保存设备信息和参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/write_img_params.html">写入图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/write_imu_params.html">写入 IMU 标定参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/data/contents.html">MYNT® EYE Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_device_info.html">Get device information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_img_params.html">Get image calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_imu_params.html">Get IMU calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_stereo_rectified.html">Get stereo camera correction image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_disparity.html">Get disparity image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_points.html">Get point image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_imu.html">Get IMU data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_from_callbacks.html">Get data from callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/save_params.html">Save device infomation and parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/write_img_params.html">Write image parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/write_imu_params.html">Write IMU parameters</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="src/control/contents.html">MYNT® EYE 控制</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/control/framerate.html">设定图像帧率和 IMU 频率</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/control/auto_exposure.html">启用自动曝光及其调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/control/manual_exposure.html">启用手动曝光及其调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/control/infrared.html">启用 IR 及其调节</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/control/contents.html">MYNT® EYE Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/control/framerate.html">Set the frame rate of image &amp; IMU frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/control/auto_exposure.html">Enable auto exposure and its adjustment function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/control/manual_exposure.html">Enable manual exposure and its adjustment function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/control/infrared.html">Enable IR and its adjustments function</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="src/log/contents.html">运行日志</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/log/log_file.html">启用日志文件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/log/log_verbose.html">启用详细级别</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/log/contents.html">Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/log/log_file.html">Enable log file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/log/log_verbose.html">Enabled detailed level</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="src/wrapper/contents.html">封装接口</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/wrapper/ros.html">ROS 如何使用</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/wrapper/contents.html">Wrappers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/wrapper/ros.html">How to use ROS</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="src/analytics/contents.html">数据分析</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/analytics/dataset.html">录制数据集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_imu.html">分析 IMU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_stamp.html">分析时间戳</a></li>
+<li class="toctree-l1"><a class="reference internal" href="src/analytics/contents.html">Data Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src/analytics/dataset.html">Record data set</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_imu.html">Analyse IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_stamp.html">Analyse time stamp</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/slam/contents.html">SLAM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/slam/vins.html">VINS 如何整合 x</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/slam/maplab.html">Maplab 如何整合 x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/slam/vins.html">How to use in VINS x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/slam/maplab.html">How to use in Maplab x</a></li>
 </ul>
 </li>
 </ul>
@@ -237,9 +230,7 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -259,7 +250,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -277,7 +268,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -290,19 +282,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -20,7 +20,7 @@
   LOG(INFO) << "IMU type: " << api->GetInfo(Info::IMU_TYPE);
   LOG(INFO) << "Nominal baseline: " << api->GetInfo(Info::NOMINAL_BASELINE);
 
-参考运行结果，于 Linux 上 ：
+参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 

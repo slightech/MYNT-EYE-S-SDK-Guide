@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>获取深度图像 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Get a depth image &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE 数据" href="contents.html"/>
-        <link rel="next" title="获取点云图像" href="get_points.html"/>
-        <link rel="prev" title="获取视差图像" href="get_disparity.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Get point image" href="get_points.html" />
+    <link rel="prev" title="Get disparity image" href="get_disparity.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,28 +85,28 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 数据</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">获取设备信息</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_img_params.html">获取图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">获取 IMU 标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">获取双目原始图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">获取双目纠正图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">获取视差图像</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">获取深度图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_points.html">获取点云图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_imu.html">获取 IMU 数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">从回调接口获取数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">使用插件获取数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="save_params.html">保存设备信息和参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">写入图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">写入 IMU 标定参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Data</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -128,7 +119,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -136,9 +127,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -161,9 +153,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="contents.html">MYNT® EYE 数据</a> &raquo;</li>
+          <li><a href="contents.html">MYNT® EYE Data</a> &raquo;</li>
         
-      <li>获取深度图像</li>
+      <li>Get a depth image</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,10 +175,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="get-depth">
-<span id="id1"></span><h1>获取深度图像<a class="headerlink" href="#get-depth" title="Permalink to this headline">¶</a></h1>
-<p>深度图像，属于上层合成数据。需要事先 <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> 启用，然后 <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code> 获取。另外，判断不为空后再使用。</p>
-<p>详细流程说明，请参阅 <a class="reference internal" href="get_stereo.html#get-stereo"><span class="std std-ref">获取双目原始图像</span></a> <a class="reference internal" href="get_stereo_rectified.html#get-stereo-rectified"><span class="std std-ref">获取双目纠正图像</span></a> 。</p>
-<p>参考代码片段：</p>
+<span id="id1"></span><h1>Get a depth image<a class="headerlink" href="#get-depth" title="Permalink to this headline">¶</a></h1>
+<p>Depth images is synthetic data which belong to upper layer. You need to start the <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> beforehand, then you can get it through <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>. In addition, it should be check not empty before use.</p>
+<p>Please see <a class="reference internal" href="get_stereo.html#get-stereo"><span class="std std-ref">Get binocular original image</span></a> <a class="reference internal" href="get_stereo_rectified.html#get-stereo-rectified"><span class="std std-ref">Get stereo camera correction image</span></a> for detail process description.</p>
+<p>In addition, it is recommended to use plugin to calculate depth: depth map will be better and frame rate is higher.Please see <a class="reference internal" href="get_with_plugin.html#get-with-plugin"><span class="std std-ref">Using the plugin to get the data</span></a> for detail.</p>
+<p>Reference code snippet:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">EnableStreamData</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">DEPTH</span><span class="p">);</span>
@@ -220,28 +213,26 @@
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">Stop</span><span class="p">(</span><span class="n">Source</span><span class="o">::</span><span class="n">VIDEO_STREAMING</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> 就会结束程序。</p>
-<p>完整代码样例，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_depth.cc">get_depth.cc</a> 。</p>
+<p>OpenCV is used to display image above. Select the display window, press <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> to exit program.</p>
+<p>For complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_depth.cc">get_depth.cc</a> .</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">预览深度图某区域的值，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc">get_depth_with_region.cc</a> 。</p>
+<p class="last">Preview the value of an area in the depth image, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc">get_depth_with_region.cc</a> .</p>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="get_points.html" class="btn btn-neutral float-right" title="获取点云图像" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="get_points.html" class="btn btn-neutral float-right" title="Get point image" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="get_disparity.html" class="btn btn-neutral" title="获取视差图像" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="get_disparity.html" class="btn btn-neutral" title="Get disparity image" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -254,7 +245,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -272,7 +263,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -285,19 +277,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

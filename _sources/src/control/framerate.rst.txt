@@ -31,7 +31,7 @@
   LOG(INFO) << "Set IMU_FREQUENCY to "
             << api->GetOptionValue(Option::IMU_FREQUENCY);
 
-参考运行结果，于 Linux 上 ：
+参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 

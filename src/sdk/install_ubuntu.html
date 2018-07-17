@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ubuntu 安装 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Ubuntu Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE SDK" href="contents.html"/>
-        <link rel="next" title="Windows 安装" href="install_windows.html"/>
-        <link rel="prev" title="支持平台" href="platform.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Windows Installation" href="install_windows.html" />
+    <link rel="prev" title="Supported platforms" href="platform.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,21 +85,20 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE SDK</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="platform.html">支持平台</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS 安装 x</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV 不依赖</a></li>
-<li class="toctree-l2"><a class="reference internal" href="from_v1.html">从 1.x 换到 2.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform.html">Supported platforms</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV dependency</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -121,7 +111,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -129,9 +119,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -156,7 +147,7 @@
         
           <li><a href="contents.html">MYNT® EYE SDK</a> &raquo;</li>
         
-      <li>Ubuntu 安装</li>
+      <li>Ubuntu Installation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -176,7 +167,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ubuntu">
-<span id="sdk-install-ubuntu"></span><h1>Ubuntu 安装<a class="headerlink" href="#ubuntu" title="Permalink to this headline">¶</a></h1>
+<span id="sdk-install-ubuntu"></span><h1>Ubuntu Installation<a class="headerlink" href="#ubuntu" title="Permalink to this headline">¶</a></h1>
 <table border="1" class="docutils">
 <colgroup>
 <col width="50%" />
@@ -195,7 +186,7 @@
 </table>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>如果是其他 Linux 发行版，不是用的 <code class="docutils literal notranslate"><span class="pre">apt-get</span></code> 包管理工具，那你准备依赖时不能 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">init</span></code> 自动安装，得自己手动安装了。必要安装项如下：</p>
+<p>If you used any other Linux distributions that without apt-get package manager, you’d better install required packages manaully instead of using “make init”.</p>
 <table border="1" class="last docutils">
 <colgroup>
 <col width="16%" />
@@ -220,13 +211,14 @@
 </table>
 </div>
 <div class="section" id="id1">
-<h2>获取代码<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/slightech/MYNT-EYE-SDK-2.git
+<h2>Getting Source Code<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install git
+git clone https://github.com/slightech/MYNT-EYE-SDK-2.git
 </pre></div>
 </div>
 </div>
 <div class="section" id="id2">
-<h2>准备依赖<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>Required Packages<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
 make init
 </pre></div>
@@ -236,24 +228,28 @@ make init
 </ul>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>OpenCV 如何编译安装，请见官方文档 <a class="reference external" href="https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html">Installation in Linux</a> 。或参考如下命令：</p>
-<div class="last highlight-bat notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/opencv/opencv.git
-$ cd opencv/
+<p>To build and install Opencv, Please refer to <a class="reference external" href="https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html">Installation in Linux</a> . Or reference below command:</p>
+<div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>compiler<span class="o">]</span> sudo apt-get install build-essential
+<span class="o">[</span>required<span class="o">]</span> sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+<span class="o">[</span>optional<span class="o">]</span> sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+
+$ git clone https://github.com/opencv/opencv.git
+$ <span class="nb">cd</span> opencv/
 $ git checkout tags/3.4.1
 
 $ mkdir _build
-$ cd _build/
+$ <span class="nb">cd</span> _build/
 
-$ cmake \
--DCMAKE_BUILD_TYPE=RELEASE \
--DCMAKE_INSTALL_PREFIX=/usr/local \
-\
--DWITH_CUDA=OFF \
-\
--DBUILD_DOCS=OFF \
--DBUILD_EXAMPLES=OFF \
--DBUILD_TESTS=OFF \
--DBUILD_PERF_TESTS=OFF \
+$ cmake <span class="se">\</span>
+-DCMAKE_BUILD_TYPE<span class="o">=</span>RELEASE <span class="se">\</span>
+-DCMAKE_INSTALL_PREFIX<span class="o">=</span>/usr/local <span class="se">\</span>
+<span class="se">\</span>
+-DWITH_CUDA<span class="o">=</span>OFF <span class="se">\</span>
+<span class="se">\</span>
+-DBUILD_DOCS<span class="o">=</span>OFF <span class="se">\</span>
+-DBUILD_EXAMPLES<span class="o">=</span>OFF <span class="se">\</span>
+-DBUILD_TESTS<span class="o">=</span>OFF <span class="se">\</span>
+-DBUILD_PERF_TESTS<span class="o">=</span>OFF <span class="se">\</span>
 ..
 
 $ make -j4
@@ -263,68 +259,66 @@ $ sudo make install
 </div>
 </div>
 <div class="section" id="id3">
-<h2>编译代码<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Building Code<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径：</p>
+<p>If opencv is installed in custom directory or you want to specify version, you should set the path before building:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># OpenCV_DIR 为 OpenCVConfig.cmake 所在目录</span>
 <span class="nb">export</span> <span class="nv">OpenCV_DIR</span><span class="o">=</span>~/opencv
 </pre></div>
 </div>
-<p class="last">不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV 不依赖</span></a> 。</p>
+<p class="last">Otherwise, CMake will prompt cannot find Opencv. If you need sdk without OpenCV, please read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV dependency</span></a> .</p>
 </div>
-<p>编译并安装：</p>
+<p>Build and install:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
 make install
 </pre></div>
 </div>
-<p>最终，默认会安装在 <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/_install</span></code> 目录。</p>
+<p>Finally, sdk will install in <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/_install</span></code> by default.</p>
 </div>
 <div class="section" id="id4">
-<h2>编译样例<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>Building samples<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
 make samples
 </pre></div>
 </div>
-<p>运行样例：</p>
+<p>Run samples:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./samples/_output/bin/api/camera_a
 </pre></div>
 </div>
-<p>教程样例，请阅读 <a class="reference internal" href="../data/contents.html#data"><span class="std std-ref">MYNT® EYE 数据</span></a> 和 <a class="reference internal" href="../control/contents.html#ctrl"><span class="std std-ref">MYNT® EYE 控制</span></a> 。</p>
+<p>Tutorial samples, please read <a class="reference internal" href="../data/contents.html#data"><span class="std std-ref">MYNT® EYE Data</span></a> and <a class="reference internal" href="../control/contents.html#ctrl"><span class="std std-ref">MYNT® EYE Control</span></a> .</p>
 </div>
 <div class="section" id="id5">
-<h2>编译工具<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>Building tools<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
 make tools
 </pre></div>
 </div>
-<p>安装脚本依赖：</p>
+<p>Install requirement:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;/tools/
 sudo pip install -r requirements.txt
 </pre></div>
 </div>
-<p>工具和脚本的使用，后续会有介绍。</p>
+<p>the usage of tools and scripts will be introduced later.</p>
 </div>
 <div class="section" id="id6">
-<h2>结语<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>工程要引入 SDK 的话，CMake 可参考 <code class="docutils literal notranslate"><span class="pre">samples/CMakeLists.txt</span></code> 里的配置。不然，就是直接引入安装目录里的头文件和动态库。</p>
+<h2>Conclusion<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>If your project will use SDK, you can reference the settings in <code class="docutils literal notranslate"><span class="pre">samples/CMakeLists.txt</span></code> for CMake. Or just import the head file and dynamic library in installation directory.</p>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="install_windows.html" class="btn btn-neutral float-right" title="Windows 安装" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="install_windows.html" class="btn btn-neutral float-right" title="Windows Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="platform.html" class="btn btn-neutral" title="支持平台" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="platform.html" class="btn btn-neutral" title="Supported platforms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -337,7 +331,7 @@ sudo pip install -r requirements.txt
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -355,7 +349,8 @@ sudo pip install -r requirements.txt
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -368,19 +363,13 @@ sudo pip install -r requirements.txt
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

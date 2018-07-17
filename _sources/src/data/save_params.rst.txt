@@ -14,7 +14,7 @@ SDK 提供了保存信息和参数的工具 ``save_all_infos`` 。工具详情�
   # Windows
   .\tools\_output\bin\writer\save_all_infos.bat
 
-参考运行结果，于 Linux 上 ：
+参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 

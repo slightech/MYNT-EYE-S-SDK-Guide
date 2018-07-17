@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ROS 安装 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>ROS Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE SDK" href="contents.html"/>
-        <link rel="next" title="OpenCV 不依赖" href="without_opencv.html"/>
-        <link rel="prev" title="MacOS 安装 x" href="install_macos.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="OpenCV dependency" href="without_opencv.html" />
+    <link rel="prev" title="MacOS Installation x" href="install_macos.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,21 +85,20 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE SDK</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="platform.html">支持平台</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS 安装 x</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ROS 安装</a></li>
-<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV 不依赖</a></li>
-<li class="toctree-l2"><a class="reference internal" href="from_v1.html">从 1.x 换到 2.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform.html">Supported platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ROS Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV dependency</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -121,7 +111,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -129,9 +119,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -156,7 +147,7 @@
         
           <li><a href="contents.html">MYNT® EYE SDK</a> &raquo;</li>
         
-      <li>ROS 安装</li>
+      <li>ROS Installation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -176,7 +167,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="ros">
-<span id="sdk-install-ros"></span><h1>ROS 安装<a class="headerlink" href="#ros" title="Permalink to this headline">¶</a></h1>
+<span id="sdk-install-ros"></span><h1>ROS Installation<a class="headerlink" href="#ros" title="Permalink to this headline">¶</a></h1>
 <table border="1" class="docutils">
 <colgroup>
 <col width="50%" />
@@ -194,7 +185,7 @@
 </tbody>
 </table>
 <div class="section" id="id1">
-<h2>环境准备<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>Prepare Environment<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference external" href="http://www.ros.org/">ROS</a></li>
 </ul>
@@ -214,27 +205,27 @@ chmod <span class="m">755</span> ./ros_install.sh <span class="o">&amp;&amp;</sp
 </div>
 </div>
 <div class="section" id="id3">
-<h2>编译代码<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Compiled<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
 make ros
 </pre></div>
 </div>
 </div>
 <div class="section" id="id4">
-<h2>运行节点<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>Running node<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> wrappers/ros/devel/setup.bash
 roslaunch mynt_eye_ros_wrapper mynteye.launch
 </pre></div>
 </div>
-<p>运行节点，同时打开 RViz 预览：</p>
+<p>Run the node，and preview by RViz:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> wrappers/ros/devel/setup.bash
 roslaunch mynt_eye_ros_wrapper display.launch
 </pre></div>
 </div>
 </div>
 <div class="section" id="id5">
-<h2>测试服务<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>运行节点，有提供获取设备信息服务，如下测试：</p>
+<h2>Testing Services<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Run the node as follows, make sure that device information service is same:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">source</span> wrappers/ros/devel/setup.bash
 $ rosrun mynt_eye_ros_wrapper get_device_info.py
 LENS_TYPE: <span class="m">0000</span>
@@ -249,47 +240,45 @@ DEVICE_NAME: MYNT-EYE-S1000
 </div>
 </div>
 <div class="section" id="ros-indigo">
-<h2>常见问题 - ROS Indigo<a class="headerlink" href="#ros-indigo" title="Permalink to this headline">¶</a></h2>
+<h2>Common issues - ROS Indigo<a class="headerlink" href="#ros-indigo" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="make-ros-libopencv">
-<h3><code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> 时 <code class="docutils literal notranslate"><span class="pre">libopencv</span></code> 找不到<a class="headerlink" href="#make-ros-libopencv" title="Permalink to this headline">¶</a></h3>
+<h3>Cann’t find``libopencv`` while <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code><a class="headerlink" href="#make-ros-libopencv" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make[3]: *** No rule to make target `/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8&#39;, needed by `/home/john/Workspace/mynt-eye-sdk-2/wrappers/ros/devel/lib/libmynteye_wrapper.so&#39;.  Stop.
 </pre></div>
 </div>
-<p><strong>Solution 1)</strong> 安装 OpenCV 2:</p>
+<p><strong>Solution 1)</strong> Install OpenCV 2:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get update
 sudo apt-get install libcv-dev
 </pre></div>
 </div>
-<p><strong>Solution 2)</strong> 安装 OpenCV 3 并重编 <code class="docutils literal notranslate"><span class="pre">cv_bridge</span></code>:</p>
+<p><strong>Solution 2)</strong> Install OpenCV 3  &amp; re-compiled <code class="docutils literal notranslate"><span class="pre">cv_bridge</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install ros-indigo-opencv3
 
 git clone https://github.com/ros-perception/vision_opencv.git
 mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
 </pre></div>
 </div>
-<p>然后，重新 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> 。</p>
+<p>Than run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> again</p>
 </div>
 </div>
 <div class="section" id="id6">
-<h2>结语<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>关于如何使用，请阅读 <a class="reference internal" href="../wrapper/ros.html#wrapper-ros"><span class="std std-ref">ROS 如何使用</span></a> 。</p>
+<h2>Conclusion<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>About more details, check the <a class="reference internal" href="../wrapper/ros.html#wrapper-ros"><span class="std std-ref">How to use ROS</span></a> .</p>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="without_opencv.html" class="btn btn-neutral float-right" title="OpenCV 不依赖" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="without_opencv.html" class="btn btn-neutral float-right" title="OpenCV dependency" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="install_macos.html" class="btn btn-neutral" title="MacOS 安装 x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="install_macos.html" class="btn btn-neutral" title="MacOS Installation x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -302,7 +291,7 @@ mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -320,7 +309,8 @@ mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -333,19 +323,13 @@ mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

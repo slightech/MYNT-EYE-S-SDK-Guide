@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>启用手动曝光及其调节 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Enable manual exposure and its adjustment function &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE 控制" href="contents.html"/>
-        <link rel="next" title="启用 IR 及其调节" href="infrared.html"/>
-        <link rel="prev" title="启用自动曝光及其调节" href="auto_exposure.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Enable IR and its adjustments function" href="infrared.html" />
+    <link rel="prev" title="Enable auto exposure and its adjustment function" href="auto_exposure.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,18 +85,18 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 控制</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="framerate.html">设定图像帧率和 IMU 频率</a></li>
-<li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">启用自动曝光及其调节</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">启用手动曝光及其调节</a></li>
-<li class="toctree-l2"><a class="reference internal" href="infrared.html">启用 IR 及其调节</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Control</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="framerate.html">Set the frame rate of image &amp; IMU frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">Enable auto exposure and its adjustment function</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Enable manual exposure and its adjustment function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infrared.html">Enable IR and its adjustments function</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -118,7 +109,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -126,9 +117,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -151,9 +143,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="contents.html">MYNT® EYE 控制</a> &raquo;</li>
+          <li><a href="contents.html">MYNT® EYE Control</a> &raquo;</li>
         
-      <li>启用手动曝光及其调节</li>
+      <li>Enable manual exposure and its adjustment function</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -173,15 +165,15 @@
            <div itemprop="articleBody">
             
   <div class="section" id="manual-exposure">
-<span id="id1"></span><h1>启用手动曝光及其调节<a class="headerlink" href="#manual-exposure" title="Permalink to this headline">¶</a></h1>
-<p>通过 API 的 <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> 函数，就可以设定当前打开设备的各类控制值。</p>
-<p>启用手动曝光，就是设定 <code class="docutils literal notranslate"><span class="pre">Option::EXPOSURE_MODE</span></code> 为 <code class="docutils literal notranslate"><span class="pre">1</span></code> 。手动曝光时，可调节的设定有：</p>
+<span id="id1"></span><h1>Enable manual exposure and its adjustment function<a class="headerlink" href="#manual-exposure" title="Permalink to this headline">¶</a></h1>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function of the API, you can set various control values ​​for the current open device.</p>
+<p>Enabling manual exposure is setting <code class="docutils literal notranslate"><span class="pre">Option::EXPOSURE_MODE</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>. During manual exposure, the settings available for adjustment are:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">Option::GAIN</span></code> 增益。</li>
-<li><code class="docutils literal notranslate"><span class="pre">Option::BRIGHTNESS</span></code> 亮度，或者说曝光时间。</li>
-<li><code class="docutils literal notranslate"><span class="pre">Option::CONTRAST</span></code> 对比度，或者说黑电平校准。</li>
+<li><code class="docutils literal notranslate"><span class="pre">Option::GAIN</span></code> Gain.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Option::BRIGHTNESS</span></code> Brightness（Exposure time）</li>
+<li><code class="docutils literal notranslate"><span class="pre">Option::CONTRAST</span></code> Contrast (Black level calibration)</li>
 </ul>
-<p>参考代码片段：</p>
+<p>Reference Code:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
 <span class="c1">// manual-exposure: 1</span>
@@ -200,7 +192,7 @@
 <span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set CONTRAST to &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">CONTRAST</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>参考运行结果，于 Linux 上 ：</p>
+<p>Reference running results on Linux:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_manual_exposure
 I0513 <span class="m">14</span>:09:17.104431 <span class="m">31908</span> utils.cc:26<span class="o">]</span> Detecting MYNT EYE devices
 I0513 <span class="m">14</span>:09:17.501519 <span class="m">31908</span> utils.cc:33<span class="o">]</span> MYNT EYE devices:
@@ -212,24 +204,22 @@ I0513 <span class="m">14</span>:09:17.552958 <span class="m">31908</span> manual
 I0513 <span class="m">14</span>:09:17.552963 <span class="m">31908</span> manual_exposure.cc:40<span class="o">]</span> Set CONTRAST to <span class="m">127</span>
 </pre></div>
 </div>
-<p>样例程序会显示图像，左上角有真实曝光时间，单位毫秒。</p>
-<p>完整代码样例，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc">manual_exposure.cc</a> 。</p>
+<p>The sample program displays the image with a real exposure time (millisecond) in the upper left corner</p>
+<p>For complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc">manual_exposure.cc</a></p>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="infrared.html" class="btn btn-neutral float-right" title="启用 IR 及其调节" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="infrared.html" class="btn btn-neutral float-right" title="Enable IR and its adjustments function" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="auto_exposure.html" class="btn btn-neutral" title="启用自动曝光及其调节" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="auto_exposure.html" class="btn btn-neutral" title="Enable auto exposure and its adjustment function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -242,7 +232,7 @@ I0513 <span class="m">14</span>:09:17.552963 <span class="m">31908</span> manual
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -260,7 +250,8 @@ I0513 <span class="m">14</span>:09:17.552963 <span class="m">31908</span> manual
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -273,19 +264,13 @@ I0513 <span class="m">14</span>:09:17.552963 <span class="m">31908</span> manual
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

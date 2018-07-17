@@ -34,7 +34,7 @@
   LOG(INFO) << "Set DESIRED_BRIGHTNESS to "
             << api->GetOptionValue(Option::DESIRED_BRIGHTNESS);
 
-参考运行结果，于 Linux 上 ：
+参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 

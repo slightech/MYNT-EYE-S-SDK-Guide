@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>使用插件获取数据 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Using the plugin to get the data &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE 数据" href="contents.html"/>
-        <link rel="next" title="保存设备信息和参数" href="save_params.html"/>
-        <link rel="prev" title="从回调接口获取数据" href="get_from_callbacks.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Save device infomation and parameters" href="save_params.html" />
+    <link rel="prev" title="Get data from callbacks" href="get_from_callbacks.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,28 +85,28 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 数据</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">获取设备信息</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_img_params.html">获取图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">获取 IMU 标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">获取双目原始图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">获取双目纠正图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">获取视差图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_depth.html">获取深度图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_points.html">获取点云图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_imu.html">获取 IMU 数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">从回调接口获取数据</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">使用插件获取数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="save_params.html">保存设备信息和参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">写入图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">写入 IMU 标定参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Data</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -128,7 +119,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -136,9 +127,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -161,9 +153,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="contents.html">MYNT® EYE 数据</a> &raquo;</li>
+          <li><a href="contents.html">MYNT® EYE Data</a> &raquo;</li>
         
-      <li>使用插件获取数据</li>
+      <li>Using the plugin to get the data</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,47 +175,48 @@
            <div itemprop="articleBody">
             
   <div class="section" id="get-with-plugin">
-<span id="id1"></span><h1>使用插件获取数据<a class="headerlink" href="#get-with-plugin" title="Permalink to this headline">¶</a></h1>
-<p>API 提供了 <code class="docutils literal notranslate"><span class="pre">EnablePlugin()</span></code> 函数，以启用某路径下的插件。</p>
-<p>官方目前提供了些计算双目视差的插件，在 <a class="reference external" href="https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f">Google Drive</a> 或 <a class="reference external" href="https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ">百度网盘</a> 的 <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> 目录内。</p>
+<span id="id1"></span><h1>Using the plugin to get the data<a class="headerlink" href="#get-with-plugin" title="Permalink to this headline">¶</a></h1>
+<p>API provides a <code class="docutils literal notranslate"><span class="pre">EnablePlugin</span> <span class="pre">()</span></code> function to enable plug-ins under a path.</p>
+<p>Now officials have provided some plug-ins for calculating binocular parallax, in <a class="reference external" href="http://doc.myntai.com/mynteye/s/download">MYNTEYE_BOX</a> location within the <code class="docutils literal notranslate"><span class="pre">Plugins</span></code> directory.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Plugins/
 ├─linux-x86_64/
 │  ├─libplugin_b_ocl1.2_opencv3.4.0.so
 │  ├─libplugin_g_cuda9.1_opencv2.4.13.5.so
 │  ├─libplugin_g_cuda9.1_opencv3.3.1.so
 │  └─libplugin_g_cuda9.1_opencv3.4.0.so
+├─tegra-armv8/
 └─win-x86_64/
 </pre></div>
 </div>
 <ul class="simple">
-<li>目录 <code class="docutils literal notranslate"><span class="pre">linux-x86_64</span></code> 表明了系统和架构。<ul>
-<li>可从系统信息或 <code class="docutils literal notranslate"><span class="pre">uname</span> <span class="pre">-a</span></code> 得知你的 CPU 架构。</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">linux-x86_64</span></code> directory shows the system and architecture.<ul>
+<li>You can find your CPU architecture from system information or “uname -a”.</li>
 </ul>
 </li>
-<li>库名 <code class="docutils literal notranslate"><span class="pre">libplugin_*</span></code> 表明了插件标识和第三方依赖。<ul>
-<li><code class="docutils literal notranslate"><span class="pre">b</span></code> <code class="docutils literal notranslate"><span class="pre">g</span></code> 是插件标识，说明用了不同算法。</li>
-<li><code class="docutils literal notranslate"><span class="pre">ocl1.2</span></code> 表明依赖了 <code class="docutils literal notranslate"><span class="pre">OpenCL</span> <span class="pre">1.2</span></code> ，如果存在。</li>
-<li><code class="docutils literal notranslate"><span class="pre">cuda9.1</span></code> 表明依赖了 <code class="docutils literal notranslate"><span class="pre">CUDA</span> <span class="pre">9.1</span></code> ，如果存在。</li>
-<li><code class="docutils literal notranslate"><span class="pre">opencv3.4.0</span></code> 表明依赖了 <code class="docutils literal notranslate"><span class="pre">OpenCV</span> <span class="pre">3.4.0</span></code> ，如果存在。</li>
-<li><code class="docutils literal notranslate"><span class="pre">mynteye2.0.0</span></code> 表明依赖了 <code class="docutils literal notranslate"><span class="pre">MYNT</span> <span class="pre">EYE</span> <span class="pre">SDK</span> <span class="pre">2.0.0</span></code> ，如果存在。</li>
+<li>The library name <code class="docutils literal notranslate"><span class="pre">libplugin_*</span></code> shows the plug-in identity and the third party dependency.<ul>
+<li><code class="docutils literal notranslate"><span class="pre">b</span></code> <code class="docutils literal notranslate"><span class="pre">g</span></code> is a plugin identifier, indicating that different algorithms are used.</li>
+<li><code class="docutils literal notranslate"><span class="pre">ocl1.2</span></code> shows it dependence on <code class="docutils literal notranslate"><span class="pre">OpenCL</span> <span class="pre">1.2</span></code> if it exists.</li>
+<li><code class="docutils literal notranslate"><span class="pre">cuda9.1</span></code> shows it dependence on <code class="docutils literal notranslate"><span class="pre">CUDA</span> <span class="pre">9.1</span></code>,if it exists.</li>
+<li><code class="docutils literal notranslate"><span class="pre">opencv3.4.0</span></code> shows it dependence on <code class="docutils literal notranslate"><span class="pre">OpenCV</span> <span class="pre">3.4.0</span></code>,if it exists.</li>
+<li><code class="docutils literal notranslate"><span class="pre">mynteye2.0.0</span></code> shows it dependency on <code class="docutils literal notranslate"><span class="pre">MYNT</span> <span class="pre">EYE</span> <span class="pre">SDK</span> <span class="pre">2.0.0</span></code>,if it exists.</li>
 </ul>
 </li>
 </ul>
-<p>首先，根据具体情况，选择你想测试使用的插件。如果依赖了第三方，那么请安装一致的版本。</p>
-<p>然后，参考如下代码启用插件：</p>
+<p>First, select the plug-ins that you are going to use for testing according to the situation. If you rely on third parties, please install a consistent version.</p>
+<p>Then, enable the plug-in with the following code:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">EnablePlugin</span><span class="p">(</span><span class="s">&quot;plugins/linux-x86_64/libplugin_g_cuda9.1_opencv3.4.0.so&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>路径可以是绝对路径，也可以是相对路径（相对于当前工作目录）。</p>
-<p>最终，和之前一样调用 API 获取数据就行了。</p>
+<p>The path can be an absolute path or a relative path (relative to the current working directory).</p>
+<p>Finally, just call the API to get the data as before.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>如果没有启用插件的话， <code class="docutils literal notranslate"><span class="pre">api-&gt;Start(Source::VIDEO_STREAMING);</span></code> 时会自动在 <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/plugins/&lt;platform&gt;</span></code> 目录里找合适的插件去加载。</p>
-<p class="last">换句话说，可以把当前平台的插件目录整个搬进 <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/plugins</span></code> 目录内。安装好对应的 <code class="docutils literal notranslate"><span class="pre">CUDA</span></code> <code class="docutils literal notranslate"><span class="pre">OpenCV</span></code> 等插件依赖后重编译，此后运行 <code class="docutils literal notranslate"><span class="pre">API</span></code> 层接口程序，就会自动加载官方插件了。</p>
+<p>If the plugin is not enabled, <code class="docutils literal notranslate"><span class="pre">api-&gt;Start(Source::VIDEO_STREAMING);</span></code> will automatically find the appropriate plug-in in the “”<code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/plugins/&lt;platform&gt;</span></code> directory to load.</p>
+<p class="last">In other words, you can move the plug-in directory of the current platform into the <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">SDK</span> <span class="pre">&gt;</span> <span class="pre">/</span> <span class="pre">plugins</span></code> directory. Install the corresponding `` CUDA `` `` OpenCV `` Recompiling after plug-in dependency, then run `` API `` layer interface program, the official plug-in will be automatically loaded.</p>
 </div>
-<p>运行前，请执行如下命令，以确保能搜索到插件的依赖库：</p>
+<p>Before running, please execute the following commands to ensure that you can search the plug-in’s dependency Library:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Linux</span>
 <span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/lib:<span class="nv">$LD_LIBRARY_PATH</span>
 <span class="c1"># /usr/local/lib 指依赖库所在路径</span>
@@ -237,7 +230,7 @@
 <span class="c1"># 或者，添加进系统环境变量 Path 里。</span>
 </pre></div>
 </div>
-<p>此外，可执行如下命令，检查是否能搜索到插件的依赖库：</p>
+<p>In addition, the following command can be executed to check whether the dependency Library of the plug-in can be searched:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Linux</span>
 ldd *.so
 <span class="c1"># *.so 指具体插件路径</span>
@@ -250,17 +243,17 @@ otool -L *.dylib
 <span class="c1"># 请下载如 Dependency Walker ，打开 DLL 。</span>
 </pre></div>
 </div>
-<p>如果找不到插件的依赖库，加载时将会报错 “Open plugin failed” 。</p>
-<p>完整代码样例，请见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_with_plugin.cc">get_with_plugin.cc</a> 。</p>
+<p>If the plugin’s dependent library is not found, it will report an error “Open plugin failed” when loading.</p>
+<p>Complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_with_plugin.cc">get_with_plugin.cc</a> .</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>Linux 上也可以把依赖库路径加入系统环境，编译出的程序就可以直接运行了（不需要于终端里 <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">LD_LIBRARY_PATH</span></code> 再运行）。</p>
+<p>Linux can also add a dependency library path to the system environment,so that the compiled program can run directly. (does not require <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">LD_LIBRARY_PATH</span></code> in the terminal then run again).</p>
 <ul class="simple">
-<li>新建 <code class="docutils literal notranslate"><span class="pre">/etc/ld.so.conf.d/libmynteye.conf</span></code> 文件，写入依赖库路径。</li>
-<li>终端里执行 <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">/sbin/ldconfig</span></code> 命令，刷新缓存。</li>
+<li>Create a <code class="docutils literal notranslate"><span class="pre">/etc/ld.so.conf.d/libmynteye.conf</span></code> file and write the dependent library path.</li>
+<li>Execute the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">/sbin/ldconfig</span></code> command in the terminal and refresh the cache.</li>
 </ul>
-<div class="literal-block-wrapper last docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">e.g. libmynteye.conf</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="literal-block-wrapper last docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">e.g. libmynteye.conf</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># libmynteye configuration
 #
 # 1) Copy this file to: /etc/ld.so.conf.d/libmynteye.conf
@@ -276,18 +269,16 @@ $HOME/opencv-3.4.1/lib
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="save_params.html" class="btn btn-neutral float-right" title="保存设备信息和参数" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="save_params.html" class="btn btn-neutral float-right" title="Save device infomation and parameters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="get_from_callbacks.html" class="btn btn-neutral" title="从回调接口获取数据" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="get_from_callbacks.html" class="btn btn-neutral" title="Get data from callbacks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -300,7 +291,7 @@ $HOME/opencv-3.4.1/lib
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -318,7 +309,8 @@ $HOME/opencv-3.4.1/lib
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -331,19 +323,13 @@ $HOME/opencv-3.4.1/lib
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MYNT® EYE 固件 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>MYNT® EYE Firmware &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,27 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="next" title="固件与 SDK 适配性" href="applicable.html"/>
-        <link rel="prev" title="从 1.x 换到 2.x" href="../sdk/from_v1.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Compatibility" href="applicable.html" />
+    <link rel="prev" title="OpenCV dependency" href="../sdk/without_opencv.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -66,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -93,16 +85,17 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MYNT® EYE 固件</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="applicable.html">固件与 SDK 适配性</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html">固件如何进行升级</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MYNT® EYE Firmware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="applicable.html">Compatibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html">How to upgrade the firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="from_v1.html">Change SDK 1.x to 2.x</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE 数据</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -115,7 +108,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -123,9 +116,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -148,7 +142,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>MYNT® EYE 固件</li>
+      <li>MYNT® EYE Firmware</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -168,34 +162,33 @@
            <div itemprop="articleBody">
             
   <div class="section" id="mynt-eye">
-<span id="firmware"></span><h1>MYNT® EYE 固件<a class="headerlink" href="#mynt-eye" title="Permalink to this headline">¶</a></h1>
+<span id="firmware"></span><h1>MYNT® EYE Firmware<a class="headerlink" href="#mynt-eye" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="applicable.html">固件与 SDK 适配性</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upgrade.html">固件如何进行升级</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id3">下载准备</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id4">安装程序</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id5">升级固件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="applicable.html">Compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upgrade.html">How to upgrade the firmware</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id2">Download preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html#mynt-eye-tool">Install MYNT EYE TOOL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id3">Update Firmware</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="from_v1.html">Change SDK 1.x to 2.x</a></li>
 </ul>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="applicable.html" class="btn btn-neutral float-right" title="固件与 SDK 适配性" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="applicable.html" class="btn btn-neutral float-right" title="Compatibility" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../sdk/from_v1.html" class="btn btn-neutral" title="从 1.x 换到 2.x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../sdk/without_opencv.html" class="btn btn-neutral" title="OpenCV dependency" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -208,7 +201,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -226,7 +219,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -239,19 +233,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

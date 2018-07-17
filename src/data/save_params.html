@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>保存设备信息和参数 &mdash; MYNT® EYE SDK Guide 2.0.0-rc documentation</title>
+  <title>Save device infomation and parameters &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
   
 
   
@@ -24,28 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="MYNT® EYE SDK Guide 2.0.0-rc documentation" href="../../index.html"/>
-        <link rel="up" title="MYNT® EYE 数据" href="contents.html"/>
-        <link rel="next" title="写入图像标定参数" href="write_img_params.html"/>
-        <link rel="prev" title="使用插件获取数据" href="get_with_plugin.html"/> 
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Write image parameters" href="write_img_params.html" />
+    <link rel="prev" title="Using the plugin to get the data" href="get_with_plugin.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -67,7 +58,7 @@
             
             
               <div class="version">
-                2.0.0
+                2.0.1
               </div>
             
           
@@ -94,28 +85,28 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE 固件</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE 数据</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">获取设备信息</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_img_params.html">获取图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">获取 IMU 标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">获取双目原始图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">获取双目纠正图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">获取视差图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_depth.html">获取深度图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_points.html">获取点云图像</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_imu.html">获取 IMU 数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">从回调接口获取数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">使用插件获取数据</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">保存设备信息和参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">写入图像标定参数</a></li>
-<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">写入 IMU 标定参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Data</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Save device infomation and parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE 控制</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">运行日志</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">封装接口</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">数据分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
@@ -128,7 +119,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">MYNT® EYE SDK Guide</a>
@@ -136,9 +127,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -161,9 +153,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="contents.html">MYNT® EYE 数据</a> &raquo;</li>
+          <li><a href="contents.html">MYNT® EYE Data</a> &raquo;</li>
         
-      <li>保存设备信息和参数</li>
+      <li>Save device infomation and parameters</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,16 +175,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="save-params">
-<span id="id1"></span><h1>保存设备信息和参数<a class="headerlink" href="#save-params" title="Permalink to this headline">¶</a></h1>
-<p>SDK 提供了保存信息和参数的工具 <code class="docutils literal notranslate"><span class="pre">save_all_infos</span></code> 。工具详情可见 <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> 。</p>
-<p>参考运行命令：</p>
+<span id="id1"></span><h1>Save device infomation and parameters<a class="headerlink" href="#save-params" title="Permalink to this headline">¶</a></h1>
+<p>SDK provides a tool <code class="docutils literal notranslate"><span class="pre">save_all_infos</span></code> for save information and parameters. For more, please read <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> 。</p>
+<p>Reference commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./tools/_output/bin/writer/save_all_infos
 
 <span class="c1"># Windows</span>
 .<span class="se">\t</span>ools<span class="se">\_</span>output<span class="se">\b</span>in<span class="se">\w</span>riter<span class="se">\s</span>ave_all_infos.bat
 </pre></div>
 </div>
-<p>参考运行结果，于 Linux 上 ：</p>
+<p>Reference result in Linux:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./tools/_output/bin/writer/save_all_infos
 I0512 <span class="m">21</span>:40:08.687088  <span class="m">4092</span> utils.cc:26<span class="o">]</span> Detecting MYNT EYE devices
 I0512 <span class="m">21</span>:40:09.366693  <span class="m">4092</span> utils.cc:33<span class="o">]</span> MYNT EYE devices:
@@ -201,8 +193,8 @@ I0512 <span class="m">21</span>:40:09.366757  <span class="m">4092</span> utils.
 I0512 <span class="m">21</span>:40:09.367609  <span class="m">4092</span> save_all_infos.cc:38<span class="o">]</span> Save all infos to <span class="s2">&quot;config/SN0610243700090720&quot;</span>
 </pre></div>
 </div>
-<p>默认会保存进 <code class="docutils literal notranslate"><span class="pre">&lt;workdir&gt;/config</span></code> 目录。你也可以加参数，指定保存到其他目录。</p>
-<p>保存内容如下：</p>
+<p>Result save into <code class="docutils literal notranslate"><span class="pre">&lt;workdir&gt;/config</span></code> by default. You can also add parameter, select other directory to save.</p>
+<p>Saved contents:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;workdir&gt;/
 └─config/
    └─SN0610243700090720/
@@ -215,18 +207,16 @@ I0512 <span class="m">21</span>:40:09.367609  <span class="m">4092</span> save_a
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="write_img_params.html" class="btn btn-neutral float-right" title="写入图像标定参数" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="write_img_params.html" class="btn btn-neutral float-right" title="Write image parameters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="get_with_plugin.html" class="btn btn-neutral" title="使用插件获取数据" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="get_with_plugin.html" class="btn btn-neutral" title="Using the plugin to get the data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -239,7 +229,7 @@ I0512 <span class="m">21</span>:40:09.367609  <span class="m">4092</span> save_a
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -257,7 +247,8 @@ I0512 <span class="m">21</span>:40:09.367609  <span class="m">4092</span> save_a
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.0-rc',
+            VERSION:'2.0.1-rc0',
+            LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -270,19 +261,13 @@ I0512 <span class="m">21</span>:40:09.367609  <span class="m">4092</span> save_a
 
   
 
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

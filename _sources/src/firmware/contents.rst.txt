@@ -7,3 +7,4 @@ MYNT® EYE 固件
 
    applicable
    upgrade
+   from_v1.rst

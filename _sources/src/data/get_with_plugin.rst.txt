@@ -5,7 +5,7 @@
 
 API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。
 
-官方目前提供了些计算双目视差的插件，在 `Google Drive <https://drive.google.com/drive/folders/1tdFCcTBMNcImEGZ39tdOZmlX2SHKCr2f>`_ 或 `百度网盘 <https://pan.baidu.com/s/1yPQDp2r0x4jvNwn2UjlMUQ>`_ 的 ``Plugins`` 目录内。
+官方目前提供了些计算双目视差的插件，在 `MYNTEYE_BOX <http://doc.myntai.com/mynteye/s/download>`_ 的 ``Plugins`` 目录内。
 
 .. code-block:: none
 
@@ -15,8 +15,9 @@ API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。
   │  ├─libplugin_g_cuda9.1_opencv2.4.13.5.so
   │  ├─libplugin_g_cuda9.1_opencv3.3.1.so
   │  └─libplugin_g_cuda9.1_opencv3.4.0.so
+  ├─tegra-armv8/
   └─win-x86_64/
-
+  
 * 目录 ``linux-x86_64`` 表明了系统和架构。
 
   * 可从系统信息或 ``uname -a`` 得知你的 CPU 架构。

@@ -17,7 +17,7 @@
   LOG(INFO) << "Extrinsics left to right: {"
             << api->GetExtrinsics(Stream::LEFT, Stream::RIGHT) << "}";
 
-参考运行结果，于 Linux 上 ：
+参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 

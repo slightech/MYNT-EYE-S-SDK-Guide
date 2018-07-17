@@ -32,7 +32,7 @@
   LOG(INFO) << "Set BRIGHTNESS to " << api->GetOptionValue(Option::BRIGHTNESS);
   LOG(INFO) << "Set CONTRAST to " << api->GetOptionValue(Option::CONTRAST);
 
-参考运行结果，于 Linux 上 ：
+参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 
