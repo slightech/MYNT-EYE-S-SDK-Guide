@@ -40,7 +40,7 @@ open _build/latex/mynt-eye-sdk-guide.pdf
 start _build/latex/mynt-eye-sdk-guide.pdf
 ```
 
-## i18n (TODO: en)
+## i18n (en)
 
 ```bash
 # Extract document’s translatable messages into pot files
@@ -53,13 +53,27 @@ sphinx-intl update -p _build/gettext -l en
 
 # Build mo files and make translated document
 sphinx-intl build
+```
+
+* [Internationalization](http://www.sphinx-doc.org/en/master/intl.html)
+
+### Build HTML (en)
+
+```bash
 # Linux, MacOS
 make -e SPHINXOPTS="-D language='en'" html
 # Windows
 set SPHINXOPTS=-D language=en & make.bat html
 ```
 
-* [Internationalization](http://www.sphinx-doc.org/en/master/intl.html)
+### Build PDF (en)
+
+```bash
+# Linux, MacOS
+make -e SPHINXOPTS="-D language='en'" latexpdf
+# Windows
+set SPHINXOPTS=-D language=en & make.bat latexpdf
+```
 
 ## How to Edit
 
