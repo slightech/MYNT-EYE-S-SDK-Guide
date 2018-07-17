@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../src/data/write_imu_params.rst:4
 msgid "写入 IMU 标定参数"
-msgstr " Write IMU parameters"
+msgstr "Write IMU parameters"
 
 #: ../../src/data/write_imu_params.rst:6
 msgid ""

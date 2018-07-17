@@ -24,7 +24,7 @@ msgstr "How to use ROS"
 
 #: ../../src/wrapper/ros.rst:6
 msgid "按照 :ref:`sdk_install_ros` ，编译再运行节点。"
-msgstr "According to : ref:`sdk_install_ros` ,Compile and run the node."
+msgstr "According to :ref:`sdk_install_ros`, compile and run the node."
 
 #: ../../src/wrapper/ros.rst:8
 msgid "``rostopic list`` 可以列出发布的节点："
