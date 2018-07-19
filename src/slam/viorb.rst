@@ -1,6 +1,6 @@
 .. _slam_viorb:
 
-`ORB_SLAM2 <https://github.com/jingpang/LearnVIORB>`_ 如何整合 
+`VIORB <https://github.com/jingpang/LearnVIORB>`_ 如何整合 
 =============================================================
 
 
@@ -13,7 +13,7 @@
 * 4. 运行  mynt_eye_ros_wrapper 和 VIORB 。
 
 安装 MYNT-EYE-VIORB-SDK2
----------------------
+---------------------------
 
 .. code-block:: bat
  
@@ -29,6 +29,7 @@
 执行:
 
 .. code-block:: bat
+
   cd MYNT-EYE-VIORB-Sample
   ./build.sh
 
@@ -45,7 +46,7 @@
 这时，可以获得针孔模型下的 ``distortion_parameters`` 和 ``projection_parameters`` 参数，然后在 ``<MYNT-EYE-VIORB-Sample>/config/mynteye.yaml`` 中更新。
 
 运行  VIORB 和 mynt_eye_ros_wrapper
----------------------
+--------------------------------------
 
 .. code-block:: bat
 

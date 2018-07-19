@@ -1,11 +1,11 @@
 .. _slam_orb_slam2:
 
 `ORB_SLAM2 <https://github.com/raulmur/ORB_SLAM2>`_ 如何整合 
-=============================================================
+==============================================================
 
 
 在MYNT® EYE 上运行 ORB_SLAM2 ，请依照这些步骤：
-----------------------------------------------
+------------------------------------------------
 
 * 1. 下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ 及安装。
 * 2. 添加 MYNT-EYE-SDK 路径到环境变量。打开 ``.bashrc`` 文件，在最后添加：export MYNTEYE_SDK2_ROOT=MYNT-EYE-SDK-2_INSTALL_PATH 。
