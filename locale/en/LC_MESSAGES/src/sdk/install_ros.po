@@ -56,7 +56,7 @@ msgstr "ROS Indigo (Ubuntu 14.04)"
 
 #: ../../src/sdk/install_ros.rst:46
 msgid "编译代码"
-msgstr "Compiled"
+msgstr "Compiling Code"
 
 #: ../../src/sdk/install_ros.rst:54
 msgid "运行节点"
@@ -64,7 +64,7 @@ msgstr "Running node"
 
 #: ../../src/sdk/install_ros.rst:61
 msgid "运行节点，同时打开 RViz 预览："
-msgstr "Run the node，and preview by RViz:"
+msgstr "Run the node, and preview by RViz:"
 
 #: ../../src/sdk/install_ros.rst:69
 msgid "测试服务"
@@ -72,7 +72,7 @@ msgstr "Testing Services"
 
 #: ../../src/sdk/install_ros.rst:71
 msgid "运行节点，有提供获取设备信息服务，如下测试："
-msgstr "Run the node as follows, make sure that device information service is same:"
+msgstr "Run the node as follows, provide device information getting service, see follows:"
 
 #: ../../src/sdk/install_ros.rst:87
 msgid "常见问题 - ROS Indigo"
@@ -80,7 +80,7 @@ msgstr "Common issues - ROS Indigo"
 
 #: ../../src/sdk/install_ros.rst:90
 msgid "``make ros`` 时 ``libopencv`` 找不到"
-msgstr "Cann't find``libopencv`` while ``make ros``"
+msgstr "Cannot find``libopencv`` while ``make ros``"
 
 #: ../../src/sdk/install_ros.rst:96
 msgid "**Solution 1)** 安装 OpenCV 2:"
@@ -92,7 +92,7 @@ msgstr "**Solution 2)** Install OpenCV 3  & re-compiled ``cv_bridge``:"
 
 #: ../../src/sdk/install_ros.rst:112
 msgid "然后，重新 ``make ros`` 。"
-msgstr "Than run ``make ros`` again"
+msgstr "Then run ``make ros`` again"
 
 #: ../../src/sdk/install_ros.rst:115
 msgid "结语"

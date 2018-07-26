@@ -27,18 +27,18 @@ msgid ""
 "视差图像，属于上层合成数据。需要事先 ``EnableStreamData()`` 启用，然后 ``GetStreamData()`` "
 "获取。另外，判断不为空后再使用。"
 msgstr ""
-"Disparity image, which belong to the upper layer of synthetic data. You need to start the ``EnableStreamData()`` beforehand, then you can get it through ``GetStreamData()``"
-". In addition, it needs to be judged not to be empty before use."
+"Disparity image belongs to the upper layer of synthetic data. You need to start the ``EnableStreamData()`` beforehand, to get it through ``GetStreamData()``"
+". In addition, it should be check not be empty before use."
 
 #: ../../src/data/get_disparity.rst:8
 msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
-msgstr "Please see :ref:`get_stereo` :ref:`get_stereo_rectified` for detailed process description."
+msgstr "Please see :ref:`get_stereo` :ref:`get_stereo_rectified` for a detailed process description."
 
 #: ../../src/data/get_disparity.rst:10
 msgid "另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。"
 msgstr ""
-"In addition, it is recommended to use plugin to calculate depth: depth "
-"map will be better and frame rate is higher.Please see "
+"It is recommended to use plugin to calculate depth: the depth "
+"map will be better with a higher frame rate. Please see "
 ":ref:`get_with_plugin` for detail. "
 
 #: ../../src/data/get_disparity.rst:12
@@ -54,6 +54,6 @@ msgid ""
 "完整代码样例，请见 `get_disparity.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_disparity.cc>`_ 。"
 msgstr ""
-"Preview the value of an area in the depth diagram, see `get_disparity.cc <https://github.com/slightech/MYNT-EYE-"
+"To preview the value of an area in the depth diagram, see `get_disparity.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_disparity.cc>`_ ."
 

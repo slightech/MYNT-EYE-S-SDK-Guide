@@ -20,19 +20,19 @@ msgstr ""
 
 #: ../../src/data/get_stereo.rst:4
 msgid "获取双目原始图像"
-msgstr "Get binocular original image"
+msgstr "Get original binocular image"
 
 #: ../../src/data/get_stereo.rst:6
 msgid ""
 "API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据。如果只捕获图像数据的话，参数用 "
 "``Source::VIDEO_STREAMING`` 即可。"
-msgstr "Use ``Start()``  or ``Stop()`` ,to start or stop data capture. If you only needs capture the image data, use ``Source::VIDEO_STREAMING`` "
+msgstr "Use ``Start()``  or ``Stop()`` ,to start or stop data capturing. If you only need the image data, use ``Source::VIDEO_STREAMING`` "
 
 #: ../../src/data/get_stereo.rst:8
 msgid ""
 "开始捕获数据后，首先调用 ``WaitForStreams()`` 函数，等待捕获到数据。接着，通过 ``GetStreamData()`` "
 "函数，就能获取想要的数据了。"
-msgstr "When data capture starts, call ``WaitForStreams()`` function. When data capture begins to appear, use ``GetStreamData()`` to capture what your need"
+msgstr "When data capturing starts, call ``WaitForStreams()`` function. Once data capturing begins, use ``GetStreamData()`` to get your data"
 
 #: ../../src/data/get_stereo.rst:10
 msgid "参考代码片段："
@@ -40,12 +40,12 @@ msgstr "Reference commands: "
 
 #: ../../src/data/get_stereo.rst:38
 msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
-msgstr "Press ``ESC/Q`` to end your OPENCV image."
+msgstr "Press ``ESC/Q`` to close your OpenCV image."
 
 #: ../../src/data/get_stereo.rst:40
 msgid ""
 "完整代码样例，请见 `get_stereo.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_stereo.cc>`_ 。"
-msgstr "View sample code, check the `get_stereo.cc <https://github.com/slightech/MYNT-EYE-"
+msgstr "To view compelte sample code, check `get_stereo.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_stereo.cc>`_ ."
 

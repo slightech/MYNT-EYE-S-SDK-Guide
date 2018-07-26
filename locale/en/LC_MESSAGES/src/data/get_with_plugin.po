@@ -20,12 +20,12 @@ msgstr ""
 
 #: ../../src/data/get_with_plugin.rst:4
 msgid "使用插件获取数据"
-msgstr "Using the plugin to get the data"
+msgstr "Using the plugin to get data"
 
 #: ../../src/data/get_with_plugin.rst:6
 msgid "API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。"
 msgstr ""
-"API provides a ``EnablePlugin ()`` function to enable plug-ins under a "
+"API provides a ``EnablePlugin ()`` function to enable plugins  "
 "path."
 
 #: ../../src/data/get_with_plugin.rst:8
