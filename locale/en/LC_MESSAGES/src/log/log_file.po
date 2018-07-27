@@ -27,7 +27,7 @@ msgid ""
 "日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。"
 msgstr ""
-"General configuration of the log in the head of `glog_init.h <https://github.com/slightech/MYNT-EYE-"
+"The general configuration of the log in the head file `glog_init.h <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/include/mynteye/glog_init.h>`_  。"
 
 #: ../../src/log/log_file.rst:8
@@ -35,7 +35,7 @@ msgid ""
 "取消注释的 ``FLAGS_log_dir = \".\";`` 重新编译，即可保存日志到当前工作目录。例如运行 ``camera_a`` "
 "后，日志文件如下："
 msgstr ""
-"uncomment ``FLAGS_log_dir = \".\";`` recompiled it and save log to current work directory. As to run ``camera_a`` "
+"Uncomment ``FLAGS_log_dir = \".\";`` recompile and save to current work directory. Run ``camera_a`` "
 "log file as follows:"
 
 #: ../../src/log/log_file.rst:22
@@ -44,9 +44,9 @@ msgid ""
 "ubuntu.john.log.INFO.20180513-141832.519`` 。运行多次后， ``camera_a.INFO`` "
 "仍只会有一个，指向最新的那个日志文件，便于你查看。"
 msgstr ""
-"``camera_a.INFO`` shows which program and levers of log it is. But it is only a link, which link to real log file, as ``camera_a.john-"
-"ubuntu.john.log.INFO.20180513-141832.519``. Run several times, ``camera_a.INFO`` "
-"still leaves one to link the lastes log file, so can be checked easily"
+"``camera_a.INFO`` shows the program and levers of log it is running. The link to the real log file is ``camera_a.john-"
+"ubuntu.john.log.INFO.20180513-141832.519``. Even if it ran several times, ``camera_a.INFO`` "
+"still leaves the link to last log file."
 
 
 #: ../../src/log/log_file.rst:24

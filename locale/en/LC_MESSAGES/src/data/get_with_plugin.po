@@ -25,7 +25,7 @@ msgstr "Using the plugin to get data"
 #: ../../src/data/get_with_plugin.rst:6
 msgid "API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。"
 msgstr ""
-"API provides a ``EnablePlugin ()`` function to enable plugins  "
+"API provides a ``EnablePlugin ()`` function to enable plugins under a "
 "path."
 
 #: ../../src/data/get_with_plugin.rst:8
@@ -33,9 +33,9 @@ msgid ""
 "官方目前提供了些计算双目视差的插件，在 `MYNTEYE_BOX "
 "<http://www.myntai.com/mynteye/s/download>`_ 的 ``Plugins`` 目录内。"
 msgstr ""
-"Now officials have provided some plug-ins for calculating binocular "
-"parallax, in `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_"
-" location within the ``Plugins`` directory."
+"Official provided plugins for calculating binocular "
+"parallax are now available in the `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_ "
+"located in the ``Plugins`` directory."
 
 #: ../../src/data/get_with_plugin.rst:21
 msgid "目录 ``linux-x86_64`` 表明了系统和架构。"
@@ -50,7 +50,7 @@ msgstr ""
 #: ../../src/data/get_with_plugin.rst:25
 msgid "库名 ``libplugin_*`` 表明了插件标识和第三方依赖。"
 msgstr ""
-"The library name ``libplugin_*`` shows the plug-in identity and the third"
+"The library name ``libplugin_*`` shows the plugin identity and the third"
 " party dependency."
 
 #: ../../src/data/get_with_plugin.rst:27
@@ -80,13 +80,13 @@ msgstr ""
 #: ../../src/data/get_with_plugin.rst:33
 msgid "首先，根据具体情况，选择你想测试使用的插件。如果依赖了第三方，那么请安装一致的版本。"
 msgstr ""
-"First, select the plug-ins that you are going to use for testing "
-"according to the situation. If you rely on third parties, please install "
-"a consistent version."
+"First, select the plugins that you are going to use "
+"depending on your situation. If you relying on third parties, please install "
+"a corresponding version."
 
 #: ../../src/data/get_with_plugin.rst:35
 msgid "然后，参考如下代码启用插件："
-msgstr "Then, enable the plug-in with the following code:"
+msgstr "Then, enable the plugin with the following code:"
 
 #: ../../src/data/get_with_plugin.rst:43
 msgid "路径可以是绝对路径，也可以是相对路径（相对于当前工作目录）。"
@@ -113,16 +113,16 @@ msgid ""
 "等插件依赖后重编译，此后运行 ``API`` 层接口程序，就会自动加载官方插件了。"
 msgstr ""
 "In other words, you can move the plug-in directory of the current "
-"platform into the ``< SDK > / plugins`` directory. Install the "
-"corresponding `` CUDA `` `` OpenCV `` Recompiling after plug-in "
-"dependency, then run `` API `` layer interface program, the official "
-"plug-in will be automatically loaded."
+"platform into the ``< SDK > / plugins`` directory. To automatically load the official "
+"plugin, install the corresponding `` CUDA `` `` OpenCV ``"
+" plugin dependency, recompiling and"
+" then run `` API `` layer interface program."
 
 #: ../../src/data/get_with_plugin.rst:53
 msgid "运行前，请执行如下命令，以确保能搜索到插件的依赖库："
 msgstr ""
-"Before running, please execute the following commands to ensure that you "
-"can search the plug-in's dependency Library:"
+"Before running, please execute the following commands to ensure that "
+" the plugin's dependency library can be searched: "
 
 #: ../../src/data/get_with_plugin.rst:69
 msgid "此外，可执行如下命令，检查是否能搜索到插件的依赖库："

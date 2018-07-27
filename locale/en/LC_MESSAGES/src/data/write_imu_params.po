@@ -26,12 +26,12 @@ msgstr " Write IMU parameters"
 msgid ""
 "SDK 提供了写入 IMU 标定参数的工具 ``imu_params_writer`` 。工具详情可见 `tools/README.md "
 "<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。"
-msgstr "SDK provides the tool ``imu_params_writer`` to write IMU parameters. For deltail,"
+msgstr "SDK provides the tool ``imu_params_writer`` to write IMU parameters. For deltail, "
 "please read `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ ."
 
 #: ../../src/data/write_imu_params.rst:8
 msgid "有关如何获取，请阅读 :ref:`get_imu_params` 。"
-msgstr "About how to get, please read :ref:`get_imu_params` ."
+msgstr "Information about how to get IMU parameters, please read :ref:`get_imu_params` ."
 
 #: ../../src/data/write_imu_params.rst:10
 msgid "参考运行命令："
@@ -42,11 +42,11 @@ msgid ""
 "其中， `tools/writer/config/imu.params <https://github.com/slightech/MYNT-"
 "EYE-SDK-2/blob/master/tools/writer/config/imu.params>`_ "
 "是参数文件路径。如果你自己标定了参数，可以编辑此文件，然后执行上述命令写入设备。"
-msgstr "For attention, the path of parameters file is `tools/writer/config/img.params <https://github.com/"
-"slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params>`_ . If you calibrate parameters yourself," "you can endit it and run previous commands to write into devices."
+msgstr "The path of parameters file can be found in `tools/writer/config/img.params <https://github.com/"
+"slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params>`_ . If you calibrated the parameters yourself, you can edit the file and run above commands to write them into the device."
 
 #: ../../src/data/write_imu_params.rst:23
 msgid "请不要随意覆写参数。另外 ``save_all_infos`` 工具可帮你备份参数。"
-msgstr "Please  don't override parameters optionally. In addition, you can use ``save_all_infos`` "
+msgstr "Please  don't override parameters, you can use ``save_all_infos`` "
 "to backup parameters."
 

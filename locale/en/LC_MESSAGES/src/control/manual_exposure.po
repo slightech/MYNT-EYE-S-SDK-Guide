@@ -34,7 +34,7 @@ msgid ""
 "启用手动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``1`` 。手动曝光时，可调"
 "节的设定有："
 msgstr ""
-"Enabling manual exposure is setting ``Option::EXPOSURE_MODE`` to ``1``. "
+"To enabling manual exposure, set ``Option::EXPOSURE_MODE`` to ``1``. "
 "During manual exposure, the settings available for adjustment are:"
 
 #: ../../src/control/manual_exposure.rst:10
