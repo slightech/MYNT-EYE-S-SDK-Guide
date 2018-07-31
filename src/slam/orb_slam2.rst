@@ -11,7 +11,7 @@
 * 2. 添加 MYNT-EYE-SDK 路径到环境变量。打开 ``.bashrc`` 文件，在最后添加：export MYNTEYE_SDK2_ROOT=MYNT-EYE-SDK-2_INSTALL_PATH 。
 * 3. 按照一般步骤安装 ORB_SLAM2。
 * 4. 更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数到 ``<ORB_SLAM2>/config/mynteye_*.yaml``。
-* 5. 运行 mynt_eye_ros_wrapper 和 VINS-Mono 。
+* 5. 在MYNT® EYE 上运行例子。
 
 双目样例
 ---------
@@ -41,7 +41,7 @@ ROS下创建单目和双目节点
 
   export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:PATH/ORB_SLAM2/Examples/ROS
 
-* 运行脚本 `build.sh` ：
+* 运行脚本 `build_ros.sh` ：
 
 .. code-block:: bat
  
