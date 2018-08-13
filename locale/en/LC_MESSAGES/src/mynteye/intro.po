@@ -47,9 +47,9 @@ msgstr "In order to ensure the quality of the output data of the camera products
 
 #: ../../src/mynteye/intro.rst:14
 msgid "产品推出至今，获得了国内外诸多知名企业认可，除了已经面世的标准版“S”系列，未来还将推出内置深度计算能力的“D”系列产品。客户可根据目标平台的算力、运算架构等因素，选择合适的产品。"
-msgstr "Since its first appearance, the product has been recognized by many well-known companies in and outside of China. In addition to the standard "S" series that has already been released, a new "D" series  product with built-in deep computing power will also be launched in the future. Customers can select the appropriate product based on factors such as the computing power and operational architecture of the target platform."
+msgstr "Since its first appearance, the product has been recognized by many well-known companies in and outside of China. In addition to the standard "S" series that has already been released, a new "D" series product with built-in deep computing power will also be launched in the future. Customers can select the appropriate product based on factors such as the computing power and operational architecture of the target platform."
 
 #: ../../src/mynteye/intro.rst:16
 msgid "以成为全球顶尖的立体视觉计算技术解决方案供应商为目标，我们一直在不断优化与完善软硬件，让小觅双目摄像头成为最优的立体视觉技术研发与应用平台。"
-msgstr "In order to become the world's top supplier of stereo vision computing technology solutions, We will continue to improve and perfect the software and hardware, to make MYNT® EYE  binocular camera the most optimal development and application platform for stereoscopic vision technology."
+msgstr "In order to become the world's top supplier of stereo vision computing technology solutions, We will continue to improve and perfect the software and hardware, to make MYNT® EYE binocular camera the most optimal development and application platform for stereoscopic vision technology."
 

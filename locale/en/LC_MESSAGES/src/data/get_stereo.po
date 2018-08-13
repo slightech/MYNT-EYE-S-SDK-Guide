@@ -26,7 +26,7 @@ msgstr "Get original binocular image"
 msgid ""
 "API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据。如果只捕获图像数据的话，参数用 "
 "``Source::VIDEO_STREAMING`` 即可。"
-msgstr "Use ``Start()``  or ``Stop()`` ,to start or stop data capturing. If you only need the image data, use ``Source::VIDEO_STREAMING`` "
+msgstr "Use ``Start()`` or ``Stop()`` ,to start or stop data capturing. If you only need the image data, use ``Source::VIDEO_STREAMING`` "
 
 #: ../../src/data/get_stereo.rst:8
 msgid ""

@@ -88,7 +88,7 @@ msgstr "**Solution 1)** Install OpenCV 2:"
 
 #: ../../src/sdk/install_ros.rst:103
 msgid "**Solution 2)** 安装 OpenCV 3 并重编 ``cv_bridge``:"
-msgstr "**Solution 2)** Install OpenCV 3  & re-compiled ``cv_bridge``:"
+msgstr "**Solution 2)** Install OpenCV 3 & re-compiled ``cv_bridge``:"
 
 #: ../../src/sdk/install_ros.rst:112
 msgid "然后，重新 ``make ros`` 。"

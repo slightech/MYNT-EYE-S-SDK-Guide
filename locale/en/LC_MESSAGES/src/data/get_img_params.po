@@ -25,7 +25,7 @@ msgstr "Get image calibration parameters"
 #: ../../src/data/get_img_params.rst:6
 msgid "通过 API 的 ``GetIntrinsics()`` ``GetExtrinsics()`` 函数，就可以获取当前打开设备的图像标定参数。"
 msgstr ""
-"Use ``GetIntrinsics()``  & ``GetExtrinsics()`` to get image calibration "
+"Use ``GetIntrinsics()`` & ``GetExtrinsics()`` to get image calibration "
 "parameters."
 
 #: ../../src/data/get_img_params.rst:8

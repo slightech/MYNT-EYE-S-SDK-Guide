@@ -47,6 +47,6 @@ msgstr "The path of parameters file can be found in `tools/writer/config/img.par
 
 #: ../../src/data/write_imu_params.rst:23
 msgid "请不要随意覆写参数。另外 ``save_all_infos`` 工具可帮你备份参数。"
-msgstr "Please  don't override parameters, you can use ``save_all_infos`` "
+msgstr "Please don't override parameters, you can use ``save_all_infos`` "
 "to backup parameters."
 

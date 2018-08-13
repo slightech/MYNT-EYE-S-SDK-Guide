@@ -26,7 +26,7 @@ msgstr "Get IMU calibration parameters"
 msgid ""
 "通过 API 的 ``GetMotionIntrinsics()`` ``GetMotionExtrinsics()`` "
 "函数，就可以获取当前打开设备的 IMU 标定参数。"
-msgstr "Use ``GetMotionIntrinsics()`` &  ``GetMotionExtrinsics()`` to get current IMU calibration parameters"
+msgstr "Use ``GetMotionIntrinsics()`` & ``GetMotionExtrinsics()`` to get current IMU calibration parameters"
 
 #: ../../src/data/get_imu_params.rst:8
 msgid "参考代码片段："

@@ -28,7 +28,7 @@ msgstr "If you wanna run VIORB with MYNT EYE camera, please follow the steps:"
 
 #: ../../src/slam/viorb.rst:10
 msgid "1. 下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ 及安装 mynt_eye_ros_wrapper。"
-msgstr "1. Download `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_  and install mynt_eye_ros_wrapper."
+msgstr "1. Download `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ and install mynt_eye_ros_wrapper."
 
 #: ../../src/slam/viorb.rst:11
 msgid "2. 按照一般步骤安装 VIORB。"
@@ -67,7 +67,7 @@ msgid "这时，可以获得针孔模型下的 ``distortion_parameters`` 和 ``p
 msgstr "After running the above type, pinhole's distortion_parameters and projection_parameters is obtained , and then update to <MYNT-EYE-VIORB-Sample>/config/mynteye.yaml."
 
 #: ../../src/slam/viorb.rst:49
-msgid "运行  VIORB 和 mynt_eye_ros_wrapper"
+msgid "运行 VIORB 和 mynt_eye_ros_wrapper"
 msgstr "Run VIORB and mynt_eye_ros_wrapper"
 
 #: ../../src/slam/viorb.rst:56

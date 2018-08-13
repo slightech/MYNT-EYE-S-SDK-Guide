@@ -28,7 +28,7 @@ msgid ""
 "SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。"
 msgstr ""
 "The general configuration of the log in the head file `glog_init.h <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/include/mynteye/glog_init.h>`_  。"
+"SDK-2/blob/master/include/mynteye/glog_init.h>`_ ."
 
 #: ../../src/log/log_file.rst:8
 msgid ""
