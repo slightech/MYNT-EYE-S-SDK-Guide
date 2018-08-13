@@ -25,8 +25,7 @@ msgstr "Using the plugin to get data"
 #: ../../src/data/get_with_plugin.rst:6
 msgid "API 提供了 ``EnablePlugin()`` 函数，以启用某路径下的插件。"
 msgstr ""
-"API provides a ``EnablePlugin ()`` function to enable plugins under a "
-"path."
+"API provides a ``EnablePlugin()`` function to enable plugins under a path."
 
 #: ../../src/data/get_with_plugin.rst:8
 msgid ""
@@ -44,8 +43,7 @@ msgstr "The ``linux-x86_64`` directory shows the system and architecture."
 #: ../../src/data/get_with_plugin.rst:23
 msgid "可从系统信息或 ``uname -a`` 得知你的 CPU 架构。"
 msgstr ""
-"You can find your CPU architecture from system information or \"uname "
-"-a\"."
+"You can find your CPU architecture from system information or ``uname -a``."
 
 #: ../../src/data/get_with_plugin.rst:25
 msgid "库名 ``libplugin_*`` 表明了插件标识和第三方依赖。"
@@ -61,20 +59,20 @@ msgstr ""
 
 #: ../../src/data/get_with_plugin.rst:28
 msgid "``ocl1.2`` 表明依赖了 ``OpenCL 1.2`` ，如果存在。"
-msgstr "``ocl1.2`` shows it dependence on ``OpenCL 1.2`` if it exists."
+msgstr "``ocl1.2`` shows it dependence on ``OpenCL 1.2``, if it exists."
 
 #: ../../src/data/get_with_plugin.rst:29
 msgid "``cuda9.1`` 表明依赖了 ``CUDA 9.1`` ，如果存在。"
-msgstr "``cuda9.1`` shows it dependence on ``CUDA 9.1``,if it exists."
+msgstr "``cuda9.1`` shows it dependence on ``CUDA 9.1``, if it exists."
 
 #: ../../src/data/get_with_plugin.rst:30
 msgid "``opencv3.4.0`` 表明依赖了 ``OpenCV 3.4.0`` ，如果存在。"
-msgstr "``opencv3.4.0`` shows it dependence on ``OpenCV 3.4.0``,if it exists."
+msgstr "``opencv3.4.0`` shows it dependence on ``OpenCV 3.4.0``, if it exists."
 
 #: ../../src/data/get_with_plugin.rst:31
 msgid "``mynteye2.0.0`` 表明依赖了 ``MYNT EYE SDK 2.0.0`` ，如果存在。"
 msgstr ""
-"``mynteye2.0.0`` shows it dependency on ``MYNT EYE SDK 2.0.0``,if it "
+"``mynteye2.0.0`` shows it dependency on ``MYNT EYE SDK 2.0.0``, if it "
 "exists."
 
 #: ../../src/data/get_with_plugin.rst:33
@@ -105,7 +103,7 @@ msgid ""
 msgstr ""
 "If the plugin is not enabled, ``api->Start(Source::VIDEO_STREAMING);`` "
 "will automatically find the appropriate plug-in in the "
-"\"\"``<sdk>/plugins/<platform>`` directory to load."
+"``<sdk>/plugins/<platform>`` directory to load."
 
 #: ../../src/data/get_with_plugin.rst:51
 msgid ""
@@ -114,15 +112,15 @@ msgid ""
 msgstr ""
 "In other words, you can move the plug-in directory of the current "
 "platform into the ``< SDK > / plugins`` directory. To automatically load the official "
-"plugin, install the corresponding `` CUDA `` `` OpenCV ``"
+"plugin, install the corresponding ``CUDA`` ``OpenCV``"
 " plugin dependency, recompiling and"
-" then run `` API `` layer interface program."
+" then run ``API`` layer interface program."
 
 #: ../../src/data/get_with_plugin.rst:53
 msgid "运行前，请执行如下命令，以确保能搜索到插件的依赖库："
 msgstr ""
 "Before running, please execute the following commands to ensure that "
-" the plugin's dependency library can be searched: "
+" the plugin's dependency library can be searched:"
 
 #: ../../src/data/get_with_plugin.rst:69
 msgid "此外，可执行如下命令，检查是否能搜索到插件的依赖库："
@@ -150,7 +148,7 @@ msgid ""
 "Linux 上也可以把依赖库路径加入系统环境，编译出的程序就可以直接运行了（不需要于终端里 ``export LD_LIBRARY_PATH`` "
 "再运行）。"
 msgstr ""
-"Linux can also add a dependency library path to the system environment,so"
+"Linux can also add a dependency library path to the system environment, so"
 " that the compiled program can run directly. (does not require ``export "
 "LD_LIBRARY_PATH`` in the terminal then run again)."
 

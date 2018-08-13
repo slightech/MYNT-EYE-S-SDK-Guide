@@ -45,7 +45,7 @@ msgid ""
 msgstr ""
 "If you used any other Linux distributions without apt-get package "
 "manager, you need to install required packages manaully instead of using "
-"\"make init\"."
+"``make init``."
 
 #: ../../src/sdk/install_ubuntu.rst:29
 msgid "Linux"
@@ -97,11 +97,11 @@ msgid ""
 "opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ 。或参考如下命令："
 msgstr ""
 "To build and install Opencv, Please refer to `Installation in Linux <https://"
-"docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ . Alternatively, refer to the command below: "
+"docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ . Alternatively, refer to the command below:"
 
 #: ../../src/sdk/install_ubuntu.rst:91
 msgid "编译代码"
-msgstr "Building Code"
+msgstr "Building code"
 
 #: ../../src/sdk/install_ubuntu.rst:95
 msgid "如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径："

@@ -42,8 +42,8 @@ msgstr ""
 "take effect."
 
 #: ../../src/control/framerate.rst:13
-msgid "图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60 。"
-msgstr "The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60"
+msgid "图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55 。"
+msgstr "The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55."
 
 #: ../../src/control/framerate.rst:14
 msgid "IMU 频率有效值： 100, 200, 250, 333, 500 。"
@@ -61,7 +61,7 @@ msgstr "Reference running results on Linux:"
 msgid "样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率和 IMU 频率。"
 msgstr ""
 "After the sample program finishes running with ``ESC/Q``, it will output "
-"the calculated value of the frame rate of image & IMU frequency"
+"the calculated value of the frame rate of image & IMU frequency."
 
 #: ../../src/control/framerate.rst:51
 msgid ""
@@ -70,5 +70,5 @@ msgid ""
 msgstr ""
 "For a complete code sample, see `framerate.cc "
 "<https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_"
+"SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_ ."
 

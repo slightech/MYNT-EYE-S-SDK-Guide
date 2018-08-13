@@ -28,15 +28,15 @@ msgstr "SDK provides a three-tier interface with OpenCV dependencies:"
 
 #: ../../src/sdk/without_opencv.rst:8
 msgid "``api``， 上层接口，依赖 OpenCV 。"
-msgstr "``api``,Upper interface, with OpenCV dependencies"
+msgstr "``api``, upper interface, with OpenCV dependencies"
 
 #: ../../src/sdk/without_opencv.rst:9
 msgid "``device``，中间层接口，不依赖 OpenCV 。"
-msgstr "``device``,Interlayer interface, without OpenCV dependencies"
+msgstr "``device``, interlayer interface, without OpenCV dependencies"
 
 #: ../../src/sdk/without_opencv.rst:10
 msgid "``uvc``，底层接口，不依赖 OpenCV 。"
-msgstr "``uvc``,Bottom interface, without OpenCV dependencies"
+msgstr "``uvc``, bottom interface, without OpenCV dependencies"
 
 #: ../../src/sdk/without_opencv.rst:12
 msgid ""

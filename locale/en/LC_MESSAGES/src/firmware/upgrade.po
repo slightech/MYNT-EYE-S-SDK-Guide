@@ -31,9 +31,9 @@ msgid "固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX "
 "<http://doc.myntai.com/mynteye/s/download>`_ 的 ``Firmwares`` "
 "目录内。文件结构如下："
 msgstr ""
-"You can download the firmware and MYNT EYE TOOL installation package in the ``Firmwares`` folder of"
+"You can download the firmware and MYNT EYE TOOL installation package in the ``Firmwares`` folder of "
 "`MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_ ."
-" The file structure is as follows: "
+" The file structure is as follows:"
 
 #: ../../src/firmware/upgrade.rst:18
 msgid "固件升级程序，目前仅支持 Windows ，所以需要你在 Windows 下进行操作。步骤如下："
@@ -103,7 +103,7 @@ msgstr "A warning dialog box will pop up, click ``yes`` ."
 
 #: ../../src/firmware/upgrade.rst:53
 msgid "由于该操作会擦除固件，所以弹出警告。详情见 README 。"
-msgstr "This operation will erase the firmware, for details see README"
+msgstr "This operation will erase the firmware, for details see README."
 
 #: ../../src/firmware/upgrade.rst:55
 msgid "通常在升级过程中，MYNT EYE TOOL会自动安装驱动。"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../src/firmware/upgrade.rst:68
 msgid "升级完成后，状态变为 ``Succeeded`` 。"
-msgstr "Once the upgrade is complete, the status will changes to ``Succeeded``"
+msgstr "Once the upgrade is complete, the status will changes to ``Succeeded``."
 
 #: ../../src/firmware/upgrade.rst:73
 msgid "关闭MYNT EYE TOOL，结束。"

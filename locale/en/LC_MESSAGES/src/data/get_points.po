@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../src/data/get_points.rst:12
 msgid "参考代码片段："
-msgstr "Sample code snippet: "
+msgstr "Sample code snippet:"
 
 #: ../../src/data/get_points.rst:51
 msgid ""

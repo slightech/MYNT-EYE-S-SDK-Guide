@@ -37,12 +37,12 @@ msgid ""
 "取到 IMU 数据。否则，只能通过回调接口得到 IMU 数据，请参阅 :ref:`get_from_callbacks` 。"
 msgstr ""
 "During capturing data, you need ``EnableMotionDatas()`` to enable caching in order to get IMU data "
-"from ``GetMotionDatas()`` . Otherwise, IMU data is only available through the callback interface, see :"
-"ref:`get_from_callbacks` ."
+"from ``GetMotionDatas()`` . Otherwise, IMU data is only available through the callback interface, "
+"see :ref:`get_from_callbacks` ."
 
 #: ../../src/data/get_imu.rst:10
 msgid "参考代码片段："
-msgstr "Sample code snippet: "
+msgstr "Sample code snippet:"
 
 #: ../../src/data/get_imu.rst:64
 msgid "上述代码，用了 OpenCV 来显示图像和数据。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"

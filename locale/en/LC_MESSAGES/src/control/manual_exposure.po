@@ -43,11 +43,11 @@ msgstr "``Option::GAIN`` Gain."
 
 #: ../../src/control/manual_exposure.rst:11
 msgid "``Option::BRIGHTNESS`` 亮度，或者说曝光时间。"
-msgstr "``Option::BRIGHTNESS`` Brightness（Exposure time）"
+msgstr "``Option::BRIGHTNESS`` Brightness (Exposure time)."
 
 #: ../../src/control/manual_exposure.rst:12
 msgid "``Option::CONTRAST`` 对比度，或者说黑电平校准。"
-msgstr "``Option::CONTRAST`` Contrast (Black level calibration)"
+msgstr "``Option::CONTRAST`` Contrast (Black level calibration)."
 
 #: ../../src/control/manual_exposure.rst:14
 msgid "参考代码片段："
@@ -61,7 +61,7 @@ msgstr "Reference running results on Linux:"
 msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
 msgstr ""
 "The sample program displays the image with a real exposure time "
-"(millisecond) in the upper left corner"
+"(millisecond) in the upper left corner."
 
 #: ../../src/control/manual_exposure.rst:51
 msgid ""
@@ -70,4 +70,4 @@ msgid ""
 msgstr ""
 "For complete code sample, see `manual_exposure.cc <https://github.com/"
 "slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/"
-"manual_exposure.cc>`_"
+"manual_exposure.cc>`_ ."

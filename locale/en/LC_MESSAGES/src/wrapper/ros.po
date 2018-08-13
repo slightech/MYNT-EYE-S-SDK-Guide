@@ -24,15 +24,15 @@ msgstr "How to use ROS"
 
 #: ../../src/wrapper/ros.rst:6
 msgid "按照 :ref:`sdk_install_ros` ，编译再运行节点。"
-msgstr "Compile and run the node according to : ref:`sdk_install_ros` ."
+msgstr "Compile and run the node according to :ref:`sdk_install_ros` ."
 
 #: ../../src/wrapper/ros.rst:8
 msgid "``rostopic list`` 可以列出发布的节点："
-msgstr "``rostopic list`` lists all released nodes: "
+msgstr "``rostopic list`` lists all released nodes:"
 
 #: ../../src/wrapper/ros.rst:27
 msgid "``rostopic hz <topic>`` 可以检查是否有数据："
-msgstr "``rostopic hz <topic>`` checks the data: "
+msgstr "``rostopic hz <topic>`` checks the data:"
 
 #: ../../src/wrapper/ros.rst:41
 msgid ""

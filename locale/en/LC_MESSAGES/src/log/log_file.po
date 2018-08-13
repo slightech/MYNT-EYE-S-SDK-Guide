@@ -52,4 +52,4 @@ msgstr ""
 #: ../../src/log/log_file.rst:24
 msgid "执行 ``make cleanlog`` 可以清理所有日志文件。"
 msgstr ""
-"Excute `make cleanlog` to clean all log files"
+"Excute `make cleanlog` to clean all log files."

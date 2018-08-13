@@ -43,5 +43,5 @@ msgstr "Results save into ``<workdir>/dataset`` by default. You can also add par
 
 #: ../../src/analytics/dataset.rst:44
 msgid "录制内容如下："
-msgstr "Record contents: "
+msgstr "Record contents:"
 

@@ -80,7 +80,7 @@ msgstr "Common issues - ROS Indigo"
 
 #: ../../src/sdk/install_ros.rst:90
 msgid "``make ros`` 时 ``libopencv`` 找不到"
-msgstr "Cannot find``libopencv`` while ``make ros``"
+msgstr "Cannot find ``libopencv`` while ``make ros``"
 
 #: ../../src/sdk/install_ros.rst:96
 msgid "**Solution 1)** 安装 OpenCV 2:"

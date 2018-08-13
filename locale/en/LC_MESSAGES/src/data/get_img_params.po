@@ -30,11 +30,11 @@ msgstr ""
 
 #: ../../src/data/get_img_params.rst:8
 msgid "参考代码片段："
-msgstr "Reference: "
+msgstr "Reference code snippet:"
 
 #: ../../src/data/get_img_params.rst:20
 msgid "参考运行结果，于 Linux 上："
-msgstr "Reference - Liunx:"
+msgstr "Reference result on Linux:"
 
 #: ../../src/data/get_img_params.rst:33
 msgid ""
@@ -43,5 +43,5 @@ msgid ""
 msgstr ""
 "To view complete sample, check `get_img_params.cc "
 "<https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/data/get_img_params.cc>`_."
+"SDK-2/blob/master/samples/tutorials/data/get_img_params.cc>`_ ."
 

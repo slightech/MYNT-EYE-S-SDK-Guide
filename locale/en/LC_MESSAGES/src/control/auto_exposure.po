@@ -58,7 +58,7 @@ msgstr "Reference running results on Linux:"
 msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
 msgstr ""
 "The sample program displays the image with a real exposure time "
-"(millisecond) in the upper left corner"
+"(millisecond) in the upper left corner."
 
 #: ../../src/control/auto_exposure.rst:53
 msgid ""
@@ -67,5 +67,5 @@ msgid ""
 msgstr ""
 "For complete code sample, see `auto_exposure.cc "
 "<https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/samples/tutorials/control/auto_exposure.cc>`_ "
+"SDK-2/blob/master/samples/tutorials/control/auto_exposure.cc>`_ ."
 

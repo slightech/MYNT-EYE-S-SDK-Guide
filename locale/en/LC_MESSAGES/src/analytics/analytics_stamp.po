@@ -31,15 +31,15 @@ msgstr "The SDK provides ``stamp_analytics.py`` script for analyse time stamp. F
 
 #: ../../src/analytics/analytics_stamp.rst:8
 msgid "参考运行命令及结果，于 Linux 上："
-msgstr "Reference of run command and results on Linux: "
+msgstr "Reference of run command and results on Linux:"
 
 #: ../../src/analytics/analytics_stamp.rst:43
 msgid "分析结果图会保存进数据集目录，参考如下："
-msgstr "Analysis of result saved in the data set directory, for reference: "
+msgstr "Analysis of result saved in the data set directory, for reference:"
 
 #: ../../src/analytics/analytics_stamp.rst:47
 msgid "另外，脚本具体选项可执行 ``-h`` 了解："
-msgstr "In addition, specific options of script see by ``-h`` "
+msgstr "In addition, specific options of script see by ``-h``:"
 
 #: ../../src/analytics/analytics_stamp.rst:55
 msgid ""

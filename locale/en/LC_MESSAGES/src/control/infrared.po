@@ -61,5 +61,5 @@ msgid ""
 "SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_ 。"
 msgstr ""
 "For complete code sample, `infrared.cc <https://github.com/slightech"
-"/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_"
+"/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_ ."
 

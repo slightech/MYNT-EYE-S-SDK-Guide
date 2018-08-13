@@ -25,8 +25,8 @@ msgstr "Get data from callbacks"
 #: ../../src/data/get_from_callbacks.rst:6
 msgid "API 提供了 ``SetStreamCallback()`` ``SetMotionCallback()`` 函数，来设定各类数据的回调。"
 msgstr ""
-"API offers function ``SetStreamCallback()`` and ``SetMotionCallback()`` to set callbacks for various "
-"data. "
+"API offers function ``SetStreamCallback()`` and ``SetMotionCallback()`` to "
+"set callbacks for various data."
 
 #: ../../src/data/get_from_callbacks.rst:10
 msgid "一定不要阻塞回调。如果需要长时间处理数据，请将回调作为数据生产者。"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../src/data/get_from_callbacks.rst:12
 msgid "参考代码片段："
-msgstr "Sample code snippet: "
+msgstr "Reference code snippet:"
 
 #: ../../src/data/get_from_callbacks.rst:117
 msgid "上述代码，用了 OpenCV 来显示图像和数据。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"

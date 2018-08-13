@@ -9,95 +9,136 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-08-13 11:43+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/slam/orb_slam2.rst:4
 msgid "`ORB_SLAM2 <https://github.com/raulmur/ORB_SLAM2>`_ 如何整合"
 msgstr "How to use in `ORB_SLAM2 <https://github.com/raulmur/ORB_SLAM2>`_ "
 
 #: ../../src/slam/orb_slam2.rst:8
-msgid "在MYNT® EYE 上运行 ORB_SLAM2 ，请依照这些步骤："
-msgstr "If you wanna run ORB_SLAM2 with MYNT EYE camera, please follow the steps:"
+msgid "在 MYNT® EYE 上运行 ORB_SLAM2 ，请依照这些步骤："
+msgstr "If you wanna run ORB_SLAM2 with MYNT EYE camera, please follow the "
+"steps:"
 
 #: ../../src/slam/orb_slam2.rst:10
-msgid "1. 下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ 及安装。"
-msgstr "1. Download `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ and follow steps to install."
+msgid ""
+"下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ "
+"及安装。"
+msgstr ""
+"Download `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-"
+"SDK-2.git>`_ and follow steps to install."
 
 #: ../../src/slam/orb_slam2.rst:11
-msgid "2. 添加 MYNT-EYE-SDK 路径到环境变量。打开 ``.bashrc`` 文件，在最后添加：export MYNTEYE_SDK2_ROOT=MYNT-EYE-SDK-2_INSTALL_PATH 。"
-msgstr "Add MYNT-EYE-SDK path to the environment variable. Open .bashrc file and add at the end the following path. export MYNTEYE_SDK2_ROOT=MYNT-EYE-SDK-2_INSTALL_PATH"
+msgid ""
+"添加 MYNT-EYE-SDK 路径到环境变量。打开 ``.bashrc`` 文件，在最后添加 ``export "
+"MYNTEYE_SDK2_ROOT=<MYNT-EYE-SDK-2 INSTALL PATH>`` 。"
+msgstr "Add MYNT-EYE-SDK path to the environment variable. Open ``.bashrc`` "
+"file and add at the end the following: ``export "
+"MYNTEYE_SDK2_ROOT=<MYNT-EYE-SDK-2 INSTALL PATH>``."
 
 #: ../../src/slam/orb_slam2.rst:12
-msgid "3. 按照一般步骤安装 ORB_SLAM2。"
-msgstr "3. Follow the normal procedure to install ORB_SLAM2."
+msgid "按照一般步骤安装 ORB_SLAM2 。"
+msgstr "Follow the normal procedure to install ORB_SLAM2."
 
 #: ../../src/slam/orb_slam2.rst:13
-msgid "4. 更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数到 ``<ORB_SLAM2>/config/mynteye_*.yaml``。"
-msgstr "4. Update distortion_parameters and projection_parameters to <ORB_SLAM2>/config/mynteye_*.yaml"
+msgid ""
+"更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数到 "
+"``<ORB_SLAM2>/config/mynteye_*.yaml``。"
+msgstr ""
+"Update ``distortion_parameters`` and ``projection_parameters`` to "
+"``<ORB_SLAM2>/config/mynteye_*.yaml``."
 
 #: ../../src/slam/orb_slam2.rst:14
-msgid "5. 在MYNT® EYE 上运行例子。"
-msgstr "run examples by mynteye camera."
+msgid "在 MYNT® EYE 上运行例子。"
+msgstr "Run examples by mynteye camera."
 
 #: ../../src/slam/orb_slam2.rst:17
 msgid "双目样例"
 msgstr "Install ROS Kinetic conveniently (if already installed, please ignore)"
 
 #: ../../src/slam/orb_slam2.rst:19
-msgid "按照 `ROS-StereoCalibration <http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration>`_ 或 OpenCV 校准双目摄像头，并在 ``<ORB_SLAM2>/config/mynteye_stereo.yaml`` 中更新参数。"
-msgstr "Calibrate a stereo camera with ·ROS-StereoCalibration <http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration>`_ or opencv, and then update parameters to <ORB_SLAM2>/config/mynteye_stereo.yaml."
+msgid ""
+"按照 `ROS-StereoCalibration "
+"<http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration>`_ 或 "
+"OpenCV 校准双目摄像头，并在 ``<ORB_SLAM2>/config/mynteye_stereo.yaml`` 中更新参数。"
+msgstr ""
+"Calibrate a stereo camera with `ROS-StereoCalibration "
+"<http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration>`_ or "
+"OpenCV, and then update parameters to "
+"``<ORB_SLAM2>/config/mynteye_stereo.yaml``."
 
 #: ../../src/slam/orb_slam2.rst:21
-msgid "运行脚本 `build.sh` ："
-msgstr "Execute build.sh script:"
+msgid "运行脚本 ``build.sh`` ："
+msgstr "Execute ``build.sh`` script:"
 
 #: ../../src/slam/orb_slam2.rst:28
 msgid "依照下面样式运行双目样例："
-msgstr "run stereo sample using the follow type."
+msgstr "Run stereo sample using the follow type:"
 
 #: ../../src/slam/orb_slam2.rst:36
-msgid "ROS下创建单目和双目节点"
+msgid "ROS 下创建单目和双目节点"
 msgstr "Building the nodes for mono and stereo (ROS)"
 
 #: ../../src/slam/orb_slam2.rst:38
-msgid "添加 ``Examples/ROS/ORB_SLAM2`` 路径到环境变量 ``ROS_PACKAGE_PATH`` 。打开 ``.bashrc`` 文件，在最后添加下面命令行。 ``PATH`` 为当前 ``ORB_SLAM2`` 存放路径:"
-msgstr "Add the path including Examples/ROS/ORB_SLAM2 to the ROS_PACKAGE_PATH environment variable. Open .bashrc file and add at the end the following line. Replace PATH by the folder where you cloned ORB_SLAM2:"
+msgid ""
+"添加 ``Examples/ROS/ORB_SLAM2`` 路径到环境变量 ``ROS_PACKAGE_PATH`` 。打开 "
+"``.bashrc`` 文件，在最后添加下面命令行。 ``PATH`` 为当前 ``ORB_SLAM2`` 存放路径:"
+msgstr ""
+"Add the path including ``Examples/ROS/ORB_SLAM2`` to the ``ROS_PACKAGE_PATH`` "
+"environment variable. Open ``.bashrc`` file and add at the end the following "
+"line. Replace ``PATH`` by the folder where you cloned ORB_SLAM2:"
 
 #: ../../src/slam/orb_slam2.rst:44
 msgid "运行脚本 `build_ros.sh` ："
-msgstr "Execute build_ros.sh script:"
+msgstr "Execute ``build_ros.sh`` script:"
 
 #: ../../src/slam/orb_slam2.rst:52
 msgid "Mono_ROS 例子"
 msgstr "Mono_ROS Example"
 
 #: ../../src/slam/orb_slam2.rst:54
-msgid "在 ``<ORBSLAM2>/config/mynteye_mono.yaml`` 里更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数"
-msgstr " Update distortion_parameters and projection_parameters in <ORBSLAM2>/config/mynteye_mono.yaml"
+msgid ""
+"在 ``<ORBSLAM2>/config/mynteye_mono.yaml`` 里更新 ``distortion_parameters`` 和"
+" ``projection_parameters`` 参数"
+msgstr ""
+"Update ``distortion_parameters`` and ``projection_parameters`` in "
+"``<ORBSLAM2>/config/mynteye_mono.yaml``"
 
 #: ../../src/slam/orb_slam2.rst:62
-msgid "这时获得针孔模型下 ``distortion_parameters`` 和 ``projection_parameters`` 参数，更新到 ``<ORBSLAM2>/config/mynteye_mono.yaml`` 中。"
-msgstr "After running the above type, pinhole's distortion_parameters and projection_parameters is obtained , and then update to <ORB_SLAM2>/config/mynteye_mono.yaml."
+msgid ""
+"这时获得针孔模型下 ``distortion_parameters`` 和 ``projection_parameters`` 参数，更新到 "
+"``<ORBSLAM2>/config/mynteye_mono.yaml`` 中。"
+msgstr ""
+"After running the above type, pinhole's ``distortion_parameters`` and "
+"``projection_parameters`` is obtained, and then update to "
+"``<ORB_SLAM2>/config/mynteye_mono.yaml``."
 
 #: ../../src/slam/orb_slam2.rst:64
 msgid "运行 ORB_SLAM2 ``Mono_ROS`` 例子"
-msgstr "Launch ORB_SLAM2 Mono_ROS"
+msgstr "Launch ORB_SLAM2 ``Mono_ROS``"
 
-#: ../../src/slam/orb_slam2.rst:70
+#: ../../src/slam/orb_slam2.rst:71
 msgid "Stereo_ROS 例子"
 msgstr "Stereo_ROS Example"
 
 #: ../../src/slam/orb_slam2.rst:73
-msgid "按照 `ROS-StereoCalibration <http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration>`_ 或 OpenCV 校准双目摄像头，并在 ``<ORB_SLAM2>/config/mynteye_stereo.yaml`` 中更新参数。"
-msgstr "Calibrate a stereo camera with ROS-StereoCalibration or opencv, and then update parameters to <ORB_SLAM2>/config/mynteye_stereo.yaml."
+msgid ""
+"按照 `ROS-StereoCalibration  "
+"<http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration>`_ 或 "
+"OpenCV 校准双目摄像头，并在 ``<ORB_SLAM2>/config/mynteye_stereo.yaml`` 中更新参数。"
+msgstr ""
+"Calibrate a stereo camera with `ROS-StereoCalibration "
+"<http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration>`_ or"
+" OpenCV, and then update parameters to "
+"``<ORB_SLAM2>/config/mynteye_stereo.yaml``."
 
 #: ../../src/slam/orb_slam2.rst:75
 msgid "运行 ORB_SLAM2 ``Stereo_ROS`` 例子"
-msgstr "Launch ORB_SLAM2 Stereo_ROS"
+msgstr "Launch ORB_SLAM2 ``Stereo_ROS``"
