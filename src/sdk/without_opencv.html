@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>OpenCV dependency &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>OpenCV independency &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -90,7 +90,7 @@
 <li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">OpenCV dependency</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">OpenCV independency</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
@@ -147,7 +147,7 @@
         
           <li><a href="contents.html">MYNT® EYE SDK</a> &raquo;</li>
         
-      <li>OpenCV dependency</li>
+      <li>OpenCV independency</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -167,18 +167,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="opencv">
-<span id="sdk-without-opencv"></span><h1>OpenCV dependency<a class="headerlink" href="#opencv" title="Permalink to this headline">¶</a></h1>
+<span id="sdk-without-opencv"></span><h1>OpenCV independency<a class="headerlink" href="#opencv" title="Permalink to this headline">¶</a></h1>
 <p>SDK provides a three-tier interface with OpenCV dependencies:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">api</span></code>,Upper interface, with OpenCV dependencies</li>
-<li><code class="docutils literal notranslate"><span class="pre">device</span></code>,Interlayer interface, without OpenCV dependencies</li>
-<li><code class="docutils literal notranslate"><span class="pre">uvc</span></code>,Bottom interface, without OpenCV dependencies</li>
+<li><code class="docutils literal notranslate"><span class="pre">api</span></code>, upper interface, with OpenCV dependencies</li>
+<li><code class="docutils literal notranslate"><span class="pre">device</span></code>, interlayer interface, without OpenCV dependencies</li>
+<li><code class="docutils literal notranslate"><span class="pre">uvc</span></code>, bottom interface, without OpenCV dependencies</li>
 </ul>
-<p>If you don’t want to use OpenCV,edit <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/cmake/Option.cmake</span></code> and set <code class="docutils literal notranslate"><span class="pre">WITH_API</span></code> to <code class="docutils literal notranslate"><span class="pre">OFF``That</span> <span class="pre">will</span> <span class="pre">not</span> <span class="pre">compile</span> <span class="pre">``api</span></code>:</p>
+<p>If you don’t want to use OpenCV, edit <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/cmake/Option.cmake</span></code> , set <code class="docutils literal notranslate"><span class="pre">WITH_API</span></code> to <code class="docutils literal notranslate"><span class="pre">OFF</span></code>. This will stop the compilation of the interface api:</p>
 <div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">option</span><span class="p">(</span><span class="s">WITH_API</span> <span class="s2">&quot;Build with API layer, need OpenCV&quot;</span> <span class="s">ON</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Use samples for the interface <code class="docutils literal notranslate"><span class="pre">device</span></code>, please refer to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/device/camera.cc">device/camera.cc</a> .</p>
+<p>For samples for the interface <code class="docutils literal notranslate"><span class="pre">device</span></code>, please refer to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/device/camera.cc">device/camera.cc</a> .</p>
 </div>
 
 
@@ -223,7 +223,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

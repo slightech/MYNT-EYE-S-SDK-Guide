@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get stereo camera correction image &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Get stereo camera correction image &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Get disparity image" href="get_disparity.html" />
-    <link rel="prev" title="Get binocular original image" href="get_stereo.html" /> 
+    <link rel="prev" title="Get original binocular image" href="get_stereo.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -90,14 +90,14 @@
 <li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get original binocular image</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Get stereo camera correction image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get depth image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
@@ -176,9 +176,9 @@
             
   <div class="section" id="get-stereo-rectified">
 <span id="id1"></span><h1>Get stereo camera correction image<a class="headerlink" href="#get-stereo-rectified" title="Permalink to this headline">¶</a></h1>
-<p>The <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code> API provided, can only get the raw data of the hardware by default, for example stereo camera raw image.</p>
-<p>However, the stereo camera correction image is synthetic data which belong to upper layer . To get this kind of data through <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>, you need to start the <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> beforehand.</p>
-<p>In addition, <code class="docutils literal notranslate"><span class="pre">WaitForStreams()</span></code> is waiting for the key of the raw data. At the beginning, the synthetic data may still being processed, and the value taken out is null, so it needs to check not empty.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code> API provided can only get the raw data of the hardware, for example, the stereo camera raw image.</p>
+<p>The stereo camera correction image belongs to the upper layer of synthetic data. To get the data through <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>, you will need to start <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> beforehand.</p>
+<p>In addition, <code class="docutils literal notranslate"><span class="pre">WaitForStreams()</span></code> waits for the key of the raw data. At the beginning when the synthetic data may still being processed, the value taken out will be null, so it needs to check not empty.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
 <p class="last">If you want the synthetic data once it is generated, see <a class="reference internal" href="get_from_callbacks.html#get-from-callbacks"><span class="std std-ref">Get data from callbacks</span></a>.</p>
@@ -215,7 +215,7 @@
 </pre></div>
 </div>
 <p>OpenCV is used to display the image above. Select the display window, press <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> to exit the program.</p>
-<p>For complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc">get_stereo_rectified.cc</a> .</p>
+<p>For the complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc">get_stereo_rectified.cc</a> .</p>
 </div>
 
 
@@ -229,7 +229,7 @@
         <a href="get_disparity.html" class="btn btn-neutral float-right" title="Get disparity image" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="get_stereo.html" class="btn btn-neutral" title="Get binocular original image" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="get_stereo.html" class="btn btn-neutral" title="Get original binocular image" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -260,7 +260,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MYNT® EYE SDK Guide &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>MYNT® EYE SDK Guide &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -171,27 +171,27 @@
 <li class="toctree-l2"><a class="reference internal" href="src/sdk/install_windows.html">Windows Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/sdk/install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/sdk/install_ros.html">ROS Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/sdk/without_opencv.html">OpenCV dependency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/sdk/without_opencv.html">OpenCV independency</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/firmware/contents.html">MYNT® EYE Firmware</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="src/firmware/applicable.html">Compatibility</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/firmware/upgrade.html">How to upgrade the firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/firmware/from_v1.html">Change SDK 1.x to 2.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/firmware/from_v1.html">Change from SDK 1.x to 2.x</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/data/contents.html">MYNT® EYE Data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_device_info.html">Get device information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_img_params.html">Get image calibration parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_imu_params.html">Get IMU calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_stereo.html">Get original binocular image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_stereo_rectified.html">Get stereo camera correction image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_disparity.html">Get disparity image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_depth.html">Get depth image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_points.html">Get point image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_imu.html">Get IMU data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/get_from_callbacks.html">Get data from callbacks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/data/get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/data/get_with_plugin.html">Using the plugin to get data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/save_params.html">Save device infomation and parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/write_img_params.html">Write image parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/data/write_imu_params.html">Write IMU parameters</a></li>
@@ -214,13 +214,16 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/analytics/contents.html">Data Analytics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/analytics/dataset.html">Record data set</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_imu.html">Analyse IMU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_stamp.html">Analyse time stamp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/analytics/dataset.html">Recording data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_imu.html">Analyzing the IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/analytics/analytics_stamp.html">Analyze time stamps</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="src/slam/contents.html">SLAM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="src/slam/vins.html">How to use in VINS x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/slam/vins.html">How to use in VINS-Mono</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/slam/orb_slam2.html">How to use in ORB_SLAM2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/slam/okvis.html">How to use in OKVIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src/slam/viorb.html">How to use in VIORB</a></li>
 <li class="toctree-l2"><a class="reference internal" href="src/slam/maplab.html">How to use in Maplab x</a></li>
 </ul>
 </li>
@@ -268,7 +271,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

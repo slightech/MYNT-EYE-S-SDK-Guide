@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get binocular original image &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Get original binocular image &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -90,14 +90,14 @@
 <li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Get binocular original image</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Get original binocular image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get depth image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
@@ -155,7 +155,7 @@
         
           <li><a href="contents.html">MYNT® EYE Data</a> &raquo;</li>
         
-      <li>Get binocular original image</li>
+      <li>Get original binocular image</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,9 +175,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="get-stereo">
-<span id="id1"></span><h1>Get binocular original image<a class="headerlink" href="#get-stereo" title="Permalink to this headline">¶</a></h1>
-<p>Use <code class="docutils literal notranslate"><span class="pre">Start()</span></code>  or <code class="docutils literal notranslate"><span class="pre">Stop()</span></code> ,to start or stop data capture. If you only needs capture the image data, use <code class="docutils literal notranslate"><span class="pre">Source::VIDEO_STREAMING</span></code></p>
-<p>When data capture starts, call <code class="docutils literal notranslate"><span class="pre">WaitForStreams()</span></code> function. When data capture begins to appear, use <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code> to capture what your need</p>
+<span id="id1"></span><h1>Get original binocular image<a class="headerlink" href="#get-stereo" title="Permalink to this headline">¶</a></h1>
+<p>Use <code class="docutils literal notranslate"><span class="pre">Start()</span></code> or <code class="docutils literal notranslate"><span class="pre">Stop()</span></code> , to start or stop data capturing. If you only need the image data, use <code class="docutils literal notranslate"><span class="pre">Source::VIDEO_STREAMING</span></code> .</p>
+<p>When data capturing starts, call <code class="docutils literal notranslate"><span class="pre">WaitForStreams()</span></code> function. Once data capturing begins, use <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code> to get your data.</p>
 <p>Reference commands:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
@@ -204,8 +204,8 @@
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">Stop</span><span class="p">(</span><span class="n">Source</span><span class="o">::</span><span class="n">VIDEO_STREAMING</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Press <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> to end your OPENCV image.</p>
-<p>View sample code, check the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo.cc">get_stereo.cc</a> .</p>
+<p>Press <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> to close your OpenCV image.</p>
+<p>To view compelte sample code, check <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo.cc">get_stereo.cc</a> .</p>
 </div>
 
 
@@ -250,7 +250,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

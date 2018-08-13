@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Analyse IMU &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Analyzing the IMU &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Analyse time stamp" href="analytics_stamp.html" />
-    <link rel="prev" title="Record data set" href="dataset.html" /> 
+    <link rel="next" title="Analyze time stamps" href="analytics_stamp.html" />
+    <link rel="prev" title="Recording data sets" href="dataset.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -91,9 +91,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">Data Analytics</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="dataset.html">Record data set</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Analyse IMU</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analytics_stamp.html">Analyse time stamp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dataset.html">Recording data sets</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Analyzing the IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytics_stamp.html">Analyze time stamps</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
@@ -144,7 +144,7 @@
         
           <li><a href="contents.html">Data Analytics</a> &raquo;</li>
         
-      <li>Analyse IMU</li>
+      <li>Analyzing the IMU</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -164,8 +164,8 @@
            <div itemprop="articleBody">
             
   <div class="section" id="imu">
-<span id="analytics-imu"></span><h1>Analyse IMU<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
-<p>SDK provides <code class="docutils literal notranslate"><span class="pre">imu_analytics.py</span></code> script for analyse IMU. Details see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> .</p>
+<span id="analytics-imu"></span><h1>Analyzing the IMU<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
+<p>The SDK provides <code class="docutils literal notranslate"><span class="pre">imu_analytics.py</span></code> script for IMU analysis. For details see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> .</p>
 <p>Reference run command and results on Linux:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python tools/analytics/imu_analytics.py -i dataset -c tools/config/mynteye/mynteye_config.yaml -al<span class="o">=</span>-1.2,1.2 -gl<span class="o">=</span> -gdu<span class="o">=</span>d -gsu<span class="o">=</span>d -kl<span class="o">=</span>
 imu analytics ...
@@ -187,9 +187,9 @@ save figure to:
 imu analytics <span class="k">done</span>
 </pre></div>
 </div>
-<p>Analysis result saved in data set directory, reference:</p>
+<p>Reference for the analysis results saved in the data set directory:</p>
 <img alt="../../_images/imu_analytics.png" src="../../_images/imu_analytics.png" />
-<p>In addition, script specific options see by <code class="docutils literal notranslate"><span class="pre">-h</span></code></p>
+<p>In addition, specific options of script can see by <code class="docutils literal notranslate"><span class="pre">-h</span></code> :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python tools/analytics/imu_analytics.py -h
 </pre></div>
 </div>
@@ -203,10 +203,10 @@ imu analytics <span class="k">done</span>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="analytics_stamp.html" class="btn btn-neutral float-right" title="Analyse time stamp" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="analytics_stamp.html" class="btn btn-neutral float-right" title="Analyze time stamps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="dataset.html" class="btn btn-neutral" title="Record data set" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="dataset.html" class="btn btn-neutral" title="Recording data sets" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -237,7 +237,7 @@ imu analytics <span class="k">done</span>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

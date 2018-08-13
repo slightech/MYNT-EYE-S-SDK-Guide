@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ROS Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>ROS Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="OpenCV dependency" href="without_opencv.html" />
+    <link rel="next" title="OpenCV independency" href="without_opencv.html" />
     <link rel="prev" title="MacOS Installation x" href="install_macos.html" /> 
 
   
@@ -90,7 +90,7 @@
 <li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">ROS Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV dependency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV independency</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
@@ -205,7 +205,7 @@ chmod <span class="m">755</span> ./ros_install.sh <span class="o">&amp;&amp;</sp
 </div>
 </div>
 <div class="section" id="id3">
-<h2>Compiled<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Compiling Code<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
 make ros
 </pre></div>
@@ -217,7 +217,7 @@ make ros
 roslaunch mynt_eye_ros_wrapper mynteye.launch
 </pre></div>
 </div>
-<p>Run the node，and preview by RViz:</p>
+<p>Run the node, and preview by RViz:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> wrappers/ros/devel/setup.bash
 roslaunch mynt_eye_ros_wrapper display.launch
 </pre></div>
@@ -225,7 +225,7 @@ roslaunch mynt_eye_ros_wrapper display.launch
 </div>
 <div class="section" id="id5">
 <h2>Testing Services<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Run the node as follows, make sure that device information service is same:</p>
+<p>Run the node as follows, provide device information getting service, see follows:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">source</span> wrappers/ros/devel/setup.bash
 $ rosrun mynt_eye_ros_wrapper get_device_info.py
 LENS_TYPE: <span class="m">0000</span>
@@ -242,7 +242,7 @@ DEVICE_NAME: MYNT-EYE-S1000
 <div class="section" id="ros-indigo">
 <h2>Common issues - ROS Indigo<a class="headerlink" href="#ros-indigo" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="make-ros-libopencv">
-<h3>Cann’t find``libopencv`` while <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code><a class="headerlink" href="#make-ros-libopencv" title="Permalink to this headline">¶</a></h3>
+<h3>Cannot find <code class="docutils literal notranslate"><span class="pre">libopencv</span></code> while <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code><a class="headerlink" href="#make-ros-libopencv" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make[3]: *** No rule to make target `/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8&#39;, needed by `/home/john/Workspace/mynt-eye-sdk-2/wrappers/ros/devel/lib/libmynteye_wrapper.so&#39;.  Stop.
 </pre></div>
 </div>
@@ -251,14 +251,14 @@ DEVICE_NAME: MYNT-EYE-S1000
 sudo apt-get install libcv-dev
 </pre></div>
 </div>
-<p><strong>Solution 2)</strong> Install OpenCV 3  &amp; re-compiled <code class="docutils literal notranslate"><span class="pre">cv_bridge</span></code>:</p>
+<p><strong>Solution 2)</strong> Install OpenCV 3 &amp; re-compiled <code class="docutils literal notranslate"><span class="pre">cv_bridge</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install ros-indigo-opencv3
 
 git clone https://github.com/ros-perception/vision_opencv.git
 mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
 </pre></div>
 </div>
-<p>Than run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> again</p>
+<p>Then run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> again</p>
 </div>
 </div>
 <div class="section" id="id6">
@@ -275,7 +275,7 @@ mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="without_opencv.html" class="btn btn-neutral float-right" title="OpenCV dependency" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="without_opencv.html" class="btn btn-neutral float-right" title="OpenCV independency" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="install_macos.html" class="btn btn-neutral" title="MacOS Installation x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -309,7 +309,7 @@ mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

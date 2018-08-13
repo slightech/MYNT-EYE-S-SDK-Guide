@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get IMU data &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Get IMU data &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -90,14 +90,14 @@
 <li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get original binocular image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get depth image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Get IMU data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
@@ -176,8 +176,8 @@
             
   <div class="section" id="imu">
 <span id="get-imu-data"></span><h1>Get IMU data<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
-<p>API offers <code class="docutils literal notranslate"><span class="pre">Start()</span></code> / <code class="docutils literal notranslate"><span class="pre">Stop()</span></code> function to start/stop capturing data. You can set <code class="docutils literal notranslate"><span class="pre">Source::MOTION_TRACKING</span></code> argument to capture IMU data only while set <code class="docutils literal notranslate"><span class="pre">Source::ALL</span></code> to capture both image and IMU data.</p>
-<p>During capturing data, you need <code class="docutils literal notranslate"><span class="pre">EnableMotionDatas()</span></code> to caching then can get IMU data from <code class="docutils literal notranslate"><span class="pre">GetMotionDatas()</span></code> . Otherwise, IMU data is only available through callback interface, see <a class="reference internal" href="get_from_callbacks.html#get-from-callbacks"><span class="std std-ref">Get data from callbacks</span></a> .</p>
+<p>The API offers <code class="docutils literal notranslate"><span class="pre">Start()</span></code> / <code class="docutils literal notranslate"><span class="pre">Stop()</span></code> function to start/stop capturing data. You can set the argument to``Source::MOTION_TRACKING`` to capture IMU data only, or set it to <code class="docutils literal notranslate"><span class="pre">Source::ALL</span></code> to capture both image and IMU data.</p>
+<p>During capturing data, you need <code class="docutils literal notranslate"><span class="pre">EnableMotionDatas()</span></code> to enable caching in order to get IMU data from <code class="docutils literal notranslate"><span class="pre">GetMotionDatas()</span></code> . Otherwise, IMU data is only available through the callback interface, see <a class="reference internal" href="get_from_callbacks.html#get-from-callbacks"><span class="std std-ref">Get data from callbacks</span></a> .</p>
 <p>Sample code snippet:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
@@ -231,7 +231,7 @@
 </pre></div>
 </div>
 <p>OpenCV is used to display image and data. When window is selected, press <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> to exit program.</p>
-<p>For complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_imu.cc">get_imu.cc</a> .</p>
+<p>For the complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_imu.cc">get_imu.cc</a> .</p>
 </div>
 
 
@@ -276,7 +276,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Write image parameters &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Write image parameters &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -90,14 +90,14 @@
 <li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get original binocular image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get depth image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Write image parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
@@ -176,8 +176,8 @@
             
   <div class="section" id="write-img-params">
 <span id="id1"></span><h1>Write image parameters<a class="headerlink" href="#write-img-params" title="Permalink to this headline">¶</a></h1>
-<p>SDK provides a tool <code class="docutils literal notranslate"><span class="pre">img_params_writer</span></code> to write the image parameters.For detail ,you can read <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> .</p>
-<p>How to get image parameter, please read <a class="reference internal" href="get_img_params.html#get-img-params"><span class="std std-ref">Get image calibration parameters</span></a>, This is used to calculate the deviation.</p>
+<p>The SDK provides a tool <code class="docutils literal notranslate"><span class="pre">img_params_writer</span></code> for writing image parameters. For details, read <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> .</p>
+<p>For getting image parameters, please read <a class="reference internal" href="get_img_params.html#get-img-params"><span class="std std-ref">Get image calibration parameters</span></a>. This is used to calculate the deviation.</p>
 <p>Reference commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./tools/_output/bin/writer/img_params_writer tools/writer/config/img.params
 
@@ -185,14 +185,14 @@
 .<span class="se">\t</span>ools<span class="se">\_</span>output<span class="se">\b</span>in<span class="se">\w</span>riter<span class="se">\i</span>mg_params_writer.bat tools<span class="se">\w</span>riter<span class="se">\c</span>onfig<span class="se">\i</span>mg.params
 </pre></div>
 </div>
-<p>For attention,the path of parameters file is <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params">tools/writer/config/img.params</a>. If you calibrate parameters yourself, you can edit it and run previous commands to write into devices.</p>
+<p>The path of parameters file is <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params">tools/writer/config/img.params</a>. If you calibrated parameters yourself, you can edit it and run previous commands to write them into the devices.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">You can also write into devices with <code class="docutils literal notranslate"><span class="pre">SN*.conf</span></code> provided by old sdk.</p>
+<p class="last">You can also write into devices with <code class="docutils literal notranslate"><span class="pre">SN*.conf</span></code> provided by old SDK.</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Please don’t override parameters optionally. In addition, you can use <code class="docutils literal notranslate"><span class="pre">save_all_infos</span></code> to backup parameters.</p>
+<p class="last">Please don’t override parameters, you can use <code class="docutils literal notranslate"><span class="pre">save_all_infos</span></code> to backup parameters.</p>
 </div>
 </div>
 
@@ -238,7 +238,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

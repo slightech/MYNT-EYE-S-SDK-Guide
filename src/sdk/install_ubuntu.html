@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ubuntu Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Ubuntu Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -90,7 +90,7 @@
 <li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV dependency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV independency</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
@@ -186,7 +186,7 @@
 </table>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>If you used any other Linux distributions that without apt-get package manager, you’d better install required packages manaully instead of using “make init”.</p>
+<p>If you used any other Linux distributions without apt-get package manager, you need to install required packages manaully instead of using <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">init</span></code>.</p>
 <table border="1" class="last docutils">
 <colgroup>
 <col width="16%" />
@@ -228,7 +228,7 @@ make init
 </ul>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>To build and install Opencv, Please refer to <a class="reference external" href="https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html">Installation in Linux</a> . Or reference below command:</p>
+<p>To build and install Opencv, Please refer to <a class="reference external" href="https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html">Installation in Linux</a> . Alternatively, refer to the command below:</p>
 <div class="last highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>compiler<span class="o">]</span> sudo apt-get install build-essential
 <span class="o">[</span>required<span class="o">]</span> sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 <span class="o">[</span>optional<span class="o">]</span> sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
@@ -259,15 +259,15 @@ $ sudo make install
 </div>
 </div>
 <div class="section" id="id3">
-<h2>Building Code<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Building code<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>If opencv is installed in custom directory or you want to specify version, you should set the path before building:</p>
+<p>If opencv is installed in custom directory or if you want to specify a version, you should set the path before building:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># OpenCV_DIR 为 OpenCVConfig.cmake 所在目录</span>
 <span class="nb">export</span> <span class="nv">OpenCV_DIR</span><span class="o">=</span>~/opencv
 </pre></div>
 </div>
-<p class="last">Otherwise, CMake will prompt cannot find Opencv. If you need sdk without OpenCV, please read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV dependency</span></a> .</p>
+<p class="last">Otherwise, CMake will prompt cannot find OpenCV. If you need sdk without OpenCV, please read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV independency</span></a> .</p>
 </div>
 <p>Build and install:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
@@ -294,16 +294,16 @@ make samples
 make tools
 </pre></div>
 </div>
-<p>Install requirement:</p>
+<p>Installation requirement:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;/tools/
 sudo pip install -r requirements.txt
 </pre></div>
 </div>
-<p>the usage of tools and scripts will be introduced later.</p>
+<p>The usage of tools and scripts will be introduced later.</p>
 </div>
 <div class="section" id="id6">
 <h2>Conclusion<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>If your project will use SDK, you can reference the settings in <code class="docutils literal notranslate"><span class="pre">samples/CMakeLists.txt</span></code> for CMake. Or just import the head file and dynamic library in installation directory.</p>
+<p>If your project will use SDK, you can refer to the settings in <code class="docutils literal notranslate"><span class="pre">samples/CMakeLists.txt</span></code> for CMake. Alternatively, import the head file and dynamic library in the installation directory.</p>
 </div>
 </div>
 
@@ -349,7 +349,7 @@ sudo pip install -r requirements.txt
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

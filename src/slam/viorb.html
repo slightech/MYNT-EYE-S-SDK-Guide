@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>SLAM &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>How to use in VIORB &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="How to use in VINS-Mono" href="vins.html" />
-    <link rel="prev" title="Analyze time stamps" href="../analytics/analytics_stamp.html" /> 
+    <link rel="next" title="How to use in Maplab x" href="maplab.html" />
+    <link rel="prev" title="How to use in OKVIS" href="okvis.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -91,11 +91,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">SLAM</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">SLAM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a></li>
 <li class="toctree-l2"><a class="reference internal" href="orb_slam2.html">How to use in ORB_SLAM2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="okvis.html">How to use in OKVIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html">How to use in VIORB</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to use in VIORB</a></li>
 <li class="toctree-l2"><a class="reference internal" href="maplab.html">How to use in Maplab x</a></li>
 </ul>
 </li>
@@ -144,13 +144,15 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>SLAM</li>
+          <li><a href="contents.html">SLAM</a> &raquo;</li>
+        
+      <li>How to use in VIORB</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/src/slam/contents.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/src/slam/viorb.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,44 +165,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="slam">
-<span id="id1"></span><h1>SLAM<a class="headerlink" href="#slam" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#mynt-eye-vins-mono">If you wanna run VINS-Mono with MYNT EYE camera, please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#ros-kinetic">Install ROS Kinetic conveniently (if already installed, please ignore)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#mynt-eye-vins-sample">Install MYNT-EYE-VINS-Sample</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#id2">Get image calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#id4">Run VINS-Mono with MYNT EYE camera</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="orb_slam2.html">How to use in ORB_SLAM2</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html#mynt-eye-orb-slam2">If you wanna run ORB_SLAM2 with MYNT EYE camera, please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html#id2">Install ROS Kinetic conveniently (if already installed, please ignore)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html#ros">Building the nodes for mono and stereo (ROS)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="orb_slam2.html#mono-ros">Mono_ROS Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="orb_slam2.html#stereo-ros">Stereo_ROS Example</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="okvis.html">How to use in OKVIS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#mynt-eye-okvis">If you wanna run OKVIS with MYNT EYE camera, please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#id2">Install MYNTEYE OKVIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#id3">Get camera calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#id6">Run MYNTEYE OKVIS</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="viorb.html">How to use in VIORB</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#mynt-eye-viorb">If you wanna run VIORB with MYNT EYE camera, please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#mynt-eye-viorb-sdk2">Install MYNT-EYE-VIORB-SDK2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#id2">Get image calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#viorb-mynt-eye-ros-wrapper">Run VIORB and mynt_eye_ros_wrapper</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="maplab.html">How to use in Maplab x</a></li>
-</ul>
+  <div class="section" id="slam-viorb">
+<span id="id1"></span><h1>How to use in <a class="reference external" href="https://github.com/jingpang/LearnVIORB">VIORB</a><a class="headerlink" href="#slam-viorb" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mynt-eye-viorb">
+<h2>If you wanna run VIORB with MYNT EYE camera, please follow the steps:<a class="headerlink" href="#mynt-eye-viorb" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and install mynt_eye_ros_wrapper.</li>
+<li>Follow the normal procedure to install VIORB.</li>
+<li>Update camera parameters to <code class="docutils literal notranslate"><span class="pre">&lt;VIO&gt;/config/mynteye.yaml</span></code>.</li>
+<li>Run mynt_eye_ros_wrapper &amp; VIORB to start.</li>
+</ol>
+</div>
+<div class="section" id="mynt-eye-viorb-sdk2">
+<h2>Install MYNT-EYE-VIORB-SDK2<a class="headerlink" href="#mynt-eye-viorb-sdk2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone -b sdk2 https://github.com/slightech/MYNT-EYE-VIORB-Sample.git
+<span class="nb">cd</span> MYNT-EYE-VIORB-Sample
+</pre></div>
+</div>
+<p>Add the path including <code class="docutils literal notranslate"><span class="pre">Examples/ROS/ORB_VIO</span></code> to the <code class="docutils literal notranslate"><span class="pre">ROS_PACKAGE_PATH</span></code> environment variable. Open <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file and add at the end the following line. Replace <code class="docutils literal notranslate"><span class="pre">PATH</span></code> by the folder where you cloned <code class="docutils literal notranslate"><span class="pre">MYNT-EYE-VIORB-SDK2</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">ROS_PACKAGE_PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">ROS_PACKAGE_PATH</span><span class="si">}</span>:PATH/Examples/ROS/ORB_VIO
+</pre></div>
+</div>
+<p>Build with shell:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-VIORB-Sample
+./build.sh
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Get image calibration parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Assume that the left eye of the mynteye camera is used with IMU. Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> API, you can get the image calibration parameters of the currently open device, follow the steps:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-SDK-2
+./samples/_output/bin/tutorials/get_img_params
+</pre></div>
+</div>
+<p>After running the above type, pinhole’s <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> is obtained, and then update to <code class="docutils literal notranslate"><span class="pre">&lt;MYNT-EYE-VIORB-Sample&gt;/config/mynteye.yaml</span></code>.</p>
+</div>
+<div class="section" id="viorb-mynt-eye-ros-wrapper">
+<h2>Run VIORB and mynt_eye_ros_wrapper<a class="headerlink" href="#viorb-mynt-eye-ros-wrapper" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>roslaunch mynt_eye_ros_wrapper mynteye.launch
+roslaunch ORB_VIO testmynteye.launch
+</pre></div>
+</div>
+<p>Finally, files in <code class="docutils literal notranslate"><span class="pre">pyplotscripts</span></code> can be used to visualize some results.</p>
 </div>
 </div>
 
@@ -212,10 +219,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="vins.html" class="btn btn-neutral float-right" title="How to use in VINS-Mono" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="maplab.html" class="btn btn-neutral float-right" title="How to use in Maplab x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../analytics/analytics_stamp.html" class="btn btn-neutral" title="Analyze time stamps" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="okvis.html" class="btn btn-neutral" title="How to use in OKVIS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

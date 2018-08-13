@@ -10,7 +10,7 @@
 .. Attention::
 
   * 图像帧率和 IMU 频率必须同时设定才能生效。
-  * 图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60 。
+  * 图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55 。
   * IMU 频率有效值： 100, 200, 250, 333, 500 。
 
 参考代码片段：
@@ -22,7 +22,7 @@
   // Attention: must set FRAME_RATE and IMU_FREQUENCY together, otherwise won't
   // succeed.
 
-  // FRAME_RATE values: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60
+  // FRAME_RATE values: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55
   api->SetOptionValue(Option::FRAME_RATE, 25);
   // IMU_FREQUENCY values: 100, 200, 250, 333, 500
   api->SetOptionValue(Option::IMU_FREQUENCY, 500);

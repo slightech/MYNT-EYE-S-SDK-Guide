@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use in VINS x &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>How to use in VINS-Mono &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="How to use in Maplab x" href="maplab.html" />
+    <link rel="next" title="How to use in ORB_SLAM2" href="orb_slam2.html" />
     <link rel="prev" title="SLAM" href="contents.html" /> 
 
   
@@ -92,7 +92,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">SLAM</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">How to use in VINS x</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to use in VINS-Mono</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html">How to use in ORB_SLAM2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="okvis.html">How to use in OKVIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viorb.html">How to use in VIORB</a></li>
 <li class="toctree-l2"><a class="reference internal" href="maplab.html">How to use in Maplab x</a></li>
 </ul>
 </li>
@@ -143,7 +146,7 @@
         
           <li><a href="contents.html">SLAM</a> &raquo;</li>
         
-      <li>How to use in VINS x</li>
+      <li>How to use in VINS-Mono</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -162,8 +165,59 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="vins-x">
-<span id="slam-vins"></span><h1>How to use in <a class="reference external" href="https://github.com/HKUST-Aerial-Robotics/VINS-Mono">VINS</a> x<a class="headerlink" href="#vins-x" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="slam-vins">
+<span id="id1"></span><h1>How to use in <a class="reference external" href="https://github.com/HKUST-Aerial-Robotics/VINS-Mono">VINS-Mono</a><a class="headerlink" href="#slam-vins" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mynt-eye-vins-mono">
+<h2>If you wanna run VINS-Mono with MYNT EYE camera, please follow the steps:<a class="headerlink" href="#mynt-eye-vins-mono" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and install mynt_eye_ros_wrapper.</li>
+<li>Follow the normal procedure to install VINS-Mono.</li>
+<li>Update <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/sdk2/config/mynteye/mynteye_config.yaml">here</a> .</li>
+<li>Run mynt_eye_ros_wrapper &amp; VINS-Mono to start.</li>
+</ol>
+</div>
+<div class="section" id="ros-kinetic">
+<h2>Install ROS Kinetic conveniently (if already installed, please ignore)<a class="headerlink" href="#ros-kinetic" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~
+wget https://raw.githubusercontent.com/oroca/oroca-ros-pkg/master/ros_install.sh <span class="o">&amp;&amp;</span> <span class="se">\</span>
+chmod <span class="m">755</span> ./ros_install.sh <span class="o">&amp;&amp;</span> bash ./ros_install.sh catkin_ws kinetic
+</pre></div>
+</div>
+</div>
+<div class="section" id="mynt-eye-vins-sample">
+<h2>Install MYNT-EYE-VINS-Sample<a class="headerlink" href="#mynt-eye-vins-sample" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir -p ~/catkin_ws/src
+<span class="nb">cd</span> ~/catkin_ws/src
+git clone -b sdk2 https://github.com/slightech/MYNT-EYE-VINS-Sample.git
+<span class="nb">cd</span> ..
+catkin_make
+<span class="nb">source</span> devel/setup.bash
+<span class="nb">echo</span> <span class="s2">&quot;source ~/catkin_ws/devel/setup.bash&quot;</span> &gt;&gt; ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Get image calibration parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Assume that the left eye of the mynteye camera is used with IMU. Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> API, you can get the image calibration parameters of the currently open device, follow the steps:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-SDK-2
+./samples/_output/bin/tutorials/get_img_params
+</pre></div>
+</div>
+<p>After running the above type, pinhole’s <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> is obtained , and then update to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/sdk2/config/mynteye/mynteye_config.yaml">here</a> .</p>
+</div>
+<div class="section" id="id4">
+<h2>Run VINS-Mono with MYNT EYE camera<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/catkin_ws
+roslaunch mynt_eye_ros_wrapper mynteye.launch
+roslaunch vins_estimator mynteye.launch
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want to use a fish-eye camera model, please click <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/tree/sdk2/calibration_images">here</a> .</p>
+</div>
+</div>
 </div>
 
 
@@ -174,7 +228,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="maplab.html" class="btn btn-neutral float-right" title="How to use in Maplab x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="orb_slam2.html" class="btn btn-neutral float-right" title="How to use in ORB_SLAM2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="contents.html" class="btn btn-neutral" title="SLAM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -208,7 +262,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

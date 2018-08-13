@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to upgrade the firmware &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>How to upgrade the firmware &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Change SDK 1.x to 2.x" href="from_v1.html" />
+    <link rel="next" title="Change from SDK 1.x to 2.x" href="from_v1.html" />
     <link rel="prev" title="Compatibility" href="applicable.html" /> 
 
   
@@ -88,7 +88,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Firmware</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="applicable.html">Compatibility</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">How to upgrade the firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="from_v1.html">Change SDK 1.x to 2.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="from_v1.html">Change from SDK 1.x to 2.x</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
@@ -165,8 +165,8 @@
             
   <div class="section" id="firmware-upgrade">
 <span id="id1"></span><h1>How to upgrade the firmware<a class="headerlink" href="#firmware-upgrade" title="Permalink to this headline">¶</a></h1>
-<p>Please use MYNT EYE TOOL upgrade the firmware</p>
-<p>You can download firmware and MYNT EYE TOOL installation package in <a class="reference external" href="http://doc.myntai.com/mynteye/s/download">MYNTEYE_BOX</a> They are in the <code class="docutils literal notranslate"><span class="pre">Firmwares</span></code> folder, the file structure is as follows:</p>
+<p>Please use the MYNT EYE TOOL to upgrade the firmware</p>
+<p>You can download the firmware and MYNT EYE TOOL installation package in the <code class="docutils literal notranslate"><span class="pre">Firmwares</span></code> folder of <a class="reference external" href="http://www.myntai.com/mynteye/s/download">MYNTEYE_BOX</a> . The file structure is as follows:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Firmwares/
 ├─Checksum.txt                 # file checksum
 ├─MYNTEYE_S_2.0.0_rc0.img      # firmware
@@ -174,16 +174,16 @@
 └─setup.zip                    # MYNTEYE TOOL zip
 </pre></div>
 </div>
-<p>MYNT EYE Tool is only supported in Windows system, so you need to do the following steps in Winodws.</p>
+<p>The MYNT EYE Tool is only supported in Windows system, so you need to do the following steps in Windows.</p>
 <div class="section" id="id2">
 <h2>Download preparation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Download and unzip <code class="docutils literal notranslate"><span class="pre">setup.zip</span></code></li>
 <li>Download firmware, such as <code class="docutils literal notranslate"><span class="pre">MYNTEYE_S_2.0.0_rc0.img</span></code><ul>
-<li>Please refer to <a class="reference internal" href="applicable.html#firmware-applicable"><span class="std std-ref">Compatibility</span></a> select the firmware suitable for the SDK version</li>
-<li>Please refer to <code class="docutils literal notranslate"><span class="pre">Checksum.txt</span></code> find the firmware check code as follows:<ul>
+<li>Please refer to <a class="reference internal" href="applicable.html#firmware-applicable"><span class="std std-ref">Compatibility</span></a> to select the firmware suitable for the SDK version</li>
+<li>Please refer to <code class="docutils literal notranslate"><span class="pre">Checksum.txt</span></code> to find the firmware check code as follows:<ul>
 <li>Run the command in CMD <code class="docutils literal notranslate"><span class="pre">certutil</span> <span class="pre">-hashfile</span> <span class="pre">&lt;*.img&gt;</span> <span class="pre">MD5</span></code> .</li>
-<li>If the check code is incorrect, it means that the download is wrong. Please download it again!</li>
+<li>If the check code is incorrect, it means that the download went wrong. Please download it again!</li>
 </ul>
 </li>
 </ul>
@@ -193,25 +193,25 @@
 <div class="section" id="mynt-eye-tool">
 <h2>Install MYNT EYE TOOL<a class="headerlink" href="#mynt-eye-tool" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Double click the <code class="docutils literal notranslate"><span class="pre">setup.msi</span></code> and intall the app.</li>
+<li>Double click on <code class="docutils literal notranslate"><span class="pre">setup.msi</span></code> and install the application.</li>
 </ul>
 </div>
 <div class="section" id="id3">
 <h2>Update Firmware<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Plug in the MYNT® EYE camera at the USB3.0 port</li>
-<li>Open MYNT EYE TOOL,select <code class="docutils literal notranslate"><span class="pre">Options/FirmwareUpdate</span></code> .</li>
+<li>Plug in the MYNT® EYE camera into a USB3.0 port</li>
+<li>Open MYNT EYE TOOL and select <code class="docutils literal notranslate"><span class="pre">Options/FirmwareUpdate</span></code> .</li>
 </ul>
 <img alt="../../_images/firmware_update_option.png" src="../../_images/firmware_update_option.png" />
 <ul class="simple">
-<li>Clink <code class="docutils literal notranslate"><span class="pre">Update</span></code> .</li>
+<li>Click <code class="docutils literal notranslate"><span class="pre">Update</span></code> .</li>
 </ul>
 <a class="reference internal image-reference" href="../../_images/firmware_update.png"><img alt="../../_images/firmware_update.png" src="../../_images/firmware_update.png" style="width: 60%;" /></a>
 <ul class="simple">
-<li>Pop-up a warning dialog box, click <code class="docutils literal notranslate"><span class="pre">yes</span></code> .<ul>
-<li>This operation will erase the firmware, for details see README<ul>
-<li>Usually, MYNT EYE TOOL automatically installs the driver during the upgrade process.</li>
-<li>If the upgrade fails, refer to READEME.</li>
+<li>A warning dialog box will pop up, click <code class="docutils literal notranslate"><span class="pre">yes</span></code> .<ul>
+<li>This operation will erase the firmware, for details see README.<ul>
+<li>Usually, the MYNT EYE TOOL automatically installs the driver during the upgrade process.</li>
+<li>If the upgrade fails, refer to README.</li>
 </ul>
 </li>
 </ul>
@@ -224,15 +224,15 @@
 </ul>
 <img alt="../../_images/firmware_update_select.png" src="../../_images/firmware_update_select.png" />
 <ul class="simple">
-<li>When the upgrade is completed, the status changes to <code class="docutils literal notranslate"><span class="pre">Succeeded</span></code></li>
+<li>Once the upgrade is complete, the status will changes to <code class="docutils literal notranslate"><span class="pre">Succeeded</span></code>.</li>
 </ul>
 <a class="reference internal image-reference" href="../../_images/firmware_update_success.png"><img alt="../../_images/firmware_update_success.png" src="../../_images/firmware_update_success.png" style="width: 60%;" /></a>
 <ul class="simple">
-<li>Closing MYNT EYE TOOL，finish.</li>
+<li>Close the MYNT EYE TOOL，finish.</li>
 </ul>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">When the firmware is upgraded, the first time you open the MYNT® EYE camera, please put it steadily  for 3 seconds, and there will be a zero drift compensation process.Alternatively, call the API <code class="docutils literal notranslate"><span class="pre">RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)</span></code> for zero drift correction.please</p>
+<p class="last">During the first time you open the MYNT® EYE camera after a firmware update, please hold the camera steadily for 3 seconds, for a zero drift compensation process. You can also call the API <code class="docutils literal notranslate"><span class="pre">RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)</span></code> for zero drift correction.</p>
 </div>
 </div>
 </div>
@@ -245,7 +245,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="from_v1.html" class="btn btn-neutral float-right" title="Change SDK 1.x to 2.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="from_v1.html" class="btn btn-neutral float-right" title="Change from SDK 1.x to 2.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="applicable.html" class="btn btn-neutral" title="Compatibility" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -279,7 +279,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to use in ORB_SLAM2 &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="How to use in OKVIS" href="okvis.html" />
+    <link rel="prev" title="How to use in VINS-Mono" href="vins.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">SLAM</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to use in ORB_SLAM2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="okvis.html">How to use in OKVIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viorb.html">How to use in VIORB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maplab.html">How to use in Maplab x</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">SLAM</a> &raquo;</li>
+        
+      <li>How to use in ORB_SLAM2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/slam/orb_slam2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="slam-orb-slam2">
+<span id="id1"></span><h1>How to use in <a class="reference external" href="https://github.com/raulmur/ORB_SLAM2">ORB_SLAM2</a><a class="headerlink" href="#slam-orb-slam2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="mynt-eye-orb-slam2">
+<h2>If you wanna run ORB_SLAM2 with MYNT EYE camera, please follow the steps:<a class="headerlink" href="#mynt-eye-orb-slam2" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and follow steps to install.</li>
+<li>Add MYNT-EYE-SDK path to the environment variable. Open <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file and add at the end the following: <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">MYNTEYE_SDK2_ROOT=&lt;MYNT-EYE-SDK-2</span> <span class="pre">INSTALL</span> <span class="pre">PATH&gt;</span></code>.</li>
+<li>Follow the normal procedure to install ORB_SLAM2.</li>
+<li>Update <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> to <code class="docutils literal notranslate"><span class="pre">&lt;ORB_SLAM2&gt;/config/mynteye_*.yaml</span></code>.</li>
+<li>Run examples by mynteye camera.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Install ROS Kinetic conveniently (if already installed, please ignore)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Calibrate a stereo camera with <a class="reference external" href="http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration">ROS-StereoCalibration</a> or OpenCV, and then update parameters to <code class="docutils literal notranslate"><span class="pre">&lt;ORB_SLAM2&gt;/config/mynteye_stereo.yaml</span></code>.</li>
+<li>Execute <code class="docutils literal notranslate"><span class="pre">build.sh</span></code> script:</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod +x build.sh
+./build.sh
+</pre></div>
+</div>
+<ul class="simple">
+<li>Run stereo sample using the follow type:</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./Examples/Stereo/stereo_mynt ./Vocabulary/ORBvoc.txt ./config/mynteye_stereo.yaml <span class="nb">true</span> /mynteye/left/image_raw /mynteye/right/image_raw
+</pre></div>
+</div>
+</div>
+<div class="section" id="ros">
+<h2>Building the nodes for mono and stereo (ROS)<a class="headerlink" href="#ros" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Add the path including <code class="docutils literal notranslate"><span class="pre">Examples/ROS/ORB_SLAM2</span></code> to the <code class="docutils literal notranslate"><span class="pre">ROS_PACKAGE_PATH</span></code> environment variable. Open <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file and add at the end the following line. Replace <code class="docutils literal notranslate"><span class="pre">PATH</span></code> by the folder where you cloned ORB_SLAM2:</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">ROS_PACKAGE_PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">ROS_PACKAGE_PATH</span><span class="si">}</span>:PATH/ORB_SLAM2/Examples/ROS
+</pre></div>
+</div>
+<ul class="simple">
+<li>Execute <code class="docutils literal notranslate"><span class="pre">build_ros.sh</span></code> script:</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod +x build_ros.sh
+./build_ros.sh
+</pre></div>
+</div>
+<div class="section" id="mono-ros">
+<h3>Mono_ROS Example<a class="headerlink" href="#mono-ros" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>Update <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> in <code class="docutils literal notranslate"><span class="pre">&lt;ORBSLAM2&gt;/config/mynteye_mono.yaml</span></code></li>
+</ul>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-SDK-2
+
+./samples/_output/bin/tutorials/get_img_params
+</pre></div>
+</div>
+<p>After running the above type, pinhole’s <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> is obtained, and then update to <code class="docutils literal notranslate"><span class="pre">&lt;ORB_SLAM2&gt;/config/mynteye_mono.yaml</span></code>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Launch ORB_SLAM2 <code class="docutils literal notranslate"><span class="pre">Mono_ROS</span></code></li>
+</ul>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun ORB_SLAM2 mynteye_mono ./Vocabulary/ORBvoc.txt ./config/mynteye_mono.yaml /mynteye/left/image_raw
+</pre></div>
+</div>
+</div>
+<div class="section" id="stereo-ros">
+<h3>Stereo_ROS Example<a class="headerlink" href="#stereo-ros" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>Calibrate a stereo camera with <a class="reference external" href="http://wiki.ros.org/camera_calibration/Tutorials/StereoCalibration">ROS-StereoCalibration</a> or OpenCV, and then update parameters to <code class="docutils literal notranslate"><span class="pre">&lt;ORB_SLAM2&gt;/config/mynteye_stereo.yaml</span></code>.</li>
+<li>Launch ORB_SLAM2 <code class="docutils literal notranslate"><span class="pre">Stereo_ROS</span></code></li>
+</ul>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rosrun ORB_SLAM2 ros_mynteye_stereo ./Vocabulary/ORBvoc.txt ./config/mynteye_stereo.yaml <span class="nb">true</span> /mynteye/left/image_raw /mynteye/right/image_raw
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="okvis.html" class="btn btn-neutral float-right" title="How to use in OKVIS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="vins.html" class="btn btn-neutral" title="How to use in VINS-Mono" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, JohnZhao.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'2.0.1-rc1',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

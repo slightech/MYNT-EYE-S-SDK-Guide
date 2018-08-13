@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Enable log file &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Enable log file &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -164,8 +164,8 @@
             
   <div class="section" id="log-file">
 <span id="id1"></span><h1>Enable log file<a class="headerlink" href="#log-file" title="Permalink to this headline">¶</a></h1>
-<p>General configuration of the log in the head of <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/include/mynteye/glog_init.h">glog_init.h</a>  。</p>
-<p>uncomment <code class="docutils literal notranslate"><span class="pre">FLAGS_log_dir</span> <span class="pre">=</span> <span class="pre">&quot;.&quot;;</span></code> recompiled it and save log to current work directory. As to run <code class="docutils literal notranslate"><span class="pre">camera_a</span></code> log file as follows:</p>
+<p>The general configuration of the log in the head file <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/include/mynteye/glog_init.h">glog_init.h</a> .</p>
+<p>Uncomment <code class="docutils literal notranslate"><span class="pre">FLAGS_log_dir</span> <span class="pre">=</span> <span class="pre">&quot;.&quot;;</span></code> recompile and save to current work directory. Run <code class="docutils literal notranslate"><span class="pre">camera_a</span></code> log file as follows:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;workdir&gt;/
 ├─camera_a.ERROR
 ├─camera_a.FATAL
@@ -177,8 +177,8 @@
 └─camera_a.john-ubuntu.john.log.WARNING.20180513-141833.519
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">camera_a.INFO</span></code> shows which program and levers of log it is. But it is only a link, which link to real log file, as <code class="docutils literal notranslate"><span class="pre">camera_a.john-ubuntu.john.log.INFO.20180513-141832.519</span></code>. Run several times, <code class="docutils literal notranslate"><span class="pre">camera_a.INFO</span></code> still leaves one to link the lastes log file, so can be checked easily</p>
-<p>Excute <cite>make cleanlog</cite> to clean all log files</p>
+<p><code class="docutils literal notranslate"><span class="pre">camera_a.INFO</span></code> shows the program and levers of log it is running. The link to the real log file is <code class="docutils literal notranslate"><span class="pre">camera_a.john-ubuntu.john.log.INFO.20180513-141832.519</span></code>. Even if it ran several times, <code class="docutils literal notranslate"><span class="pre">camera_a.INFO</span></code> still leaves the link to last log file.</p>
+<p>Excute <cite>make cleanlog</cite> to clean all log files.</p>
 </div>
 
 
@@ -223,7 +223,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

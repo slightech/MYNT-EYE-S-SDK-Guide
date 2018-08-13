@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Enable manual exposure and its adjustment function &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Enable manual exposure and its adjustment function &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -167,11 +167,11 @@
   <div class="section" id="manual-exposure">
 <span id="id1"></span><h1>Enable manual exposure and its adjustment function<a class="headerlink" href="#manual-exposure" title="Permalink to this headline">¶</a></h1>
 <p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function of the API, you can set various control values ​​for the current open device.</p>
-<p>Enabling manual exposure is setting <code class="docutils literal notranslate"><span class="pre">Option::EXPOSURE_MODE</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>. During manual exposure, the settings available for adjustment are:</p>
+<p>To enabling manual exposure, set <code class="docutils literal notranslate"><span class="pre">Option::EXPOSURE_MODE</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>. During manual exposure, the settings available for adjustment are:</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">Option::GAIN</span></code> Gain.</li>
-<li><code class="docutils literal notranslate"><span class="pre">Option::BRIGHTNESS</span></code> Brightness（Exposure time）</li>
-<li><code class="docutils literal notranslate"><span class="pre">Option::CONTRAST</span></code> Contrast (Black level calibration)</li>
+<li><code class="docutils literal notranslate"><span class="pre">Option::BRIGHTNESS</span></code> Brightness (Exposure time).</li>
+<li><code class="docutils literal notranslate"><span class="pre">Option::CONTRAST</span></code> Contrast (Black level calibration).</li>
 </ul>
 <p>Reference Code:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
@@ -204,8 +204,8 @@ I0513 <span class="m">14</span>:09:17.552958 <span class="m">31908</span> manual
 I0513 <span class="m">14</span>:09:17.552963 <span class="m">31908</span> manual_exposure.cc:40<span class="o">]</span> Set CONTRAST to <span class="m">127</span>
 </pre></div>
 </div>
-<p>The sample program displays the image with a real exposure time (millisecond) in the upper left corner</p>
-<p>For complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc">manual_exposure.cc</a></p>
+<p>The sample program displays the image with a real exposure time (millisecond) in the upper left corner.</p>
+<p>For complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc">manual_exposure.cc</a> .</p>
 </div>
 
 
@@ -250,7 +250,7 @@ I0513 <span class="m">14</span>:09:17.552963 <span class="m">31908</span> manual
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

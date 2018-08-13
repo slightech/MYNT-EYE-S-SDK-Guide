@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Windows Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Windows Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -90,7 +90,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Windows Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV dependency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV independency</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
@@ -183,11 +183,11 @@
 </table>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">Windows does not provide Visual Studio <code class="docutils literal notranslate"><span class="pre">*.sln</span></code> file directly and requires CMake to build. First, CMake is cross-platform, easy to configure, and sustainable maintenance, and the second is the third party code (Glog, OpenCV) are also used CMake to build.</p>
+<p class="last">Windows does not provide Visual Studio <code class="docutils literal notranslate"><span class="pre">*.sln</span></code> file directly and requires CMake to build. Firstly, CMake can be used across multiple platforms, it is easy to configure and can be maintained in a sustainable way. Secondly, the third-party codes (Glog, OpenCV) are built using CMake.</p>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">Currently we do not provide a binary installer, you need to compile from the source code. It is also the process of configuring the development environment.</p>
+<p class="last">Currently we do not provide a binary installer, thus you need to compile from the source code. It is also the process of configuring the development environment.</p>
 </div>
 <div class="section" id="id1">
 <h2>Prerequisites<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
@@ -220,7 +220,7 @@ git version 2.11.1.windows.1
 </li>
 <li><a class="reference external" href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">Windows 10 SDK</a></li>
 </ul>
-<p>After installing Visual Studio, confirm that in Visual Studio Command Prompt the following command can be run:</p>
+<p>After installing Visual Studio, confirm that the following command can run in the Visual Studio Command Prompt:</p>
 <div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>cl
 Microsoft (R) C/C++ Optimizing Compiler Version 19.14.26429.4 for x86
 
@@ -261,7 +261,7 @@ Microsoft (R) 生成引擎版本 15.7.179.6572
 </tr>
 </tbody>
 </table>
-<p>In Visual Studio command Prompt, you can use the compile command <code class="docutils literal notranslate"><span class="pre">cl</span></code> <code class="docutils literal notranslate"><span class="pre">link</span></code> <code class="docutils literal notranslate"><span class="pre">lib</span></code> <code class="docutils literal notranslate"><span class="pre">msbuild</span></code>, etc.,</p>
+<p>In Visual Studio command Prompt, you can use the compile command <code class="docutils literal notranslate"><span class="pre">cl</span></code> <code class="docutils literal notranslate"><span class="pre">link</span></code> <code class="docutils literal notranslate"><span class="pre">lib</span></code> <code class="docutils literal notranslate"><span class="pre">msbuild</span></code>, etc.</p>
 <img alt="../../_images/vs_cmd_test.png" class="last" src="../../_images/vs_cmd_test.png" />
 </div>
 </div>
@@ -274,7 +274,7 @@ Microsoft (R) 生成引擎版本 15.7.179.6572
 </ul>
 </li>
 </ul>
-<p>After installation, verify that the system environment variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code> has added the following path:</p>
+<p>After installation, verify that the following path has been added to the system environment variable PATH.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\msys64\usr\bin
 </pre></div>
 </div>
@@ -319,7 +319,7 @@ cmake version 3.10.1
 </ul>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>OpenCV official provided the <code class="docutils literal notranslate"><span class="pre">exe</span></code> for installation. If you want to compile from the source code, see the Official document <a class="reference external" href="https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html">Installation in Windows</a> . or refer to the following command:</p>
+<p>The official OpenCV provides the <code class="docutils literal notranslate"><span class="pre">exe</span></code> for installation. If you want to compile from the source code, see the Official document <a class="reference external" href="https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html">Installation in Windows</a> . or refer to the following command:</p>
 <div class="last highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="p">&gt;</span>git clone https://github.com/opencv/opencv.git
 <span class="p">&gt;</span>cd opencv
 <span class="p">&gt;</span>git checkout tags/3.4.1
@@ -349,19 +349,19 @@ cmake version 3.10.1
 <h2>Building Code<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>If opencv is installed in custom directory or you want to specify version, you should set the path before building:</p>
+<p>If OpenCV is installed in the custom directory or if you want to specify a version, you should set the path before building:</p>
 <div class="highlight-bat notranslate"><div class="highlight"><pre><span></span># OpenCV_DIR 为 OpenCVConfig.cmake 所在目录
 <span class="k">set</span> <span class="nv">OpenCV_DIR</span><span class="p">=</span>C:\opencv
 </pre></div>
 </div>
-<p class="last">Otherwise, CMake will prompt cannot find Opencv. If you need sdk without OpenCV, please read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV dependency</span></a> .</p>
+<p class="last">Otherwise, CMake will prompt cannot find Opencv. If you need sdk without OpenCV, please read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV independency</span></a> .</p>
 </div>
 <p>Build and install:</p>
 <div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> <span class="p">&lt;</span>sdk&gt;
 make install
 </pre></div>
 </div>
-<p>Finally, sdk will install in <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/_install</span></code> by default.</p>
+<p>Finally, the SDK will install in <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;/_install</span></code> by default.</p>
 </div>
 <div class="section" id="id8">
 <h2>Building samples<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
@@ -373,12 +373,12 @@ make samples
 <div class="highlight-bat notranslate"><div class="highlight"><pre><span></span>.\samples\_output\bin\api\camera_a.bat
 </pre></div>
 </div>
-<p>Tutorial samples,please read <a class="reference internal" href="../data/contents.html#data"><span class="std std-ref">MYNT® EYE Data</span></a> 和 <a class="reference internal" href="../control/contents.html#ctrl"><span class="std std-ref">MYNT® EYE Control</span></a> .</p>
+<p>For tutorial samples, please read <a class="reference internal" href="../data/contents.html#data"><span class="std std-ref">MYNT® EYE Data</span></a> and <a class="reference internal" href="../control/contents.html#ctrl"><span class="std std-ref">MYNT® EYE Control</span></a> .</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
 <p>All compiled sample programs <code class="docutils literal notranslate"><span class="pre">exe</span></code> will have a corresponding <code class="docutils literal notranslate"><span class="pre">bat</span></code>. <code class="docutils literal notranslate"><span class="pre">bat</span></code> will temporarily set system environment variables and then run <code class="docutils literal notranslate"><span class="pre">exe</span></code>. So it is recommended to run <code class="docutils literal notranslate"><span class="pre">bat</span></code>.</p>
 <p>If you run``exe`` directly, it may prompt that cannot find <code class="docutils literal notranslate"><span class="pre">dll</span></code>. Then you should add <code class="docutils literal notranslate"><span class="pre">&lt;sdk&gt;\_install\bin</span></code> <code class="docutils literal notranslate"><span class="pre">%OPENCV_DIR%\bin</span></code> to <code class="docutils literal notranslate"><span class="pre">PATH</span></code> in system environment variable.</p>
-<p class="last">How to set the environment variable for OpenCV, refer to official document <a class="reference external" href="https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html#tutorial_windows_install_path">Set the OpenCV environment variable and add it to the systems path</a> .</p>
+<p class="last">How to set the environment variable for OpenCV, refer to the official document <a class="reference external" href="https://docs.opencv.org/master/d3/d52/tutorial_windows_install.html#tutorial_windows_install_path">Set the OpenCV environment variable and add it to the systems path</a> .</p>
 </div>
 </div>
 <div class="section" id="id9">
@@ -387,20 +387,20 @@ make samples
 make tools
 </pre></div>
 </div>
-<p>the usage of tools and scripts will be introduced later.</p>
+<p>The usage of tools and scripts will be introduced later.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>The script is based-on Python. You need to install Python and its package management tool pip first, and then install the dependencies as follows:</p>
+<p>The script is based on Python. You need to install Python and its package management tool pip first, and then install the dependencies as follows:</p>
 <div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> <span class="p">&lt;</span>sdk<span class="p">&gt;</span>\tools
 pip install -r requirements.txt
 </pre></div>
 </div>
-<p class="last">Note: Python is also in MSYS2, but testing install Matplotlib failed.</p>
+<p class="last">Note: Python is also in MSYS2, but fail install Matplotlib in test.</p>
 </div>
 </div>
 <div class="section" id="id10">
 <h2>Conclusion<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<p>If your project will use SDK, you can reference the settings in <code class="docutils literal notranslate"><span class="pre">samples/CMakeLists.txt</span></code> for CMake. Or just import the head file and dynamic library in installation directory.</p>
+<p>If your project will use SDK, you can refer to the settings in <code class="docutils literal notranslate"><span class="pre">samples/CMakeLists.txt</span></code> for CMake. Or just import the head file and dynamic library in the installation directory.</p>
 </div>
 </div>
 
@@ -446,7 +446,7 @@ pip install -r requirements.txt
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

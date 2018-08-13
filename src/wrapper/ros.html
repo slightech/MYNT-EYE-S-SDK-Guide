@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use ROS &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>How to use ROS &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -163,8 +163,8 @@
             
   <div class="section" id="ros">
 <span id="wrapper-ros"></span><h1>How to use ROS<a class="headerlink" href="#ros" title="Permalink to this headline">¶</a></h1>
-<p>According to <a class="reference internal" href="../sdk/install_ros.html#sdk-install-ros"><span class="std std-ref">ROS Installation</span></a>, compile and run the node.</p>
-<p><code class="docutils literal notranslate"><span class="pre">rostopic</span> <span class="pre">list</span></code> list all released node</p>
+<p>Compile and run the node according to <a class="reference internal" href="../sdk/install_ros.html#sdk-install-ros"><span class="std std-ref">ROS Installation</span></a> .</p>
+<p><code class="docutils literal notranslate"><span class="pre">rostopic</span> <span class="pre">list</span></code> lists all released nodes:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ rostopic list
 /mynteye/depth/image_raw
 /mynteye/disparity/image_norm
@@ -181,7 +181,7 @@
 ...
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">rostopic</span> <span class="pre">hz</span> <span class="pre">&lt;topic&gt;</span></code> checked is there data:</p>
+<p><code class="docutils literal notranslate"><span class="pre">rostopic</span> <span class="pre">hz</span> <span class="pre">&lt;topic&gt;</span></code> checks the data:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ rostopic hz /mynteye/imu/data_raw
 subscribed to <span class="o">[</span>/mynteye/imu/data_raw<span class="o">]</span>
 average rate: <span class="m">505</span>.953
@@ -193,8 +193,8 @@ average rate: <span class="m">500</span>.375
 ...
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">rostopic</span> <span class="pre">echo</span> <span class="pre">&lt;topic&gt;</span></code> can print and release data. if need more, please read <a class="reference external" href="http://wiki.ros.org/rostopic">rostopic</a>.</p>
-<p>Entile structure of ROS file, As follows:</p>
+<p><code class="docutils literal notranslate"><span class="pre">rostopic</span> <span class="pre">echo</span> <span class="pre">&lt;topic&gt;</span></code> can print and release data. Please read <a class="reference external" href="http://wiki.ros.org/rostopic">rostopic</a> for more information.</p>
+<p>The ROS file is structured like follows:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;sdk&gt;/wrappers/ros/
 ├─src/
 │  └─mynt_eye_ros_wrapper/
@@ -212,11 +212,11 @@ average rate: <span class="m">500</span>.375
 └─README.md
 </pre></div>
 </div>
-<p>For <code class="docutils literal notranslate"><span class="pre">mynteye.launch</span></code>, can set released topics and frame_ids 、Which data should be enabled, and set controller options. For <code class="docutils literal notranslate"><span class="pre">gravity</span></code> please set it to local gravity acceleration</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">mynteye.launch</span></code>, you can configure the topics and frame_ids, decide which data to enable, and set the control options. Please set <code class="docutils literal notranslate"><span class="pre">gravity</span></code> to the local gravity acceleration.</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;arg</span> <span class="na">name=</span><span class="s">&quot;gravity&quot;</span> <span class="na">default=</span><span class="s">&quot;9.8&quot;</span> <span class="nt">/&gt;</span>
 </pre></div>
 </div>
-<p>If need print debug info, please edit <code class="docutils literal notranslate"><span class="pre">wrapper_node.cc</span></code>, replace <code class="docutils literal notranslate"><span class="pre">Info</span></code> to <code class="docutils literal notranslate"><span class="pre">Debug</span></code></p>
+<p>For printing debug info, replace <code class="docutils literal notranslate"><span class="pre">Info</span></code> in <code class="docutils literal notranslate"><span class="pre">wrapper_node.cc</span></code> to <code class="docutils literal notranslate"><span class="pre">Debug</span></code> :</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="n">ros</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">set_logger_level</span><span class="p">(</span>
     <span class="n">ROSCONSOLE_DEFAULT_NAME</span><span class="p">,</span> <span class="n">ros</span><span class="o">::</span><span class="n">console</span><span class="o">::</span><span class="n">levels</span><span class="o">::</span><span class="n">Info</span><span class="p">);</span>
 </pre></div>
@@ -265,7 +265,7 @@ average rate: <span class="m">500</span>.375
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

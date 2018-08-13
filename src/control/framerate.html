@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -167,12 +167,12 @@
   <div class="section" id="imu">
 <span id="framerate"></span><h1>Set the frame rate of image &amp; IMU frequency<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
 <p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function in the API, you can set various control values ​​for the current device.</p>
-<p>Set the frame rate of image &amp; IMU frequency, which is setting <code class="docutils literal notranslate"><span class="pre">Option::FRAME_RATE</span></code> and <code class="docutils literal notranslate"><span class="pre">Option::IMU_FREQUENCY</span></code></p>
+<p>Set the frame rate of image using <code class="docutils literal notranslate"><span class="pre">Option::FRAME_RATE</span></code> and the IMU frequency using <code class="docutils literal notranslate"><span class="pre">Option::IMU_FREQUENCY</span></code>.</p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
 <ul class="last simple">
 <li>The frame rate of image &amp; IMU frequency must be set at the same time to take effect.</li>
-<li>The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60</li>
+<li>The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55.</li>
 <li>The effective frequency of IMU: 100, 200, 250, 333, 500</li>
 </ul>
 </div>
@@ -182,7 +182,7 @@
 <span class="c1">// Attention: must set FRAME_RATE and IMU_FREQUENCY together, otherwise won&#39;t</span>
 <span class="c1">// succeed.</span>
 
-<span class="c1">// FRAME_RATE values: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60</span>
+<span class="c1">// FRAME_RATE values: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55</span>
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">FRAME_RATE</span><span class="p">,</span> <span class="mi">25</span><span class="p">);</span>
 <span class="c1">// IMU_FREQUENCY values: 100, 200, 250, 333, 500</span>
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">IMU_FREQUENCY</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
@@ -205,8 +205,8 @@ I0513 <span class="m">14</span>:06:21.702388 <span class="m">31813</span> framer
 I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framerate.cc:87<span class="o">]</span> Imu count: <span class="m">11509</span>, hz: <span class="m">494</span>.348
 </pre></div>
 </div>
-<p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, it will output the calculated value of the frame rate of image &amp; IMU frequency</p>
-<p>For a complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/framerate.cc">framerate.cc</a></p>
+<p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, it will output the calculated value of the frame rate of image &amp; IMU frequency.</p>
+<p>For a complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/framerate.cc">framerate.cc</a> .</p>
 </div>
 
 
@@ -251,7 +251,7 @@ I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framer
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

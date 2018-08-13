@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get IMU calibration parameters &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Get IMU calibration parameters &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Get binocular original image" href="get_stereo.html" />
+    <link rel="next" title="Get original binocular image" href="get_stereo.html" />
     <link rel="prev" title="Get image calibration parameters" href="get_img_params.html" /> 
 
   
@@ -90,14 +90,14 @@
 <li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Get IMU calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get original binocular image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get a depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get depth image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
@@ -176,7 +176,7 @@
             
   <div class="section" id="imu">
 <span id="get-imu-params"></span><h1>Get IMU calibration parameters<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
-<p>Use <code class="docutils literal notranslate"><span class="pre">GetMotionIntrinsics()</span></code> &amp;  <code class="docutils literal notranslate"><span class="pre">GetMotionExtrinsics()</span></code> to get current IMU calibration parameters</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">GetMotionIntrinsics()</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">GetMotionExtrinsics()</span></code> to get current IMU calibration parameters</p>
 <p>Reference commands:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
@@ -185,7 +185,7 @@
           <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetMotionExtrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p>View sample code, check the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_imu_params.cc">get_imu_params.cc</a> .</p>
+<p>To view complete sample, check <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_imu_params.cc">get_imu_params.cc</a> .</p>
 </div>
 
 
@@ -196,7 +196,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="get_stereo.html" class="btn btn-neutral float-right" title="Get binocular original image" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="get_stereo.html" class="btn btn-neutral float-right" title="Get original binocular image" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="get_img_params.html" class="btn btn-neutral" title="Get image calibration parameters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -230,7 +230,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

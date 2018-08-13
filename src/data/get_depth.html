@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get a depth image &mdash; MYNT® EYE SDK Guide 2.0.1-rc0 documentation</title>
+  <title>Get depth image &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
   
 
   
@@ -90,14 +90,14 @@
 <li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get binocular original image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get original binocular image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Get a depth image</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Get depth image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
@@ -155,7 +155,7 @@
         
           <li><a href="contents.html">MYNT® EYE Data</a> &raquo;</li>
         
-      <li>Get a depth image</li>
+      <li>Get depth image</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,10 +175,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="get-depth">
-<span id="id1"></span><h1>Get a depth image<a class="headerlink" href="#get-depth" title="Permalink to this headline">¶</a></h1>
-<p>Depth images is synthetic data which belong to upper layer. You need to start the <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> beforehand, then you can get it through <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>. In addition, it should be check not empty before use.</p>
-<p>Please see <a class="reference internal" href="get_stereo.html#get-stereo"><span class="std std-ref">Get binocular original image</span></a> <a class="reference internal" href="get_stereo_rectified.html#get-stereo-rectified"><span class="std std-ref">Get stereo camera correction image</span></a> for detail process description.</p>
-<p>In addition, it is recommended to use plugin to calculate depth: depth map will be better and frame rate is higher.Please see <a class="reference internal" href="get_with_plugin.html#get-with-plugin"><span class="std std-ref">Using the plugin to get the data</span></a> for detail.</p>
+<span id="id1"></span><h1>Get depth image<a class="headerlink" href="#get-depth" title="Permalink to this headline">¶</a></h1>
+<p>Depth images belongs to the upper layer of synthetic data. You need to start the <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> beforehand, to get it through <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>. In addition, it should be check not be empty before use.</p>
+<p>Please see <a class="reference internal" href="get_stereo.html#get-stereo"><span class="std std-ref">Get original binocular image</span></a> <a class="reference internal" href="get_stereo_rectified.html#get-stereo-rectified"><span class="std std-ref">Get stereo camera correction image</span></a> for detail process description.</p>
+<p>It is recommended to use plugin to calculate depth: the depth map will be better with a higher frame rate. Please see <a class="reference internal" href="get_with_plugin.html#get-with-plugin"><span class="std std-ref">Using the plugin to get data</span></a> for detail.</p>
 <p>Reference code snippet:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
@@ -214,10 +214,10 @@
 </pre></div>
 </div>
 <p>OpenCV is used to display image above. Select the display window, press <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> to exit program.</p>
-<p>For complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_depth.cc">get_depth.cc</a> .</p>
+<p>For the complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_depth.cc">get_depth.cc</a> .</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">Preview the value of an area in the depth image, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc">get_depth_with_region.cc</a> .</p>
+<p class="last">To preview the value of an area in the depth image, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc">get_depth_with_region.cc</a> .</p>
 </div>
 </div>
 
@@ -263,7 +263,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc0',
+            VERSION:'2.0.1-rc1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
