@@ -26,11 +26,11 @@ msgstr "Supported platforms"
 msgid ""
 "SDK 是基于 CMake 构建的，用以跨 Linux, Windows, macOS "
 "等多个平台。而从源码编译安装，也可以适配您的平台架构，并应用本地优化。"
-msgstr "SDK is built on CMake and used to cross multiple platforms such as Linux, Windows, macOS, etc.Compile and install from source code can also adapt your platform architecture and apply local optimization."
+msgstr "SDK is built on CMake and can be used cross multiple platforms such as Linux, Windows, macOS, etc. Compile and install from source code can also adapt your platform architecture and apply local optimization."
 
 #: ../../src/sdk/platform.rst:8
 msgid "已测试可用的平台有："
-msgstr "These are the platforms that can be used by testing:"
+msgstr "These are the platforms that can be used:"
 
 #: ../../src/sdk/platform.rst:10
 msgid "Windows 10"
@@ -46,5 +46,5 @@ msgstr "Jetson TX2"
 
 #: ../../src/sdk/platform.rst:16
 msgid "由于硬件传输速率要求，务必使用 USB 3.0 接口。另外，虚拟机因其大多存在 USB 驱动兼容性问题，不建议使用。"
-msgstr "Due to the requirement of hardware transmission rate, please use the USB 3 interface.In addition, because most virtual machines exist USB driver compatibility problem, it is not recommended."
+msgstr "Due to the requirement of hardware transmission rate, please use the USB 3 interface. In addition, virtual machines have USB driver compatibility problems, thus they are not recommended."
 

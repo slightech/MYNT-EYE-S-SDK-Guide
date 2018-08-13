@@ -20,11 +20,11 @@ msgstr ""
 
 #: ../../src/firmware/from_v1.rst:4
 msgid "从 1.x 换到 2.x"
-msgstr "Change SDK 1.x to 2.x"
+msgstr "Change from SDK 1.x to 2.x"
 
 #: ../../src/firmware/from_v1.rst:6
 msgid "SDK 如果要从 1.x 换到 2.x 版本，你需要做的几件事："
-msgstr "A few things needs to do，to replace the SDK version 1.x to 2.x :"
+msgstr "To replace the SDK version 1.x to 2.x, need to:"
 
 #: ../../src/firmware/from_v1.rst:8
 msgid "1） 安装 SDK 2 ，见 :ref:`sdk` 。"
@@ -39,5 +39,5 @@ msgid ""
 "3） SDK 1.x 运行后，图像标定参数会保存到 ``<MYNTEYE_SDK_ROOT>/settings/SN*.conf`` 。请按照 "
 ":ref:`write_img_params` 将 ``SN*.conf`` 写入设备。"
 msgstr "3） After launch the SDK 1.x , the image calibration parameters will be saved in ``<MYNTEYE_SDK_ROOT>/settings/SN*.conf`` .Please check the "
-":ref:`write_img_params` Burn ``SN*.conf`` into the devices."
+":ref:`write_img_params` and write ``SN*.conf`` into the devices."
 

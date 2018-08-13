@@ -31,7 +31,7 @@ msgstr ""
 #: ../../src/control/auto_exposure.rst:8
 msgid "启用自动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``0`` 。自动曝光时，可调节的设定有："
 msgstr ""
-"Enabling auto exposure is setting ``Option::EXPOSURE_MODE`` to ``0``. The"
+"To enable auto exposure, set ``Option::EXPOSURE_MODE`` to ``0`` . The"
 " settings available for adjustment during auto exposure are:"
 
 #: ../../src/control/auto_exposure.rst:10

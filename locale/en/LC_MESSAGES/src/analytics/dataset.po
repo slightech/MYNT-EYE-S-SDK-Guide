@@ -20,13 +20,13 @@ msgstr ""
 
 #: ../../src/analytics/dataset.rst:4
 msgid "录制数据集"
-msgstr "Record data set"
+msgstr "Recording data sets"
 
 #: ../../src/analytics/dataset.rst:6
 msgid ""
 "SDK 提供了录制数据集的工具 ``record`` 。工具详情可见 `tools/README.md "
 "<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。"
-msgstr "SDK provides ``record`` tool for record data set. Details see `tools/README.md "
+msgstr "The SDK provides ``record`` tool for recording data set. For details see `tools/README.md "
 "<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ ."
 
 #: ../../src/analytics/dataset.rst:8
@@ -39,7 +39,7 @@ msgstr "Reference run results on Linux:"
 
 #: ../../src/analytics/dataset.rst:42
 msgid "默认录制进 ``<workdir>/dataset`` 目录。你也可以加参数，指定录制到其他目录。"
-msgstr "Result save into ``<workdir>/dataset`` by default. You can also add parameter, select other directory to save."
+msgstr "Results save into ``<workdir>/dataset`` by default. You can also add parameter, select other directory to save."
 
 #: ../../src/analytics/dataset.rst:44
 msgid "录制内容如下："

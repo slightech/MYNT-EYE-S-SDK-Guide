@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/slam/okvis.rst:4
+msgid "`OKVIS <https://github.com/ethz-asl/okvis>`_ 如何整合 "
+msgstr "How to use in `OKVIS <https://github.com/ethz-asl/okvis>`_ "
+
+#: ../../src/slam/okvis.rst:8
+msgid "在MYNT® EYE 上运行 OKVIS ，请依照这些步骤："
+msgstr "If you wanna run OKVIS with MYNT EYE camera, please follow the steps:"
+
+#: ../../src/slam/okvis.rst:10
+msgid "1. 下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ 并安装"
+msgstr "1. Download and install `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ ."
+
+#: ../../src/slam/okvis.rst:11
+msgid "2. 添加 MYNT-EYE-SDK 路径到环境变量。打开 ``.bashrc`` 文件，在最后添加：export MYNTEYE_SDK2_ROOT=MYNT-EYE-SDK-2_INSTALL_PATH 。"
+msgstr "2. Add the path including MYNT-EYE-SDK to the environment variable. Open .bashrc file and add at the end the following line. "
+
+#: ../../src/slam/okvis.rst:12
+msgid "3. 安装依赖，按照原始 OKVIS 步骤安装 MYNT-EYE-OKVIS-Sample。"
+msgstr "3. Install dependencies and build MYNT-EYE-OKVIS-Sample follow the procedure of the Original OKVIS here."
+
+#: ../../src/slam/okvis.rst:13
+msgid "4. 更新相机参数到 ``<OKVIS>/config/config_mynteye.yaml``。"
+msgstr "4. Update camera parameters to ``<OKVIS>/config/config_mynteye.yaml``."
+
+#: ../../src/slam/okvis.rst:14
+msgid "5. 在MYNT® EYE 上运行 OKVIS 。"
+msgstr "4. Run okvis using mynteye camaera."
+
+#: ../../src/slam/okvis.rst:17
+msgid "安装 MYNT® EYE OKVIS"
+msgstr "Install MYNTEYE OKVIS"
+
+#: ../../src/slam/okvisrst:19
+msgid "首先安装原始 OKVIS 及依赖："
+msgstr "First install dependencies based on the original OKVIS,and the follow the type:"
+
+#: ../../src/slam/okvisrst:29
+msgid "获取相机校准参数"
+msgstr "Get camera calibration parameters"
+
+#: ../../src/slam/okvis.rst:31
+msgid "通过 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API的 ``GetIntrinsics()`` 函数和 ``GetExtrinsics()`` 函数，可以获得当前工作设备的图像校准参数："
+msgstr "Through the GetIntrinsics() and GetExtrinsics() function of the MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API, you can get the camaera calibration parameters of the currently open device,follow the steps"
+
+#: ../../src/slam/okvis.rst:38
+msgid "这时，可以获得针孔模型下的 ``distortion_parameters`` 和 ``projection_parameters`` 参数，然后在 `这里 <https://github.com/slightech/MYNT-EYE-OKVIS-Sample/blob/sdk2/config/config_mynteye.yaml>`_ 更新。"
+msgstr "After running the above type, pinhole's distortion_parameters and camera parameters is obtained , and then update to `here <https://github.com/slightech/MYNT-EYE-OKVIS-Sample/blob/sdk2/config/config_mynteye.yaml>`_ ."
+
+#: ../../src/slam/okvis.rst:41
+msgid "运行 MYNT® EYE OKVIS"
+msgstr "Run MYNTEYE OKVIS"
+
+#: ../../src/slam/okvis.rst:43
+msgid "在 ``MYNT-EYE-OKVIS-Sample/build `` 中运行 ``okvis_app_mynteye_sdk2`` :"
+msgstr "Go to MYNT-EYE-OKVIS-Sample/build folder and Run the application okvis_app_mynteye_sdk2:"

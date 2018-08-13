@@ -32,8 +32,8 @@ msgstr ""
 #: ../../src/control/framerate.rst:8
 msgid "设定图像帧率和 IMU 频率，就是设定 ``Option::FRAME_RATE`` 和 ``Option::IMU_FREQUENCY`` 。"
 msgstr ""
-"Set the frame rate of image & IMU frequency, which is setting "
-"``Option::FRAME_RATE`` and ``Option::IMU_FREQUENCY``"
+"Set the frame rate of image using "
+"``Option::FRAME_RATE`` and the IMU frequency using ``Option::IMU_FREQUENCY``."
 
 #: ../../src/control/framerate.rst:12
 msgid "图像帧率和 IMU 频率必须同时设定才能生效。"

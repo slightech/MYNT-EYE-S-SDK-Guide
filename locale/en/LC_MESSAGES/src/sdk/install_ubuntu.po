@@ -43,8 +43,8 @@ msgid ""
 "如果是其他 Linux 发行版，不是用的 ``apt-get`` 包管理工具，那你准备依赖时不能 "
 "``make init`` 自动安装，得自己手动安装了。必要安装项如下："
 msgstr ""
-"If you used any other Linux distributions that without apt-get package "
-"manager, you'd better install required packages manaully instead of using "
+"If you used any other Linux distributions without apt-get package "
+"manager, you need to install required packages manaully instead of using "
 "\"make init\"."
 
 #: ../../src/sdk/install_ubuntu.rst:29
@@ -97,8 +97,7 @@ msgid ""
 "opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ 。或参考如下命令："
 msgstr ""
 "To build and install Opencv, Please refer to `Installation in Linux <https://"
-"docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ . Or reference "
-"below command:"
+"docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ . Alternatively, refer to the command below: "
 
 #: ../../src/sdk/install_ubuntu.rst:91
 msgid "编译代码"
@@ -107,7 +106,7 @@ msgstr "Building Code"
 #: ../../src/sdk/install_ubuntu.rst:95
 msgid "如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径："
 msgstr ""
-"If opencv is installed in custom directory or you want to specify version, "
+"If opencv is installed in custom directory or if you want to specify a version, "
 "you should set the path before building:"
 
 #: ../../src/sdk/install_ubuntu.rst:102
@@ -115,7 +114,7 @@ msgid ""
 "不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:"
 "`sdk_without_opencv` 。"
 msgstr ""
-"Otherwise, CMake will prompt cannot find Opencv. If you need sdk without "
+"Otherwise, CMake will prompt cannot find OpenCV. If you need sdk without "
 "OpenCV, please read :ref:`sdk_without_opencv` ."
 
 #: ../../src/sdk/install_ubuntu.rst:104
@@ -144,11 +143,11 @@ msgstr "Building tools"
 
 #: ../../src/sdk/install_ubuntu.rst:137
 msgid "安装脚本依赖："
-msgstr "Install requirement:"
+msgstr "Installation requirement:"
 
 #: ../../src/sdk/install_ubuntu.rst:144
 msgid "工具和脚本的使用，后续会有介绍。"
-msgstr "the usage of tools and scripts will be introduced later."
+msgstr "The usage of tools and scripts will be introduced later."
 
 #: ../../src/sdk/install_ubuntu.rst:147
 msgid "结语"
@@ -159,6 +158,6 @@ msgid ""
 "工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` 里的配置。不然，"
 "就是直接引入安装目录里的头文件和动态库。"
 msgstr ""
-"If your project will use SDK, you can reference the settings in ``samples/"
-"CMakeLists.txt`` for CMake. Or just import the head file and dynamic library "
-"in installation directory."
+"If your project will use SDK, you can refer to the settings in ``samples/"
+"CMakeLists.txt`` for CMake. Alternatively, import the head file and dynamic library "
+"in the installation directory."

@@ -31,7 +31,7 @@ msgstr ""
 #: ../../src/data/get_from_callbacks.rst:10
 msgid "一定不要阻塞回调。如果需要长时间处理数据，请将回调作为数据生产者。"
 msgstr ""
-"Be sure not block callback. If it need long processing time, use callback as data "
+"Make sure to not block callback. If the data processing time is too long, use the callback as a data "
 "producer."
 
 #: ../../src/data/get_from_callbacks.rst:12
@@ -41,7 +41,7 @@ msgstr "Sample code snippet: "
 #: ../../src/data/get_from_callbacks.rst:117
 msgid "上述代码，用了 OpenCV 来显示图像和数据。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
 msgstr ""
-"OpenCV is used to display images and data above. When window is selected, pressing ``ESC/"
+"OpenCV is used to display images and data above. When the window is selected, pressing ``ESC/"
 "Q`` will exit program. "
 
 #: ../../src/data/get_from_callbacks.rst:119
@@ -49,5 +49,5 @@ msgid ""
 "完整代码样例，请见 `get_from_callbacks.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/"
 "samples/tutorials/data/get_from_callbacks.cc>`_ 。"
 msgstr ""
-"For complete code sample, see `get_from_callbacks.cc <https://github.com/slightech/MYNT-EYE-SDK-2/"
+"For the complete code sample, see `get_from_callbacks.cc <https://github.com/slightech/MYNT-EYE-SDK-2/"
 "blob/master/samples/tutorials/data/get_from_callbacks.cc>`_ ."

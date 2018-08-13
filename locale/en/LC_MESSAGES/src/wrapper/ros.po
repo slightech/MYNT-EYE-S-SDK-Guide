@@ -24,36 +24,36 @@ msgstr "How to use ROS"
 
 #: ../../src/wrapper/ros.rst:6
 msgid "按照 :ref:`sdk_install_ros` ，编译再运行节点。"
-msgstr "According to :ref:`sdk_install_ros`, compile and run the node."
+msgstr "Compile and run the node according to : ref:`sdk_install_ros` ."
 
 #: ../../src/wrapper/ros.rst:8
 msgid "``rostopic list`` 可以列出发布的节点："
-msgstr "``rostopic list`` list all released node"
+msgstr "``rostopic list`` lists all released nodes: "
 
 #: ../../src/wrapper/ros.rst:27
 msgid "``rostopic hz <topic>`` 可以检查是否有数据："
-msgstr "``rostopic hz <topic>`` checked is there data: "
+msgstr "``rostopic hz <topic>`` checks the data: "
 
 #: ../../src/wrapper/ros.rst:41
 msgid ""
 "``rostopic echo <topic>`` 可以打印发布数据等。了解更多，请阅读 `rostopic "
 "<http://wiki.ros.org/rostopic>`_ 。"
-msgstr "``rostopic echo <topic>`` can print and release data. if need more, please read `rostopic "
-"<http://wiki.ros.org/rostopic>`_."
+msgstr "``rostopic echo <topic>`` can print and release data. Please read `rostopic "
+"<http://wiki.ros.org/rostopic>`_ for more information."
 
 #: ../../src/wrapper/ros.rst:43
 msgid "ROS 封装的文件结构，如下所示："
-msgstr "Entile structure of ROS file, As follows:"
+msgstr "The ROS file is structured like follows:"
 
 #: ../../src/wrapper/ros.rst:63
 msgid ""
 "其中 ``mynteye.launch`` 里，可以配置发布的 topics 与 frame_ids "
 "、决定启用哪些数据、以及设定控制选项。其中，``gravity`` 请配置成当地重力加速度。"
 msgstr ""
-"For ``mynteye.launch``, can set released topics and frame_ids "
-"、Which data should be enabled, and set controller options. For ``gravity`` please set it to local gravity acceleration"
+"In ``mynteye.launch``, you can configure the topics and frame_ids, "
+"decide which data to enable, and set the control options. Please set ``gravity`` to the local gravity acceleration."
 
 #: ../../src/wrapper/ros.rst:69
 msgid "如果想要打印调试信息，请编辑 ``wrapper_node.cc`` ，修改 ``Info`` 为 ``Debug`` 即可："
-msgstr "If need print debug info, please edit ``wrapper_node.cc``, replace ``Info`` to ``Debug`` "
+msgstr "For printing debug info, replace ``Info`` in ``wrapper_node.cc`` to ``Debug`` :"
 

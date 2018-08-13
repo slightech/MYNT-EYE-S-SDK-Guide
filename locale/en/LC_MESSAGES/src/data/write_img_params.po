@@ -26,12 +26,12 @@ msgstr "Write image parameters"
 msgid ""
 "SDK 提供了写入图像标定参数的工具 ``img_params_writer`` 。工具详情可见 `tools/README.md "
 "<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。"
-msgstr "SDK provides a tool ``img_params_writer`` to write the image parameters."
-"For detail ,you can read `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ ."
+msgstr "The SDK provides a tool ``img_params_writer`` for writing image parameters."
+"For details, read `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ ."
 
 #: ../../src/data/write_img_params.rst:8
 msgid "有关如何获取，请阅读 :ref:`get_img_params` 。此参数会用于计算纠正、视差等。"
-msgstr "How to get image parameter, please read :ref:`get_img_params`, This is used to calculate the deviation."
+msgstr "For getting image parameters, please read :ref:`get_img_params`. This is used to calculate the deviation."
 
 #: ../../src/data/write_img_params.rst:10
 msgid "参考运行命令："
@@ -42,15 +42,15 @@ msgid ""
 "其中， `tools/writer/config/img.params <https://github.com/slightech/MYNT-"
 "EYE-SDK-2/blob/master/tools/writer/config/img.params>`_ "
 "是参数文件路径。如果你自己标定了参数，可以编辑此文件，然后执行上述命令写入设备。"
-msgstr "For attention,the path of parameters file is `tools/writer/config/img.params <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params>`_. "
-"If you calibrate parameters yourself, you can edit it and run previous commands to write into devices."
+msgstr "The path of parameters file is `tools/writer/config/img.params <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params>`_. "
+"If you calibrated parameters yourself, you can edit it and run previous commands to write them into the devices."
 
 #: ../../src/data/write_img_params.rst:23
 msgid "旧 SDK 提供的标定参数文件 ``SN*.conf`` 也可用此工具写入设备。"
-msgstr "You can also write into devices with ``SN*.conf`` provided by old sdk."
+msgstr "You can also write into devices with ``SN*.conf`` provided by old SDK."
 
 #: ../../src/data/write_img_params.rst:27
 msgid "请不要随意覆写参数。另外 ``save_all_infos`` 工具可帮你备份参数。"
-msgstr "Please don't override parameters optionally. In addition, you can use ``save_all_infos`` "
+msgstr "Please don't override parameters, you can use ``save_all_infos`` "
 "to backup parameters."
 

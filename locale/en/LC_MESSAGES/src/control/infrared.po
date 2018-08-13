@@ -51,9 +51,9 @@ msgstr ""
 #: ../../src/control/infrared.rst:46
 msgid "硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备后，一定要设定下 IR 值。"
 msgstr ""
-"The hardware will not record the value of IR and it will lost after "
-"power off. If you need to keep IR enabled, you must set the value of IR "
-"after opening the device"
+"The hardware will not record the IR value after "
+"being turned off. In order to keep IR enabled, you must set the IR value "
+"after turning on the device."
 
 #: ../../src/control/infrared.rst:48
 msgid ""
