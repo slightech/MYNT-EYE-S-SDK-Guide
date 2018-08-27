@@ -20,5 +20,4 @@ msgstr ""
 
 #: ../../src/wrapper/contents.rst:4
 msgid "封装接口"
-msgstr "Wrappers"
-
+msgstr "Wrapper interface"

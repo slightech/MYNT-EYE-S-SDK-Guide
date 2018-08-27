@@ -46,10 +46,7 @@ msgstr ""
 
 #: ../../src/sdk/install_windows.rst:30
 msgid "目前暂未提供二进制安装程序，需要你从源码编译。也是配置开发环境的过程。"
-msgstr ""
-"Currently we do not provide a binary installer, thus you need to compile from "
-"the source code. It is also the process of configuring the development "
-"environment."
+msgstr "There is currently no binary installer available, which requires you to compile from source. It is also the process of configuring the development environment."
 
 #: ../../src/sdk/install_windows.rst:33
 msgid "前提条件"
@@ -209,8 +206,7 @@ msgstr "`pacman <https://wiki.archlinux.org/index.php/pacman>`_"
 
 #: ../../src/sdk/install_windows.rst:112
 msgid "安装后，确认系统环境变量 ``PATH`` 里添加了如下路径："
-msgstr ""
-"After installation, verify that the following path has been added to the system environment variable PATH."
+msgstr "After installation, verify that the following path has been added to the system environment variable PATH:"
 
 #: ../../src/sdk/install_windows.rst:118
 msgid "然后，打开 MSYS2 MSYS ，执行更新并安装 ``make`` ："
@@ -250,15 +246,11 @@ msgstr "Building Code"
 
 #: ../../src/sdk/install_windows.rst:194
 msgid "如果 OpenCV 安装到了自定义目录或想指定某一版本，编译前可如下设置路径："
-msgstr ""
-"If OpenCV is installed in the custom directory or if you want to specify "
-"a version, you should set the path before building:"
+msgstr "If OpenCV is installed in a custom directory or wants to specify a version, you can set the path as follows before compiling:"
 
 #: ../../src/sdk/install_windows.rst:201
 msgid "不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:`sdk_without_opencv` 。"
-msgstr ""
-"Otherwise, CMake will prompt cannot find Opencv. If you need sdk without "
-"OpenCV, please read :ref:`sdk_without_opencv` ."
+msgstr "Otherwise, CMake will prompt that OpenCV could not be found. If you don't want to rely on OpenCV, read :ref:`sdk_without_opencv` ."
 
 #: ../../src/sdk/install_windows.rst:203
 msgid "编译并安装："

@@ -35,15 +35,15 @@ msgstr ""
 #: ../../src/data/get_depth.rst:8
 msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
 msgstr ""
-"Please see :ref:`get_stereo` :ref:`get_stereo_rectified` for detail "
-"process description. "
+"For detailed process description, please see :ref:`get_stereo` "
+":ref:`get_stereo_rectified`."
 
 #: ../../src/data/get_depth.rst:10
 msgid "另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。"
 msgstr ""
-"It is recommended to use plugin to calculate depth: the depth "
-"map will be better with a higher frame rate. Please see "
-":ref:`get_with_plugin` for detail. "
+"In addition, it is recommended to use plugins to calculate depth: Depth "
+"images work better and operate faster. Please refer to "
+":ref:`get_with_plugin`."
 
 #: ../../src/data/get_depth.rst:12
 msgid "参考代码片段："
@@ -51,16 +51,15 @@ msgstr "Reference code snippet:"
 
 #: ../../src/data/get_depth.rst:48
 msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
-msgstr ""
-"OpenCV is used to display image above. Select the display window, press "
-"``ESC/Q`` to exit program."
+msgstr "The above code uses OpenCV to display the image. "
+"When the display window is selected, pressing ``ESC/Q`` will end the program."
 
 #: ../../src/data/get_depth.rst:50
 msgid ""
 "完整代码样例，请见 `get_depth.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_depth.cc>`_ 。"
 msgstr ""
-"For the complete code sample, see `get_depth.cc <https://github.com/slightech"
+"Complete code examples, see `get_depth.cc <https://github.com/slightech"
 "/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_depth.cc>`_ ."
 
 #: ../../src/data/get_depth.rst:54
@@ -68,7 +67,7 @@ msgid ""
 "预览深度图某区域的值，请见 `get_depth_with_region.cc <https://github.com/slightech"
 "/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc>`_ 。"
 msgstr ""
-"To preview the value of an area in the depth image, see "
+"Preview the value of a region of the depth image, see "
 "`get_depth_with_region.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/api/get_depth_with_region.cc>`_ ."
 

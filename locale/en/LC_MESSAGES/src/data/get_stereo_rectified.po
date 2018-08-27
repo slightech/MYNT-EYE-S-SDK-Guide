@@ -30,9 +30,8 @@ msgstr "The ``GetStreamData()`` API provided can only get the raw data of the ha
 msgid ""
 "而双目纠正图像，属于上层合成数据。此类数据，需要事先 ``EnableStreamData()`` 启用，然后 "
 "``GetStreamData()`` 才能获取到。"
-msgstr ""
-"The stereo camera correction image belongs to the upper layer of synthetic data. "
-"To get the data through ``GetStreamData()``, you will need to start ``EnableStreamData()`` beforehand."
+msgstr "The stereo camera correction image belongs to the upper layer of synthetic data. "
+"For such data, you need to enable ``EnableStreamData()`` before you can get ``GetStreamData()``."
 
 #: ../../src/data/get_stereo_rectified.rst:10
 msgid "另外，``WaitForStreams()`` 等待的是关键原始数据。刚开始时，合成数据可能还在处理，取出的是空值，所以需要判断下不为空。"
@@ -55,6 +54,6 @@ msgid ""
 "完整代码样例，请见 `get_stereo_rectified.cc <https://github.com/slightech/MYNT-"
 "EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc>`_ 。"
 msgstr ""
-"For the complete code sample, see `get_stereo_rectified.cc <https://github.com/slightech/MYNT-"
+"Complete code examples, see `get_stereo_rectified.cc <https://github.com/slightech/MYNT-"
 "EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc>`_ ."
 

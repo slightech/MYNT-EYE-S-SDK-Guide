@@ -37,9 +37,8 @@ msgstr ""
 
 #: ../../src/firmware/upgrade.rst:18
 msgid "固件升级程序，目前仅支持 Windows ，所以需要你在 Windows 下进行操作。步骤如下："
-msgstr ""
-"The MYNT EYE Tool is only supported in Windows system, so you need to do the "
-"following steps in Windows. "
+msgstr "The firmware upgrade program currently only supports Windows, so you "
+"need to operate under Windows. Proceed as follows:"
 
 #: ../../src/firmware/upgrade.rst:21
 msgid "下载准备"

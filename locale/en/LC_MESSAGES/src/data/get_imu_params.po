@@ -36,6 +36,6 @@ msgstr "Reference commands:"
 msgid ""
 "完整代码样例，请见 `get_imu_params.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_imu_params.cc>`_ 。"
-msgstr "To view complete sample, check `get_imu_params.cc <https://github.com/slightech/MYNT-EYE-"
+msgstr "Complete code examples, see `get_imu_params.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_imu_params.cc>`_ ."
 

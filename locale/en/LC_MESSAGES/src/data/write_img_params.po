@@ -42,7 +42,8 @@ msgid ""
 "其中， `tools/writer/config/img.params <https://github.com/slightech/MYNT-"
 "EYE-SDK-2/blob/master/tools/writer/config/img.params>`_ "
 "是参数文件路径。如果你自己标定了参数，可以编辑此文件，然后执行上述命令写入设备。"
-msgstr "The path of parameters file is `tools/writer/config/img.params <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params>`_. "
+msgstr "And, `tools/writer/config/img.params <https://github.com/slightech/MYNT-EYE-SDK-2/blob/"
+"master/tools/writer/config/img.params>`_ is the path of parameters file. "
 "If you calibrated parameters yourself, you can edit it and run previous commands to write them into the devices."
 
 #: ../../src/data/write_img_params.rst:23

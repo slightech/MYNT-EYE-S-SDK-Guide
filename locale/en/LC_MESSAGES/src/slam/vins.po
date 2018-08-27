@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../src/slam/vins.rst:13
 msgid "运行 mynt_eye_ros_wrapper 和 VINS-Mono 。"
-msgstr "Run mynt_eye_ros_wrapper & VINS-Mono to start."
+msgstr "Run mynt_eye_ros_wrapper and VINS-Mono."
 
 #: ../../src/slam/vins.rst:16
 msgid "快捷安装 ROS Kinetic (若已安装，请忽略)"
@@ -71,12 +71,10 @@ msgid ""
 "使用 MYNT® EYE 的左目摄像头和 IMU 。通过 `MYNT-EYE-SDK-2 "
 "<https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API的 "
 "``GetIntrinsics()`` 函数和 ``GetExtrinsics()`` 函数，可以获得当前工作设备的图像校准参数："
-msgstr ""
-"Assume that the left eye of the mynteye camera is used with IMU. Through "
-"the ``GetIntrinsics()`` and ``GetExtrinsics()`` function of the `MYNT-"
-"EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API, you "
-"can get the image calibration parameters of the currently open device, "
-"follow the steps:"
+msgstr "Use MYNT® EYE's left eye camera and IMU. By `MYNT-EYE-SDK-2 "
+"<https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API "
+"``GetIntrinsics()`` function and ``GetExtrinsics()`` function, "
+"you can get the image calibration parameters of the current working device:"
 
 #: ../../src/slam/vins.rst:48
 msgid ""
@@ -91,7 +89,7 @@ msgstr ""
 
 #: ../../src/slam/vins.rst:51
 msgid "在 MYNT® EYE 上运行 VINS-Mono"
-msgstr "Run VINS-Mono with MYNT EYE camera"
+msgstr "Run VINS-Mono with MYNT® EYE"
 
 #: ../../src/slam/vins.rst:61
 msgid ""

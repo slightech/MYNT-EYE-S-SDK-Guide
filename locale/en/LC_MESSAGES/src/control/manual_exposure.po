@@ -59,15 +59,12 @@ msgstr "Reference running results on Linux:"
 
 #: ../../src/control/manual_exposure.rst:49
 msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
-msgstr ""
-"The sample program displays the image with a real exposure time "
-"(millisecond) in the upper left corner."
+msgstr "The sample program displays an image with a real exposure time in the upper left corner, in milliseconds."
 
 #: ../../src/control/manual_exposure.rst:51
 msgid ""
 "完整代码样例，请见 `manual_exposure.cc <https://github.com/slightech/MYNT-"
 "EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc>`_ 。"
 msgstr ""
-"For complete code sample, see `manual_exposure.cc <https://github.com/"
-"slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/"
-"manual_exposure.cc>`_ ."
+"Complete code samples，see `manual_exposure.cc <https://github.com/slightech/MYNT-"
+"EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc>`_ ."

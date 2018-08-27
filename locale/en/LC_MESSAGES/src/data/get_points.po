@@ -62,7 +62,7 @@ msgid ""
 "完整代码样例，请见 `get_points.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_points.cc>`_ 。"
 msgstr ""
-"For the complete code sample, see `get_points.cc "
+"Complete code examples, see `get_points.cc "
 "<https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_points.cc>`_ ."
 

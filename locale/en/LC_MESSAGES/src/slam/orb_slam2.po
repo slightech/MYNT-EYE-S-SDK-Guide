@@ -57,11 +57,11 @@ msgstr ""
 
 #: ../../src/slam/orb_slam2.rst:14
 msgid "在 MYNT® EYE 上运行例子。"
-msgstr "Run examples by mynteye camera."
+msgstr "Run examples by MYNT® EYE."
 
 #: ../../src/slam/orb_slam2.rst:17
 msgid "双目样例"
-msgstr "Install ROS Kinetic conveniently (if already installed, please ignore)"
+msgstr "Binocular camera sample"
 
 #: ../../src/slam/orb_slam2.rst:19
 msgid ""
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../src/slam/orb_slam2.rst:21
 msgid "运行脚本 ``build.sh`` ："
-msgstr "Execute ``build.sh`` script:"
+msgstr "Execute ``build.sh``:"
 
 #: ../../src/slam/orb_slam2.rst:28
 msgid "依照下面样式运行双目样例："
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../src/slam/orb_slam2.rst:44
 msgid "运行脚本 `build_ros.sh` ："
-msgstr "Execute ``build_ros.sh`` script:"
+msgstr "Execute `build_ros.sh`:"
 
 #: ../../src/slam/orb_slam2.rst:52
 msgid "Mono_ROS 例子"

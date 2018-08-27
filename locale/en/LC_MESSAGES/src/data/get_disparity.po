@@ -32,14 +32,12 @@ msgstr ""
 
 #: ../../src/data/get_disparity.rst:8
 msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
-msgstr "Please see :ref:`get_stereo` :ref:`get_stereo_rectified` for a detailed process description."
+msgstr "For detailed process description, please see :ref:`get_stereo` :ref:`get_stereo_rectified` ."
 
 #: ../../src/data/get_disparity.rst:10
 msgid "另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。"
-msgstr ""
-"It is recommended to use plugin to calculate depth: the depth "
-"map will be better with a higher frame rate. Please see "
-":ref:`get_with_plugin` for detail. "
+msgstr "It is recommended to use plugin to calculate depth: the depth "
+"map will be better with a higher frame rate. Please see :ref:`get_with_plugin` ."
 
 #: ../../src/data/get_disparity.rst:12
 msgid "参考代码片段："
@@ -54,6 +52,5 @@ msgid ""
 "完整代码样例，请见 `get_disparity.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_disparity.cc>`_ 。"
 msgstr ""
-"To preview the value of an area in the depth diagram, see `get_disparity.cc <https://github.com/slightech/MYNT-EYE-"
+"Complete code examples, see `get_disparity.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_disparity.cc>`_ ."
-

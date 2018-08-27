@@ -24,7 +24,7 @@ msgstr "How to use in `VIORB <https://github.com/jingpang/LearnVIORB>`_ "
 
 #: ../../src/slam/viorb.rst:8
 msgid "在 MYNT® EYE 上运行 VIORB ，请依照这些步骤："
-msgstr "If you wanna run VIORB with MYNT EYE camera, please follow the steps:"
+msgstr "If you wanna run VIORB with MYNT® EYE，please follow the steps:"
 
 #: ../../src/slam/viorb.rst:10
 msgid ""
@@ -40,11 +40,11 @@ msgstr "Follow the normal procedure to install VIORB."
 
 #: ../../src/slam/viorb.rst:12
 msgid "更新相机参数到 ``<VIO>/config/config_mynteye.yaml``。"
-msgstr "Update camera parameters to ``<VIO>/config/mynteye.yaml``."
+msgstr "Update camera parameters to ``<VIO>/config/config_mynteye.yaml``."
 
 #: ../../src/slam/viorb.rst:13
 msgid "运行 mynt_eye_ros_wrapper 和 VIORB 。"
-msgstr "Run mynt_eye_ros_wrapper & VIORB to start."
+msgstr "Run mynt_eye_ros_wrapper and VIORB."
 
 #: ../../src/slam/viorb.rst:16
 msgid "安装 MYNT-EYE-VIORB-SDK2"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../src/slam/viorb.rst:29
 msgid "执行:"
-msgstr "Build with shell:"
+msgstr "Execute:"
 
 #: ../../src/slam/viorb.rst:37
 msgid "获取相机校准参数"
@@ -77,8 +77,7 @@ msgstr ""
 "Assume that the left eye of the mynteye camera is used with IMU. Through "
 "the ``GetIntrinsics()`` and ``GetExtrinsics()`` function of the `MYNT-"
 "EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API, you "
-"can get the image calibration parameters of the currently open device, "
-"follow the steps:"
+"can get the image calibration parameters of the currently open device:"
 
 #: ../../src/slam/viorb.rst:46
 msgid ""
@@ -95,5 +94,5 @@ msgstr "Run VIORB and mynt_eye_ros_wrapper"
 
 #: ../../src/slam/viorb.rst:56
 msgid "最后，``pyplotscripts`` 下的脚本会将结果可视化。"
-msgstr "Finally, files in ``pyplotscripts`` can be used to visualize some results."
+msgstr "Finally, ``pyplotscripts`` can be used to visualize some results."
 

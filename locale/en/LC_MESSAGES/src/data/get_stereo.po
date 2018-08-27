@@ -40,12 +40,13 @@ msgstr "Reference commands:"
 
 #: ../../src/data/get_stereo.rst:38
 msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
-msgstr "Press ``ESC/Q`` to close your OpenCV image."
+msgstr "The above code uses OpenCV to display the image. "
+"When the display window is selected, pressing ``ESC/Q`` will end the program."
 
 #: ../../src/data/get_stereo.rst:40
 msgid ""
 "完整代码样例，请见 `get_stereo.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_stereo.cc>`_ 。"
-msgstr "To view compelte sample code, check `get_stereo.cc <https://github.com/slightech/MYNT-EYE-"
+msgstr "Complete code examples, see `get_stereo.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/data/get_stereo.cc>`_ ."
 

@@ -20,5 +20,5 @@ msgstr ""
 
 #: ../../src/log/contents.rst:4
 msgid "运行日志"
-msgstr "Log"
+msgstr "Running log"
 

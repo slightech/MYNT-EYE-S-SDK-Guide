@@ -31,14 +31,11 @@ msgstr ""
 
 #: ../../src/control/framerate.rst:8
 msgid "设定图像帧率和 IMU 频率，就是设定 ``Option::FRAME_RATE`` 和 ``Option::IMU_FREQUENCY`` 。"
-msgstr ""
-"Set the frame rate of image using "
-"``Option::FRAME_RATE`` and the IMU frequency using ``Option::IMU_FREQUENCY``."
+msgstr "To set the image frame rate and IMU frequency, set ``Option::FRAME_RATE`` and ``Option::IMU_FREQUENCY``. "
 
 #: ../../src/control/framerate.rst:12
 msgid "图像帧率和 IMU 频率必须同时设定才能生效。"
-msgstr ""
-"The frame rate of image & IMU frequency must be set at the same time to "
+msgstr "The frame rate of image & IMU frequency must be set at the same time to "
 "take effect."
 
 #: ../../src/control/framerate.rst:13
@@ -67,8 +64,5 @@ msgstr ""
 msgid ""
 "完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_ 。"
-msgstr ""
-"For a complete code sample, see `framerate.cc "
-"<https://github.com/slightech/MYNT-EYE-"
+msgstr "Complete code samples，please see `framerate.cc <https://github.com/slightech/MYNT-EYE-"
 "SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_ ."
-
