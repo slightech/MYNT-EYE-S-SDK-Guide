@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use in OKVIS &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>How to use in OKVIS &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
   
 
   
@@ -88,8 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">SLAM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a></li>
@@ -170,16 +170,16 @@
 <div class="section" id="mynt-eye-okvis">
 <h2>If you wanna run OKVIS with MYNT EYE camera, please follow the steps:<a class="headerlink" href="#mynt-eye-okvis" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Download and install <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> .</li>
+<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and install it.</li>
 <li>Add the path including MYNT-EYE-SDK to the environment variable. Open <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file and add at the end the following: <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">MYNTEYE_SDK2_ROOT=&lt;MYNT-EYE-SDK-2</span> <span class="pre">INSTALL</span> <span class="pre">PATH&gt;</span></code>.</li>
 <li>Install dependencies and build MYNT-EYE-OKVIS-Sample follow the procedure of the original OKVIS.</li>
 <li>Update camera parameters to <code class="docutils literal notranslate"><span class="pre">&lt;OKVIS&gt;/config/config_mynteye.yaml</span></code>.</li>
-<li>Run OKVIS using mynteye camera.</li>
+<li>Run OKVIS using MYNT® EYE.</li>
 </ol>
 </div>
 <div class="section" id="id2">
 <h2>Install MYNTEYE OKVIS<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>First install dependencies based on the original OKVIS, and the follow the type:</p>
+<p>First install dependencies based on the original OKVIS, and the follow:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone -b sdk2 https://github.com/slightech/MYNT-EYE-OKVIS-Sample.git
 mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
 cmake -DCMAKE_BUILD_TYPE<span class="o">=</span>Release ..
@@ -248,7 +248,7 @@ make -j4
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc1',
+            VERSION:'2.0.1-rc2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use in VIORB &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>How to use in VIORB &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
   
 
   
@@ -88,8 +88,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">SLAM</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a></li>
@@ -168,12 +168,12 @@
   <div class="section" id="slam-viorb">
 <span id="id1"></span><h1>How to use in <a class="reference external" href="https://github.com/jingpang/LearnVIORB">VIORB</a><a class="headerlink" href="#slam-viorb" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="mynt-eye-viorb">
-<h2>If you wanna run VIORB with MYNT EYE camera, please follow the steps:<a class="headerlink" href="#mynt-eye-viorb" title="Permalink to this headline">¶</a></h2>
+<h2>If you wanna run VIORB with MYNT® EYE，please follow the steps:<a class="headerlink" href="#mynt-eye-viorb" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and install mynt_eye_ros_wrapper.</li>
 <li>Follow the normal procedure to install VIORB.</li>
-<li>Update camera parameters to <code class="docutils literal notranslate"><span class="pre">&lt;VIO&gt;/config/mynteye.yaml</span></code>.</li>
-<li>Run mynt_eye_ros_wrapper &amp; VIORB to start.</li>
+<li>Update camera parameters to <code class="docutils literal notranslate"><span class="pre">&lt;VIO&gt;/config/config_mynteye.yaml</span></code>.</li>
+<li>Run mynt_eye_ros_wrapper and VIORB.</li>
 </ol>
 </div>
 <div class="section" id="mynt-eye-viorb-sdk2">
@@ -186,7 +186,7 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">ROS_PACKAGE_PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">ROS_PACKAGE_PATH</span><span class="si">}</span>:PATH/Examples/ROS/ORB_VIO
 </pre></div>
 </div>
-<p>Build with shell:</p>
+<p>Execute:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-VIORB-Sample
 ./build.sh
 </pre></div>
@@ -194,7 +194,7 @@
 </div>
 <div class="section" id="id2">
 <h2>Get image calibration parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Assume that the left eye of the mynteye camera is used with IMU. Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> API, you can get the image calibration parameters of the currently open device, follow the steps:</p>
+<p>Assume that the left eye of the mynteye camera is used with IMU. Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> API, you can get the image calibration parameters of the currently open device:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-SDK-2
 ./samples/_output/bin/tutorials/get_img_params
 </pre></div>
@@ -207,7 +207,7 @@
 roslaunch ORB_VIO testmynteye.launch
 </pre></div>
 </div>
-<p>Finally, files in <code class="docutils literal notranslate"><span class="pre">pyplotscripts</span></code> can be used to visualize some results.</p>
+<p>Finally, <code class="docutils literal notranslate"><span class="pre">pyplotscripts</span></code> can be used to visualize some results.</p>
 </div>
 </div>
 
@@ -253,7 +253,7 @@ roslaunch ORB_VIO testmynteye.launch
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc1',
+            VERSION:'2.0.1-rc2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

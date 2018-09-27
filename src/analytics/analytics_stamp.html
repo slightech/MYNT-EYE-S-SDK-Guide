@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Analyze time stamps &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>Analyze time stamps &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="SLAM" href="../slam/contents.html" />
-    <link rel="prev" title="Analyzing the IMU" href="analytics_imu.html" /> 
+    <link rel="prev" title="Analyzing IMU" href="analytics_imu.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -88,11 +88,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">Data Analytics</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dataset.html">Recording data sets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analytics_imu.html">Analyzing the IMU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analytics_imu.html">Analyzing IMU</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Analyze time stamps</a></li>
 </ul>
 </li>
@@ -165,8 +165,8 @@
             
   <div class="section" id="analytics-stamp">
 <span id="id1"></span><h1>Analyze time stamps<a class="headerlink" href="#analytics-stamp" title="Permalink to this headline">¶</a></h1>
-<p>The SDK provides <code class="docutils literal notranslate"><span class="pre">stamp_analytics.py</span></code> script for analyse time stamp. For details see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> .</p>
-<p>Reference of run command and results on Linux:</p>
+<p>SDK provides a script for timestamp analysis <code class="docutils literal notranslate"><span class="pre">stamp_analytics.py</span></code> . Tool details are visible in <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools">tools/README.md</a> .</p>
+<p>Reference run commands and results on Linux:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python tools/analytics/stamp_analytics.py -i dataset -c tools/config/mynteye/mynteye_config.yaml
 stamp analytics ...
   input: dataset
@@ -199,15 +199,15 @@ save figure to:
 stamp analytics <span class="k">done</span>
 </pre></div>
 </div>
-<p>Analysis of result saved in the data set directory, for reference:</p>
+<p>The analysis result graph will be saved in the dataset directory, as follows:</p>
 <img alt="../../_images/stamp_analytics.png" src="../../_images/stamp_analytics.png" />
-<p>In addition, specific options of script see by <code class="docutils literal notranslate"><span class="pre">-h</span></code>:</p>
+<p>In addition, the script specific options can be executed <code class="docutils literal notranslate"><span class="pre">-h</span></code> to understand:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python tools/analytics/stamp_analytics.py -h
 </pre></div>
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">While recording the data set, suggest annodate <code class="docutils literal notranslate"><span class="pre">cv::imshow()</span></code> show image in <code class="docutils literal notranslate"><span class="pre">record.cc</span></code>, annodate <code class="docutils literal notranslate"><span class="pre">cv::imwrite()</span></code> write image in <code class="docutils literal notranslate"><span class="pre">dataset.cc</span></code> . Because these operations are time consuming, some images may be discarded. In other words, when the consumption cannot keep up with the pace of production, parts of images are discarded. <code class="docutils literal notranslate"><span class="pre">GetStreamDatas()</span></code>  in <code class="docutils literal notranslate"><span class="pre">record.cc</span></code> only caches the four latest images.</p>
+<p class="last">Suggestions when recording data sets <code class="docutils literal notranslate"><span class="pre">record.cc</span></code> annotation display image inside <code class="docutils literal notranslate"><span class="pre">cv::imshow()</span></code>, <code class="docutils literal notranslate"><span class="pre">dataset.cc</span></code> annotation display image inside <code class="docutils literal notranslate"><span class="pre">cv::imwrite()</span></code> . Because these operations are time-consuming, they can cause images to be discarded. In other words, consumption can’t keep up with production, so some images are discarded. <code class="docutils literal notranslate"><span class="pre">GetStreamDatas()</span></code> used in <code class="docutils literal notranslate"><span class="pre">record.cc</span></code> only caches the latest 4 images.</p>
 </div>
 </div>
 
@@ -222,7 +222,7 @@ stamp analytics <span class="k">done</span>
         <a href="../slam/contents.html" class="btn btn-neutral float-right" title="SLAM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="analytics_imu.html" class="btn btn-neutral" title="Analyzing the IMU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="analytics_imu.html" class="btn btn-neutral" title="Analyzing IMU" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -253,7 +253,7 @@ stamp analytics <span class="k">done</span>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc1',
+            VERSION:'2.0.1-rc2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Windows Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>Windows Installation &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
   
 
   
@@ -96,8 +96,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
@@ -187,7 +187,7 @@
 </div>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">Currently we do not provide a binary installer, thus you need to compile from the source code. It is also the process of configuring the development environment.</p>
+<p class="last">There is currently no binary installer available, which requires you to compile from source. It is also the process of configuring the development environment.</p>
 </div>
 <div class="section" id="id1">
 <h2>Prerequisites<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
@@ -274,7 +274,7 @@ Microsoft (R) 生成引擎版本 15.7.179.6572
 </ul>
 </li>
 </ul>
-<p>After installation, verify that the following path has been added to the system environment variable PATH.</p>
+<p>After installation, verify that the following path has been added to the system environment variable PATH:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\msys64\usr\bin
 </pre></div>
 </div>
@@ -349,12 +349,12 @@ cmake version 3.10.1
 <h2>Building Code<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p>If OpenCV is installed in the custom directory or if you want to specify a version, you should set the path before building:</p>
+<p>If OpenCV is installed in a custom directory or wants to specify a version, you can set the path as follows before compiling:</p>
 <div class="highlight-bat notranslate"><div class="highlight"><pre><span></span># OpenCV_DIR 为 OpenCVConfig.cmake 所在目录
 <span class="k">set</span> <span class="nv">OpenCV_DIR</span><span class="p">=</span>C:\opencv
 </pre></div>
 </div>
-<p class="last">Otherwise, CMake will prompt cannot find Opencv. If you need sdk without OpenCV, please read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV independency</span></a> .</p>
+<p class="last">Otherwise, CMake will prompt that OpenCV could not be found. If you don’t want to rely on OpenCV, read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV independency</span></a> .</p>
 </div>
 <p>Build and install:</p>
 <div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> <span class="p">&lt;</span>sdk&gt;
@@ -446,7 +446,7 @@ pip install -r requirements.txt
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc1',
+            VERSION:'2.0.1-rc2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

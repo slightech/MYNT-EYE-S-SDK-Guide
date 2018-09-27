@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
   
 
   
@@ -94,8 +94,8 @@
 <li class="toctree-l2"><a class="reference internal" href="infrared.html">Enable IR and its adjustments function</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
@@ -167,7 +167,7 @@
   <div class="section" id="imu">
 <span id="framerate"></span><h1>Set the frame rate of image &amp; IMU frequency<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
 <p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function in the API, you can set various control values ​​for the current device.</p>
-<p>Set the frame rate of image using <code class="docutils literal notranslate"><span class="pre">Option::FRAME_RATE</span></code> and the IMU frequency using <code class="docutils literal notranslate"><span class="pre">Option::IMU_FREQUENCY</span></code>.</p>
+<p>To set the image frame rate and IMU frequency, set <code class="docutils literal notranslate"><span class="pre">Option::FRAME_RATE</span></code> and <code class="docutils literal notranslate"><span class="pre">Option::IMU_FREQUENCY</span></code>.</p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
 <ul class="last simple">
@@ -206,7 +206,7 @@ I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framer
 </pre></div>
 </div>
 <p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, it will output the calculated value of the frame rate of image &amp; IMU frequency.</p>
-<p>For a complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/framerate.cc">framerate.cc</a> .</p>
+<p>Complete code samples，please see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/framerate.cc">framerate.cc</a> .</p>
 </div>
 
 
@@ -251,7 +251,7 @@ I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framer
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc1',
+            VERSION:'2.0.1-rc2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get stereo camera correction image &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>Get stereo camera correction image &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
   
 
   
@@ -104,8 +104,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
@@ -177,7 +177,7 @@
   <div class="section" id="get-stereo-rectified">
 <span id="id1"></span><h1>Get stereo camera correction image<a class="headerlink" href="#get-stereo-rectified" title="Permalink to this headline">¶</a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code> API provided can only get the raw data of the hardware, for example, the stereo camera raw image.</p>
-<p>The stereo camera correction image belongs to the upper layer of synthetic data. To get the data through <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>, you will need to start <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> beforehand.</p>
+<p>The stereo camera correction image belongs to the upper layer of synthetic data. For such data, you need to enable <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> before you can get <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>.</p>
 <p>In addition, <code class="docutils literal notranslate"><span class="pre">WaitForStreams()</span></code> waits for the key of the raw data. At the beginning when the synthetic data may still being processed, the value taken out will be null, so it needs to check not empty.</p>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
@@ -215,7 +215,7 @@
 </pre></div>
 </div>
 <p>OpenCV is used to display the image above. Select the display window, press <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code> to exit the program.</p>
-<p>For the complete code sample, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc">get_stereo_rectified.cc</a> .</p>
+<p>Complete code examples, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc">get_stereo_rectified.cc</a> .</p>
 </div>
 
 
@@ -260,7 +260,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc1',
+            VERSION:'2.0.1-rc2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

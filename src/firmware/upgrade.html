@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to upgrade the firmware &mdash; MYNT® EYE SDK Guide 2.0.1-rc1 documentation</title>
+  <title>How to upgrade the firmware &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Change from SDK 1.x to 2.x" href="from_v1.html" />
-    <link rel="prev" title="Compatibility" href="applicable.html" /> 
+    <link rel="prev" title="Firmware and SDK compatibility" href="applicable.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -86,15 +86,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Firmware</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="applicable.html">Compatibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applicable.html">Firmware and SDK compatibility</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">How to upgrade the firmware</a></li>
 <li class="toctree-l2"><a class="reference internal" href="from_v1.html">Change from SDK 1.x to 2.x</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrappers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
@@ -174,13 +174,13 @@
 └─setup.zip                    # MYNTEYE TOOL zip
 </pre></div>
 </div>
-<p>The MYNT EYE Tool is only supported in Windows system, so you need to do the following steps in Windows.</p>
+<p>The firmware upgrade program currently only supports Windows, so you need to operate under Windows. Proceed as follows:</p>
 <div class="section" id="id2">
 <h2>Download preparation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Download and unzip <code class="docutils literal notranslate"><span class="pre">setup.zip</span></code></li>
 <li>Download firmware, such as <code class="docutils literal notranslate"><span class="pre">MYNTEYE_S_2.0.0_rc0.img</span></code><ul>
-<li>Please refer to <a class="reference internal" href="applicable.html#firmware-applicable"><span class="std std-ref">Compatibility</span></a> to select the firmware suitable for the SDK version</li>
+<li>Please refer to <a class="reference internal" href="applicable.html#firmware-applicable"><span class="std std-ref">Firmware and SDK compatibility</span></a> to select the firmware suitable for the SDK version</li>
 <li>Please refer to <code class="docutils literal notranslate"><span class="pre">Checksum.txt</span></code> to find the firmware check code as follows:<ul>
 <li>Run the command in CMD <code class="docutils literal notranslate"><span class="pre">certutil</span> <span class="pre">-hashfile</span> <span class="pre">&lt;*.img&gt;</span> <span class="pre">MD5</span></code> .</li>
 <li>If the check code is incorrect, it means that the download went wrong. Please download it again!</li>
@@ -248,7 +248,7 @@
         <a href="from_v1.html" class="btn btn-neutral float-right" title="Change from SDK 1.x to 2.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="applicable.html" class="btn btn-neutral" title="Compatibility" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="applicable.html" class="btn btn-neutral" title="Firmware and SDK compatibility" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -279,7 +279,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2.0.1-rc1',
+            VERSION:'2.0.1-rc2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
