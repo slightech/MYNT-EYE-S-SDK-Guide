@@ -25,8 +25,8 @@ msgstr "Supported platforms"
 #: ../../src/sdk/platform.rst:6
 msgid ""
 "SDK 是基于 CMake 构建的，用以跨 Linux, Windows, macOS "
-"等多个平台。而从源码编译安装，也可以适配您的平台架构，并应用本地优化。"
-msgstr "SDK is built on CMake and can be used cross multiple platforms such as Linux, Windows, macOS, etc. Compile and install from source code can also adapt your platform architecture and apply local optimization."
+"等多个平台。SDK提供两种安装方式：下载安装以及源码编译安装。"
+msgstr "SDK is built on CMake and can be used cross multiple platforms such as Linux, Windows, macOS, etc. We provides two installation: Download and install, and Compile and install from source code."
 
 #: ../../src/sdk/platform.rst:8
 msgid "已测试可用的平台有："
@@ -45,6 +45,10 @@ msgid "Jetson TX2"
 msgstr "Jetson TX2"
 
 #: ../../src/sdk/platform.rst:16
+msgid "ubuntu 14.04暂不支持ppa安装，只能通过源码编译安装。"
+msgstr "Do not support ppa installation on ubuntu 14.04. Support compile and install from source code only."
+
+#: ../../src/sdk/platform.rst:20
 msgid "由于硬件传输速率要求，务必使用 USB 3.0 接口。另外，虚拟机因其大多存在 USB 驱动兼容性问题，不建议使用。"
 msgstr "Due to the requirement of hardware transmission rate, please use the USB 3 interface. In addition, virtual machines have USB driver compatibility problems, thus they are not recommended."
 

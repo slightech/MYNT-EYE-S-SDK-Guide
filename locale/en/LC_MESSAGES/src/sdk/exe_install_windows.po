@@ -1,0 +1,55 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE SDK Guide
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.3\n"
+
+#: ../../src/sdk/exe_install_windows.rst:4
+msgid "Windows SDK exe 安装"
+msgstr "Windows SDK exe installation"
+
+#: ../../src/sdk/exe_install_windows.rst:9 ../../src/sdk/exe_install_windows.rst:19
+msgid "Windows 10"
+msgstr "Windows 10"
+
+#: ../../src/sdk/exe_install_windows.rst:24
+msgid "下载并安装指定版本opencv"
+msgstr "Download and install opencv3.4.3"
+
+#: ../../src/sdk/exe_install_windows.rst:29
+msgid "设置环境变量"
+msgstr "Setting environment variables "
+
+#: ../../src/sdk/exe_install_windows.rst:31
+msgid "将opencv添加至PATH 变量: OPENCV_DIR = \<opencv>\build"
+msgstr "Set opencv_dir to PATH: OPENCV_DIR = \<opencv>\build"
+
+#: ../../src/sdk/exe_install_windows.rst:34
+msgid "<opencv>为opencv的安装路径"
+msgstr "<opencv> is opencv's installation path"
+
+#: ../../src/sdk/exe_install_windows.rst:36
+msgid "下载并安装SDK"
+msgstr "Download and install SDK"
+
+#: ../../src/sdk/exe_install_windows.rst:41
+msgid "运行样例"
+msgstr "Run samples"
+
+#: ../../src/sdk/exe_install_windows.rst:50
+msgid "如何引用"
+msgstr "How to call"
