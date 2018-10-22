@@ -39,7 +39,7 @@ Windows SDK exe 安装
 下载并安装SDK
 ---------------
 
-`mynteye-2.0-win-x64-opencv-3.4.3.exe <http://wiki.mynt.com/download/attachments/8028199/mynteye-2.0-win-x64-opencv-3.4.3.exe/>`_
+`mynteye-2.0-win-x64-opencv-3.4.3.exe <https://pan.baidu.com/s/1NY78fEGFrpr4SJce8CQHzA/>`_
 
 运行样例
 ----------
