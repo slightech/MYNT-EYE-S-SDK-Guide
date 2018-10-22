@@ -48,7 +48,7 @@ Windows SDK exe 安装
 
   $ c:
   $ cd Program Files (x86)\Slightech\MYNT EYE SDK 2.0
-  $ .\samples\bin\api\camera_a.bat
+  $ .\samples\bin\api\camera_a.exe
 
 如何引用
 ----------
