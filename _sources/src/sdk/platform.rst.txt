@@ -3,13 +3,17 @@
 支持平台
 ==========
 
-SDK 是基于 CMake 构建的，用以跨 Linux, Windows, macOS 等多个平台。而从源码编译安装，也可以适配您的平台架构，并应用本地优化。
+SDK 是基于 CMake 构建的，用以跨 Linux, Windows, macOS 等多个平台。SDK提供两种安装方式：下载安装以及源码编译安装。
 
 已测试可用的平台有：
 
 * Windows 10
 * Ubuntu 16.04 / 14.04
 * Jetson TX2
+
+.. tip::
+
+  ubuntu 14.04暂不支持直接下载安装，只能通过源码编译安装。
 
 .. warning::
 

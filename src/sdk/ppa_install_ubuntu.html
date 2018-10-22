@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>SLAM &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
+  <title>Ubuntu SDK PPA installation &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="How to use in VINS-Mono" href="vins.html" />
-    <link rel="prev" title="Analyze time stamps" href="../analytics/analytics_stamp.html" /> 
+    <link rel="next" title="Windows SDK exe installation" href="exe_install_windows.html" />
+    <link rel="prev" title="Supported platforms" href="platform.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -84,21 +84,24 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE SDK</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="platform.html">Supported platforms</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu SDK PPA installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exe_install_windows.html">Windows SDK exe installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_install_ubuntu.html">Ubuntu SDK Source Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_install_windows.html">Windows SDK Source Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV independency</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">SLAM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a></li>
-<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html">How to use in ORB_SLAM2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html">How to use in OKVIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html">How to use in VIORB</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maplab.html">How to use in Maplab x</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
 </ul>
 
             
@@ -144,13 +147,15 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>SLAM</li>
+          <li><a href="contents.html">MYNT® EYE SDK</a> &raquo;</li>
+        
+      <li>Ubuntu SDK PPA installation</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/src/slam/contents.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/src/sdk/ppa_install_ubuntu.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,44 +168,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="slam">
-<span id="id1"></span><h1>SLAM<a class="headerlink" href="#slam" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#mynt-eye-vins-mono">If you wanna run VINS-Mono with MYNT EYE camera, please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#ros-kinetic">Install ROS Kinetic conveniently (if already installed, please ignore)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#mynt-eye-vins-sample">Install MYNT-EYE-VINS-Sample</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#id2">Get image calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="vins.html#id4">Run VINS-Mono with MYNT® EYE</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="orb_slam2.html">How to use in ORB_SLAM2</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html#mynt-eye-orb-slam2">If you wanna run ORB_SLAM2 with MYNT EYE camera, please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html#id2">Binocular camera sample</a></li>
-<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html#ros">Building the nodes for mono and stereo (ROS)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="orb_slam2.html#mono-ros">Mono_ROS Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="orb_slam2.html#stereo-ros">Stereo_ROS Example</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="okvis.html">How to use in OKVIS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#mynt-eye-okvis">If you wanna run OKVIS with MYNT EYE camera, please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#id2">Install MYNTEYE OKVIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#id3">Get camera calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="okvis.html#id6">Run MYNTEYE OKVIS</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="viorb.html">How to use in VIORB</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#mynt-eye-viorb">If you wanna run VIORB with MYNT® EYE，please follow the steps:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#mynt-eye-viorb-sdk2">Install MYNT-EYE-VIORB-SDK2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#id2">Get image calibration parameters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="viorb.html#viorb-mynt-eye-ros-wrapper">Run VIORB and mynt_eye_ros_wrapper</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="maplab.html">How to use in Maplab x</a></li>
-</ul>
+  <div class="section" id="ubuntu-sdk-ppa">
+<span id="sdk-ppa-install-ubuntu"></span><h1>Ubuntu SDK PPA installation<a class="headerlink" href="#ubuntu-sdk-ppa" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Ubuntu 16.04</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="build_passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat" /></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="ppa">
+<h2>PPA installation<a class="headerlink" href="#ppa" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo add-apt-repository ppa:slightech/mynteye2
+$ sudo apt-get update
+$ sudo apt-get install mynteye2
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>Run samples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">samples path: /opt/mynteye/samples  tools path: /opt/mynteye/tools</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /opt/mynteye/samples
+$ ./api/camera_a
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -212,10 +212,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="vins.html" class="btn btn-neutral float-right" title="How to use in VINS-Mono" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="exe_install_windows.html" class="btn btn-neutral float-right" title="Windows SDK exe installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../analytics/analytics_stamp.html" class="btn btn-neutral" title="Analyze time stamps" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="platform.html" class="btn btn-neutral" title="Supported platforms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

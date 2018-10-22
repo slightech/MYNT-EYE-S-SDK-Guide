@@ -1,7 +1,7 @@
-.. _sdk_install_ubuntu:
+.. _sdk_source_install_ubuntu:
 
-Ubuntu 安装
-=============
+Ubuntu SDK 源码安装
+=====================
 
 .. only:: html
 

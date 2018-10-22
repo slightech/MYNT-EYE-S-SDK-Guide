@@ -1,7 +1,7 @@
-.. _sdk_install_windows:
+.. _sdk_source_install_windows:
 
-Windows 安装
-==============
+Windows SDK 源码安装
+=====================
 
 .. only:: html
 

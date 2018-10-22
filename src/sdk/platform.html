@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Supported platforms &mdash; MYNT® EYE SDK Guide 2.0.1-rc2 documentation</title>
+  <title>Supported platforms &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Ubuntu Installation" href="install_ubuntu.html" />
+    <link rel="next" title="Ubuntu SDK PPA installation" href="ppa_install_ubuntu.html" />
     <link rel="prev" title="MYNT® EYE SDK" href="contents.html" /> 
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.0.1
+                2.2.1
               </div>
             
           
@@ -86,8 +86,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE SDK</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Supported platforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_ubuntu.html">Ubuntu Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install_windows.html">Windows Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ppa_install_ubuntu.html">Ubuntu SDK PPA installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exe_install_windows.html">Windows SDK exe installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_install_ubuntu.html">Ubuntu SDK Source Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="source_install_windows.html">Windows SDK Source Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="without_opencv.html">OpenCV independency</a></li>
@@ -168,13 +170,17 @@
             
   <div class="section" id="sdk-platform">
 <span id="id1"></span><h1>Supported platforms<a class="headerlink" href="#sdk-platform" title="Permalink to this headline">¶</a></h1>
-<p>SDK is built on CMake and can be used cross multiple platforms such as Linux, Windows, macOS, etc. Compile and install from source code can also adapt your platform architecture and apply local optimization.</p>
+<p>SDK is built on CMake and can be used cross multiple platforms such as Linux, Windows, macOS, etc. We provides two installation: Download and install, and Compile and install from source code.</p>
 <p>These are the platforms that can be used:</p>
 <ul class="simple">
 <li>Windows 10</li>
 <li>Ubuntu 16.04 / 14.04</li>
 <li>Jetson TX2</li>
 </ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Do not support ppa installation on ubuntu 14.04. Support compile and install from source code only.</p>
+</div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Due to the requirement of hardware transmission rate, please use the USB 3 interface. In addition, virtual machines have USB driver compatibility problems, thus they are not recommended.</p>
@@ -189,7 +195,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="install_ubuntu.html" class="btn btn-neutral float-right" title="Ubuntu Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ppa_install_ubuntu.html" class="btn btn-neutral float-right" title="Ubuntu SDK PPA installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="contents.html" class="btn btn-neutral" title="MYNT® EYE SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -201,7 +207,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, JohnZhao.
+        &copy; Copyright 2018, JohnZhao
 
     </p>
   </div>
@@ -220,20 +226,14 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../',
-            VERSION:'2.0.1-rc2',
-            LANGUAGE:'en',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
