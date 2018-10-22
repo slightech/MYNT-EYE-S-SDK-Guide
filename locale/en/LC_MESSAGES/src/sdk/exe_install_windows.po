@@ -35,21 +35,25 @@ msgid "设置环境变量"
 msgstr "Setting environment variables "
 
 #: ../../src/sdk/exe_install_windows.rst:31
-msgid "将opencv添加至PATH 变量: OPENCV_DIR = \<opencv>\build"
-msgstr "Set opencv_dir to PATH: OPENCV_DIR = \<opencv>\build"
+msgid "设置Opencv路径: OPENCV_DIR = \<opencv>\build"
+msgstr "Set Opencv dir: OPENCV_DIR = \<opencv>\build"
 
 #: ../../src/sdk/exe_install_windows.rst:34
-msgid "<opencv>为opencv的安装路径"
-msgstr "<opencv> is opencv's installation path"
+msgid "设置Opencv路径: OPENCV_DIR = \<opencv>\build"
+msgstr "Set Opencv dir: OPENCV_DIR = \<opencv>\build"
 
-#: ../../src/sdk/exe_install_windows.rst:36
+#: ../../src/sdk/exe_install_windows.rst:38
+msgid "将该路径添加至PATH：%OPENCV_DIR%\x64\vc15\bin"
+msgstr "Set the dir to PATH：%OPENCV_DIR%\x64\vc15\bin"
+
+#: ../../src/sdk/exe_install_windows.rst:40
 msgid "下载并安装SDK"
 msgstr "Download and install SDK"
 
-#: ../../src/sdk/exe_install_windows.rst:41
+#: ../../src/sdk/exe_install_windows.rst:45
 msgid "运行样例"
 msgstr "Run samples"
 
-#: ../../src/sdk/exe_install_windows.rst:50
+#: ../../src/sdk/exe_install_windows.rst:54
 msgid "如何引用"
 msgstr "How to call"

@@ -24,11 +24,15 @@ Windows SDK exe 安装
 下载并安装指定版本opencv
 ---------------------------
 
-`opencv-3.4.3-vc14_vc15.exe <https://downloads.sourceforge.net/project/opencvlibrary/opencv-win/3.4.3/opencv-3.4.3-vc14_vc15.exe/>`_
+`opencv-3.4.3-vc14_vc15.exe <https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.4.3/>`_
 
 设置环境变量
 --------------------
-  将opencv添加至PATH 变量: OPENCV_DIR = \<opencv>\build
+.. code-block:: bash
+
+  设置Opencv路径: OPENCV_DIR = \<opencv>\build
+  将该路径添加至PATH：%OPENCV_DIR%\x64\vc15\bin
+
 
 .. tip::
   <opencv>为opencv的安装路径
