@@ -28,13 +28,12 @@ Windows SDK exe 安装
 
 设置环境变量
 --------------------
-.. code-block:: bash
 
-  设置Opencv路径: OPENCV_DIR = \<opencv>\build
-  将该路径添加至PATH：%OPENCV_DIR%\x64\vc15\bin
+* 设置 OpenCV 路径： `OPENCV_DIR = <opencv>\\build`
+* 将该路径添加至 PATH ： `%OPENCV_DIR%\\x64\\vc15\\bin`
 
 .. tip::
-  <opencv>为opencv的安装路径
+  <opencv> 为 OpenCV 的安装路径
 
 下载并安装SDK
 ---------------

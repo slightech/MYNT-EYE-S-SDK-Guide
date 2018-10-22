@@ -9,27 +9,41 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-10-22 21:57+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/sdk/ppa_install_ubuntu.rst:4
 msgid "Ubuntu SDK PPA 安装"
 msgstr "Ubuntu SDK PPA installation"
 
-#: ../../src/sdk/ppa_install_ubuntu.rst:9 ../../src/sdk/ppa_install_ubuntu.rst:19
+#: ../../src/sdk/ppa_install_ubuntu.rst:9
+#: ../../src/sdk/ppa_install_ubuntu.rst:19
 msgid "Ubuntu 16.04"
 msgstr "Ubuntu 16.04"
 
-#: ../../src/sdk/ppa_install_ubuntu.rst:24
+#: ../../src/sdk/ppa_install_ubuntu.rst:11
+msgid "|build_passing|"
+msgstr ""
+
+#: ../../src/sdk/ppa_install_ubuntu.rst:21
+msgid "✓"
+msgstr ""
+
+#: ../../src/sdk/ppa_install_ubuntu.rst:25
 msgid "PPA安装"
 msgstr "PPA installation"
 
-#: ../../src/sdk/ppa_install_ubuntu.rst:33
+#: ../../src/sdk/ppa_install_ubuntu.rst:34
 msgid "运行样例"
 msgstr "Run samples"
+
+#: ../../src/sdk/ppa_install_ubuntu.rst:37
+msgid "samples 路径: /opt/mynteye/samples   tools路径: /opt/mynteye/tools"
+msgstr "samples path: /opt/mynteye/samples  tools path: /opt/mynteye/tools"
+

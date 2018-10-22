@@ -9,43 +9,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-10-22 21:57+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/sdk/exe_install_windows.rst:4
 msgid "Windows SDK exe 安装"
 msgstr "Windows SDK exe installation"
 
-#: ../../src/sdk/exe_install_windows.rst:9 ../../src/sdk/exe_install_windows.rst:19
+#: ../../src/sdk/exe_install_windows.rst:9
+#: ../../src/sdk/exe_install_windows.rst:19
 msgid "Windows 10"
 msgstr "Windows 10"
 
-#: ../../src/sdk/exe_install_windows.rst:24
+#: ../../src/sdk/exe_install_windows.rst:11
+msgid "|build_passing|"
+msgstr ""
+
+#: ../../src/sdk/exe_install_windows.rst:21
+msgid "✓"
+msgstr ""
+
+#: ../../src/sdk/exe_install_windows.rst:25
 msgid "下载并安装指定版本opencv"
 msgstr "Download and install opencv3.4.3"
 
-#: ../../src/sdk/exe_install_windows.rst:29
+#: ../../src/sdk/exe_install_windows.rst:27
+msgid ""
+"`opencv-3.4.3-vc14_vc15.exe "
+"<https://sourceforge.net/projects/opencvlibrary/files/opencv-"
+"win/3.4.3/>`_"
+msgstr ""
+
+#: ../../src/sdk/exe_install_windows.rst:30
 msgid "设置环境变量"
-msgstr "Setting environment variables "
+msgstr "Setting environment variables"
 
-#: ../../src/sdk/exe_install_windows.rst:31
-msgid "设置Opencv路径: OPENCV_DIR = \<opencv>\build"
-msgstr "Set Opencv dir: OPENCV_DIR = \<opencv>\build"
+#: ../../src/sdk/exe_install_windows.rst:32
+msgid "设置 OpenCV 路径： `OPENCV_DIR = <opencv>\\\\build`"
+msgstr "Setting OpenCV path: `OPENCV_DIR = <opencv>\\\\build`"
 
-#: ../../src/sdk/exe_install_windows.rst:34
-msgid "设置Opencv路径: OPENCV_DIR = \<opencv>\build"
-msgstr "Set Opencv dir: OPENCV_DIR = \<opencv>\build"
+#: ../../src/sdk/exe_install_windows.rst:33
+msgid "将该路径添加至 PATH ： `%OPENCV_DIR%\\\\x64\\\\vc15\\\\bin`"
+msgstr "Add OpenCV directory to PATH: `%OPENCV_DIR%\\\\x64\\\\vc15\\\\bin`"
 
-#: ../../src/sdk/exe_install_windows.rst:37
-msgid "将该路径添加至PATH：%OPENCV_DIR%\x64\vc15\bin"
-msgstr "Set the dir to PATH：%OPENCV_DIR%\x64\vc15\bin"
+#: ../../src/sdk/exe_install_windows.rst:36
+msgid "<opencv> 为 OpenCV 的安装路径"
+msgstr "<opencv> indicates the install path"
 
 #: ../../src/sdk/exe_install_windows.rst:39
 msgid "下载并安装SDK"
 msgstr "Download and install SDK"
+
+#: ../../src/sdk/exe_install_windows.rst:41
+msgid ""
+"`mynteye-2.0-win-x64-opencv-3.4.3.exe "
+"<https://pan.baidu.com/s/1NY78fEGFrpr4SJce8CQHzA/>`_"
+msgstr ""
+
+#: ../../src/sdk/exe_install_windows.rst:44
+msgid "运行样例"
+msgstr "Run samples"
+
