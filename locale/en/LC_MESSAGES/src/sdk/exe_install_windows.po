@@ -49,11 +49,3 @@ msgstr "Set the dir to PATH：%OPENCV_DIR%\x64\vc15\bin"
 #: ../../src/sdk/exe_install_windows.rst:39
 msgid "下载并安装SDK"
 msgstr "Download and install SDK"
-
-#: ../../src/sdk/exe_install_windows.rst:44
-msgid "运行样例"
-msgstr "Run samples"
-
-#: ../../src/sdk/exe_install_windows.rst:53
-msgid "如何引用"
-msgstr "How to call"

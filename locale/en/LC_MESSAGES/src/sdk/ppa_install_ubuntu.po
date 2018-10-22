@@ -33,8 +33,3 @@ msgstr "PPA installation"
 #: ../../src/sdk/ppa_install_ubuntu.rst:33
 msgid "运行样例"
 msgstr "Run samples"
-
-#: ../../src/sdk/ppa_install_ubuntu.rst:44
-msgid "如何引用"
-msgstr "How to call"
-

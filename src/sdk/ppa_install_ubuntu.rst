@@ -40,8 +40,3 @@ PPA安装
 
   $ cd /opt/mynteye/samples
   $ ./api/camera_a
-
-如何引用
-----------
-
-
