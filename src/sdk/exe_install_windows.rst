@@ -33,7 +33,6 @@ Windows SDK exe 安装
   设置Opencv路径: OPENCV_DIR = \<opencv>\build
   将该路径添加至PATH：%OPENCV_DIR%\x64\vc15\bin
 
-
 .. tip::
   <opencv>为opencv的安装路径
 
