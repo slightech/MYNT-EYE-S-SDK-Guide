@@ -43,7 +43,7 @@ Ubuntu SDK 源码安装
 .. code-block:: bash
 
   sudo apt-get install git
-  git clone https://github.com/slightech/MYNT-EYE-SDK-2.git
+  git clone https://github.com/slightech/MYNT-EYE-S-SDK.git
 
 准备依赖
 --------

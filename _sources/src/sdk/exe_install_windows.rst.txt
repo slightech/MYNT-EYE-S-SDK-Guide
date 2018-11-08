@@ -21,30 +21,27 @@ Windows SDK exe 安装
   | ✓               |
   +-----------------+
 
-下载并安装指定版本opencv
----------------------------
-
-`opencv-3.4.3-vc14_vc15.exe <https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.4.3/>`_
-
-设置环境变量
---------------------
-
-* 设置 OpenCV 路径： `OPENCV_DIR = <opencv>\\build`
-* 将该路径添加至 PATH ： `%OPENCV_DIR%\\x64\\vc15\\bin`
-
-.. tip::
-  <opencv> 为 OpenCV 的安装路径
-
-下载并安装SDK
+下载并安装 SDK
 ---------------
 
-`mynteye-2.0-win-x64-opencv-3.4.3.exe <https://pan.baidu.com/s/1NY78fEGFrpr4SJce8CQHzA/>`_
+.. tip::
 
-运行样例
-----------
+  下载地址： `mynteye-s-2.2.2-win-x64-opencv-3.4.3.exe <https://pan.baidu.com/s/1qt5825t9pDIR680NYSrdDg>`_
 
-.. code-block:: bash
+安装完 SDK 的 exe 安装包后，桌面会生成 SDK 根目录的快捷方式。
 
-  $ c:
-  $ cd Program Files (x86)\Slightech\MYNT EYE SDK 2.0
-  $ .\samples\bin\api\camera_a.exe
+进入 ``<SDK_ROOT_DIR>\bin\samples\tutorials`` 目录，双击 ``get_stereo.exe`` 运行，即可看到双目实时画面。
+
+生成样例工程
+------------
+
+首先，安装好 `Visual Studio 2017 <https://visualstudio.microsoft.com/>`_ 和 `CMake <https://cmake.org/>`_ 。
+
+接着，进入 ``<SDK_ROOT_DIR>\samples`` 目录， 双击 ``generate.bat`` 即可生成样例工程。
+
+p.s. 样例教程，可见 `SDK <https://slightech.github.io/MYNT-EYE-S-SDK/>`_ 主页给出的 Guide 文档。
+
+如何于 Visual Studio 2017 下使用 SDK
+------------------------------------
+
+进入 ``<SDK_ROOT_DIR>\projects\vs2017`` ，见 ``README.md`` 说明。

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use in VINS-Mono &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
+  <title>How to use in VINS-Mono &mdash; MYNT® EYE S SDK Guide 2.2.2-rc0 documentation</title>
   
 
   
@@ -48,7 +48,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
           
 
           
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.1
+                2.2.2
               </div>
             
           
@@ -113,7 +113,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
         
       </nav>
 
@@ -170,9 +170,9 @@
 <div class="section" id="mynt-eye-vins-mono">
 <h2>If you wanna run VINS-Mono with MYNT EYE camera, please follow the steps:<a class="headerlink" href="#mynt-eye-vins-mono" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and install mynt_eye_ros_wrapper.</li>
+<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK.git">MYNT-EYE-S-SDK</a> and install mynt_eye_ros_wrapper.</li>
 <li>Follow the normal procedure to install VINS-Mono.</li>
-<li>Update <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/sdk2/config/mynteye/mynteye_config.yaml">here</a> .</li>
+<li>Update <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/mynteye-s/config/mynteye/mynteye_config.yaml">here</a> .</li>
 <li>Run mynt_eye_ros_wrapper and VINS-Mono.</li>
 </ol>
 </div>
@@ -188,7 +188,7 @@ chmod <span class="m">755</span> ./ros_install.sh <span class="o">&amp;&amp;</sp
 <h2>Install MYNT-EYE-VINS-Sample<a class="headerlink" href="#mynt-eye-vins-sample" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir -p ~/catkin_ws/src
 <span class="nb">cd</span> ~/catkin_ws/src
-git clone -b sdk2 https://github.com/slightech/MYNT-EYE-VINS-Sample.git
+git clone -b mynteye-s https://github.com/slightech/MYNT-EYE-VINS-Sample.git
 <span class="nb">cd</span> ..
 catkin_make
 <span class="nb">source</span> devel/setup.bash
@@ -199,12 +199,12 @@ catkin_make
 </div>
 <div class="section" id="id2">
 <h2>Get image calibration parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Use MYNT® EYE’s left eye camera and IMU. By <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> API <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> function and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function, you can get the image calibration parameters of the current working device:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-SDK-2
+<p>Use MYNT® EYE’s left eye camera and IMU. By <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK.git">MYNT-EYE-S-SDK</a> API <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> function and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function, you can get the image calibration parameters of the current working device:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-S-SDK
 ./samples/_output/bin/tutorials/get_img_params
 </pre></div>
 </div>
-<p>After running the above type, pinhole’s <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> is obtained , and then update to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/sdk2/config/mynteye/mynteye_config.yaml">here</a> .</p>
+<p>After running the above type, pinhole’s <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> is obtained , and then update to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/mynteye-s/config/mynteye/mynteye_config.yaml">here</a> .</p>
 </div>
 <div class="section" id="id4">
 <h2>Run VINS-Mono with MYNT® EYE<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -215,7 +215,7 @@ roslaunch vins_estimator mynteye.launch
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">If you want to use a fish-eye camera model, please click <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/tree/sdk2/calibration_images">here</a> .</p>
+<p class="last">If you want to use a fish-eye camera model, please click <a class="reference external" href="https://github.com/slightech/MYNT-EYE-VINS-Sample/tree/mynteye-s/calibration_images">here</a> .</p>
 </div>
 </div>
 </div>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ROS Installation &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
+  <title>ROS Installation &mdash; MYNT® EYE S SDK Guide 2.2.2-rc0 documentation</title>
   
 
   
@@ -48,7 +48,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
           
 
           
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.1
+                2.2.2
               </div>
             
           
@@ -116,7 +116,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
         
       </nav>
 
@@ -245,7 +245,7 @@ DEVICE_NAME: MYNT-EYE-S1000
 <h2>Common issues - ROS Indigo<a class="headerlink" href="#ros-indigo" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="make-ros-libopencv">
 <h3>Cannot find <code class="docutils literal notranslate"><span class="pre">libopencv</span></code> while <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code><a class="headerlink" href="#make-ros-libopencv" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make[3]: *** No rule to make target `/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8&#39;, needed by `/home/john/Workspace/mynt-eye-sdk-2/wrappers/ros/devel/lib/libmynteye_wrapper.so&#39;.  Stop.
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>make[3]: *** No rule to make target `/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8&#39;, needed by `/home/john/Workspace/MYNT-EYE-S-SDK/wrappers/ros/devel/lib/libmynteye_wrapper.so&#39;.  Stop.
 </pre></div>
 </div>
 <p><strong>Solution 1)</strong> Install OpenCV 2:</p>
@@ -257,7 +257,7 @@ sudo apt-get install libcv-dev
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install ros-indigo-opencv3
 
 git clone https://github.com/ros-perception/vision_opencv.git
-mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
+mv vision_opencv/cv_bridge/ MYNT-EYE-S-SDK/wrappers/ros/src/
 </pre></div>
 </div>
 <p>Then run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">ros</span></code> again</p>

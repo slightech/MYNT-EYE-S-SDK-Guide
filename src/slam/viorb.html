@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use in VIORB &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
+  <title>How to use in VIORB &mdash; MYNT® EYE S SDK Guide 2.2.2-rc0 documentation</title>
   
 
   
@@ -48,7 +48,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
           
 
           
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.1
+                2.2.2
               </div>
             
           
@@ -113,7 +113,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
         
       </nav>
 
@@ -170,19 +170,19 @@
 <div class="section" id="mynt-eye-viorb">
 <h2>If you wanna run VIORB with MYNT® EYE，please follow the steps:<a class="headerlink" href="#mynt-eye-viorb" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and install mynt_eye_ros_wrapper.</li>
+<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK.git">MYNT-EYE-S-SDK</a> and install mynt_eye_ros_wrapper.</li>
 <li>Follow the normal procedure to install VIORB.</li>
 <li>Update camera parameters to <code class="docutils literal notranslate"><span class="pre">&lt;VIO&gt;/config/config_mynteye.yaml</span></code>.</li>
 <li>Run mynt_eye_ros_wrapper and VIORB.</li>
 </ol>
 </div>
-<div class="section" id="mynt-eye-viorb-sdk2">
-<h2>Install MYNT-EYE-VIORB-SDK2<a class="headerlink" href="#mynt-eye-viorb-sdk2" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone -b sdk2 https://github.com/slightech/MYNT-EYE-VIORB-Sample.git
+<div class="section" id="mynt-eye-viorb-sample">
+<h2>安装 MYNT-EYE-VIORB-Sample.<a class="headerlink" href="#mynt-eye-viorb-sample" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone -b mynteye-s https://github.com/slightech/MYNT-EYE-VIORB-Sample.git
 <span class="nb">cd</span> MYNT-EYE-VIORB-Sample
 </pre></div>
 </div>
-<p>Add the path including <code class="docutils literal notranslate"><span class="pre">Examples/ROS/ORB_VIO</span></code> to the <code class="docutils literal notranslate"><span class="pre">ROS_PACKAGE_PATH</span></code> environment variable. Open <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file and add at the end the following line. Replace <code class="docutils literal notranslate"><span class="pre">PATH</span></code> by the folder where you cloned <code class="docutils literal notranslate"><span class="pre">MYNT-EYE-VIORB-SDK2</span></code>:</p>
+<p>Add the path including <code class="docutils literal notranslate"><span class="pre">Examples/ROS/ORB_VIO</span></code> to the <code class="docutils literal notranslate"><span class="pre">ROS_PACKAGE_PATH</span></code> environment variable. Open <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file and add at the end the following line. Replace <code class="docutils literal notranslate"><span class="pre">PATH</span></code> by the folder where you cloned <code class="docutils literal notranslate"><span class="pre">MYNT-EYE-VIORB-Sample</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">ROS_PACKAGE_PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">ROS_PACKAGE_PATH</span><span class="si">}</span>:PATH/Examples/ROS/ORB_VIO
 </pre></div>
 </div>
@@ -194,8 +194,8 @@
 </div>
 <div class="section" id="id2">
 <h2>Get image calibration parameters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Assume that the left eye of the mynteye camera is used with IMU. Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> API, you can get the image calibration parameters of the currently open device:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-SDK-2
+<p>Assume that the left eye of the mynteye camera is used with IMU. Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK.git">MYNT-EYE-S-SDK</a> API, you can get the image calibration parameters of the currently open device:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-S-SDK
 ./samples/_output/bin/tutorials/get_img_params
 </pre></div>
 </div>

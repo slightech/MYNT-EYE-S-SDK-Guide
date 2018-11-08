@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use in OKVIS &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
+  <title>How to use in OKVIS &mdash; MYNT® EYE S SDK Guide 2.2.2-rc0 documentation</title>
   
 
   
@@ -48,7 +48,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
           
 
           
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.1
+                2.2.2
               </div>
             
           
@@ -113,7 +113,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
         
       </nav>
 
@@ -170,8 +170,7 @@
 <div class="section" id="mynt-eye-okvis">
 <h2>If you wanna run OKVIS with MYNT EYE camera, please follow the steps:<a class="headerlink" href="#mynt-eye-okvis" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> and install it.</li>
-<li>Add the path including MYNT-EYE-SDK to the environment variable. Open <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> file and add at the end the following: <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">MYNTEYE_SDK2_ROOT=&lt;MYNT-EYE-SDK-2</span> <span class="pre">INSTALL</span> <span class="pre">PATH&gt;</span></code>.</li>
+<li>Download <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK.git">MYNT-EYE-S-SDK</a> and install it.</li>
 <li>Install dependencies and build MYNT-EYE-OKVIS-Sample follow the procedure of the original OKVIS.</li>
 <li>Update camera parameters to <code class="docutils literal notranslate"><span class="pre">&lt;OKVIS&gt;/config/config_mynteye.yaml</span></code>.</li>
 <li>Run OKVIS using MYNT® EYE.</li>
@@ -180,7 +179,7 @@
 <div class="section" id="id2">
 <h2>Install MYNTEYE OKVIS<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>First install dependencies based on the original OKVIS, and the follow:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone -b sdk2 https://github.com/slightech/MYNT-EYE-OKVIS-Sample.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone -b mynteye-s https://github.com/slightech/MYNT-EYE-OKVIS-Sample.git
 mkdir build <span class="o">&amp;&amp;</span> <span class="nb">cd</span> build
 cmake -DCMAKE_BUILD_TYPE<span class="o">=</span>Release ..
 make -j4
@@ -189,18 +188,18 @@ make -j4
 </div>
 <div class="section" id="id3">
 <h2>Get camera calibration parameters<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2.git">MYNT-EYE-SDK-2</a> API, you can get the camera calibration parameters of the currently open device, follow the steps:</p>
-<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> MYNT-EYE-SDK-2
+<p>Through the <code class="docutils literal notranslate"><span class="pre">GetIntrinsics()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetExtrinsics()</span></code> function of the <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK.git">MYNT-EYE-S-SDK</a> API, you can get the camera calibration parameters of the currently open device, follow the steps:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">cd</span> MYNT-EYE-S-SDK
 ./samples/_output/bin/tutorials/get_img_params
 </pre></div>
 </div>
-<p>After running the above type, pinhole’s <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> is obtained, then update to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-OKVIS-Sample/blob/sdk2/config/config_mynteye.yaml">here</a> .</p>
+<p>After running the above type, pinhole’s <code class="docutils literal notranslate"><span class="pre">distortion_parameters</span></code> and <code class="docutils literal notranslate"><span class="pre">projection_parameters</span></code> is obtained, then update to <a class="reference external" href="https://github.com/slightech/MYNT-EYE-OKVIS-Sample/blob/mynteye-s/config/config_mynteye.yaml">here</a> .</p>
 </div>
 <div class="section" id="id6">
 <h2>Run MYNTEYE OKVIS<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Go to <code class="docutils literal notranslate"><span class="pre">MYNT-EYE-OKVIS-Sample/build</span></code> folder and Run the application <code class="docutils literal notranslate"><span class="pre">okvis_app_mynteye_sdk2</span></code> :</p>
+<p>Go to <code class="docutils literal notranslate"><span class="pre">MYNT-EYE-OKVIS-Sample/build</span></code> folder and Run the application <code class="docutils literal notranslate"><span class="pre">okvis_app_mynteye_s</span></code> :</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> MYNT-EYE-OKVIS-Sample/build
-./okvis_app_mynteye_sdk2 ../config/config_mynteye.yaml
+./okvis_app_mynteye_s ../config/config_mynteye.yaml
 </pre></div>
 </div>
 </div>

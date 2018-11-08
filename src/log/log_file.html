@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Enable log file &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
+  <title>Enable log file &mdash; MYNT® EYE S SDK Guide 2.2.2-rc0 documentation</title>
   
 
   
@@ -48,7 +48,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
           
 
           
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.1
+                2.2.2
               </div>
             
           
@@ -110,7 +110,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
         
       </nav>
 
@@ -164,7 +164,11 @@
             
   <div class="section" id="log-file">
 <span id="id1"></span><h1>Enable log file<a class="headerlink" href="#log-file" title="Permalink to this headline">¶</a></h1>
-<p>The general configuration of the log in the head file <a class="reference external" href="https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/include/mynteye/glog_init.h">glog_init.h</a> .</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">If import glog to build.</p>
+</div>
+<p>The general configuration of the log in the head file <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/include/mynteye/logger.h">logger.h</a> .</p>
 <p>Uncomment <code class="docutils literal notranslate"><span class="pre">FLAGS_log_dir</span> <span class="pre">=</span> <span class="pre">&quot;.&quot;;</span></code> recompile and save to current work directory. Run <code class="docutils literal notranslate"><span class="pre">camera_a</span></code> log file as follows:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;workdir&gt;/
 ├─camera_a.ERROR

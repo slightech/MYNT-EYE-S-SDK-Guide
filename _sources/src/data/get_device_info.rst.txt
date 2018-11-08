@@ -38,4 +38,4 @@
   I0503 16:40:21.615164 32106 get_device_info.cc:16] IMU type: 0000
   I0503 16:40:21.615171 32106 get_device_info.cc:17] Nominal baseline: 120
 
-完整代码样例，请见 `get_device_info.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_device_info.cc>`_ 。
+完整代码样例，请见 `get_device_info.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_device_info.cc>`_ 。

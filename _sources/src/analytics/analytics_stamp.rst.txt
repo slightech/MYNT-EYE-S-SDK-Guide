@@ -3,7 +3,7 @@
 分析时间戳
 ============
 
-SDK 提供了时间戳分析的脚本 ``stamp_analytics.py`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。
+SDK 提供了时间戳分析的脚本 ``stamp_analytics.py`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-S-SDK/tree/master/tools>`_ 。
 
 参考运行命令及结果，于 Linux 上：
 

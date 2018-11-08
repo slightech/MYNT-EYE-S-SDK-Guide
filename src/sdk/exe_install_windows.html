@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Windows SDK exe installation &mdash; MYNT® EYE SDK Guide 2.2.1-rc documentation</title>
+  <title>Windows SDK exe installation &mdash; MYNT® EYE S SDK Guide 2.2.2-rc0 documentation</title>
   
 
   
@@ -48,7 +48,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> MYNT® EYE SDK Guide
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
           
 
           
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.1
+                2.2.2
               </div>
             
           
@@ -116,7 +116,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">MYNT® EYE SDK Guide</a>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
         
       </nav>
 
@@ -183,32 +183,24 @@
 </tr>
 </tbody>
 </table>
-<div class="section" id="opencv">
-<h2>Download and install opencv3.4.3<a class="headerlink" href="#opencv" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/3.4.3/">opencv-3.4.3-vc14_vc15.exe</a></p>
-</div>
-<div class="section" id="id1">
-<h2>Setting environment variables<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Setting OpenCV path: <cite>OPENCV_DIR = &lt;opencv&gt;\build</cite></li>
-<li>Add OpenCV directory to PATH: <cite>%OPENCV_DIR%\x64\vc15\bin</cite></li>
-</ul>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">&lt;opencv&gt; indicates the install path</p>
-</div>
-</div>
 <div class="section" id="sdk">
 <h2>Download and install SDK<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://pan.baidu.com/s/1NY78fEGFrpr4SJce8CQHzA/">mynteye-2.0-win-x64-opencv-3.4.3.exe</a></p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Download here: <a class="reference external" href="https://pan.baidu.com/s/1qt5825t9pDIR680NYSrdDg">mynteye-s-2.2.2-win-x64-opencv-3.4.3.exe</a></p>
 </div>
-<div class="section" id="id2">
-<h2>Run samples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ c:
-$ <span class="nb">cd</span> Program Files <span class="o">(</span>x86<span class="o">)</span><span class="se">\S</span>lightech<span class="se">\M</span>YNT EYE SDK <span class="m">2</span>.0
-$ .<span class="se">\s</span>amples<span class="se">\b</span>in<span class="se">\a</span>pi<span class="se">\c</span>amera_a.exe
-</pre></div>
+<p>After you install the win pack of SDK, there will be a shortcut to the SDK root directory on your desktop.</p>
+<p>Goto the <code class="docutils literal notranslate"><span class="pre">&lt;SDK_ROOT_DIR&gt;\bin\samples\tutorials</span></code> directory and click <code class="docutils literal notranslate"><span class="pre">get_stereo.exe</span></code> to run.</p>
 </div>
+<div class="section" id="id1">
+<h2>Generate samples project<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>First, you should install <a class="reference external" href="https://visualstudio.microsoft.com/">Visual Studio 2017</a> and <a class="reference external" href="https://cmake.org/">CMake</a> .</p>
+<p>Second, goto the <code class="docutils literal notranslate"><span class="pre">&lt;SDK_ROOT_DIR&gt;\samples</span></code> directory and click <code class="docutils literal notranslate"><span class="pre">generate.bat</span></code> to generate project.</p>
+<p>The tutorials of samples are here: <a class="reference external" href="https://slightech.github.io/MYNT-EYE-S-SDK-Guide/src/data/contents.html">https://slightech.github.io/MYNT-EYE-S-SDK-Guide/src/data/contents.html</a>.</p>
+</div>
+<div class="section" id="visual-studio-2017-sdk">
+<h2>Start using SDK with Visual Studio 2017<a class="headerlink" href="#visual-studio-2017-sdk" title="Permalink to this headline">¶</a></h2>
+<p>Goto the <code class="docutils literal notranslate"><span class="pre">&lt;SDK_ROOT_DIR&gt;\projects\vs2017</span></code>, see the <code class="docutils literal notranslate"><span class="pre">README.md</span></code>.</p>
 </div>
 </div>
 

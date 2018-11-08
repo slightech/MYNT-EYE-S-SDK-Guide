@@ -3,7 +3,7 @@
 保存设备信息和参数
 ====================
 
-SDK 提供了保存信息和参数的工具 ``save_all_infos`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。
+SDK 提供了保存信息和参数的工具 ``save_all_infos`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-S-SDK/tree/master/tools>`_ 。
 
 参考运行命令：
 

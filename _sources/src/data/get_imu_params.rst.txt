@@ -15,4 +15,4 @@
   LOG(INFO) << "Motion extrinsics left to imu: {"
             << api->GetMotionExtrinsics(Stream::LEFT) << "}";
 
-完整代码样例，请见 `get_imu_params.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_imu_params.cc>`_ 。
+完整代码样例，请见 `get_imu_params.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_imu_params.cc>`_ 。

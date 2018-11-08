@@ -48,4 +48,4 @@
 
 样例程序会显示图像，左上角有真实曝光时间，单位毫秒。
 
-完整代码样例，请见 `manual_exposure.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc>`_ 。
+完整代码样例，请见 `manual_exposure.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/manual_exposure.cc>`_ 。

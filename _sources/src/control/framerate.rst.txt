@@ -48,4 +48,4 @@
 
 样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率和 IMU 频率。
 
-完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/framerate.cc>`_ 。
+完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/framerate.cc>`_ 。

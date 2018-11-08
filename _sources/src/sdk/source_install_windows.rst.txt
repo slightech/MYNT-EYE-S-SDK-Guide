@@ -134,7 +134,7 @@ MSYS2（提供 Linux 命令）
 
 .. code-block:: bat
 
-  git clone https://github.com/slightech/MYNT-EYE-SDK-2.git
+  git clone https://github.com/slightech/MYNT-EYE-S-SDK.git
 
 准备依赖
 --------
