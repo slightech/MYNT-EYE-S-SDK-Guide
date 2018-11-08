@@ -91,7 +91,7 @@ ROS Indigo (Ubuntu 14.04)
 
 ::
 
-  make[3]: *** No rule to make target `/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8', needed by `/home/john/Workspace/mynt-eye-sdk-2/wrappers/ros/devel/lib/libmynteye_wrapper.so'.  Stop.
+  make[3]: *** No rule to make target `/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8', needed by `/home/john/Workspace/MYNT-EYE-S-SDK/wrappers/ros/devel/lib/libmynteye_wrapper.so'.  Stop.
 
 **Solution 1)** 安装 OpenCV 2:
 
@@ -107,7 +107,7 @@ ROS Indigo (Ubuntu 14.04)
   sudo apt-get install ros-indigo-opencv3
 
   git clone https://github.com/ros-perception/vision_opencv.git
-  mv vision_opencv/cv_bridge/ mynt-eye-sdk-2/wrappers/ros/src/
+  mv vision_opencv/cv_bridge/ MYNT-EYE-S-SDK/wrappers/ros/src/
 
 然后，重新 ``make ros`` 。
 

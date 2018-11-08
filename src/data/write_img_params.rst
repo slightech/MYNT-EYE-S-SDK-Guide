@@ -3,7 +3,7 @@
 写入图像标定参数
 ==================
 
-SDK 提供了写入图像标定参数的工具 ``img_params_writer`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。
+SDK 提供了写入图像标定参数的工具 ``img_params_writer`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-S-SDK/tree/master/tools>`_ 。
 
 有关如何获取，请阅读 :ref:`get_img_params` 。此参数会用于计算纠正、视差等。
 
@@ -16,7 +16,7 @@ SDK 提供了写入图像标定参数的工具 ``img_params_writer`` 。工具�
   # Windows
   .\tools\_output\bin\writer\img_params_writer.bat tools\writer\config\img.params
 
-其中， `tools/writer/config/img.params <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/tools/writer/config/img.params>`_ 是参数文件路径。如果你自己标定了参数，可以编辑此文件，然后执行上述命令写入设备。
+其中， `tools/writer/config/img.params <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/tools/writer/config/img.params>`_ 是参数文件路径。如果你自己标定了参数，可以编辑此文件，然后执行上述命令写入设备。
 
 .. tip::
 

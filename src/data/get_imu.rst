@@ -63,4 +63,4 @@ API 提供了 ``Start()`` ``Stop()`` 函数，用于开始或停止捕获数据�
 
 上述代码，用了 OpenCV 来显示图像和数据。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。
 
-完整代码样例，请见 `get_imu.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_imu.cc>`_ 。
+完整代码样例，请见 `get_imu.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_imu.cc>`_ 。

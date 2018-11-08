@@ -47,8 +47,8 @@
 
 上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。
 
-完整代码样例，请见 `get_depth.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_depth.cc>`_ 。
+完整代码样例，请见 `get_depth.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_depth.cc>`_ 。
 
 .. tip::
 
-  预览深度图某区域的值，请见 `get_depth_with_region.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/api/get_depth_with_region.cc>`_ 。
+  预览深度图某区域的值，请见 `get_depth_with_region.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/api/get_depth_with_region.cc>`_ 。

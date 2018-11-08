@@ -7,11 +7,10 @@
 在 MYNT® EYE 上运行 ORB_SLAM2 ，请依照这些步骤：
 ------------------------------------------------
 
-1. 下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ 及安装。
-2. 添加 MYNT-EYE-SDK 路径到环境变量。打开 ``.bashrc`` 文件，在最后添加 ``export MYNTEYE_SDK2_ROOT=<MYNT-EYE-SDK-2 INSTALL PATH>`` 。
-3. 按照一般步骤安装 ORB_SLAM2 。
-4. 更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数到 ``<ORB_SLAM2>/config/mynteye_*.yaml``。
-5. 在 MYNT® EYE 上运行例子。
+1. 下载 `MYNT-EYE-S-SDK <https://github.com/slightech/MYNT-EYE-S-SDK.git>`_ 及安装。
+2. 按照一般步骤安装 ORB_SLAM2 。
+3. 更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数到 ``<ORB_SLAM2>/config/mynteye_*.yaml``。
+4. 在 MYNT® EYE 上运行例子。
 
 双目样例
 ---------
@@ -55,7 +54,7 @@ Mono_ROS 例子
 
 .. code-block:: bash
 
-  cd MYNT-EYE-SDK-2
+  cd MYNT-EYE-S-SDK
 
   ./samples/_output/bin/tutorials/get_img_params
 

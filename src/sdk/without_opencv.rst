@@ -15,4 +15,4 @@ SDK 提供了三层接口，其 OpenCV 依赖情况如下：
 
   option(WITH_API "Build with API layer, need OpenCV" ON)
 
-``device`` 层接口使用样例，请见 `device/camera.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/device/camera.cc>`_ 。
+``device`` 层接口使用样例，请见 `device/camera.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/device/camera.cc>`_ 。

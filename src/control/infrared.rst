@@ -45,4 +45,4 @@
 
   硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备后，一定要设定下 IR 值。
 
-完整代码样例，请见 `infrared.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/control/infrared.cc>`_ 。
+完整代码样例，请见 `infrared.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/infrared.cc>`_ 。

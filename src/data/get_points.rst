@@ -50,8 +50,8 @@
 
 上述代码，用了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 来显示点云。关闭点云窗口时，也会结束程序。
 
-完整代码样例，请见 `get_points.cc <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/data/get_points.cc>`_ 。
+完整代码样例，请见 `get_points.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_points.cc>`_ 。
 
 .. attention::
 
-  准备好了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库，编译教程样例时才会有此例子。如果 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库安装到了自定义目录，那么请打开 `tutorials/CMakeLists.txt <https://github.com/slightech/MYNT-EYE-SDK-2/blob/master/samples/tutorials/CMakeLists.txt>`_ ，找到 ``find_package(PCL)`` ，把 ``PCLConfig.cmake`` 所在目录添加进 ``CMAKE_PREFIX_PATH`` 。
+  准备好了 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库，编译教程样例时才会有此例子。如果 `PCL <https://github.com/PointCloudLibrary/pcl>`_ 库安装到了自定义目录，那么请打开 `tutorials/CMakeLists.txt <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/CMakeLists.txt>`_ ，找到 ``find_package(PCL)`` ，把 ``PCLConfig.cmake`` 所在目录添加进 ``CMAKE_PREFIX_PATH`` 。

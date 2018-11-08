@@ -7,9 +7,9 @@
 在 MYNT® EYE 上运行 VINS-Mono，请依照这些步骤：
 ------------------------------------------------
 
-1. 下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ 及安装 mynt_eye_ros_wrapper。
+1. 下载 `MYNT-EYE-S-SDK <https://github.com/slightech/MYNT-EYE-S-SDK.git>`_ 及安装 mynt_eye_ros_wrapper。
 2. 按照一般步骤安装 VINS-Mono 。
-3. 在 `这里 <https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/sdk2/config/mynteye/mynteye_config.yaml>`__ 更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数。
+3. 在 `这里 <https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/mynteye-s/config/mynteye/mynteye_config.yaml>`__ 更新 ``distortion_parameters`` 和 ``projection_parameters`` 参数。
 4. 运行 mynt_eye_ros_wrapper 和 VINS-Mono 。
 
 快捷安装 ROS Kinetic (若已安装，请忽略)
@@ -28,7 +28,7 @@
 
   mkdir -p ~/catkin_ws/src
   cd ~/catkin_ws/src
-  git clone -b sdk2 https://github.com/slightech/MYNT-EYE-VINS-Sample.git
+  git clone -b mynteye-s https://github.com/slightech/MYNT-EYE-VINS-Sample.git
   cd ..
   catkin_make
   source devel/setup.bash
@@ -38,14 +38,14 @@
 获取图像校准参数
 ----------------
 
-使用 MYNT® EYE 的左目摄像头和 IMU 。通过 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API的 ``GetIntrinsics()`` 函数和 ``GetExtrinsics()`` 函数，可以获得当前工作设备的图像校准参数：
+使用 MYNT® EYE 的左目摄像头和 IMU 。通过 `MYNT-EYE-S-SDK <https://github.com/slightech/MYNT-EYE-S-SDK.git>`_ API的 ``GetIntrinsics()`` 函数和 ``GetExtrinsics()`` 函数，可以获得当前工作设备的图像校准参数：
 
 .. code-block:: bash
 
-  cd MYNT-EYE-SDK-2
+  cd MYNT-EYE-S-SDK
   ./samples/_output/bin/tutorials/get_img_params
 
-这时，可以获得针孔模型下的 ``distortion_parameters`` 和 ``projection_parameters`` 参数，然后在 `这里 <https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/sdk2/config/mynteye/mynteye_config.yaml>`__ 更新。
+这时，可以获得针孔模型下的 ``distortion_parameters`` 和 ``projection_parameters`` 参数，然后在 `这里 <https://github.com/slightech/MYNT-EYE-VINS-Sample/blob/mynteye-s/config/mynteye/mynteye_config.yaml>`__ 更新。
 
 在 MYNT® EYE 上运行 VINS-Mono
 -----------------------------
@@ -58,4 +58,4 @@
 
 .. note::
 
-  如果使用鱼眼相机模型，点击 `这里 <https://github.com/slightech/MYNT-EYE-VINS-Sample/tree/sdk2/calibration_images>`_ 。
+  如果使用鱼眼相机模型，点击 `这里 <https://github.com/slightech/MYNT-EYE-VINS-Sample/tree/mynteye-s/calibration_images>`_ 。

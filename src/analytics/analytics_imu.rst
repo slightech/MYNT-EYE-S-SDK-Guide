@@ -3,7 +3,7 @@
 分析 IMU
 ==========
 
-SDK 提供了 IMU 分析的脚本 ``imu_analytics.py`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。
+SDK 提供了 IMU 分析的脚本 ``imu_analytics.py`` 。工具详情可见 `tools/README.md <https://github.com/slightech/MYNT-EYE-S-SDK/tree/master/tools>`_ 。
 
 参考运行命令及结果，于 Linux 上：
 
