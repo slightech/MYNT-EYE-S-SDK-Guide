@@ -34,7 +34,8 @@ PPA安装
 ----------
 
 .. tip::
-  samples 路径: /opt/mynteye/samples   tools路径: /opt/mynteye/tools
+
+  samples 路径: /opt/mynteye/samples; tools 路径: /opt/mynteye/tools
 
 .. code-block:: bash
 
