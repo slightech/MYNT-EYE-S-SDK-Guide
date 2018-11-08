@@ -9,47 +9,52 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-11-08 22:31+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/log/log_file.rst:4
 msgid "启用日志文件"
 msgstr "Enable log file"
 
-#: ../../src/log/log_file.rst:6
-msgid ""
-"日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/include/mynteye/glog_init.h>`_ 里 。"
-msgstr ""
-"The general configuration of the log in the head file `glog_init.h <https://github.com/slightech/MYNT-EYE-"
-"SDK-2/blob/master/include/mynteye/glog_init.h>`_ ."
-
 #: ../../src/log/log_file.rst:8
+msgid "如果引入 glog 库编译。"
+msgstr "If import glog to build."
+
+#: ../../src/log/log_file.rst:10
+msgid ""
+"日志的通用配置，在头文件 `logger.h <https://github.com/slightech/MYNT-"
+"EYE-S-SDK/blob/master/include/mynteye/logger.h>`_ 里 。"
+msgstr ""
+"The general configuration of the log in the head file `logger.h "
+"<https://github.com/slightech/MYNT-"
+"EYE-S-SDK/blob/master/include/mynteye/logger.h>`_ ."
+
+#: ../../src/log/log_file.rst:12
 msgid ""
 "取消注释的 ``FLAGS_log_dir = \".\";`` 重新编译，即可保存日志到当前工作目录。例如运行 ``camera_a`` "
 "后，日志文件如下："
 msgstr ""
-"Uncomment ``FLAGS_log_dir = \".\";`` recompile and save to current work directory. Run ``camera_a`` "
-"log file as follows:"
+"Uncomment ``FLAGS_log_dir = \".\";`` recompile and save to current work "
+"directory. Run ``camera_a`` log file as follows:"
 
-#: ../../src/log/log_file.rst:22
+#: ../../src/log/log_file.rst:26
 msgid ""
 "``camera_a.INFO`` 表明了哪个程序、什么日志级别。但它只是一个链接，指向真实的日志文件，如 ``camera_a.john-"
 "ubuntu.john.log.INFO.20180513-141832.519`` 。运行多次后， ``camera_a.INFO`` "
 "仍只会有一个，指向最新的那个日志文件，便于你查看。"
 msgstr ""
-"``camera_a.INFO`` shows the program and levers of log it is running. The link to the real log file is ``camera_a.john-"
-"ubuntu.john.log.INFO.20180513-141832.519``. Even if it ran several times, ``camera_a.INFO`` "
-"still leaves the link to last log file."
+"``camera_a.INFO`` shows the program and levers of log it is running. The "
+"link to the real log file is ``camera_a.john-"
+"ubuntu.john.log.INFO.20180513-141832.519``. Even if it ran several times,"
+" ``camera_a.INFO`` still leaves the link to last log file."
 
-
-#: ../../src/log/log_file.rst:24
+#: ../../src/log/log_file.rst:28
 msgid "执行 ``make cleanlog`` 可以清理所有日志文件。"
-msgstr ""
-"Excute `make cleanlog` to clean all log files."
+msgstr "Excute `make cleanlog` to clean all log files."
+

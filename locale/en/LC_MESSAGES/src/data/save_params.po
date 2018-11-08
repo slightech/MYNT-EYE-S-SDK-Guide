@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-11-08 21:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/data/save_params.rst:4
 msgid "保存设备信息和参数"
@@ -25,10 +25,11 @@ msgstr "Save device infomation and parameters"
 #: ../../src/data/save_params.rst:6
 msgid ""
 "SDK 提供了保存信息和参数的工具 ``save_all_infos`` 。工具详情可见 `tools/README.md "
-"<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ 。"
-msgstr "The SDK provides a tool ``save_all_infos`` for save information and "
+"<https://github.com/slightech/MYNT-EYE-S-SDK/tree/master/tools>`_ 。"
+msgstr ""
+"The SDK provides a tool ``save_all_infos`` for save information and "
 "parameters. For more information, please read `tools/README.md "
-"<https://github.com/slightech/MYNT-EYE-SDK-2/tree/master/tools>`_ ."
+"<https://github.com/slightech/MYNT-EYE-S-SDK/tree/master/tools>`_ ."
 
 #: ../../src/data/save_params.rst:8
 msgid "参考运行命令："
@@ -40,7 +41,9 @@ msgstr "Reference result on Linux:"
 
 #: ../../src/data/save_params.rst:28
 msgid "默认会保存进 ``<workdir>/config`` 目录。你也可以加参数，指定保存到其他目录。"
-msgstr "Result save into ``<workdir>/config`` by default. You can also add parameters to select other directory for save."
+msgstr ""
+"Result save into ``<workdir>/config`` by default. You can also add "
+"parameters to select other directory for save."
 
 #: ../../src/data/save_params.rst:30
 msgid "保存内容如下："

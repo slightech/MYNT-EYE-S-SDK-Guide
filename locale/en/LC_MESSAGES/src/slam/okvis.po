@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-13 11:24+0800\n"
+"POT-Creation-Date: 2018-11-08 21:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,70 +28,66 @@ msgstr "If you wanna run OKVIS with MYNT EYE camera, please follow the steps:"
 
 #: ../../src/slam/okvis.rst:9
 msgid ""
-"下载 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ "
+"下载 `MYNT-EYE-S-SDK <https://github.com/slightech/MYNT-EYE-S-SDK.git>`_ "
 "并安装。"
-msgstr "Download `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ "
-"and install it."
+msgstr ""
+"Download `MYNT-EYE-S-SDK <https://github.com/slightech/MYNT-EYE-"
+"S-SDK.git>`_ and install it."
 
 #: ../../src/slam/okvis.rst:10
-msgid ""
-"添加 MYNT-EYE-SDK 路径到环境变量。打开 ``.bashrc`` 文件，在最后添加 ``export "
-"MYNTEYE_SDK2_ROOT=<MYNT-EYE-SDK-2 INSTALL PATH>`` 。"
-msgstr "Add the path including MYNT-EYE-SDK to the environment variable. "
-"Open ``.bashrc`` file and add at the end the following: ``export "
-"MYNTEYE_SDK2_ROOT=<MYNT-EYE-SDK-2 INSTALL PATH>``. "
+msgid "安装依赖，按照原始 OKVIS 步骤安装 MYNT-EYE-OKVIS-Sample 。"
+msgstr ""
+"Install dependencies and build MYNT-EYE-OKVIS-Sample follow the procedure"
+" of the original OKVIS."
 
 #: ../../src/slam/okvis.rst:11
-msgid "安装依赖，按照原始 OKVIS 步骤安装 MYNT-EYE-OKVIS-Sample 。"
-msgstr "Install dependencies and build MYNT-EYE-OKVIS-Sample follow the procedure of the original OKVIS."
-
-#: ../../src/slam/okvis.rst:12
 msgid "更新相机参数到 ``<OKVIS>/config/config_mynteye.yaml``。"
 msgstr "Update camera parameters to ``<OKVIS>/config/config_mynteye.yaml``."
 
-#: ../../src/slam/okvis.rst:13
+#: ../../src/slam/okvis.rst:12
 msgid "在 MYNT® EYE 上运行 OKVIS 。"
 msgstr "Run OKVIS using MYNT® EYE."
 
-#: ../../src/slam/okvis.rst:16
+#: ../../src/slam/okvis.rst:15
 msgid "安装 MYNT® EYE OKVIS"
 msgstr "Install MYNTEYE OKVIS"
 
-#: ../../src/slam/okvis.rst:18
+#: ../../src/slam/okvis.rst:17
 msgid "首先安装原始 OKVIS 及依赖："
 msgstr "First install dependencies based on the original OKVIS, and the follow:"
 
-#: ../../src/slam/okvis.rst:28
+#: ../../src/slam/okvis.rst:27
 msgid "获取相机校准参数"
 msgstr "Get camera calibration parameters"
 
-#: ../../src/slam/okvis.rst:30
+#: ../../src/slam/okvis.rst:29
 msgid ""
-"通过 `MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ "
+"通过 `MYNT-EYE-S-SDK <https://github.com/slightech/MYNT-EYE-S-SDK.git>`_ "
 "API 的 ``GetIntrinsics()`` 函数和 ``GetExtrinsics()`` 函数，可以获得当前工作设备的图像校准参数："
 msgstr ""
 "Through the ``GetIntrinsics()`` and ``GetExtrinsics()`` function of the "
-"`MYNT-EYE-SDK-2 <https://github.com/slightech/MYNT-EYE-SDK-2.git>`_ API, you "
-"can get the camera calibration parameters of the currently open "
+"`MYNT-EYE-S-SDK <https://github.com/slightech/MYNT-EYE-S-SDK.git>`_ API, "
+"you can get the camera calibration parameters of the currently open "
 "device, follow the steps:"
 
-#: ../../src/slam/okvis.rst:37
+#: ../../src/slam/okvis.rst:36
 msgid ""
 "这时，可以获得针孔模型下的 ``distortion_parameters`` 和 ``projection_parameters`` "
 "参数，然后在 `这里 <https://github.com/slightech/MYNT-EYE-OKVIS-"
-"Sample/blob/sdk2/config/config_mynteye.yaml>`_ 更新。"
+"Sample/blob/mynteye-s/config/config_mynteye.yaml>`_ 更新。"
 msgstr ""
 "After running the above type, pinhole's ``distortion_parameters`` and "
 "``projection_parameters`` is obtained, then update to `here "
 "<https://github.com/slightech/MYNT-EYE-OKVIS-"
-"Sample/blob/sdk2/config/config_mynteye.yaml>`_ ."
+"Sample/blob/mynteye-s/config/config_mynteye.yaml>`_ ."
 
-#: ../../src/slam/okvis.rst:40
+#: ../../src/slam/okvis.rst:39
 msgid "运行 MYNT® EYE OKVIS"
 msgstr "Run MYNTEYE OKVIS"
 
-#: ../../src/slam/okvis.rst:42
-msgid "在 ``MYNT-EYE-OKVIS-Sample/build`` 中运行 ``okvis_app_mynteye_sdk2`` :"
+#: ../../src/slam/okvis.rst:41
+msgid "在 ``MYNT-EYE-OKVIS-Sample/build`` 中运行 ``okvis_app_mynteye_s`` :"
 msgstr ""
 "Go to ``MYNT-EYE-OKVIS-Sample/build`` folder and Run the application "
-"``okvis_app_mynteye_sdk2`` :"
+"``okvis_app_mynteye_s`` :"
+

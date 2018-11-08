@@ -9,30 +9,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-11-08 21:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/control/manual_exposure.rst:4
 msgid "启用手动曝光及其调节"
 msgstr "Enable manual exposure and its adjustment function"
 
 #: ../../src/control/manual_exposure.rst:6
-msgid ""
-"通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
+msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
 msgstr ""
 "Using the ``SetOptionValue()`` function of the API, you can set various "
 "control values ​​for the current open device."
 
 #: ../../src/control/manual_exposure.rst:8
-msgid ""
-"启用手动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``1`` 。手动曝光时，可调"
-"节的设定有："
+msgid "启用手动曝光，就是设定 ``Option::EXPOSURE_MODE`` 为 ``1`` 。手动曝光时，可调节的设定有："
 msgstr ""
 "To enabling manual exposure, set ``Option::EXPOSURE_MODE`` to ``1``. "
 "During manual exposure, the settings available for adjustment are:"
@@ -59,12 +56,16 @@ msgstr "Reference running results on Linux:"
 
 #: ../../src/control/manual_exposure.rst:49
 msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
-msgstr "The sample program displays an image with a real exposure time in the upper left corner, in milliseconds."
+msgstr ""
+"The sample program displays an image with a real exposure time in the "
+"upper left corner, in milliseconds."
 
 #: ../../src/control/manual_exposure.rst:51
 msgid ""
 "完整代码样例，请见 `manual_exposure.cc <https://github.com/slightech/MYNT-"
-"EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc>`_ 。"
+"EYE-S-SDK/blob/master/samples/tutorials/control/manual_exposure.cc>`_ 。"
 msgstr ""
-"Complete code samples，see `manual_exposure.cc <https://github.com/slightech/MYNT-"
-"EYE-SDK-2/blob/master/samples/tutorials/control/manual_exposure.cc>`_ ."
+"Complete code samples，see `manual_exposure.cc "
+"<https://github.com/slightech/MYNT-EYE-"
+"S-SDK/blob/master/samples/tutorials/control/manual_exposure.cc>`_ ."
+

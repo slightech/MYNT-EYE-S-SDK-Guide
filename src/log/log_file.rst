@@ -3,7 +3,11 @@
 启用日志文件
 ==============
 
-日志的通用配置，在头文件 `glog_init.h <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/include/mynteye/glog_init.h>`_ 里 。
+.. tip::
+
+  如果引入 glog 库编译。
+
+日志的通用配置，在头文件 `logger.h <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/include/mynteye/logger.h>`_ 里 。
 
 取消注释的 ``FLAGS_log_dir = ".";`` 重新编译，即可保存日志到当前工作目录。例如运行 ``camera_a`` 后，日志文件如下：
 

@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-14 14:54+0800\n"
+"POT-Creation-Date: 2018-11-08 21:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.3\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: ../../src/data/get_stereo_rectified.rst:4
 msgid "获取双目纠正图像"
@@ -24,22 +24,31 @@ msgstr "Get stereo camera correction image"
 
 #: ../../src/data/get_stereo_rectified.rst:6
 msgid "API 提供的 ``GetStreamData()`` 默认仅能获取到硬件的原始数据，例如双目原始图像。"
-msgstr "The ``GetStreamData()`` API provided can only get the raw data of the hardware, for example, the stereo camera raw image."
+msgstr ""
+"The ``GetStreamData()`` API provided can only get the raw data of the "
+"hardware, for example, the stereo camera raw image."
 
 #: ../../src/data/get_stereo_rectified.rst:8
 msgid ""
 "而双目纠正图像，属于上层合成数据。此类数据，需要事先 ``EnableStreamData()`` 启用，然后 "
 "``GetStreamData()`` 才能获取到。"
-msgstr "The stereo camera correction image belongs to the upper layer of synthetic data. "
-"For such data, you need to enable ``EnableStreamData()`` before you can get ``GetStreamData()``."
+msgstr ""
+"The stereo camera correction image belongs to the upper layer of "
+"synthetic data. For such data, you need to enable ``EnableStreamData()`` "
+"before you can get ``GetStreamData()``."
 
 #: ../../src/data/get_stereo_rectified.rst:10
 msgid "另外，``WaitForStreams()`` 等待的是关键原始数据。刚开始时，合成数据可能还在处理，取出的是空值，所以需要判断下不为空。"
-msgstr "In addition, ``WaitForStreams()`` waits for the key of the raw data. At the beginning when the synthetic data may still being processed, the value taken out will be null, so it needs to check not empty."
+msgstr ""
+"In addition, ``WaitForStreams()`` waits for the key of the raw data. At "
+"the beginning when the synthetic data may still being processed, the "
+"value taken out will be null, so it needs to check not empty."
 
 #: ../../src/data/get_stereo_rectified.rst:14
 msgid "如果想要合成数据一生成就立即获取到，请参阅 :ref:`get_from_callbacks` 。"
-msgstr "If you want the synthetic data once it is generated, see :ref:`get_from_callbacks`. "
+msgstr ""
+"If you want the synthetic data once it is generated, see "
+":ref:`get_from_callbacks`. "
 
 #: ../../src/data/get_stereo_rectified.rst:16
 msgid "参考代码片段："
@@ -47,13 +56,16 @@ msgstr "Reference code snippet:"
 
 #: ../../src/data/get_stereo_rectified.rst:49
 msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
-msgstr "OpenCV is used to display the image above. Select the display window, press ``ESC/Q`` to exit the program."
+msgstr ""
+"OpenCV is used to display the image above. Select the display window, "
+"press ``ESC/Q`` to exit the program."
 
 #: ../../src/data/get_stereo_rectified.rst:51
 msgid ""
 "完整代码样例，请见 `get_stereo_rectified.cc <https://github.com/slightech/MYNT-"
-"EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc>`_ 。"
+"EYE-S-SDK/blob/master/samples/tutorials/data/get_stereo_rectified.cc>`_ 。"
 msgstr ""
-"Complete code examples, see `get_stereo_rectified.cc <https://github.com/slightech/MYNT-"
-"EYE-SDK-2/blob/master/samples/tutorials/data/get_stereo_rectified.cc>`_ ."
+"Complete code examples, see `get_stereo_rectified.cc "
+"<https://github.com/slightech/MYNT-EYE-"
+"S-SDK/blob/master/samples/tutorials/data/get_stereo_rectified.cc>`_ ."
 

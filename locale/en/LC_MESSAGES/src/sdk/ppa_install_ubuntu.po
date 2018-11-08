@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-22 21:57+0800\n"
+"POT-Creation-Date: 2018-11-08 21:54+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,7 @@ msgstr "PPA installation"
 msgid "运行样例"
 msgstr "Run samples"
 
-#: ../../src/sdk/ppa_install_ubuntu.rst:37
-msgid "samples 路径: /opt/mynteye/samples   tools路径: /opt/mynteye/tools"
-msgstr "samples path: /opt/mynteye/samples  tools path: /opt/mynteye/tools"
+#: ../../src/sdk/ppa_install_ubuntu.rst:38
+msgid "samples 路径: /opt/mynteye/samples; tools 路径: /opt/mynteye/tools"
+msgstr "samples path: /opt/mynteye/samples; tools path: /opt/mynteye/tools"
 
