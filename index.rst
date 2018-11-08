@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MYNT® EYE SDK 指导
-==================
+MYNT® EYE S SDK 指导
+====================
 
 .. toctree::
    :maxdepth: 2

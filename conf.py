@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'MYNT® EYE SDK Guide'
+project = u'MYNT® EYE S SDK Guide'
 copyright = '2018, JohnZhao'
 author = 'JohnZhao'
 
 # The short X.Y version
-version = '2.2.1'
+version = '2.2.2'
 # The full version, including alpha/beta/rc tags
-release = '{}-rc'.format(version)
+release = '{}-rc0'.format(version)
 
 
 # -- General configuration ---------------------------------------------------
@@ -114,7 +114,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'mynt-eye-sdk-guide'
+htmlhelp_basename = 'mynt-eye-s-sdk-guide'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -156,7 +156,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'mynt-eye-sdk-guide.tex', u'MYNT® EYE SDK Guide',
+    (master_doc, 'mynt-eye-s-sdk-guide.tex', u'MYNT® EYE S SDK Guide',
      'JohnZhao', 'manual'),
 ]
 
@@ -166,7 +166,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mynt-eye-sdk-guide', u'MYNT® EYE SDK Guide',
+    (master_doc, 'mynt-eye-s-sdk-guide', u'MYNT® EYE S SDK Guide',
      [author], 1)
 ]
 
@@ -177,8 +177,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'mynt-eye-sdk-guide', u'MYNT® EYE SDK Guide',
-     author, 'mynt-eye-sdk-guide', 'One line description of project.',
+    (master_doc, 'mynt-eye-s-sdk-guide', u'MYNT® EYE S SDK Guide',
+     author, 'mynt-eye-s-sdk-guide', 'One line description of project.',
      'Miscellaneous'),
 ]
 
