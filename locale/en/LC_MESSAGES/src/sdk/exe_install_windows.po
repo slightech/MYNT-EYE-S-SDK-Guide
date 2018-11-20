@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 21:54+0800\n"
+"POT-Creation-Date: 2018-11-20 12:23+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../src/sdk/exe_install_windows.rst:4
 msgid "Windows SDK exe 安装"
-msgstr "Windows SDK exe installation"
+msgstr "Windows SDK exe Installation"
 
 #: ../../src/sdk/exe_install_windows.rst:9
 #: ../../src/sdk/exe_install_windows.rst:19
@@ -41,15 +41,19 @@ msgstr "Download and install SDK"
 
 #: ../../src/sdk/exe_install_windows.rst:29
 msgid ""
-"下载地址： `mynteye-s-2.2.2-win-x64-opencv-3.4.3.exe "
-"<https://pan.baidu.com/s/1qt5825t9pDIR680NYSrdDg>`_"
-msgstr "Download here: `mynteye-s-2.2.2-win-x64-opencv-3.4.3.exe "
-"<https://pan.baidu.com/s/1qt5825t9pDIR680NYSrdDg>`_"
+"下载地址： mynteye-s-2.2.2-win-x64-opencv-3.4.3.exe `Google Drive "
+"<https://drive.google.com/file/d/1foVKBaP8lqK7PHKYx32hazS3mv8DGs13>`_ "
+"`百度网盘 <https://pan.baidu.com/s/1qt5825t9pDIR680NYSrdDg>`_ 。"
+msgstr ""
+"Download here: mynteye-s-2.2.2-win-x64-opencv-3.4.3.exe `Google Drive "
+"<https://drive.google.com/file/d/1foVKBaP8lqK7PHKYx32hazS3mv8DGs13>`_ "
+"`百度网盘 <https://pan.baidu.com/s/1qt5825t9pDIR680NYSrdDg>`_ ."
 
 #: ../../src/sdk/exe_install_windows.rst:31
 msgid "安装完 SDK 的 exe 安装包后，桌面会生成 SDK 根目录的快捷方式。"
-msgstr "After you install the win pack of SDK, there will be a shortcut to "
-"the SDK root directory on your desktop."
+msgstr ""
+"After you install the win pack of SDK, there will be a shortcut to the "
+"SDK root directory on your desktop."
 
 #: ../../src/sdk/exe_install_windows.rst:33
 msgid ""
@@ -68,20 +72,23 @@ msgid ""
 "首先，安装好 `Visual Studio 2017 <https://visualstudio.microsoft.com/>`_ 和 "
 "`CMake <https://cmake.org/>`_ 。"
 msgstr ""
-"First, you should install `Visual Studio 2017 <https://visualstudio.microsoft.com/>`_ "
-"and `CMake <https://cmake.org/>`_ ."
+"First, you should install `Visual Studio 2017 "
+"<https://visualstudio.microsoft.com/>`_ and `CMake <https://cmake.org/>`_"
+" ."
 
 #: ../../src/sdk/exe_install_windows.rst:40
 msgid "接着，进入 ``<SDK_ROOT_DIR>\\samples`` 目录， 双击 ``generate.bat`` 即可生成样例工程。"
-msgstr "Second, goto the ``<SDK_ROOT_DIR>\\samples`` directory and click ``generate.bat`` "
-"to generate project."
+msgstr ""
+"Second, goto the ``<SDK_ROOT_DIR>\\samples`` directory and click "
+"``generate.bat`` to generate project."
 
 #: ../../src/sdk/exe_install_windows.rst:42
 msgid ""
 "p.s. 样例教程，可见 `SDK <https://slightech.github.io/MYNT-EYE-S-SDK/>`_ 主页给出的 "
 "Guide 文档。"
-msgstr "The tutorials of samples are here: "
-"https://slightech.github.io/MYNT-EYE-S-SDK-Guide/src/data/contents.html."
+msgstr ""
+"The tutorials of samples are here: https://slightech.github.io/MYNT-EYE-S"
+"-SDK-Guide/src/data/contents.html."
 
 #: ../../src/sdk/exe_install_windows.rst:45
 msgid "如何于 Visual Studio 2017 下使用 SDK"
@@ -89,5 +96,5 @@ msgstr "Start using SDK with Visual Studio 2017"
 
 #: ../../src/sdk/exe_install_windows.rst:47
 msgid "进入 ``<SDK_ROOT_DIR>\\projects\\vs2017`` ，见 ``README.md`` 说明。"
-msgstr "Goto the ``<SDK_ROOT_DIR>\projects\vs2017``, see the ``README.md``."
+msgstr "Goto the ``<SDK_ROOT_DIR>\\projects\\vs2017``, see the ``README.md``."
 

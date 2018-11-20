@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../src/sdk/ppa_install_ubuntu.rst:4
 msgid "Ubuntu SDK PPA 安装"
-msgstr "Ubuntu SDK PPA installation"
+msgstr "Ubuntu SDK PPA Installation"
 
 #: ../../src/sdk/ppa_install_ubuntu.rst:9
 #: ../../src/sdk/ppa_install_ubuntu.rst:19
