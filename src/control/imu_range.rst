@@ -1,7 +1,7 @@
 .. _imu_range:
 
 设定加速度计及陀螺仪的量程
-=========================
+=============================
 
 通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。
 
@@ -49,4 +49,3 @@
 样例程序按 ``ESC/Q`` 结束运行后，imu量程设置完成。该结果将固化在硬件内部，不受掉电影响。
 
 完整代码样例，请见 `imu_range.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_range.cc>`_ 。
-响

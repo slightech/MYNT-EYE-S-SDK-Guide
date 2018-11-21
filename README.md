@@ -12,7 +12,7 @@ All doc releases are [here](https://github.com/slightech/MYNT-EYE-S-SDK-Guide/re
 ## Prerequisites
 
 ```bash
-pip install -r requirements.txt
+sudo pip install -r requirements.txt
 ```
 
 ## Build HTML (zh-Hans)
