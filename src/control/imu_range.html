@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Enable IR and its adjustments function &mdash; MYNT® EYE S SDK Guide 2.2.2-rc1 documentation</title>
+  <title>Set the range of accelerometer &amp; gyroscope &mdash; MYNT® EYE S SDK Guide 2.2.2-rc1 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Running log" href="../log/contents.html" />
-    <link rel="prev" title="Enable manual exposure and its adjustment function" href="manual_exposure.html" /> 
+    <link rel="next" title="Enable auto exposure and its adjustment function" href="auto_exposure.html" />
+    <link rel="prev" title="Set the frame rate of image &amp; IMU frequency" href="framerate.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -89,10 +89,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Control</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="framerate.html">Set the frame rate of image &amp; IMU frequency</a></li>
-<li class="toctree-l2"><a class="reference internal" href="imu_range.html">Set the range of accelerometer &amp; gyroscope</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Set the range of accelerometer &amp; gyroscope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">Enable auto exposure and its adjustment function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual_exposure.html">Enable manual exposure and its adjustment function</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Enable IR and its adjustments function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="infrared.html">Enable IR and its adjustments function</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
@@ -146,13 +146,13 @@
         
           <li><a href="contents.html">MYNT® EYE Control</a> &raquo;</li>
         
-      <li>Enable IR and its adjustments function</li>
+      <li>Set the range of accelerometer &amp; gyroscope</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/src/control/infrared.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/src/control/imu_range.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,44 +165,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="ir">
-<span id="infrared"></span><h1>Enable IR and its adjustments function<a class="headerlink" href="#ir" title="Permalink to this headline">¶</a></h1>
-<p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function of the API, you can set various control values ​​for the current open device.</p>
-<p>Enabling IR is setting <code class="docutils literal notranslate"><span class="pre">Option::IR_CONTROL</span></code> greater than 0. The greater the value, the greater the IR’s intensity.</p>
+  <div class="section" id="imu-range">
+<span id="id1"></span><h1>Set the range of accelerometer &amp; gyroscope<a class="headerlink" href="#imu-range" title="Permalink to this headline">¶</a></h1>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function in the API, you can set various control values ​​for the current device.</p>
+<p>To set the range of accelerometer and gyroscope, set <code class="docutils literal notranslate"><span class="pre">Option::ACCELEROMETER_RANGE</span></code> and <code class="docutils literal notranslate"><span class="pre">Option::GYROSCOPE_RANGE</span></code>.</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<ul class="last simple">
+<li>The effective range of accelerometer(unit:g): 4, 8, 16, 32.</li>
+<li>The effective range of gyroscope(unit:deg/s): 500, 1000, 2000, 4000.</li>
+</ul>
+</div>
 <p>Reference Code:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">api</span><span class="p">)</span>
+  <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 
-<span class="c1">// Detect infrared add-ons</span>
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Support infrared: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">boolalpha</span>
-          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">Supports</span><span class="p">(</span><span class="n">AddOns</span><span class="o">::</span><span class="n">INFRARED</span><span class="p">);</span>
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Support infrared2: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">boolalpha</span>
-          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">Supports</span><span class="p">(</span><span class="n">AddOns</span><span class="o">::</span><span class="n">INFRARED2</span><span class="p">);</span>
+<span class="c1">// ACCELEROMETER_RANGE values: 4, 8, 16, 32</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">ACCELEROMETER_RANGE</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+<span class="c1">// GYROSCOPE_RANGE values: 500, 1000, 2000, 4000</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_RANGE</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
 
-<span class="c1">// Get infrared intensity range</span>
-<span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">info</span> <span class="o">=</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionInfo</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">IR_CONTROL</span><span class="p">);</span>
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">Option</span><span class="o">::</span><span class="n">IR_CONTROL</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;: {&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">info</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
-
-<span class="c1">// Set infrared intensity value</span>
-<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">IR_CONTROL</span><span class="p">,</span> <span class="mi">80</span><span class="p">);</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set ACCELEROMETER_RANGE to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">ACCELEROMETER_RANGE</span><span class="p">);</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set GYROSCOPE_RANGE to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_RANGE</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Reference running results on Linux:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_infrared
-I0504 <span class="m">16</span>:16:28.016624 <span class="m">25848</span> utils.cc:13<span class="o">]</span> Detecting MYNT EYE devices
-I0504 <span class="m">16</span>:16:28.512462 <span class="m">25848</span> utils.cc:20<span class="o">]</span> MYNT EYE devices:
-I0504 <span class="m">16</span>:16:28.512473 <span class="m">25848</span> utils.cc:24<span class="o">]</span>   index: <span class="m">0</span>, name: MYNT-EYE-S1000
-I0504 <span class="m">16</span>:16:28.512477 <span class="m">25848</span> utils.cc:30<span class="o">]</span> Only one MYNT EYE device, <span class="k">select</span> index: <span class="m">0</span>
-I0504 <span class="m">16</span>:16:28.520848 <span class="m">25848</span> infrared.cc:13<span class="o">]</span> Support infrared: <span class="nb">true</span>
-I0504 <span class="m">16</span>:16:28.520869 <span class="m">25848</span> infrared.cc:15<span class="o">]</span> Support infrared2: <span class="nb">true</span>
-I0504 <span class="m">16</span>:16:28.520889 <span class="m">25848</span> infrared.cc:20<span class="o">]</span> Option::IR_CONTROL: <span class="o">{</span>min: <span class="m">0</span>, max: <span class="m">160</span>, def: <span class="m">0</span><span class="o">}</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_imu_range
+I/utils.cc:28 Detecting MYNT EYE devices
+I/utils.cc:38 MYNT EYE devices:
+I/utils.cc:41   index: <span class="m">0</span>, name: MYNT-EYE-S1030, sn: 4B4C1F1100090712
+I/utils.cc:49 Only one MYNT EYE device, <span class="k">select</span> index: <span class="m">0</span>
+I/imu_range.cc:34 Set ACCELEROMETER_RANGE to <span class="m">8</span>
+I/imu_range.cc:36 Set GYROSCOPE_RANGE to <span class="m">1000</span>
+I/imu_range.cc:81 Time beg: <span class="m">2018</span>-11-21 <span class="m">15</span>:34:57.726428, end: <span class="m">2018</span>-11-21 <span class="m">15</span>:35:12.190478, cost: 14464ms
+I/imu_range.cc:84 Img count: <span class="m">363</span>, fps: <span class="m">25</span>.0967
+I/imu_range.cc:86 Imu count: <span class="m">2825</span>, hz: <span class="m">195</span>.312
 </pre></div>
 </div>
-<p>At this point, if the image is displayed, you can see IR speckle on the image.</p>
-<div class="admonition attention">
-<p class="first admonition-title">Attention</p>
-<p class="last">The hardware will not record the IR value after being turned off. In order to keep IR enabled, you must set the IR value after turning on the device.</p>
-</div>
-<p>Complete code samples，see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/infrared.cc">infrared.cc</a> .</p>
+<p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, the ranges of imu setting is complete. The ranges will be kept inside the hardware and not affected by power off.</p>
+<p>Complete code samples，please see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_range.cc">imu_range.cc</a> .</p>
 </div>
 
 
@@ -213,10 +217,10 @@ I0504 <span class="m">16</span>:16:28.520889 <span class="m">25848</span> infrar
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../log/contents.html" class="btn btn-neutral float-right" title="Running log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="auto_exposure.html" class="btn btn-neutral float-right" title="Enable auto exposure and its adjustment function" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manual_exposure.html" class="btn btn-neutral" title="Enable manual exposure and its adjustment function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="framerate.html" class="btn btn-neutral" title="Set the frame rate of image &amp; IMU frequency" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

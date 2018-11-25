@@ -26,7 +26,7 @@ Windows SDK exe 安装
 
 .. tip::
 
-  下载地址： mynteye-s-2.2.2-win-x64-opencv-3.4.3.exe `Google Drive <https://drive.google.com/file/d/1foVKBaP8lqK7PHKYx32hazS3mv8DGs13>`_ `百度网盘 <https://pan.baidu.com/s/1qt5825t9pDIR680NYSrdDg>`_ 。
+  下载地址： mynteye-s-2.2.2-rc1-win-x64-opencv-3.4.3.exe `Google Drive <https://drive.google.com/file/d/1taQeWZyvaXwBIQOG8KOfFayda8kPWDgj>`_ `百度网盘 <https://pan.baidu.com/s/1X-intyUdQEMnaj9LEKC3nw>`_ 。
 
 安装完 SDK 的 exe 安装包后，桌面会生成 SDK 根目录的快捷方式。
 
