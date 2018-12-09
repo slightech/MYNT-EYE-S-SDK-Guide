@@ -23,12 +23,6 @@
 * 下载并解压 ``setup.zip``。
 * 下载固件，如 ``MYNTEYE_S_2.0.0_rc0.img`` 。
 
-  * 请见 :ref:`firmware_applicable` 选择适合当前 SDK 版本的固件。
-  * 请见 ``Checksum.txt`` 找到下载固件的校验码，如下获取并比对：
-
-    * 命令提示符（CMD）里运行 ``certutil -hashfile <*.img> MD5`` 。
-    * 校验码不正确的话，说明下载有误，请重新下载！
-
 安装MYNT EYE TOOL
 -----------------
 

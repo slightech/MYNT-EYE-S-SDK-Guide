@@ -9,4 +9,3 @@ MYNT® EYE 控制
    imu_range
    auto_exposure
    manual_exposure
-   infrared

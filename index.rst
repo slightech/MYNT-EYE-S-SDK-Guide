@@ -18,4 +18,3 @@ MYNT® EYE S SDK 指导
    src/log/contents
    src/wrapper/contents
    src/analytics/contents
-   src/slam/contents
