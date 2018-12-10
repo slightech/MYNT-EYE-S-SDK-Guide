@@ -13,14 +13,7 @@ SDK 提供了写入图像标定参数的工具 ``img_params_writer`` 。工具�
 
   ./tools/_output/bin/writer/img_params_writer tools/writer/config/img.params
 
-  # Windows
-  .\tools\_output\bin\writer\img_params_writer.bat tools\writer\config\img.params
-
 其中， `tools/writer/config/img.params <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/tools/writer/config/img.params>`_ 是参数文件路径。如果你自己标定了参数，可以编辑此文件，然后执行上述命令写入设备。
-
-.. tip::
-
-  旧 SDK 提供的标定参数文件 ``SN*.conf`` 也可用此工具写入设备。
 
 .. warning::
 

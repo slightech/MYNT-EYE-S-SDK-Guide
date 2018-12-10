@@ -1,11 +1,11 @@
 .. _firmware_upgrade:
 
-固件如何进行升级
-==================
+相机/板载mcu固件及ISP如何进行升级
+===================================
 
-固件升级，需要使用我们提供的固件升级程序：MYNT EYE TOOL。
+相机升级，需要使用我们提供的相机升级程序：MYNT EYE TOOL。
 
-固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX <http://doc.myntai.com/mynteye/s/download>`_ 的 ``Firmwares`` 目录内。文件结构如下：
+MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX <http://doc.myntai.com/mynteye/s/download>`_ 的 ``Firmwares`` 目录内。文件结构如下：
 
 .. code-block:: none
 
@@ -64,11 +64,12 @@
 .. image:: ../../images/firmware_update_success.png
    :width: 60%
 
+* 如果是需要升级板载ISP或者板载MCU，打开MYNT EYE TOOL之后点击 ``Options/BoardUpdate`` ，点击 ``IspUpdate`` 或者 ``Stm32Update`` 。
+
+.. image:: ../../images/board_update.png
+   :width: 60%
+
 * 关闭MYNT EYE TOOL，结束。
-
-.. warning::
-
-  固件升级后，初次打开 MYNT® EYE 设备时，请静置 3 秒，其会有一个零漂补偿过程。或者，请主动调用控制接口 ``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来进行零漂补偿。
 
 .. ::
 

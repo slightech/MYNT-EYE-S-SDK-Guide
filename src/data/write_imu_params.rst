@@ -13,9 +13,6 @@ SDK 提供了写入 IMU 标定参数的工具 ``imu_params_writer`` 。工具详
 
   ./tools/_output/bin/writer/imu_params_writer tools/writer/config/imu.params
 
-  # Windows
-  .\tools\_output\bin\writer\imu_params_writer.bat tools\writer\config\imu.params
-
 其中， `tools/writer/config/imu.params <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/tools/writer/config/imu.params>`_ 是参数文件路径。如果你自己标定了参数，可以编辑此文件，然后执行上述命令写入设备。
 
 .. warning::

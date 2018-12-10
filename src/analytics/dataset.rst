@@ -9,37 +9,30 @@ SDK 提供了录制数据集的工具 ``record`` 。工具详情可见 `tools/RE
 
 .. code-block:: bash
 
-  ./tools/_output/bin/dataset/record
-
-  # Windows
-  .\tools\_output\bin\dataset\record.bat
+  ./tools/_output/bin/dataset/record2
 
 参考运行结果，于 Linux 上：
 
 .. code-block:: bash
 
-  $ ./tools/_output/bin/dataset/record
-  I0513 21:28:57.128947 11487 utils.cc:26] Detecting MYNT EYE devices
-  I0513 21:28:57.807116 11487 utils.cc:33] MYNT EYE devices:
-  I0513 21:28:57.807155 11487 utils.cc:37]   index: 0, name: MYNT-EYE-S1000
-  I0513 21:28:57.807163 11487 utils.cc:43] Only one MYNT EYE device, select index: 0
-  I0513 21:28:57.808437 11487 channels.cc:114] Option::GAIN: min=0, max=48, def=24, cur=24
-  I0513 21:28:57.809999 11487 channels.cc:114] Option::BRIGHTNESS: min=0, max=240, def=120, cur=120
-  I0513 21:28:57.818678 11487 channels.cc:114] Option::CONTRAST: min=0, max=255, def=127, cur=127
-  I0513 21:28:57.831529 11487 channels.cc:114] Option::FRAME_RATE: min=10, max=60, def=25, cur=25
-  I0513 21:28:57.848914 11487 channels.cc:114] Option::IMU_FREQUENCY: min=100, max=500, def=200, cur=500
-  I0513 21:28:57.865185 11487 channels.cc:114] Option::EXPOSURE_MODE: min=0, max=1, def=0, cur=0
-  I0513 21:28:57.881434 11487 channels.cc:114] Option::MAX_GAIN: min=0, max=48, def=48, cur=48
-  I0513 21:28:57.897598 11487 channels.cc:114] Option::MAX_EXPOSURE_TIME: min=0, max=240, def=240, cur=240
-  I0513 21:28:57.913918 11487 channels.cc:114] Option::DESIRED_BRIGHTNESS: min=0, max=255, def=192, cur=192
-  I0513 21:28:57.930177 11487 channels.cc:114] Option::IR_CONTROL: min=0, max=160, def=0, cur=0
-  I0513 21:28:57.946341 11487 channels.cc:114] Option::HDR_MODE: min=0, max=1, def=0, cur=0
-  Saved 1007 imgs, 20040 imus to ./dataset
-  I0513 21:29:38.608772 11487 record.cc:118] Time beg: 2018-05-13 21:28:58.255395, end: 2018-05-13 21:29:38.578696, cost: 40323.3ms
-  I0513 21:29:38.608853 11487 record.cc:121] Img count: 1007, fps: 24.9732
-  I0513 21:29:38.608873 11487 record.cc:123] Imu count: 20040, hz: 496.983
-
-默认录制进 ``<workdir>/dataset`` 目录。你也可以加参数，指定录制到其他目录。
+  I/utils.cc:30 Detecting MYNT EYE devices
+  I/utils.cc:40 MYNT EYE devices:
+  I/utils.cc:43   index: 0, name: MYNT-EYE-S210A, sn: 07C60A190009071F
+  I/utils.cc:51 Only one MYNT EYE device, select index: 0
+  I/channels.cc:140 Option::BRIGHTNESS: min=0, max=255, def=192, cur=120
+  I/channels.cc:140 Option::EXPOSURE_MODE: min=0, max=1, def=0, cur=0
+  I/channels.cc:140 Option::MAX_GAIN: min=0, max=255, def=8, cur=8
+  I/channels.cc:140 Option::MAX_EXPOSURE_TIME: min=0, max=1000, def=333, cur=333
+  I/channels.cc:140 Option::DESIRED_BRIGHTNESS: min=1, max=255, def=122, cur=122
+  I/channels.cc:140 Option::MIN_EXPOSURE_TIME: min=0, max=1000, def=0, cur=0
+  I/channels.cc:140 Option::ACCELEROMETER_RANGE: min=6, max=48, def=12, cur=12
+  I/channels.cc:140 Option::GYROSCOPE_RANGE: min=250, max=4000, def=1000, cur=1000
+  I/channels.cc:140 Option::ACCELEROMETER_LOW_PASS_FILTER: min=0, max=2, def=2, cur=2
+  I/channels.cc:140 Option::GYROSCOPE_LOW_PASS_FILTER: min=23, max=64, def=64, cur=64
+  Saved 1024 imgs, 13799 imus to ./dataset
+  I/record2.cc:128 Time beg: 2018-12-10 19:21:25.971245, end: 2018-12-10 19:22:00.090891, cost: 34119.6ms
+  I/record2.cc:131 Img count: 1024, fps: 30.012
+  I/record2.cc:133 Imu count: 13799, hz: 404.43
 
 录制内容如下：
 

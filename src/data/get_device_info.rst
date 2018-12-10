@@ -25,17 +25,17 @@
 .. code-block:: bash
 
   $ ./samples/_output/bin/tutorials/get_device_info
-  I0503 16:40:21.109391 32106 utils.cc:13] Detecting MYNT EYE devices
-  I0503 16:40:21.604116 32106 utils.cc:20] MYNT EYE devices:
-  I0503 16:40:21.604127 32106 utils.cc:24]   index: 0, name: MYNT-EYE-S1000
-  I0503 16:40:21.604142 32106 utils.cc:30] Only one MYNT EYE device, select index: 0
-  I0503 16:40:21.615054 32106 get_device_info.cc:10] Device name: MYNT-EYE-S1000
-  I0503 16:40:21.615113 32106 get_device_info.cc:11] Serial number: 0610243700090720
-  I0503 16:40:21.615129 32106 get_device_info.cc:12] Firmware version: 2.0
-  I0503 16:40:21.615139 32106 get_device_info.cc:13] Hardware version: 2.0
-  I0503 16:40:21.615146 32106 get_device_info.cc:14] Spec version: 1.0
-  I0503 16:40:21.615155 32106 get_device_info.cc:15] Lens type: 0000
-  I0503 16:40:21.615164 32106 get_device_info.cc:16] IMU type: 0000
-  I0503 16:40:21.615171 32106 get_device_info.cc:17] Nominal baseline: 120
+  I/utils.cc:30 Detecting MYNT EYE devices
+  I/utils.cc:40 MYNT EYE devices:
+  I/utils.cc:43   index: 0, name: MYNT-EYE-S210A, sn: 07C60A190009071F
+  I/utils.cc:51 Only one MYNT EYE device, select index: 0
+  I/get_device_info.cc:24 Device name: MYNT-EYE-S210A
+  I/get_device_info.cc:25 Serial number: 07C60A190009071F
+  I/get_device_info.cc:26 Firmware version: 1.0
+  I/get_device_info.cc:27 Hardware version: 1.0
+  I/get_device_info.cc:28 Spec version: 1.1
+  I/get_device_info.cc:29 Lens type: 0001
+  I/get_device_info.cc:30 IMU type: 0001
+  I/get_device_info.cc:31 Nominal baseline: 80
 
 完整代码样例，请见 `get_device_info.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_device_info.cc>`_ 。
