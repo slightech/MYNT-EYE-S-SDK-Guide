@@ -19,15 +19,15 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../src/firmware/upgrade.rst:4
-msgid "固件如何进行升级"
-msgstr "How to upgrade the firmware"
+msgid "相机/板载mcu固件及ISP如何进行升级"
+msgstr "How to upgrade the firmwares of camera, mcu,isp"
 
 #: ../../src/firmware/upgrade.rst:6
-msgid "固件升级，需要使用我们提供的固件升级程序：MYNT EYE TOOL。"
-msgstr "Please use the MYNT EYE TOOL to upgrade the firmware"
+msgid "相机升级，需要使用我们提供的相机升级程序：MYNT EYE TOOL。"
+msgstr "Please use the MYNT EYE TOOL to upgrade the firmware."
 
 #: ../../src/firmware/upgrade.rst:8
-msgid "固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX "
+msgid "MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX 目录内。文件结构如下："
 "<http://doc.myntai.com/mynteye/s/download>`_ 的 ``Firmwares`` "
 "目录内。文件结构如下："
 msgstr ""
@@ -53,89 +53,61 @@ msgid "下载固件，如 ``MYNTEYE_S_2.0.0_rc0.img`` 。"
 msgstr "Download firmware, such as ``MYNTEYE_S_2.0.0_rc0.img`` "
 
 #: ../../src/firmware/upgrade.rst:26
-msgid "请见 :ref:`firmware_applicable` 选择适合当前 SDK 版本的固件。"
-msgstr ""
-"Please refer to :ref:`firmware_applicable` to select the firmware suitable "
-"for the SDK version"
-
-#: ../../src/firmware/upgrade.rst:27
-msgid "请见 ``Checksum.txt`` 找到下载固件的校验码，如下获取并比对："
-msgstr "Please refer to ``Checksum.txt`` to find the firmware check code as follows:"
-
-#: ../../src/firmware/upgrade.rst:29
-msgid "命令提示符（CMD）里运行 ``certutil -hashfile <*.img> MD5`` 。"
-msgstr "Run the command in CMD ``certutil -hashfile <*.img> MD5`` ."
-
-#: ../../src/firmware/upgrade.rst:30
-msgid "校验码不正确的话，说明下载有误，请重新下载！"
-msgstr ""
-"If the check code is incorrect, it means that the download went wrong. "
-"Please download it again!"
-
-#: ../../src/firmware/upgrade.rst:33
 msgid "安装MYNT EYE TOOL"
 msgstr "Install MYNT EYE TOOL"
 
-#: ../../src/firmware/upgrade.rst:35
+#: ../../src/firmware/upgrade.rst:29
 msgid "双击 ``setup.msi`` 安装固件升级程序。"
 msgstr "Double click on ``setup.msi`` and install the application."
 
-#: ../../src/firmware/upgrade.rst:38
+#: ../../src/firmware/upgrade.rst:31
 msgid "升级固件"
 msgstr "Update Firmware"
 
-#: ../../src/firmware/upgrade.rst:40
+#: ../../src/firmware/upgrade.rst:34
 msgid "USB3.0 口插上 MYNT® EYE 设备。"
 msgstr "Plug in the MYNT® EYE camera into a USB3.0 port"
 
-#: ../../src/firmware/upgrade.rst:42
+#: ../../src/firmware/upgrade.rst:36
 msgid "打开MYNT EYE TOOL，选择 ``Options/FirmwareUpdate`` 。"
 msgstr "Open MYNT EYE TOOL and select ``Options/FirmwareUpdate`` ."
 
-#: ../../src/firmware/upgrade.rst:46
+#: ../../src/firmware/upgrade.rst:40
 msgid "点击 ``Update`` 。"
 msgstr "Click ``Update`` ."
 
-#: ../../src/firmware/upgrade.rst:51
+#: ../../src/firmware/upgrade.rst:42
 msgid "弹出警告对话框，直接 ``确定`` 即可。"
 msgstr "A warning dialog box will pop up, click ``yes`` ."
 
-#: ../../src/firmware/upgrade.rst:53
+#: ../../src/firmware/upgrade.rst:47
 msgid "由于该操作会擦除固件，所以弹出警告。详情见 README 。"
 msgstr "This operation will erase the firmware, for details see README."
 
-#: ../../src/firmware/upgrade.rst:55
+#: ../../src/firmware/upgrade.rst:49
 msgid "通常在升级过程中，MYNT EYE TOOL会自动安装驱动。"
 msgstr ""
 "Usually, the MYNT EYE TOOL automatically installs the driver during the "
 "upgrade process."
 
-#: ../../src/firmware/upgrade.rst:56
+#: ../../src/firmware/upgrade.rst:50
 msgid "如果升级遇到问题，参考 README 解决。"
 msgstr "If the upgrade fails, refer to README."
 
-#: ../../src/firmware/upgrade.rst:64
+#: ../../src/firmware/upgrade.rst:58
 msgid "在打开的文件选择框里，选择要升级的固件，开始升级。"
 msgstr ""
 "In the open file selection box, select the firmware you want to upgrade "
 "and start upgrading."
 
-#: ../../src/firmware/upgrade.rst:68
+#: ../../src/firmware/upgrade.rst:62
 msgid "升级完成后，状态变为 ``Succeeded`` 。"
 msgstr "Once the upgrade is complete, the status will changes to ``Succeeded``."
 
-#: ../../src/firmware/upgrade.rst:73
+#: ../../src/firmware/upgrade.rst:67
+msgid "如果是需要升级板载ISP或者板载MCU，打开MYNT EYE TOOL之后点击 ``Options/BoardUpdate`` ，点击 ``IspUpdate`` 或者 ``Stm32Update`` 。"
+msgstr "If upgrade the firmware of mcu or isp, select ``Options/BoardUpdate`` and click ``IspUpdate`` or ``Stm32Update`` after Open MYNT EYE TOOL."
+
+#: ../../src/firmware/upgrade.rst:72
 msgid "关闭MYNT EYE TOOL，结束。"
 msgstr "Close the MYNT EYE TOOL，finish."
-
-#: ../../src/firmware/upgrade.rst:77
-msgid ""
-"固件升级后，初次打开 MYNT® EYE 设备时，请静置 3 秒，其会有一个零漂补偿过程。或者，请主动调用控制接口 "
-"``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来进行零漂补偿。"
-msgstr ""
-"During the first time you open the MYNT® EYE "
-"camera after a firmware update, please hold the camera steadily for 3 seconds, for a zero "
-"drift compensation process. You can also call the "
-"API ``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` for zero drift "
-"correction."
-

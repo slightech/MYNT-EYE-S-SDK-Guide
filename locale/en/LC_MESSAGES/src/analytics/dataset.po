@@ -35,17 +35,11 @@ msgstr ""
 msgid "参考运行命令："
 msgstr "Reference run command:"
 
-#: ../../src/analytics/dataset.rst:17
+#: ../../src/analytics/dataset.rst:14
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference run results on Linux:"
 
-#: ../../src/analytics/dataset.rst:42
-msgid "默认录制进 ``<workdir>/dataset`` 目录。你也可以加参数，指定录制到其他目录。"
-msgstr ""
-"Results save into ``<workdir>/dataset`` by default. You can also add "
-"parameter, select other directory to save."
-
-#: ../../src/analytics/dataset.rst:44
+#: ../../src/analytics/dataset.rst:37
 msgid "录制内容如下："
 msgstr "Record contents:"
 

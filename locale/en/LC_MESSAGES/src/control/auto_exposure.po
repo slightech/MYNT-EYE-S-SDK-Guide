@@ -46,21 +46,25 @@ msgstr "``Option::MAX_EXPOSURE_TIME`` Maximum exposure time."
 msgid "``Option::DESIRED_BRIGHTNESS`` 期望亮度。"
 msgstr "``Option::DESIRED_BRIGHTNESS`` Expected brightness."
 
-#: ../../src/control/auto_exposure.rst:14
+#: ../../src/control/auto_exposure.rst:13
+msgid "``Option::MIN_EXPOSURE_TIME`` 最小曝光时间。"
+msgstr "``Option::MIN_EXPOSURE_TIME`` Minimum exposure time."
+
+#: ../../src/control/auto_exposure.rst:15
 msgid "参考代码片段："
 msgstr "Reference Code:"
 
-#: ../../src/control/auto_exposure.rst:37
+#: ../../src/control/auto_exposure.rst:45
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
-#: ../../src/control/auto_exposure.rst:51
+#: ../../src/control/auto_exposure.rst:60
 msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
 msgstr ""
 "The sample program displays an image with a real exposure time in the "
 "upper left corner, in milliseconds."
 
-#: ../../src/control/auto_exposure.rst:53
+#: ../../src/control/auto_exposure.rst:62
 msgid ""
 "完整代码样例，请见 `auto_exposure.cc <https://github.com/slightech/MYNT-"
 "EYE-S-SDK/blob/master/samples/tutorials/control/auto_exposure.cc>`_ 。"

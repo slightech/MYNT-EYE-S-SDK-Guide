@@ -35,17 +35,17 @@ msgstr ""
 msgid "参考运行命令："
 msgstr "Reference commands:"
 
-#: ../../src/data/save_params.rst:17
+#: ../../src/data/save_params.rst:14
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference result on Linux:"
 
-#: ../../src/data/save_params.rst:28
+#: ../../src/data/save_params.rst:25
 msgid "默认会保存进 ``<workdir>/config`` 目录。你也可以加参数，指定保存到其他目录。"
 msgstr ""
 "Result save into ``<workdir>/config`` by default. You can also add "
 "parameters to select other directory for save."
 
-#: ../../src/data/save_params.rst:30
+#: ../../src/data/save_params.rst:27
 msgid "保存内容如下："
 msgstr "Saved contents:"
 

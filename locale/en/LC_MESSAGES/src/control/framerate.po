@@ -20,50 +20,47 @@ msgstr ""
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../src/control/framerate.rst:4
-msgid "设定图像帧率和 IMU 频率"
-msgstr "Set the frame rate of image & IMU frequency"
+msgid "设定图像分辨率，格式与帧率"
+msgstr "Set the resolution, format and frame rate of image"
 
 #: ../../src/control/framerate.rst:6
-msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
-msgstr ""
-"Using the ``SetOptionValue()`` function in the API, you can set various "
-"control values ​​for the current device."
+msgid "设置图像分辨率需要在创建 ``API`` 时通过 ``Create()`` 设置，例如 ``API::Create(Resolution::RES_1280x400)`` 。"
+msgstr "Using the ``Create()`` function you can set the image resolution "
+"​​when you creat ``API``, for example ``API::Create(Resolution::RES_1280x400)`` ."
 
-#: ../../src/control/framerate.rst:8
-msgid "设定图像帧率和 IMU 频率，就是设定 ``Option::FRAME_RATE`` 和 ``Option::IMU_FREQUENCY`` 。"
-msgstr ""
-"To set the image frame rate and IMU frequency, set ``Option::FRAME_RATE``"
-" and ``Option::IMU_FREQUENCY``. "
+#: ../../src/control/framerate.rst:78
+msgid "图像格式和帧率需要在视频请求之前通过 ``SetStreamRequest()`` 设置，例如 ``SetStreamRequest(Format::BGR888, FrameRate::RATE_30_FPS)`` 。"
+msgstr "To set the rormat and resolution of the image frame, using the function ``SetStreamRequest()`` before "
+"request the video stream, for example ``SetStreamRequest(Format::BGR888, FrameRate::RATE_30_FPS)`` ."
 
 #: ../../src/control/framerate.rst:12
-msgid "图像帧率和 IMU 频率必须同时设定才能生效。"
+msgid "相机支持的格式：BGR888。"
 msgstr ""
-"The frame rate of image & IMU frequency must be set at the same time to "
-"take effect."
+"Supported format: BGR888."
 
 #: ../../src/control/framerate.rst:13
-msgid "图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55 。"
-msgstr "The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55."
+msgid "相机支持的分辨率(左右目叠加)：RES_1280x400，RES_2560x800。"
+msgstr "Supported resolution(left add right):RES_1280x400，RES_2560x800 "
 
 #: ../../src/control/framerate.rst:14
-msgid "IMU 频率有效值： 100, 200, 250, 333, 500 。"
-msgstr "The effective frequency of IMU: 100, 200, 250, 333, 500"
+msgid "相机支持的帧率：RATE_10_FPS, RATE_20_FPS, RATE_30_FPS, RATE_60_FPS（仅1280x400支持）。"
+msgstr "Supported frame rate:RATE_10_FPS, RATE_20_FPS, RATE_30_FPS, RATE_60_FPS(only 1280x400)."
 
 #: ../../src/control/framerate.rst:16
 msgid "参考代码片段："
 msgstr "Reference Code:"
 
-#: ../../src/control/framerate.rst:34
+#: ../../src/control/framerate.rst:26
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
-#: ../../src/control/framerate.rst:49
-msgid "样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率和 IMU 频率。"
+#: ../../src/control/framerate.rst:38
+msgid "样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率。"
 msgstr ""
 "After the sample program finishes running with ``ESC/Q``, it will output "
-"the calculated value of the frame rate of image & IMU frequency."
+"the calculated value of the frame rate of image."
 
-#: ../../src/control/framerate.rst:51
+#: ../../src/control/framerate.rst:40
 msgid ""
 "完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-"
 "EYE-S-SDK/blob/master/samples/tutorials/control/framerate.cc>`_ 。"

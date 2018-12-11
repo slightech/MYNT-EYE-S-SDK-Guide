@@ -35,26 +35,18 @@ msgstr ""
 "During manual exposure, the settings available for adjustment are:"
 
 #: ../../src/control/manual_exposure.rst:10
-msgid "``Option::GAIN`` 增益。"
-msgstr "``Option::GAIN`` Gain."
-
-#: ../../src/control/manual_exposure.rst:11
-msgid "``Option::BRIGHTNESS`` 亮度，或者说曝光时间。"
-msgstr "``Option::BRIGHTNESS`` Brightness (Exposure time)."
+msgid "``Option::BRIGHTNESS`` 亮度，或者说期望亮度。"
+msgstr "``Option::BRIGHTNESS`` Brightness (Desired brightness)."
 
 #: ../../src/control/manual_exposure.rst:12
-msgid "``Option::CONTRAST`` 对比度，或者说黑电平校准。"
-msgstr "``Option::CONTRAST`` Contrast (Black level calibration)."
-
-#: ../../src/control/manual_exposure.rst:14
 msgid "参考代码片段："
 msgstr "Reference Code:"
 
-#: ../../src/control/manual_exposure.rst:35
+#: ../../src/control/manual_exposure.rst:27
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
-#: ../../src/control/manual_exposure.rst:49
+#: ../../src/control/manual_exposure.rst:39
 msgid "样例程序会显示图像，左上角有真实曝光时间，单位毫秒。"
 msgstr ""
 "The sample program displays an image with a real exposure time in the "

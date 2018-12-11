@@ -24,12 +24,10 @@ msgstr "Supported platforms"
 
 #: ../../src/sdk/platform.rst:6
 msgid ""
-"SDK 是基于 CMake 构建的，用以跨 Linux, Windows, macOS "
-"等多个平台。SDK提供两种安装方式：下载安装以及源码编译安装。"
+"SDK 是基于 CMake 构建的，用以跨 Linux, Windows, macOS 等多个平台。"
 msgstr ""
 "SDK is built on CMake and can be used cross multiple platforms such as "
-"Linux, Windows, macOS, etc. We provides two installation: Download and "
-"install, and Compile and install from source code."
+"Linux, Windows, macOS, etc."
 
 #: ../../src/sdk/platform.rst:8
 msgid "已测试可用的平台有："
