@@ -26,7 +26,7 @@ author = 'JohnZhao'
 # The short X.Y version
 version = '2.2.2'
 # The full version, including alpha/beta/rc tags
-release = '{}-rc1'.format(version)
+release = '{}'.format(version)
 
 
 # -- General configuration ---------------------------------------------------
