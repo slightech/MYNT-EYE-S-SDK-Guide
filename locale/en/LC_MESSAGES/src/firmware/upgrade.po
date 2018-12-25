@@ -4,19 +4,21 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-11 21:04+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-12-18 17:42+0800\n"
+"PO-Revision-Date: 2018-12-18 17:44+0800\n"
+"Last-Translator: \n"
+"Language: en\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../src/firmware/upgrade.rst:4
 msgid "固件如何进行升级"
@@ -27,18 +29,20 @@ msgid "固件升级，需要使用我们提供的固件升级程序：MYNT EYE T
 msgstr "Please use the MYNT EYE TOOL to upgrade the firmware"
 
 #: ../../src/firmware/upgrade.rst:8
-msgid "固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX "
-"<http://doc.myntai.com/mynteye/s/download>`_ 的 ``Firmwares`` "
-"目录内。文件结构如下："
+msgid ""
+"固件及MYNT EYE TOOL的安装包，都在 `MYNTEYE_BOX <http://doc.myntai.com/mynteye/"
+"s/download>`_ 的 ``Firmwares`` 目录内。文件结构如下："
 msgstr ""
-"You can download the firmware and MYNT EYE TOOL installation package in the ``Firmwares`` folder of "
-"`MYNTEYE_BOX <http://www.myntai.com/mynteye/s/download>`_ ."
-" The file structure is as follows:"
+"You can download the firmware and MYNT EYE TOOL installation package in the "
+"``Firmwares`` folder of `MYNTEYE_BOX <http://www.myntai.com/mynteye/s/"
+"download>`_ . The file structure is as follows:"
 
 #: ../../src/firmware/upgrade.rst:18
-msgid "固件升级程序，目前仅支持 Windows ，所以需要你在 Windows 下进行操作。步骤如下："
-msgstr "The firmware upgrade program currently only supports Windows, so you "
-"need to operate under Windows. Proceed as follows:"
+msgid ""
+"固件升级程序，目前仅支持 Windows ，所以需要你在 Windows 下进行操作。步骤如下："
+msgstr ""
+"The firmware upgrade program currently only supports Windows, so you need to "
+"operate under Windows. Proceed as follows:"
 
 #: ../../src/firmware/upgrade.rst:21
 msgid "下载准备"
@@ -60,7 +64,8 @@ msgstr ""
 
 #: ../../src/firmware/upgrade.rst:27
 msgid "请见 ``Checksum.txt`` 找到下载固件的校验码，如下获取并比对："
-msgstr "Please refer to ``Checksum.txt`` to find the firmware check code as follows:"
+msgstr ""
+"Please refer to ``Checksum.txt`` to find the firmware check code as follows:"
 
 #: ../../src/firmware/upgrade.rst:29
 msgid "命令提示符（CMD）里运行 ``certutil -hashfile <*.img> MD5`` 。"
@@ -69,8 +74,8 @@ msgstr "Run the command in CMD ``certutil -hashfile <*.img> MD5`` ."
 #: ../../src/firmware/upgrade.rst:30
 msgid "校验码不正确的话，说明下载有误，请重新下载！"
 msgstr ""
-"If the check code is incorrect, it means that the download went wrong. "
-"Please download it again!"
+"If the check code is incorrect, it means that the download went wrong. Please "
+"download it again!"
 
 #: ../../src/firmware/upgrade.rst:33
 msgid "安装MYNT EYE TOOL"
@@ -117,8 +122,8 @@ msgstr "If the upgrade fails, refer to README."
 #: ../../src/firmware/upgrade.rst:64
 msgid "在打开的文件选择框里，选择要升级的固件，开始升级。"
 msgstr ""
-"In the open file selection box, select the firmware you want to upgrade "
-"and start upgrading."
+"In the open file selection box, select the firmware you want to upgrade and "
+"start upgrading."
 
 #: ../../src/firmware/upgrade.rst:68
 msgid "升级完成后，状态变为 ``Succeeded`` 。"
@@ -130,12 +135,66 @@ msgstr "Close the MYNT EYE TOOL，finish."
 
 #: ../../src/firmware/upgrade.rst:77
 msgid ""
-"固件升级后，初次打开 MYNT® EYE 设备时，请静置 3 秒，其会有一个零漂补偿过程。或者，请主动调用控制接口 "
-"``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来进行零漂补偿。"
+"如果在设备管理器中同时找不到MYNT图像设备、 ``WestBridge_driver`` 以及 "
+"``Cypress USB BootLoader`` 则尝试换一台电脑执行以上操作。如果还是不能升级成"
+"功，请及时联系我们。"
 msgstr ""
-"During the first time you open the MYNT® EYE "
-"camera after a firmware update, please hold the camera steadily for 3 seconds, for a zero "
-"drift compensation process. You can also call the "
-"API ``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` for zero drift "
-"correction."
+"If you can't find MYNT image device,  ``WestBridge_driver``, and ``Cypress "
+"USB BootLoader`` at the same time in the device manager, try another computer "
+"to perform the above operation. If you can not upgrade successfully, please "
+"contact us in time."
 
+#: ../../src/firmware/upgrade.rst:81
+msgid "手动更新驱动"
+msgstr "Manually update drivers"
+
+#: ../../src/firmware/upgrade.rst:83
+msgid ""
+"如果应用提示您升级失败，则可能是自动安装驱动失败，您可以尝试手动安装驱动然后重"
+"新升级。以下为手动安装驱动的步骤。"
+msgstr ""
+"If the application indicates that you failed to update, you may fail to "
+"install the driver automatically. You can try to install the driver manually "
+"and then update it. The following is the manual installation of the driver."
+
+#: ../../src/firmware/upgrade.rst:85
+msgid ""
+"打开设备管理器，找到 ``WestBridge_driver`` 设备，然后右键更新驱动，选择 ``[应"
+"用安装目录]\\WestBridge_driver\\[对应系统文件夹](win7以上选择wlh)\\[系统对应位"
+"数]`` 。"
+msgstr ""
+"Open device manager, locate ``WestBridge_driver`` device, and right click "
+"Update Driver,select ``[application directory]WestBridge_driver"
+"\\[corresponding system folders](If it is more than win7, choose "
+"wlh)\\[system bits]`` ."
+
+#: ../../src/firmware/upgrade.rst:90
+msgid ""
+"以win 10 64位默认安装路径为例，需要选择的文件夹为 ``C:\\Program Files "
+"(x86)\\slightech\\MYNT EYE Camera Tool\\wlh\\x64`` 。"
+msgstr ""
+"For example,if it is the win10 64 bit system computer,and the application is "
+"installed under the default path,you should select ``C:\\Program Files "
+"(x86)\\slightech\\MYNT EYE Camera Tool\\wlh\\x64``."
+
+#: ../../src/firmware/upgrade.rst:92
+msgid ""
+"安装驱动成功之后，可以在设备管理器中找到 ``Cypress USB BootLoader`` 设备。"
+msgstr ""
+"After the installation driver is successful, you can find the ``Cypress USB "
+"BootLoader`` device in the device manager."
+
+#: ../../src/firmware/upgrade.rst:96
+msgid "然后拔插摄像头，再次打开该应用进行升级。"
+msgstr "Then plug in the camera and open the application again to update."
+
+#: ../../src/firmware/upgrade.rst:100
+msgid ""
+"固件升级后，初次打开 MYNT® EYE 设备时，请静置 3 秒，其会有一个零漂补偿过程。或"
+"者，请主动调用控制接口 ``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来"
+"进行零漂补偿。"
+msgstr ""
+"During the first time you open the MYNT® EYE camera after a firmware update, "
+"please hold the camera steadily for 3 seconds, for a zero drift compensation "
+"process. You can also call the API ``RunOptionAction(Option::"
+"ZERO_DRIFT_CALIBRATION)`` for zero drift correction."
