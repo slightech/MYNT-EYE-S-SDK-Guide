@@ -72,6 +72,28 @@
 
 * 关闭MYNT EYE TOOL，结束。
 
+
+.. attention::
+  如果在设备管理器中同时找不到MYNT图像设备、 ``WestBridge_driver`` 以及 ``Cypress USB BootLoader`` 则尝试换一台电脑执行以上操作。如果还是不能升级成功，请及时联系我们。
+
+
+手动更新驱动
+------------
+
+* 如果应用提示您升级失败，则可能是自动安装驱动失败，您可以尝试手动安装驱动然后重新升级。以下为手动安装驱动的步骤。
+
+* 打开设备管理器，找到 ``WestBridge_driver`` 设备，然后右键更新驱动，选择 ``[应用安装目录]\WestBridge_driver\[对应系统文件夹](win7以上选择wlh)\[系统对应位数]`` 。
+
+.. image:: ../../images/firmware_update_westbridge.png
+
+* 以win 10 64位默认安装路径为例，需要选择的文件夹为 ``C:\Program Files (x86)\slightech\MYNT EYE Camera Tool\wlh\x64`` 。
+
+* 安装驱动成功之后，可以在设备管理器中找到 ``Cypress USB BootLoader`` 设备。
+
+.. image:: ../../images/firmware_update_cypressUSB.png
+
+* 然后拔插摄像头，再次打开该应用进行升级。
+
 .. warning::
 
   固件升级后，初次打开 MYNT® EYE 设备时，请静置 3 秒，其会有一个零漂补偿过程。或者，请主动调用控制接口 ``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来进行零漂补偿。
