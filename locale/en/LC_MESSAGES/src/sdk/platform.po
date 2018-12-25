@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-22 21:36+0800\n"
+"POT-Creation-Date: 2018-12-25 11:42+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,12 +48,6 @@ msgid "Jetson TX2"
 msgstr "Jetson TX2"
 
 #: ../../src/sdk/platform.rst:16
-msgid "ubuntu 14.04暂不支持直接下载安装，只能通过源码编译安装。"
-msgstr ""
-"Do not support ppa installation on ubuntu 14.04. Support compile and "
-"install from source code only."
-
-#: ../../src/sdk/platform.rst:20
 msgid "由于硬件传输速率要求，务必使用 USB 3.0 接口。另外，虚拟机因其大多存在 USB 驱动兼容性问题，不建议使用。"
 msgstr ""
 "Due to the requirement of hardware transmission rate, please use the USB "
