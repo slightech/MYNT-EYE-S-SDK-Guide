@@ -24,7 +24,7 @@ copyright = '2018, JohnZhao'
 author = 'JohnZhao'
 
 # The short X.Y version
-version = '2.2.2'
+version = '2.2.3'
 # The full version, including alpha/beta/rc tags
 release = '{}'.format(version)
 
