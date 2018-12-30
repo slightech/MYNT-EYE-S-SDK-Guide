@@ -20,11 +20,11 @@
 # -- Project information -----------------------------------------------------
 
 project = u'MYNT® EYE S SDK Guide'
-copyright = '2018, JohnZhao'
-author = 'JohnZhao'
+copyright = '2018, MYNTAI'
+author = 'MYNTAI'
 
 # The short X.Y version
-version = '2.2.3'
+version = '2.2.4'
 # The full version, including alpha/beta/rc tags
 release = '{}'.format(version)
 
