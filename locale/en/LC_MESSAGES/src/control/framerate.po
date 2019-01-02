@@ -8,38 +8,42 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 21:54+0800\n"
-"PO-Revision-Date: 2018-07-04 13:34+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2018-12-28 22:46+0800\n"
+"PO-Revision-Date: 2018-12-28 22:57+0800\n"
 "Language: en\n"
 "Language-Team: en es.c@li.org\\n\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../src/control/framerate.rst:4
 msgid "设定图像帧率和 IMU 频率"
 msgstr "Set the frame rate of image & IMU frequency"
 
 #: ../../src/control/framerate.rst:6
-msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
+msgid ""
+"通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
 msgstr ""
 "Using the ``SetOptionValue()`` function in the API, you can set various "
 "control values ​​for the current device."
 
 #: ../../src/control/framerate.rst:8
-msgid "设定图像帧率和 IMU 频率，就是设定 ``Option::FRAME_RATE`` 和 ``Option::IMU_FREQUENCY`` 。"
+msgid ""
+"以s1030为例，设定图像帧率和 IMU 频率，就是设定 ``Option::FRAME_RATE`` 和 "
+"``Option::IMU_FREQUENCY`` 。"
 msgstr ""
-"To set the image frame rate and IMU frequency, set ``Option::FRAME_RATE``"
-" and ``Option::IMU_FREQUENCY``. "
+"For mynteye s1030, to set the image frame rate and IMU frequency, set "
+"``Option::FRAME_RATE`` and ``Option::IMU_FREQUENCY``. "
 
 #: ../../src/control/framerate.rst:12
 msgid "图像帧率和 IMU 频率必须同时设定才能生效。"
 msgstr ""
-"The frame rate of image & IMU frequency must be set at the same time to "
-"take effect."
+"The frame rate of image & IMU frequency must be set at the same time to take "
+"effect."
 
 #: ../../src/control/framerate.rst:13
 msgid "图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55 。"
@@ -50,25 +54,37 @@ msgid "IMU 频率有效值： 100, 200, 250, 333, 500 。"
 msgstr "The effective frequency of IMU: 100, 200, 250, 333, 500"
 
 #: ../../src/control/framerate.rst:16
+msgid "以s210a为例,图像帧率需要在运行样例时选择，帧率和分辨率选择如下："
+msgstr ""
+"For mynteye s210a, the image frame rate should be selected when running the "
+"sample, and the frame rate and resolution are combined as follows:"
+
+#: ../../src/control/framerate.rst:20
 msgid "参考代码片段："
 msgstr "Reference Code:"
 
-#: ../../src/control/framerate.rst:34
+#: ../../src/control/framerate.rst:22 ../../src/control/framerate.rst:58
+msgid "s1030："
+msgstr "s1030:"
+
+#: ../../src/control/framerate.rst:40 ../../src/control/framerate.rst:73
+msgid "s210a："
+msgstr "s210a:"
+
+#: ../../src/control/framerate.rst:56
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
-#: ../../src/control/framerate.rst:49
+#: ../../src/control/framerate.rst:79
 msgid "样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率和 IMU 频率。"
 msgstr ""
-"After the sample program finishes running with ``ESC/Q``, it will output "
-"the calculated value of the frame rate of image & IMU frequency."
+"After the sample program finishes running with ``ESC/Q``, it will output the "
+"calculated value of the frame rate of image & IMU frequency."
 
-#: ../../src/control/framerate.rst:51
+#: ../../src/control/framerate.rst:81
 msgid ""
-"完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-"
-"EYE-S-SDK/blob/master/samples/tutorials/control/framerate.cc>`_ 。"
+"完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-EYE-S-SDK/"
+"blob/master/samples/tutorials/control/framerate.cc>`_ 。"
 msgstr ""
-"Complete code samples，please see `framerate.cc "
-"<https://github.com/slightech/MYNT-EYE-"
-"S-SDK/blob/master/samples/tutorials/control/framerate.cc>`_ ."
-
+"Complete code samples，please see `framerate.cc <https://github.com/slightech/"
+"MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/framerate.cc>`_ ."

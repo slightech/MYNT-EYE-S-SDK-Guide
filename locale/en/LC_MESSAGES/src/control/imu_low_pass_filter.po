@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, JohnZhao
+# This file is distributed under the same license as the MYNT® EYE S SDK
+# Guide package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MYNT® EYE S SDK Guide 2.2.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-02 11:12+0800\n"
+"PO-Revision-Date: 2019-01-02 11:41+0800\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.0.8\n"
+
+#: ../../src/control/imu_low_pass_filter.rst:4
+msgid "低通滤波"
+msgstr "Low-pass Filter"
+
+#: ../../src/control/imu_low_pass_filter.rst:6
+msgid ""
+"通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制"
+"值。"
+msgstr ""
+"Using the ``SetOptionValue()`` function in the API, you can set various "
+"control values ​​for the current device."
+
+#: ../../src/control/imu_low_pass_filter.rst:8
+msgid ""
+"设定加速度计低通滤波寄存器值及陀螺仪低通滤波寄存器值，就是设定 ``Option::"
+"ACCELEROMETER_LOW_PASS_FILTER`` 和 ``Option::"
+"GYROSCOPE_LOW_PASS_FILTER`` 。"
+msgstr ""
+"To set the value of accelerometer low-pass filter and gyroscope low-pass "
+"filter, set ``Option::ACCELEROMETER_LOW_PASS_FILTER`` and ``Option::"
+"GYROSCOPE_LOW_PASS_FILTER``. "
+
+#: ../../src/control/imu_low_pass_filter.rst:11
+msgid "s1030不支持此功能"
+msgstr "s1030 doesn't support this feature"
+
+#: ../../src/control/imu_low_pass_filter.rst:13
+msgid "参考代码片段："
+msgstr "Reference Code:"
+
+#: ../../src/control/imu_low_pass_filter.rst:36
+msgid "参考运行结果，于 Linux 上："
+msgstr "Reference running results on Linux:"
+
+#: ../../src/control/imu_low_pass_filter.rst:61
+msgid ""
+"样例程序按 ``ESC/Q`` 结束运行后，imu低通滤波设置完成。该结果将固化在硬件"
+"内部，不受掉电影响。"
+msgstr ""
+"After the sample program finishes running with ``ESC/Q``, the low-pass "
+"filter of imu setting is complete. The ranges will be kept inside the "
+"hardware and not affected by power off."
+
+#: ../../src/control/imu_low_pass_filter.rst:63
+msgid ""
+"完整代码样例，请见 `imu_low_pass_filter.cc <https://github.com/slightech/"
+"MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_low_pass_filter."
+"cc>`_ 。"
+msgstr ""
+"Complete code samples，please see `imu_low_pass_filter.cc <https://"
+"github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/"
+"control/imu_low_pass_filter.cc>`_ 。"
+
+#~ msgid ""
+#~ "设定加速度计低通滤波寄存器值及陀螺仪低通滤波寄存器值，就是设定 "
+#~ "``Option::ACCELEROMETER_LOW_PASS_FILTER`` 和 "
+#~ "``GYROSCOPE_LOW_PASS_FILTER`` 。"
+#~ msgstr ""
+#~ "To set the value of accelerometer low-pass filter and gyroscope low-"
+#~ "pass filter, set ``Option::ACCELEROMETER_LOW_PASS_FILTER`` and "
+#~ "``Option::GYROSCOPE_LOW_PASS_FILTER``."

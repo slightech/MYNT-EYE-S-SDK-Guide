@@ -4,62 +4,71 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 21:54+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2018-12-28 22:46+0800\n"
+"PO-Revision-Date: 2019-01-02 20:31+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../src/control/infrared.rst:4
 msgid "启用 IR 及其调节"
 msgstr "Enable IR and its adjustments function"
 
 #: ../../src/control/infrared.rst:6
-msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
+msgid ""
+"通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制"
+"值。"
 msgstr ""
 "Using the ``SetOptionValue()`` function of the API, you can set various "
 "control values ​​for the current open device."
 
 #: ../../src/control/infrared.rst:8
-msgid "启用 IR ，就是设定 ``Option::IR_CONTROL`` 大于 0 的值。值越大，强度越高。"
+msgid ""
+"启用 IR ，就是设定 ``Option::IR_CONTROL`` 大于 0 的值。值越大，强度越高。"
 msgstr ""
-"Enabling IR is setting ``Option::IR_CONTROL`` greater than 0. The greater"
-" the value, the greater the IR's intensity."
+"Enabling IR is setting ``Option::IR_CONTROL`` greater than 0. The "
+"greater the value, the greater the IR's intensity."
 
-#: ../../src/control/infrared.rst:10
+#: ../../src/control/infrared.rst:11
+msgid "s210a不支持此功能"
+msgstr "mynteye s210a doesn't support this feature."
+
+#: ../../src/control/infrared.rst:13
 msgid "参考代码片段："
 msgstr "Reference Code:"
 
-#: ../../src/control/infrared.rst:29
+#: ../../src/control/infrared.rst:32
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
-#: ../../src/control/infrared.rst:42
+#: ../../src/control/infrared.rst:45
 msgid "此时，如果显示了图像，就能够看到图像上会有 IR 光斑。"
 msgstr ""
 "At this point, if the image is displayed, you can see IR speckle on the "
 "image."
 
-#: ../../src/control/infrared.rst:46
-msgid "硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备后，一定要设定下 IR 值。"
+#: ../../src/control/infrared.rst:49
+msgid ""
+"硬件不会记忆 IR 值，断电会忘掉。如果需要保持启用 IR 的话，程序在打开设备"
+"后，一定要设定下 IR 值。"
 msgstr ""
 "The hardware will not record the IR value after being turned off. In "
 "order to keep IR enabled, you must set the IR value after turning on the "
 "device."
 
-#: ../../src/control/infrared.rst:48
+#: ../../src/control/infrared.rst:51
 msgid ""
-"完整代码样例，请见 `infrared.cc <https://github.com/slightech/MYNT-"
-"EYE-S-SDK/blob/master/samples/tutorials/control/infrared.cc>`_ 。"
+"完整代码样例，请见 `infrared.cc <https://github.com/slightech/MYNT-EYE-S-"
+"SDK/blob/master/samples/tutorials/control/infrared.cc>`_ 。"
 msgstr ""
-"Complete code samples，see `infrared.cc <https://github.com/slightech"
-"/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/infrared.cc>`_ ."
-
+"Complete code samples，see `infrared.cc <https://github.com/slightech/"
+"MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/infrared.cc>`_ ."

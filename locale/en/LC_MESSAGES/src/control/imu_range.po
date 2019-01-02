@@ -8,16 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 21:54+0800\n"
-"PO-Revision-Date: 2018-07-04 13:34+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2019-01-02 20:20+0800\n"
+"PO-Revision-Date: 2019-01-02 20:36+0800\n"
+"Last-Translator: \n"
 "Language: en\n"
 "Language-Team: en es.c@li.org\\n\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../../src/control/imu_range.rst:4
 msgid "设定加速度计及陀螺仪的量程"
@@ -25,44 +26,56 @@ msgstr "Set the range of accelerometer & gyroscope"
 
 #: ../../src/control/imu_range.rst:6
 msgid "通过 API 的 ``SetOptionValue()`` 函数，就可以设定当前打开设备的各类控制值。"
-msgstr ""
-"Using the ``SetOptionValue()`` function in the API, you can set various "
-"control values ​​for the current device."
+msgstr "Using the ``SetOptionValue()`` function in the API, you can set various control values ​​for the current device."
 
 #: ../../src/control/imu_range.rst:8
 msgid "设定加速度计及陀螺仪的量程，就是设定 ``Option::ACCELEROMETER_RANGE`` 和 ``Option::GYROSCOPE_RANGE`` 。"
-msgstr ""
-"To set the range of accelerometer and gyroscope, set ``Option::ACCELEROMETER_RANGE``"
-" and ``Option::GYROSCOPE_RANGE``. "
+msgstr "To set the range of accelerometer and gyroscope, set ``Option::ACCELEROMETER_RANGE`` and ``Option::GYROSCOPE_RANGE``. "
 
-#: ../../src/control/imu_range.rst:12
+#: ../../src/control/imu_range.rst:11
+msgid "s1030有效值："
+msgstr "For mynteye s1030, the available settings are:"
+
+#: ../../src/control/imu_range.rst:13
 msgid "加速度计量程有效值（单位：g）： 4, 8, 16, 32 。"
 msgstr "The effective range of accelerometer(unit:g): 4, 8, 16, 32."
 
-#: ../../src/control/imu_range.rst:13
+#: ../../src/control/imu_range.rst:14
 msgid "陀螺仪量程有效值（单位：deg/s）： 500, 1000, 2000, 4000 。"
-msgstr "The effective range of gyroscope(unit:deg/s): 500, 1000, 2000, 4000."
+msgstr "Gyroscope Range Valid value (unit: DEG/S): 500, 1000, 2000, 4000."
 
-#: ../../src/control/imu_range.rst:15
+#: ../../src/control/imu_range.rst:16
+msgid "s210a有效值："
+msgstr "For mynteye s210a, the available settings are:"
+
+#: ../../src/control/imu_range.rst:18
+msgid "加速度计量程有效值（单位：g）： 6, 12, 24, 32 。"
+msgstr "The effective range of accelerometer(unit:g): 6, 12, 24, 32."
+
+#: ../../src/control/imu_range.rst:19
+msgid "陀螺仪量程有效值（单位：deg/s）： 250, 500, 1000, 2000, 4000 。"
+msgstr "The effective range of gyroscope(unit:deg/s): 250, 500, 1000, 2000, 4000."
+
+#: ../../src/control/imu_range.rst:21
 msgid "参考代码片段："
 msgstr "Reference Code:"
 
-#: ../../src/control/imu_range.rst:33
+#: ../../src/control/imu_range.rst:23 ../../src/control/imu_range.rst:66
+msgid "s1030："
+msgstr "s1030:"
+
+#: ../../src/control/imu_range.rst:41 ../../src/control/imu_range.rst:81
+msgid "s210a："
+msgstr "s210a:"
+
+#: ../../src/control/imu_range.rst:64
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
-#: ../../src/control/imu_range.rst:49
+#: ../../src/control/imu_range.rst:106
 msgid "样例程序按 ``ESC/Q`` 结束运行后，imu量程设置完成。该结果将固化在硬件内部，不受掉电影响。"
-msgstr ""
-"After the sample program finishes running with ``ESC/Q``, the ranges of imu setting is complete."
-" The ranges will be kept inside the hardware and not affected by power off."
+msgstr "After the sample program finishes running with ``ESC/Q``, the ranges of imu setting is complete. The ranges will be kept inside the hardware and not affected by power off."
 
-#: ../../src/control/imu_range.rst:51
-msgid ""
-"完整代码样例，请见 `imu_range.cc <https://github.com/slightech/MYNT-"
-"EYE-S-SDK/blob/master/samples/tutorials/control/imu_range.cc>`_ 。"
-msgstr ""
-"Complete code samples，please see `imu_range.cc "
-"<https://github.com/slightech/MYNT-EYE-"
-"S-SDK/blob/master/samples/tutorials/control/imu_range.cc>`_ ."
-
+#: ../../src/control/imu_range.rst:108
+msgid "完整代码样例，请见 `imu_range.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_range.cc>`_ 。"
+msgstr "Complete code samples，please see `imu_range.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_range.cc>`_."
