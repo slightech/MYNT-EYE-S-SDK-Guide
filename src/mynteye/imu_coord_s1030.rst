@@ -1,7 +1,7 @@
-.. _mynteye_imu_coord:
+.. _mynteye_imu_coord_s1030:
 
-IMU 坐标系统
-==============
+MYNTEYE-S1030 IMU 坐标系统
+==============================
 
 IMU 坐标系统为右手系，坐标轴方向如下：
 

@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
 
-#: ../../src/mynteye/imu_coord.rst:4
-msgid "IMU 坐标系统"
-msgstr "IMU coordinata system"
+#: ../../src/mynteye/imu_coord_s1030.rst:4
+msgid "MYNTEYE-S1030 IMU 坐标系统"
+msgstr "MYNTEYE-S1030 IMU coordinata system"
 
-#: ../../src/mynteye/imu_coord.rst:6
+#: ../../src/mynteye/imu_coord_s1030.rst:6
 msgid "IMU 坐标系统为右手系，坐标轴方向如下："
 msgstr "IMU coordinate system is right-handed,the axis directions are as follows:"
 
