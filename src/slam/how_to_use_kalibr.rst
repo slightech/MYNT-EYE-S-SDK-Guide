@@ -16,9 +16,7 @@
 ------------
 * **安装kalibr**： 参考 `kalibr wiki <https://github.com/ethz-asl/kalibr/wiki/installation>`_ ，按步骤安装
 
-* **标定板**： kalibr支持 ``chessbord`` , ``circlegrid`` , ``aprilgrid`` ， 这里选择 ``aprilgrid`` ,
-
-  标定板文件可以通过直接 `下载 <https://github.com/ethz-asl/kalibr/wiki/downloads>`_ ，或者通过kalibr工具生成标定板:
+* **标定板**： kalibr支持 ``chessbord`` , ``circlegrid`` , ``aprilgrid`` ， 这里选择 ``aprilgrid`` ,标定板文件可以通过直接 `下载 <https://github.com/ethz-asl/kalibr/wiki/downloads>`_ ，或者通过kalibr工具生成标定板:
 
 .. code-block:: bash
 
@@ -182,7 +180,7 @@
 
 标定完成后输出下面3个文件:
 
-  * ``camchain-homezhangsbagstatic_10hz.yaml`` # 作为标定相机和imu的输入文件使用
+  * ``camchain-homezhangsbagstatic_10hz.yaml``
   * ``report-cam-homezhangsbagstatic_10hz.pdf``
   * ``results-cam-homezhangsbagstatic_10hz.txt``
 
