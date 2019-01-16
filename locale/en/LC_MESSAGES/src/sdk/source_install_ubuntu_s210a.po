@@ -19,8 +19,8 @@ msgstr ""
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../src/sdk/source_install_ubuntu_s210a.rst:4
-msgid "Ubuntu SDK 源码安装 (S210A)"
-msgstr "Ubuntu SDK Source Installation (S210A)"
+msgid "Ubuntu SDK 源码安装 (S2100/S210A)"
+msgstr "Ubuntu SDK Source Installation (S2100/S210A)"
 
 #: ../../src/sdk/source_install_ubuntu_s210a.rst:9 ../../src/sdk/source_install_ubuntu_s210a.rst:19
 msgid "Ubuntu 16.04"
@@ -121,39 +121,44 @@ msgstr ""
 msgid "编译并安装："
 msgstr "Build and install:"
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:111
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:107
+msgid "如果您需要使用等距标定模型，可以在命令行中加上编译选项 ``CAM_MODELS=1``,或者直接在 ``Makefile`` 里加上这条语句。"
+msgstr "If you need to use the equidistant calibration model, you can add the compilation "
+"option ``CAM_MODELS=1`` to the command line or add this statement directly to ``Makefile``."
+
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:114
 msgid "最终，默认会安装在 ``<sdk>/_install`` 目录。"
 msgstr "Finally, sdk will install in ``<sdk>/_install`` by default."
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:114
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:117
 msgid "编译样例"
 msgstr "Building samples"
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:121
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:124
 msgid "运行样例："
 msgstr "Run samples:"
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:127
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:131
 msgid "教程样例，请阅读 :ref:`data` 和 :ref:`ctrl` 。"
 msgstr "Tutorial samples, please read :ref:`data` and :ref:`ctrl` ."
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:130
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:133
 msgid "编译工具"
 msgstr "Building tools"
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:137
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:140
 msgid "安装脚本依赖："
 msgstr "Installation requirement:"
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:144
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:147
 msgid "工具和脚本的使用，后续会有介绍。"
 msgstr "The usage of tools and scripts will be introduced later."
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:147
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:150
 msgid "结语"
 msgstr "Conclusion"
 
-#: ../../src/sdk/source_install_ubuntu_s210a.rst:149
+#: ../../src/sdk/source_install_ubuntu_s210a.rst:152
 msgid ""
 "工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` 里的配置。不然，"
 "就是直接引入安装目录里的头文件和动态库。"

@@ -121,39 +121,45 @@ msgstr ""
 msgid "编译并安装："
 msgstr "Build and install:"
 
-#: ../../src/sdk/source_install_ubuntu.rst:111
+#: ../../src/sdk/source_install_ubuntu.rst:107
+msgid "如果您所用相机为S2100或者S210A，由于畸变模型不同，需要编译第三方库，与S1030编译过程略有不同。"
+"请参照 :ref:`sdk_source_install_ubuntu_s210a` 进行编译。"
+msgstr "If the device is S2100 or S210A, you need to compile third-party libraries because of different distortion models,"
+" which is slightly different from the compilation process of S1030. Please refer to :ref:`sdk_source_install_ubuntu_s210a` ."
+
+#: ../../src/sdk/source_install_ubuntu.rst:114
 msgid "最终，默认会安装在 ``<sdk>/_install`` 目录。"
 msgstr "Finally, sdk will install in ``<sdk>/_install`` by default."
 
-#: ../../src/sdk/source_install_ubuntu.rst:114
+#: ../../src/sdk/source_install_ubuntu.rst:117
 msgid "编译样例"
 msgstr "Building samples"
 
-#: ../../src/sdk/source_install_ubuntu.rst:121
+#: ../../src/sdk/source_install_ubuntu.rst:124
 msgid "运行样例："
 msgstr "Run samples:"
 
-#: ../../src/sdk/source_install_ubuntu.rst:127
+#: ../../src/sdk/source_install_ubuntu.rst:131
 msgid "教程样例，请阅读 :ref:`data` 和 :ref:`ctrl` 。"
 msgstr "Tutorial samples, please read :ref:`data` and :ref:`ctrl` ."
 
-#: ../../src/sdk/source_install_ubuntu.rst:130
+#: ../../src/sdk/source_install_ubuntu.rst:134
 msgid "编译工具"
 msgstr "Building tools"
 
-#: ../../src/sdk/source_install_ubuntu.rst:137
+#: ../../src/sdk/source_install_ubuntu.rst:141
 msgid "安装脚本依赖："
 msgstr "Installation requirement:"
 
-#: ../../src/sdk/source_install_ubuntu.rst:144
+#: ../../src/sdk/source_install_ubuntu.rst:147
 msgid "工具和脚本的使用，后续会有介绍。"
 msgstr "The usage of tools and scripts will be introduced later."
 
-#: ../../src/sdk/source_install_ubuntu.rst:147
+#: ../../src/sdk/source_install_ubuntu.rst:150
 msgid "结语"
 msgstr "Conclusion"
 
-#: ../../src/sdk/source_install_ubuntu.rst:149
+#: ../../src/sdk/source_install_ubuntu.rst:152
 msgid ""
 "工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` 里的配置。不然，"
 "就是直接引入安装目录里的头文件和动态库。"

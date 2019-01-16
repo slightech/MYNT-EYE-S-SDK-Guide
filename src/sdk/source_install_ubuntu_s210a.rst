@@ -1,7 +1,7 @@
-.. _sdk_source_install_ubuntu:
+.. _sdk_source_install_ubuntu_s210a:
 
-Ubuntu SDK 源码安装 (S210A)
-=====================
+Ubuntu SDK 源码安装 (S2100/S210A)
+==================================
 
 .. only:: html
 
@@ -102,6 +102,9 @@ Ubuntu SDK 源码安装 (S210A)
   不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:`sdk_without_opencv` 。
 
 编译并安装：
+
+.. tip::
+  如果您需要使用等距标定模型，可以在命令行中加上编译选项 ``CAM_MODELS=1``,或者直接在 ``Makefile`` 里加上这条语句。
 
 .. code-block:: bash
 
