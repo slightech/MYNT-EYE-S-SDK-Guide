@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set the range of accelerometer &amp; gyroscope &mdash; MYNT® EYE S SDK Guide 2.2.4 documentation</title>
+  <title>Set the range of accelerometer &amp; gyroscope &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.4
+                2.3.0
               </div>
             
           
@@ -93,6 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">Enable auto exposure and its adjustment function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual_exposure.html">Enable manual exposure and its adjustment function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infrared.html">Enable IR and its adjustments function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imu_low_pass_filter.html">Low-pass Filter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
@@ -171,12 +172,19 @@
 <p>To set the range of accelerometer and gyroscope, set <code class="docutils literal notranslate"><span class="pre">Option::ACCELEROMETER_RANGE</span></code> and <code class="docutils literal notranslate"><span class="pre">Option::GYROSCOPE_RANGE</span></code>.</p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
-<ul class="last simple">
+<p>For mynteye s1030, the available settings are:</p>
+<ul class="simple">
 <li>The effective range of accelerometer(unit:g): 4, 8, 16, 32.</li>
-<li>The effective range of gyroscope(unit:deg/s): 500, 1000, 2000, 4000.</li>
+<li>Gyroscope Range Valid value (unit: DEG/S): 500, 1000, 2000, 4000.</li>
+</ul>
+<p>For mynteye s210a, the available settings are:</p>
+<ul class="last simple">
+<li>The effective range of accelerometer(unit:g): 6, 12, 24, 32.</li>
+<li>The effective range of gyroscope(unit:deg/s): 250, 500, 1000, 2000, 4000.</li>
 </ul>
 </div>
 <p>Reference Code:</p>
+<p>s1030:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">api</span><span class="p">)</span>
   <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
@@ -192,7 +200,28 @@
           <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_RANGE</span><span class="p">);</span>
 </pre></div>
 </div>
+<p>s210a:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">api</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="kt">bool</span> <span class="n">ok</span><span class="p">;</span>
+<span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">request</span> <span class="o">=</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">SelectStreamRequest</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ok</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">ok</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">ConfigStreamRequest</span><span class="p">(</span><span class="n">request</span><span class="p">);</span>
+
+<span class="c1">// ACCELEROMETER_RANGE values: 6, 12, 24, 32</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">ACCELEROMETER_RANGE</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<span class="c1">// GYROSCOPE_RANGE values: 250, 500, 1000, 2000, 4000</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_RANGE</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set ACCELEROMETER_RANGE to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">ACCELEROMETER_RANGE</span><span class="p">);</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set GYROSCOPE_RANGE to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_RANGE</span><span class="p">);</span>
+</pre></div>
+</div>
 <p>Reference running results on Linux:</p>
+<p>s1030:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_imu_range
 I/utils.cc:28 Detecting MYNT EYE devices
 I/utils.cc:38 MYNT EYE devices:
@@ -205,8 +234,31 @@ I/imu_range.cc:84 Img count: <span class="m">363</span>, fps: <span class="m">25
 I/imu_range.cc:86 Imu count: <span class="m">2825</span>, hz: <span class="m">195</span>.312
 </pre></div>
 </div>
+<p>s210a:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_imu_range
+I/utils.cc:30 Detecting MYNT EYE devices
+I/utils.cc:40 MYNT EYE devices:
+I/utils.cc:43   index: <span class="m">0</span>, name: MYNT-EYE-S210A, sn: 07C41A190009071F
+I/utils.cc:51 Only one MYNT EYE device, <span class="k">select</span> index: <span class="m">0</span>
+I/utils.cc:79 MYNT EYE devices:
+I/utils.cc:82   index: <span class="m">0</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">10</span>
+I/utils.cc:82   index: <span class="m">1</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">20</span>
+I/utils.cc:82   index: <span class="m">2</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">30</span>
+I/utils.cc:82   index: <span class="m">3</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">60</span>
+I/utils.cc:82   index: <span class="m">4</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">10</span>
+I/utils.cc:82   index: <span class="m">5</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">20</span>
+I/utils.cc:82   index: <span class="m">6</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">30</span>
+I/utils.cc:93 There are <span class="m">7</span> stream requests, <span class="k">select</span> index:
+<span class="m">3</span>
+I/imu_range.cc:51 Set ACCELEROMETER_RANGE to <span class="m">6</span>
+I/imu_range.cc:53 Set GYROSCOPE_RANGE to <span class="m">1000</span>
+I/imu_range.cc:98 Time beg: <span class="m">2018</span>-12-29 <span class="m">10</span>:03:10.706211, end: <span class="m">2018</span>-12-29 <span class="m">10</span>:04:12.497427, cost: <span class="m">61791</span>.2ms
+I/imu_range.cc:101 Img count: <span class="m">3706</span>, fps: <span class="m">59</span>.9762
+I/imu_range.cc:103 Imu count: <span class="m">24873</span>, hz: <span class="m">402</span>.533
+</pre></div>
+</div>
 <p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, the ranges of imu setting is complete. The ranges will be kept inside the hardware and not affected by power off.</p>
-<p>Complete code samples，please see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_range.cc">imu_range.cc</a> .</p>
+<p>Complete code samples，please see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_range.cc">imu_range.cc</a>.</p>
 </div>
 
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>MYNT® EYE Firmware &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>MYNTEYE-S1030 Size and structure &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Firmware and SDK compatibility" href="applicable.html" />
-    <link rel="prev" title="OpenCV independency" href="../sdk/without_opencv.html" /> 
+    <link rel="next" title="MYNTEYE-S1030 IMU coordinata system" href="imu_coord_s1030.html" />
+    <link rel="prev" title="Product description" href="intro.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -83,14 +83,16 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MYNT® EYE Firmware</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="applicable.html">Firmware and SDK compatibility</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html">How to upgrade the firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="from_v1.html">Change from SDK 1.x to 2.x</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="intro.html">Product description</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">MYNTEYE-S1030 Size and structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imu_coord_s1030.html">MYNTEYE-S1030 IMU coordinata system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surface_s2100.html">MYNTEYE-S2100 Size and structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imu_coord_s2100.html">MYNTEYE-S2100 IMU coordinata system</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
@@ -142,13 +144,15 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>MYNT® EYE Firmware</li>
+          <li><a href="contents.html">MYNT® EYE</a> &raquo;</li>
+        
+      <li>MYNTEYE-S1030 Size and structure</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/src/firmware/contents.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/src/mynteye/surface_s1030.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -161,21 +165,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="mynt-eye">
-<span id="firmware"></span><h1>MYNT® EYE Firmware<a class="headerlink" href="#mynt-eye" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="applicable.html">Firmware and SDK compatibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upgrade.html">How to upgrade the firmware</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id2">Download preparation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html#mynt-eye-tool">Install MYNT EYE TOOL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id3">Update Firmware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrade.html#id4">Manually update drivers</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="from_v1.html">Change from SDK 1.x to 2.x</a></li>
-</ul>
-</div>
+  <div class="section" id="mynteye-s1030">
+<span id="mynteye-surface-s1030"></span><h1>MYNTEYE-S1030 Size and structure<a class="headerlink" href="#mynteye-s1030" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="54%" />
+<col width="46%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Shell(mm)</th>
+<th class="head">PCBA board(mm)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>165x31.5x29.6</td>
+<td>149x24</td>
+</tr>
+</tbody>
+</table>
+<img alt="../../_images/mynteye_surface_zh-Hans.jpg" src="../../_images/mynteye_surface_zh-Hans.jpg" />
+<ol class="upperalpha simple">
+<li>Camera:please pay attention to protect the camera sensor lenses, to avoid imaging quality degradation.</li>
+<li>Infrared structured-light transmitter and outlet: the infrared structured-light can effectively solve the problem associated with the visual positioning calculations of white wall non-textured object(For non-IR version, the outlet is reserved but there is no internal structured-light emitter).</li>
+<li>USB Micro-B interface and set screw holes: during usage, plug in the USB Micro-B cable and secure it by fastening the set screws to avoid damage to the interface and to ensure stability in connection.</li>
+<li>¼ inch standardized set screw hole: for fixing the stereo camera to tripods or other devices.</li>
+</ol>
 </div>
 
 
@@ -186,10 +200,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="applicable.html" class="btn btn-neutral float-right" title="Firmware and SDK compatibility" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="imu_coord_s1030.html" class="btn btn-neutral float-right" title="MYNTEYE-S1030 IMU coordinata system" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../sdk/without_opencv.html" class="btn btn-neutral" title="OpenCV independency" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="intro.html" class="btn btn-neutral" title="Product description" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

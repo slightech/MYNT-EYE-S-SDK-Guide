@@ -10,3 +10,4 @@ MYNT® EYE 控制
    auto_exposure
    manual_exposure
    infrared
+   imu_low_pass_filter

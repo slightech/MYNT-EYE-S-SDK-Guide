@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Enable IR and its adjustments function &mdash; MYNT® EYE S SDK Guide 2.2.4 documentation</title>
+  <title>Enable IR and its adjustments function &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Running log" href="../log/contents.html" />
+    <link rel="next" title="Low-pass Filter" href="imu_low_pass_filter.html" />
     <link rel="prev" title="Enable manual exposure and its adjustment function" href="manual_exposure.html" /> 
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.4
+                2.3.0
               </div>
             
           
@@ -93,6 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">Enable auto exposure and its adjustment function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual_exposure.html">Enable manual exposure and its adjustment function</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Enable IR and its adjustments function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imu_low_pass_filter.html">Low-pass Filter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
@@ -169,6 +170,12 @@
 <span id="infrared"></span><h1>Enable IR and its adjustments function<a class="headerlink" href="#ir" title="Permalink to this headline">¶</a></h1>
 <p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function of the API, you can set various control values ​​for the current open device.</p>
 <p>Enabling IR is setting <code class="docutils literal notranslate"><span class="pre">Option::IR_CONTROL</span></code> greater than 0. The greater the value, the greater the IR’s intensity.</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<ul class="last simple">
+<li>mynteye s210a doesn’t support this feature.</li>
+</ul>
+</div>
 <p>Reference Code:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
@@ -213,7 +220,7 @@ I0504 <span class="m">16</span>:16:28.520889 <span class="m">25848</span> infrar
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../log/contents.html" class="btn btn-neutral float-right" title="Running log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="imu_low_pass_filter.html" class="btn btn-neutral float-right" title="Low-pass Filter" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="manual_exposure.html" class="btn btn-neutral" title="Enable manual exposure and its adjustment function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>Low-pass Filter &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Set the range of accelerometer &amp; gyroscope" href="imu_range.html" />
-    <link rel="prev" title="MYNT® EYE Control" href="contents.html" /> 
+    <link rel="next" title="Running log" href="../log/contents.html" />
+    <link rel="prev" title="Enable IR and its adjustments function" href="infrared.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -88,12 +88,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Control</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Set the frame rate of image &amp; IMU frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="framerate.html">Set the frame rate of image &amp; IMU frequency</a></li>
 <li class="toctree-l2"><a class="reference internal" href="imu_range.html">Set the range of accelerometer &amp; gyroscope</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auto_exposure.html">Enable auto exposure and its adjustment function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual_exposure.html">Enable manual exposure and its adjustment function</a></li>
 <li class="toctree-l2"><a class="reference internal" href="infrared.html">Enable IR and its adjustments function</a></li>
-<li class="toctree-l2"><a class="reference internal" href="imu_low_pass_filter.html">Low-pass Filter</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Low-pass Filter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
@@ -147,13 +147,13 @@
         
           <li><a href="contents.html">MYNT® EYE Control</a> &raquo;</li>
         
-      <li>Set the frame rate of image &amp; IMU frequency</li>
+      <li>Low-pass Filter</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/src/control/framerate.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/src/control/imu_low_pass_filter.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -166,46 +166,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="imu">
-<span id="framerate"></span><h1>Set the frame rate of image &amp; IMU frequency<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="imu-low-pass-filter">
+<span id="id1"></span><h1>Low-pass Filter<a class="headerlink" href="#imu-low-pass-filter" title="Permalink to this headline">¶</a></h1>
 <p>Using the <code class="docutils literal notranslate"><span class="pre">SetOptionValue()</span></code> function in the API, you can set various control values ​​for the current device.</p>
-<p>For mynteye s1030, to set the image frame rate and IMU frequency, set <code class="docutils literal notranslate"><span class="pre">Option::FRAME_RATE</span></code> and <code class="docutils literal notranslate"><span class="pre">Option::IMU_FREQUENCY</span></code>.</p>
+<p>To set the value of accelerometer low-pass filter and gyroscope low-pass filter, set <code class="docutils literal notranslate"><span class="pre">Option::ACCELEROMETER_LOW_PASS_FILTER</span></code> and <code class="docutils literal notranslate"><span class="pre">Option::GYROSCOPE_LOW_PASS_FILTER</span></code>.</p>
 <div class="admonition attention">
 <p class="first admonition-title">Attention</p>
 <ul class="last simple">
-<li>The frame rate of image &amp; IMU frequency must be set at the same time to take effect.</li>
-<li>The effective fps of the image: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55.</li>
-<li>The effective frequency of IMU: 100, 200, 250, 333, 500</li>
+<li>s1030 doesn’t support this feature</li>
 </ul>
 </div>
-<p>For mynteye s210a, the image frame rate should be selected when running the sample, and the frame rate and resolution are combined as follows:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>index: <span class="m">0</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">10</span>
-index: <span class="m">1</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">20</span>
-index: <span class="m">2</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">30</span>
-index: <span class="m">3</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">60</span>
-index: <span class="m">4</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">10</span>
-index: <span class="m">5</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">20</span>
-index: <span class="m">6</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">30</span>
-</pre></div>
-</div>
 <p>Reference Code:</p>
-<p>s1030:</p>
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
-
-<span class="c1">// Attention: must set FRAME_RATE and IMU_FREQUENCY together, otherwise won&#39;t</span>
-<span class="c1">// succeed.</span>
-
-<span class="c1">// FRAME_RATE values: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55</span>
-<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">FRAME_RATE</span><span class="p">,</span> <span class="mi">25</span><span class="p">);</span>
-<span class="c1">// IMU_FREQUENCY values: 100, 200, 250, 333, 500</span>
-<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">IMU_FREQUENCY</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
-
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set FRAME_RATE to &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">FRAME_RATE</span><span class="p">);</span>
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set IMU_FREQUENCY to &quot;</span>
-          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">IMU_FREQUENCY</span><span class="p">);</span>
-</pre></div>
-</div>
-<p>s210a:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">api</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 
@@ -214,25 +185,19 @@ index: <span class="m">6</span>, request: width: <span class="m">2560</span>, he
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">ok</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">ConfigStreamRequest</span><span class="p">(</span><span class="n">request</span><span class="p">);</span>
 
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Please set frame rate by &#39;SelectStreamRequest()&#39;&quot;</span><span class="p">;</span>
+<span class="c1">// ACCELEROMETER_RANGE values: 0, 1, 2</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">ACCELEROMETER_LOW_PASS_FILTER</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="c1">// GYROSCOPE_RANGE values: 23, 64</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_LOW_PASS_FILTER</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>
+
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set ACCELEROMETER_LOW_PASS_FILTER to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">ACCELEROMETER_LOW_PASS_FILTER</span><span class="p">);</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Set GYROSCOPE_LOW_PASS_FILTER to &quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_LOW_PASS_FILTER</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Reference running results on Linux:</p>
-<p>s1030:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_framerate
-I0513 <span class="m">14</span>:05:57.218222 <span class="m">31813</span> utils.cc:26<span class="o">]</span> Detecting MYNT EYE devices
-I0513 <span class="m">14</span>:05:57.899404 <span class="m">31813</span> utils.cc:33<span class="o">]</span> MYNT EYE devices:
-I0513 <span class="m">14</span>:05:57.899430 <span class="m">31813</span> utils.cc:37<span class="o">]</span>   index: <span class="m">0</span>, name: MYNT-EYE-S1000
-I0513 <span class="m">14</span>:05:57.899435 <span class="m">31813</span> utils.cc:43<span class="o">]</span> Only one MYNT EYE device, <span class="k">select</span> index: <span class="m">0</span>
-I0513 <span class="m">14</span>:05:58.076257 <span class="m">31813</span> framerate.cc:36<span class="o">]</span> Set FRAME_RATE to <span class="m">25</span>
-I0513 <span class="m">14</span>:05:58.076836 <span class="m">31813</span> framerate.cc:37<span class="o">]</span> Set IMU_FREQUENCY to <span class="m">500</span>
-I0513 <span class="m">14</span>:06:21.702361 <span class="m">31813</span> framerate.cc:82<span class="o">]</span> Time beg: <span class="m">2018</span>-05-13 <span class="m">14</span>:05:58.384967, end: <span class="m">2018</span>-05-13 <span class="m">14</span>:06:21.666115, cost: <span class="m">23281</span>.1ms
-I0513 <span class="m">14</span>:06:21.702388 <span class="m">31813</span> framerate.cc:85<span class="o">]</span> Img count: <span class="m">573</span>, fps: <span class="m">24</span>.6122
-I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framerate.cc:87<span class="o">]</span> Imu count: <span class="m">11509</span>, hz: <span class="m">494</span>.348
-</pre></div>
-</div>
-<p>s210a:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_framerate
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_imu_low_pass_filter
 I/utils.cc:30 Detecting MYNT EYE devices
 I/utils.cc:40 MYNT EYE devices:
 I/utils.cc:43   index: <span class="m">0</span>, name: MYNT-EYE-S210A, sn: 07C41A190009071F
@@ -246,15 +211,16 @@ I/utils.cc:82   index: <span class="m">4</span>, request: width: <span class="m"
 I/utils.cc:82   index: <span class="m">5</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">20</span>
 I/utils.cc:82   index: <span class="m">6</span>, request: width: <span class="m">2560</span>, height: <span class="m">800</span>, format: Format::BGR888, fps: <span class="m">30</span>
 I/utils.cc:93 There are <span class="m">7</span> stream requests, <span class="k">select</span> index:
-<span class="m">2</span>
-I/framerate.cc:54 Please <span class="nb">set</span> frame rate by <span class="s1">&#39;SelectStreamRequest()&#39;</span>
-I/framerate.cc:99 Time beg: <span class="m">2018</span>-12-29 <span class="m">10</span>:05:08.203095, end: <span class="m">2018</span>-12-29 <span class="m">10</span>:08:20.074969, cost: 191872ms
-I/framerate.cc:102 Img count: <span class="m">5759</span>, fps: <span class="m">30</span>.0148
-I/framerate.cc:104 Imu count: <span class="m">77163</span>, hz: <span class="m">402</span>.159
+<span class="m">1</span>
+I/imu_low_pass_filter.cc:48 Set ACCELEROMETER_LOW_PASS_FILTER to <span class="m">2</span>
+I/imu_low_pass_filter.cc:50 Set GYROSCOPE_LOW_PASS_FILTER to <span class="m">64</span>
+I/imu_low_pass_filter.cc:96 Time beg: <span class="m">2018</span>-12-29 <span class="m">13</span>:53:42.296299, end: <span class="m">2018</span>-12-29 <span class="m">14</span>:06:33.295960, cost: 771000ms
+I/imu_low_pass_filter.cc:99 Img count: <span class="m">15412</span>, fps: <span class="m">19</span>.9896
+I/imu_low_pass_filter.cc:101 Imu count: <span class="m">309891</span>, hz: <span class="m">401</span>.934
 </pre></div>
 </div>
-<p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, it will output the calculated value of the frame rate of image &amp; IMU frequency.</p>
-<p>Complete code samples，please see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/framerate.cc">framerate.cc</a> .</p>
+<p>After the sample program finishes running with <code class="docutils literal notranslate"><span class="pre">ESC/Q</span></code>, the low-pass filter of imu setting is complete. The ranges will be kept inside the hardware and not affected by power off.</p>
+<p>Complete code samples，please see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/control/imu_low_pass_filter.cc">imu_low_pass_filter.cc</a> 。</p>
 </div>
 
 
@@ -265,10 +231,10 @@ I/framerate.cc:104 Imu count: <span class="m">77163</span>, hz: <span class="m">
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="imu_range.html" class="btn btn-neutral float-right" title="Set the range of accelerometer &amp; gyroscope" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../log/contents.html" class="btn btn-neutral float-right" title="Running log" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="contents.html" class="btn btn-neutral" title="MYNT® EYE Control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="infrared.html" class="btn btn-neutral" title="Enable IR and its adjustments function" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

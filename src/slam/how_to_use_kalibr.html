@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to calibrate MYNTEYE by kalibr &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="How to use in VINS-Mono" href="vins.html" />
+    <link rel="prev" title="SLAM" href="contents.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.3.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data/contents.html">MYNT® EYE Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">SLAM</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to calibrate MYNTEYE by kalibr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vins.html">How to use in VINS-Mono</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orb_slam2.html">How to use in ORB_SLAM2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="okvis.html">How to use in OKVIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viorb.html">How to use in VIORB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maplab.html">How to use in Maplab x</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">SLAM</a> &raquo;</li>
+        
+      <li>How to calibrate MYNTEYE by kalibr</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/slam/how_to_use_kalibr.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kalibr-mynteye">
+<span id="how-to-use-kalibr"></span><h1>How to calibrate MYNTEYE by kalibr<a class="headerlink" href="#kalibr-mynteye" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Target<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Calibrate the pose relationship between left and right camera</li>
+<li>Calibrate the pose relationship left camera between and IMU</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>Preparation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Install kalibr:Refer to <a class="reference external" href="https://github.com/ethz-asl/kalibr/wiki/installation">kalibr wiki</a> and follow the steps to install</li>
+<li>Calibration board: kalibr supports <code class="docutils literal notranslate"><span class="pre">chessbord</span></code> , <code class="docutils literal notranslate"><span class="pre">circlegrid</span></code> , <code class="docutils literal notranslate"><span class="pre">aprilgrid</span></code> ,choose <code class="docutils literal notranslate"><span class="pre">aprilgrid</span></code> here Calibration board file can be directly <a class="reference external" href="https://github.com/ethz-asl/kalibr/wiki/downloads">download</a> , Or you can also generate calibration board by Kalibr tool.</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kalibr_create_target_pdf --type <span class="s1">&#39;apriltag&#39;</span> --nx <span class="m">6</span> --ny <span class="m">6</span> --tsize <span class="m">0</span>.08 --tspace <span class="m">0</span>.3
+</pre></div>
+</div>
+<p>View parameters’ meanings by kalibr_create)target_pdf command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kalibr_create_target_pdf --h
+usage:
+    Example Aprilgrid:
+        kalibr_create_target_pdf --type apriltag --nx <span class="m">6</span> --ny <span class="m">6</span> --tsize <span class="m">0</span>.08 --tspace <span class="m">0</span>.3
+    Example Checkerboard:
+        kalibr_create_target_pdf --type checkerboard --nx <span class="m">6</span> --ny <span class="m">6</span> -csx <span class="m">0</span>.05 --csy <span class="m">0</span>.1
+
+
+Generate PDFs of calibration patterns.
+
+optional arguments:
+  -h, --help           show this <span class="nb">help</span> message and <span class="nb">exit</span>
+
+Output options:
+  output               Output filename
+  --eps                Also output an EPS file
+
+Generic grid options:
+  --type GRIDTYPE      The grid pattern type. <span class="o">(</span><span class="s1">&#39;apriltag&#39;</span> or <span class="s1">&#39;checkerboard&#39;</span><span class="o">)</span>
+  --nx N_COLS          The number of tags in x direction <span class="o">(</span>default: <span class="m">6</span><span class="o">)</span>
+  --ny N_ROWS          The number of tags in y direction <span class="o">(</span>default: <span class="m">7</span><span class="o">)</span>
+
+Apriltag arguments:
+  --tsize TSIZE        The size of one tag <span class="o">[</span>m<span class="o">]</span> <span class="o">(</span>default: <span class="m">0</span>.08<span class="o">)</span>
+  --tspace TAGSPACING  The space between the tags in fraction of the edge size
+                      <span class="o">[</span><span class="m">0</span>..1<span class="o">]</span> <span class="o">(</span>default: <span class="m">0</span>.3<span class="o">)</span>
+  --tfam TAGFAMILIY    Familiy of April tags <span class="o">[</span><span class="s1">&#39;t16h5&#39;</span>, <span class="s1">&#39;t25h9&#39;</span>, <span class="s1">&#39;t25h7&#39;</span>,
+                      <span class="s1">&#39;t36h11&#39;</span><span class="o">]</span> <span class="o">(</span>default: t36h11<span class="o">)</span>
+
+Checkerboard arguments:
+  --csx CHESSSZX       The size of one chessboard square in x direction <span class="o">[</span>m<span class="o">]</span>
+                      <span class="o">(</span>default: <span class="m">0</span>.05<span class="o">)</span>
+  --csy CHESSSZY       The size of one chessboard square in y direction <span class="o">[</span>m<span class="o">]</span>
+                      <span class="o">(</span>default: <span class="m">0</span>.05<span class="o">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Calibrate the intrinsic IMU parameters:kalibr requires imu data to be calibrated by intrinsic parameters by default.The intrinsic parameters calibration tool uses <a class="reference external" href="https://github.com/Kyle-ak/imu_tk.git">imu-tk</a> .</li>
+<li><dl class="first docutils">
+<dt>Count imu data parameter</dt>
+<dd><ul class="first last">
+<li>noise density</li>
+<li>bias random walk</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Using Allan analyzing tool <a class="reference external" href="https://github.com/gaowenliang/imu_utils">imu_utils</a>, We can get the characteristics of above imu data,and to format the output as <code class="docutils literal notranslate"><span class="pre">imu.yaml</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1">#Accelerometers</span>
+accelerometer_noise_density: <span class="m">0</span>.02680146180736048   <span class="c1">#Noise density (continuous-time)</span>
+accelerometer_random_walk:   <span class="m">0</span>.0026296086159332804   <span class="c1">#Bias random walk</span>
+
+<span class="c1">#Gyroscopes</span>
+gyroscope_noise_density:     <span class="m">0</span>.008882328296710996   <span class="c1">#Noise density (continuous-time)</span>
+gyroscope_random_walk:       <span class="m">0</span>.00037956578292701033   <span class="c1">#Bias random walk</span>
+
+rostopic:                    /mynteye/imu/data_raw      <span class="c1">#the IMU ROS topic</span>
+update_rate:                 <span class="m">200</span>.0      <span class="c1">#Hz (for discretization of the values above)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>Calibrate the pose relationship between left and right camera<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Collect calibration images: kalibr supports the collection of the required calibration images through two ways:by <code class="docutils literal notranslate"><span class="pre">rosbag</span></code> or collect offline images . Using <code class="docutils literal notranslate"><span class="pre">rosbag</span></code> here for convenience,Reference <a class="reference external" href="https://github.com/ethz-asl/kalibr/wiki/bag-format">link</a> for collecting images.</li>
+<li>Method of collecting images by <code class="docutils literal notranslate"><span class="pre">rosbag</span></code> :fix mynteye camera,move <code class="docutils literal notranslate"><span class="pre">aprilgrid</span></code> calibration board in the camera field of view</li>
+<li>To increase the calibration time,try to use image acquisition data with lower frame rate,kalibr recommends using <code class="docutils literal notranslate"><span class="pre">4Hz</span></code> frame rate,here uses <code class="docutils literal notranslate"><span class="pre">10hz</span></code> .</li>
+<li>MYNTEYE S series camera offers images at least 10Hz,You can use <a class="reference external" href="http://wiki.ros.org/topic_tools/throttle">topic_tools</a> to modify frequency,because using 10Hz requires more calibration time</li>
+<li>Record <code class="docutils literal notranslate"><span class="pre">static.bag</span></code> : After fix the mynteye camera,start <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK">wrapper</a>, record the topic of the left and right images to <code class="docutils literal notranslate"><span class="pre">static.bag</span></code> .</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">source</span> wrappers/ros/devel/setup.bash
+$ roslaunch mynt_eye_ros_wrapper display.launch
+$ <span class="nb">cd</span> ~
+$ mkdir -p bag
+$ <span class="nb">cd</span> bag
+$ rosbag record -O static_10hz /mynteye/left/image_raw /mynteye/right/image_raw <span class="c1">#建议使用10hz,你也可以使用topic_tools发布4hz.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>kalibr calibration:</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kalibr_calibrate_cameras --target aprilgrid.yaml --bag ~/bag/static_10hz.bag --models pinhole-radtan pinhole-radtan --topics /mynteye/left/image_raw /mynteye/right/image_raw
+</pre></div>
+</div>
+<p>View parameters’ meanings by kalibr_calibrate_cameras command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kalibr_calibrate_cameras --h
+
+Calibrate the intrinsics and extrinsics of a camera system with non-shared
+overlapping field of view.
+
+usage:
+  Example usage to calibrate a camera system with two cameras using an aprilgrid.
+
+  cam0: omnidirection model with radial-tangential distortion
+  cam1: pinhole model with equidistant distortion
+
+  kalibr_calibrate_cameras --models omni-radtan pinhole-equi --target aprilgrid.yaml <span class="se">\</span>
+            --bag MYROSBAG.bag --topics /cam0/image_raw /cam1/image_raw
+
+  example aprilgrid.yaml:
+      target_type: <span class="s1">&#39;aprilgrid&#39;</span>
+      tagCols: <span class="m">6</span>
+      tagRows: <span class="m">6</span>
+      tagSize: <span class="m">0</span>.088  <span class="c1">#m</span>
+      tagSpacing: <span class="m">0</span>.3 <span class="c1">#percent of tagSize</span>
+
+optional arguments:
+-h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+--models MODELS <span class="o">[</span>MODELS ...<span class="o">]</span>
+                      The camera model <span class="o">[</span><span class="s1">&#39;pinhole-radtan&#39;</span>, <span class="s1">&#39;pinhole-equi&#39;</span>,
+                      <span class="s1">&#39;omni-radtan&#39;</span>, <span class="s1">&#39;pinhole-fov&#39;</span><span class="o">]</span> to estimate
+
+Data source:
+--bag BAGFILE         The bag file with the data
+--topics TOPICS <span class="o">[</span>TOPICS ...<span class="o">]</span>
+                      The list of image topics
+--bag-from-to bag_from_to bag_from_to
+                      Use the bag data starting from up to this <span class="nb">time</span> <span class="o">[</span>s<span class="o">]</span>
+
+Calibration target configuration:
+--target TARGETYAML   Calibration target configuration as yaml file
+
+Image synchronization:
+--approx-sync MAX_DELTA_APPROXSYNC
+                      Time tolerance <span class="k">for</span> approximate image synchronization
+                      <span class="o">[</span>s<span class="o">]</span> <span class="o">(</span>default: <span class="m">0</span>.02<span class="o">)</span>
+
+Calibrator settings:
+--qr-tol QRTOL        The tolerance on the factors of the QR decomposition
+                      <span class="o">(</span>default: <span class="m">0</span>.02<span class="o">)</span>
+--mi-tol MITOL        The tolerance on the mutual information <span class="k">for</span> adding an
+                      image. Higher means fewer images will be added. Use -1
+                      to force all images. <span class="o">(</span>default: <span class="m">0</span>.2<span class="o">)</span>
+--no-shuffle          Do not shuffle the dataset processing order
+
+Outlier filtering options:
+--no-outliers-removal
+                      Disable corner outlier filtering
+--no-final-filtering  Disable filtering after all views have been processed.
+--min-views-outlier MINVIEWOUTLIER
+                      Number of raw views to initialize statistics <span class="o">(</span>default:
+                      <span class="m">20</span><span class="o">)</span>
+--use-blakezisserman  Enable the Blake-Zisserman m-estimator
+--plot-outliers       Plot the detect outliers during extraction <span class="o">(</span>this could
+                      be slow<span class="o">)</span>
+
+Output options:
+--verbose             Enable <span class="o">(</span>really<span class="o">)</span> verbose output <span class="o">(</span>disables plots<span class="o">)</span>
+--show-extraction     Show the calibration target extraction. <span class="o">(</span>disables
+                      plots<span class="o">)</span>
+--plot                Plot during calibration <span class="o">(</span>this could be slow<span class="o">)</span>.
+--dont-show-report    Do not show the report on screen after calibration.
+</pre></div>
+</div>
+<p>Output the following three files after finish calibration</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">camchain-homezhangsbagstatic_10hz.yaml</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">report-cam-homezhangsbagstatic_10hz.pdf</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">results-cam-homezhangsbagstatic_10hz.txt</span></code></li>
+</ul>
+</div></blockquote>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">If you use camera parameters in Vins,it would be better to choose the  pinhole-equi model or the omni-radtan model.If you use camera parameters in Maplab,please choose pinhole-equi model</p>
+</div>
+</div>
+<div class="section" id="imu">
+<h2>Calibrate the pose relationship between camera and IMU coordinate system<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Collect calibration data: as calibrate the pose relationship of camera,Kalibr supports two ways to collect data,we still use <code class="docutils literal notranslate"><span class="pre">rosbag</span></code> here.</dt>
+<dd><ul class="first last">
+<li>Method of collecting image: fix <code class="docutils literal notranslate"><span class="pre">apilgrid</span></code> calibration board, move camera</li>
+<li>Make sure that the data collected is good:the brightness of the calibration board should be appropriate,too bright or too dark can’t guarantee the quality of data,meanwhile do not shake too fast to avoid blurring of the iamge.</li>
+<li>Set the imu publishing frequency to 200Hz,image to 20Hz(recommended by kalibr)</li>
+<li>Fully motivate each axis of the imu,for example ,3 actions on each axis,then in the “8-shaped” motion</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Record camera and imu as <code class="docutils literal notranslate"><span class="pre">dynamic.bag</span></code>.</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ roslaunch mynt_eye_ros_wrapper display.launch
+$ <span class="nb">cd</span> bag
+$ rosbag record -O dynamic /mynteye/left/image_raw /mynteye/right/image_raw /mynteye/imu/data_raw <span class="c1">#注意设置图像发布频率为20hz, imu发布频率为200hz</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>kalibr calibration:</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kalibr_calibrate_imu_camera --cam camchain-homezhangsbagstatic_10hz.yaml --target aprilgrid.yaml --imu imu.yaml --time-calibration　--bag ~/bag/dynamic.bag
+</pre></div>
+</div>
+<p>View the parameters’ meanings by kalibr_calibrate_imu_camera command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ kalibr_calibrate_imu_camera --h
+
+Calibrate the spatial and temporal parameters of an IMU to a camera chain.
+
+usage:
+    Example usage to calibrate a camera system against an IMU using an aprilgrid
+    with temporal calibration enabled.
+
+    kalibr_calibrate_imu_camera --bag MYROSBAG.bag --cam camchain.yaml --imu imu.yaml <span class="se">\</span>
+            --target aprilgrid.yaml --time-calibration
+
+    camchain.yaml: is the camera-system calibration output of the multiple-camera
+                  calibratin tool <span class="o">(</span>kalibr_calibrate_cameras<span class="o">)</span>
+
+    example aprilgrid.yaml:       <span class="p">|</span>  example imu.yaml: <span class="o">(</span>ADIS16448<span class="o">)</span>
+        target_type: <span class="s1">&#39;aprilgrid&#39;</span>  <span class="p">|</span>      accelerometer_noise_density: <span class="m">0</span>.006
+        tagCols: <span class="m">6</span>                <span class="p">|</span>      accelerometer_random_walk: <span class="m">0</span>.0002
+        tagRows: <span class="m">6</span>                <span class="p">|</span>      gyroscope_noise_density: <span class="m">0</span>.0004
+        tagSize: <span class="m">0</span>.088            <span class="p">|</span>      gyroscope_random_walk: <span class="m">4</span>.0e-06
+        tagSpacing: <span class="m">0</span>.3           <span class="p">|</span>      update_rate: <span class="m">200</span>.0
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+
+Dataset source:
+  --bag BAGFILE         Ros bag file containing image and imu data <span class="o">(</span>rostopics
+                        specified in the yamls<span class="o">)</span>
+  --bag-from-to bag_from_to bag_from_to
+                        Use the bag data starting from up to this <span class="nb">time</span> <span class="o">[</span>s<span class="o">]</span>
+  --perform-synchronization
+                        Perform a clock synchronization according to <span class="s1">&#39;Clock</span>
+<span class="s1">                        synchronization algorithms for network measurements&#39;</span>
+                        by Zhang et al. <span class="o">(</span><span class="m">2002</span><span class="o">)</span>.
+
+Camera system configuration:
+  --cams CHAIN_YAML     Camera system configuration as yaml file
+  --recompute-camera-chain-extrinsics
+                        Recompute the camera chain extrinsics. This option is
+                        exclusively recommended <span class="k">for</span> debugging purposes in
+                        order to identify problems with the camera chain
+                        extrinsics.
+  --reprojection-sigma REPROJECTION_SIGMA
+                        Standard deviation of the distribution of reprojected
+                        corner points <span class="o">[</span>px<span class="o">]</span>. <span class="o">(</span>default: <span class="m">1</span>.0<span class="o">)</span>
+
+IMU configuration:
+  --imu IMU_YAMLS <span class="o">[</span>IMU_YAMLS ...<span class="o">]</span>
+                        Yaml files holding the IMU noise parameters. The first
+                        IMU will be the reference IMU.
+  --imu-delay-by-correlation
+                        Estimate the delay between multiple IMUs by
+                        correlation. By default, no temporal calibration
+                        between IMUs will be performed.
+  --imu-models IMU_MODELS <span class="o">[</span>IMU_MODELS ...<span class="o">]</span>
+                        The IMU models to estimate. Currently supported are
+                        <span class="s1">&#39;calibrated&#39;</span>, <span class="s1">&#39;scale-misalignment&#39;</span> and <span class="s1">&#39;scale-</span>
+<span class="s1">                        misalignment-size-effect&#39;</span>.
+
+Calibration target:
+  --target TARGET_YAML  Calibration target configuration as yaml file
+
+Optimization options:
+  --time-calibration    Enable the temporal calibration
+  --max-iter MAX_ITER   Max. iterations <span class="o">(</span>default: <span class="m">30</span><span class="o">)</span>
+  --recover-covariance  Recover the covariance of the design variables.
+  --timeoffset-padding TIMEOFFSET_PADDING
+                        Maximum range in which the timeoffset may change
+                        during estimation <span class="o">[</span>s<span class="o">]</span> <span class="o">(</span>default: <span class="m">0</span>.01<span class="o">)</span>
+
+Output options:
+  --show-extraction     Show the calibration target extraction. <span class="o">(</span>disables
+                        plots<span class="o">)</span>
+  --extraction-stepping
+                        Show each image during calibration target extraction
+                        <span class="o">(</span>disables plots<span class="o">)</span>
+  --verbose             Verbose output <span class="o">(</span>disables plots<span class="o">)</span>
+  --dont-show-report    Do not show the report on screen after calibration.
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Output the follwing 4 files after finish calibration</dt>
+<dd><ul class="first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">camchain-imucam-homezhangsbagdynamic.yaml</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">imu-homezhangsbagdynamatic.yaml</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">report-imucam-homezhangsbagdynamic.pdf</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">results-imucam-homezhangsbagdynamic.yaml</span></code></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vins.html" class="btn btn-neutral float-right" title="How to use in VINS-Mono" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contents.html" class="btn btn-neutral" title="SLAM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, MYNTAI
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

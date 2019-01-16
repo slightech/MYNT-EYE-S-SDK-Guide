@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Product description &mdash; MYNT® EYE S SDK Guide 2.2.4 documentation</title>
+  <title>Product description &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Size and structure" href="surface.html" />
+    <link rel="next" title="MYNTEYE-S1030 Size and structure" href="surface_s1030.html" />
     <link rel="prev" title="MYNT® EYE" href="contents.html" /> 
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.4
+                2.3.0
               </div>
             
           
@@ -85,8 +85,10 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Product description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="surface.html">Size and structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="imu_coord.html">IMU coordinata system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surface_s1030.html">MYNTEYE-S1030 Size and structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imu_coord_s1030.html">MYNTEYE-S1030 IMU coordinata system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="surface_s2100.html">MYNTEYE-S2100 Size and structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="imu_coord_s2100.html">MYNTEYE-S2100 IMU coordinata system</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
@@ -165,12 +167,10 @@
             
   <div class="section" id="mynteye-intro">
 <span id="id1"></span><h1>Product description<a class="headerlink" href="#mynteye-intro" title="Permalink to this headline">¶</a></h1>
-<p>The MYNT® EYE Standard Edition utilizes the camera and the motion sensor to provide visually accurate SLAM results with higher precision, lower cost, simpler layout, along with the ability to achieve face and object recognition. The concept of combining binocular and IMU is the leading-edge technology in the current SLAM industry.</p>
-<p>As a hardware product for in-depth research and development of stereo vision computing applications, MYNT® EYE standard version can be widely used in the field of Visual positioning navigation (vSLAM), including Visual real-time positioning navigation system of Driverless Vehicle and Robot, Visual positioning system of UAV, Obstacle avoidance navigation system for Driverless Vehicle, Augmented Reality (AR), Virtual Reality (VR), etc. At the same time, it can be used in field of Visual recognition, including Stereoscopic face recognition, Three-dimensional object recognition, space motion tracking, three-dimensional gestures and somatosensory recognition. And of course, you can use it for measurement which includes Assisted driving system (ADAS), Binocular volume calculation, Industrial visual screening, etc.</p>
-<p>Using camera techniques such as frame synchronization, automatic exposure, and white balance control, the MYNT® EYE Standard Edition can produce synchronized image sources with high-precision, which decreases the difficulty of algorithms development, thus increasing efficiency. The standard version comes with six-axis sensor(IMU) and an infrared active light detector (IR). Among them, the six-axis sensor(IMU) can provide complementarity and correction of data from the visual positioning algorithms, and is suitable for visual inertial odometry(VIO) algorithms research to help improve the positioning accuracy. The infrared active light detector (IR) can help solve the problem of identification of objects such as indoor white walls and non-textured objects, as well as enhance the accuracy of image source recognition.</p>
-<p>In order to ensure the quality of the output data of the camera products, we have calibrated the binocular and IMU. The product has passed various hardware stability tests, such as high temperature and humidity continuous work and operation, low-temperature dynamic aging, high-temperature operation, low-temperature storage, whole-machine thermal shock, sinusoidal vibration and random vibration tests to ensure the stability and reliability of the product. In addition to the research and development of products and technologies, it can also be directly applied to mass production, accelerating the process from R&amp;D to productization.</p>
-<p>Since its first appearance, the product has been recognized by many well-known companies in and outside of China. In addition to the standard “S” series that has already been released, a new “D” series product with built-in deep computing power will also be launched in the future. Customers can select the appropriate product based on factors such as the computing power and operational architecture of the target platform.</p>
-<p>With the goal of becoming the world’s leading provider of stereo vision computing technology solutions, we have been continuously optimizing and perfecting hardware and software, making MYNT® EYE binocular camera the best stereo vision technology development and application platform.</p>
+<p>MYNT® EYE S Series includes MYNT EYE S, MYNT EYE SE and MYNT EYE SC. The “Binocular + IMU” inertial navigation solution for MYNT® EYE S Series provides accurate six-axis complementary data for vSLAM applications and is more accurate and robust than other single solutions.</p>
+<p>Combined with self-developed camera synchronization, auto exposure, and white balance control camera technology, MYNT® EYE S Series provides a CUDA-based GPU real-time acceleration solution that outputs high-precision, synchronized image sources to help reduce the difficulty of algorithm development and speed up the efficiency of algorithm research and development. At the same time, MYNT EYE S is equipped with a six-axis sensor (IMU) and an infrared active light (IR). Among them, six-axis sensor (IMU) can provide data complementation and correction for the research of visual positioning algorithm, suitable for algorithm research of visual inertial odometer (VIO), help improve positioning accuracy; infrared active light (IR) can help solve the problem of identifying indoor white walls and non-textured objects, and improve the recognition accuracy of image sources. The difference between MYNT EYE SE and MYNT EYE S is that MYNT EYE SE does not include IR and offers customers with lower cost hardware. MYNT EYE SC provides 8cm/12cm optional baseline solution, super wide angle 146°FOV, providing a wider depth recognition range and accuracy level, with color image sensor, upgraded brand new BMI088 six-axis IMU, IR active light, I2C time synchronization Chip, global shutter, etc., with resolutions up to 1280x800/60fps and accuracy is up to centimeters. In addition, MYNT EYE S Series also provides a rich SDK interface and VSLAM open source project support, which can help customers quickly integrate solutions, accelerate the product development process, and achieve rapid productization and implementation.</p>
+<p>As a hardware product for research and development of stereo vision computing applications, MYNT® EYE S Series can be widely used in a field of visual positioning navigation (vSLAM), including visual real-time positioning navigation system of driverless vehicle and robots, visual positioning system of UAV, obstacle avoidance navigation system for driverless Vehicle, Augmented Reality (AR), Virtual Reality (VR), etc. At the same time, it can be used in a field of visual recognition, including Stereoscopic face recognition, three-dimensional object recognition, space motion tracking, three-dimensional gestures, and somatosensory recognition. And of course, you can use it for measurement which includes assisted driving system (ADAS), binocular volume calculation, industrial visual screening, etc. At present, MYNTAI has carried out service and cooperation with more than 500 domestic and foreign enterprise clients.</p>
+<p>In order to ensure the quality of the output data of the camera products, we have calibrated the binocular and IMU. The product has passed various hardware stability tests, such as high- temperature and humidity continuous work and operation, low-temperature dynamic aging, high-temperature operation, low-temperature storage, whole-machine thermal shock, sinusoidal vibration and random vibration tests to ensure the stability and reliability of the product. In addition to the research and development of products and technologies, it can also be directly applied to mass production, accelerating the process from R&amp;D to productization.</p>
 </div>
 
 
@@ -181,7 +181,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="surface.html" class="btn btn-neutral float-right" title="Size and structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="surface_s1030.html" class="btn btn-neutral float-right" title="MYNTEYE-S1030 Size and structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="contents.html" class="btn btn-neutral" title="MYNT® EYE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

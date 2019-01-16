@@ -1,7 +1,7 @@
-.. _sdk_source_install_ubuntu:
+.. _sdk_source_install_ubuntu_s210a:
 
-Ubuntu SDK 源码安装
-=====================
+Ubuntu SDK 源码安装 (S2100/S210A)
+==================================
 
 .. only:: html
 
@@ -104,12 +104,12 @@ Ubuntu SDK 源码安装
 编译并安装：
 
 .. tip::
-  如果您所用相机为S2100或者S210A，由于畸变模型不同，需要编译第三方库，与S1030编译过程略有不同。请参照 :ref:`sdk_source_install_ubuntu_s210a` 进行编译。
+  如果您需要使用等距标定模型，可以在命令行中加上编译选项 ``CAM_MODELS=1``,或者直接在 ``Makefile`` 里加上这条语句。
 
 .. code-block:: bash
 
   cd <sdk>
-  make install
+  make install CAM_MODELS=1
 
 最终，默认会安装在 ``<sdk>/_install`` 目录。
 
@@ -119,7 +119,7 @@ Ubuntu SDK 源码安装
 .. code-block:: bash
 
   cd <sdk>
-  make samples
+  make samples CAM_MODELS=1
 
 运行样例：
 
@@ -135,7 +135,7 @@ Ubuntu SDK 源码安装
 .. code-block:: bash
 
   cd <sdk>
-  make tools
+  make tools CAM_MODELS=1
 
 安装脚本依赖：
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get image calibration parameters &mdash; MYNT® EYE S SDK Guide 2.2.4 documentation</title>
+  <title>Get image calibration parameters &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.2.4
+                2.3.0
               </div>
             
           
@@ -180,11 +180,12 @@
 <p>Reference code snippet:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Intrinsics left: {&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetIntrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Intrinsics right: {&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetIntrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">RIGHT</span><span class="p">)</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Intrinsics left: {&quot;</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">api</span><span class="o">-&gt;</span><span class="n">GetIntrinsicsBase</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">)</span>
           <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
-<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Extrinsics left to right: {&quot;</span>
-          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetExtrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">,</span> <span class="n">Stream</span><span class="o">::</span><span class="n">RIGHT</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Intrinsics right: {&quot;</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">api</span><span class="o">-&gt;</span><span class="n">GetIntrinsicsBase</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">RIGHT</span><span class="p">)</span>
+          <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
+<span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Extrinsics right to left: {&quot;</span>
+          <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetExtrinsics</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">RIGHT</span><span class="p">,</span> <span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;}&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Reference result on Linux:</p>
