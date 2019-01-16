@@ -96,7 +96,7 @@ Ubuntu SDK 源码安装 (S2100/S210A)
 
   .. code-block:: bash
 
-    # OpenCV_DIR 为 OpenCVConfig.cmake 所在目录
+    # OpenCV_DIR is the directory where your OpenCVConfig.cmake exists
     export OpenCV_DIR=~/opencv
 
   不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:`sdk_without_opencv` 。

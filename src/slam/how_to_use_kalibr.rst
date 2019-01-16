@@ -1,8 +1,7 @@
 .. _how_to_use_kalibr:
 
-如何通过kalibr标定MYNTEYE
+如何用 kalibr 标定 MYNTEYE
 ================================
-
 
 标定目标
 ------------
@@ -14,6 +13,7 @@
 
 准备工作
 ------------
+
 * **安装kalibr**： 参考 `kalibr wiki <https://github.com/ethz-asl/kalibr/wiki/installation>`_ ，按步骤安装
 
 * **标定板**： kalibr支持 ``chessbord`` , ``circlegrid`` , ``aprilgrid`` ， 这里选择 ``aprilgrid`` ,标定板文件可以通过直接 `下载 <https://github.com/ethz-asl/kalibr/wiki/downloads>`_ ，或者通过kalibr工具生成标定板:

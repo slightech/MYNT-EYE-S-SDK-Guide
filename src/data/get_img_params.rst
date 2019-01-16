@@ -11,11 +11,12 @@
 
   auto &&api = API::Create(argc, argv);
 
-  LOG(INFO) << "Intrinsics left: {" << api->GetIntrinsics(Stream::LEFT) << "}";
-  LOG(INFO) << "Intrinsics right: {" << api->GetIntrinsics(Stream::RIGHT)
+  LOG(INFO) << "Intrinsics left: {" << *api->GetIntrinsicsBase(Stream::LEFT)
             << "}";
-  LOG(INFO) << "Extrinsics left to right: {"
-            << api->GetExtrinsics(Stream::LEFT, Stream::RIGHT) << "}";
+  LOG(INFO) << "Intrinsics right: {" << *api->GetIntrinsicsBase(Stream::RIGHT)
+            << "}";
+  LOG(INFO) << "Extrinsics right to left: {"
+            << api->GetExtrinsics(Stream::RIGHT, Stream::LEFT) << "}";
 
 参考运行结果，于 Linux 上：
 

@@ -8,9 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
-"Report-
-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 21:54+0800\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-01-16 18:09+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,187 +19,223 @@ Msgid-Bugs-To: \n"
 "Generated-By: Babel 2.6.0\n"
 
 #: ../../src/slam/how_to_use_kalibr.rst:4
-msgid "如何通过kalibr标定MYNTEYE"
+msgid "如何用 kalibr 标定 MYNTEYE"
 msgstr "How to calibrate MYNTEYE by kalibr"
 
-#: ../../src/slam/how_to_use_kalibr.rst:8
+#: ../../src/slam/how_to_use_kalibr.rst:7
 msgid "标定目标"
 msgstr "Target"
 
-#: ../../src/slam/how_to_use_kalibr.rst:10
+#: ../../src/slam/how_to_use_kalibr.rst:9
+#: ../../src/slam/how_to_use_kalibr.rst:86
 msgid "标定左右目之间的位姿关系"
 msgstr "Calibrate the pose relationship between left and right camera"
 
-#: ../../src/slam/how_to_use_kalibr.rst:12
+#: ../../src/slam/how_to_use_kalibr.rst:11
 msgid "标定相机（左目）和IMU坐标系之间的位姿关系"
 msgstr "Calibrate the pose relationship left camera between and IMU"
 
-#: ../../src/slam/how_to_use_kalibr.rst:16
+#: ../../src/slam/how_to_use_kalibr.rst:15
 msgid "准备工作"
 msgstr "Preparation"
 
 #: ../../src/slam/how_to_use_kalibr.rst:17
-msgid "**安装kalibr**： 参考 `kalibr wiki <https://github.com/ethz-asl/kalibr/wiki/installation>`_ "
-"，按步骤安装"
+msgid ""
+"**安装kalibr**： 参考 `kalibr wiki <https://github.com/ethz-"
+"asl/kalibr/wiki/installation>`_ ，按步骤安装"
 msgstr ""
-"Install kalibr:Refer to `kalibr wiki <https://github.com/ethz-asl/kalibr/wiki/installation>`_ "
-"and follow the steps to install"
+"Install kalibr:Refer to `kalibr wiki <https://github.com/ethz-"
+"asl/kalibr/wiki/installation>`_ and follow the steps to install"
 
 #: ../../src/slam/how_to_use_kalibr.rst:19
-msgid "**标定板**： kalibr支持 ``chessbord`` , ``circlegrid`` , ``aprilgrid`` ， "
-"这里选择 ``aprilgrid`` ,标定板文件可以通过直接 `下载 <https://github.com/ethz-asl/kalibr/wiki/downloads>`_ ，"
-"或者通过kalibr工具生成标定板:"
+msgid ""
+"**标定板**： kalibr支持 ``chessbord`` , ``circlegrid`` , ``aprilgrid`` ， 这里选择 "
+"``aprilgrid`` ,标定板文件可以通过直接 `下载 <https://github.com/ethz-"
+"asl/kalibr/wiki/downloads>`_ ，或者通过kalibr工具生成标定板:"
 msgstr ""
-"Calibration board: kalibr supports ``chessbord`` , ``circlegrid`` , ``aprilgrid`` ,choose ``aprilgrid`` here "
-"Calibration board file can be directly `download <https://github.com/ethz-asl/kalibr/wiki/downloads>`_ , "
-"Or you can also generate calibration board by Kalibr tool."
+"Calibration board: kalibr supports ``chessbord`` , ``circlegrid`` , "
+"``aprilgrid`` ,choose ``aprilgrid`` here Calibration board file can be "
+"directly `download <https://github.com/ethz-asl/kalibr/wiki/downloads>`_ "
+", Or you can also generate calibration board by Kalibr tool."
 
 #: ../../src/slam/how_to_use_kalibr.rst:25
 msgid "通过该命令查看kalibr_create_target_pdf参数意义："
-msgstr ""
-"View parameters' meanings by kalibr_create)target_pdf command"
+msgstr "View parameters' meanings by kalibr_create)target_pdf command"
 
 #: ../../src/slam/how_to_use_kalibr.rst:64
-msgid "**标定imu内参** ：kalibr默认情况下要求imu数据是经过内参标定的。"
-"内参标定工具使用 `imu-tk <https://github.com/Kyle-ak/imu_tk.git>`_ ."
+msgid ""
+"**标定imu内参** ：kalibr默认情况下要求imu数据是经过内参标定的。内参标定工具使用 `imu-tk "
+"<https://github.com/Kyle-ak/imu_tk.git>`_ ."
 msgstr ""
-"Calibrate the intrinsic IMU parameters:kalibr requires imu data to be calibrated by intrinsic parameters by default."
-"The intrinsic parameters calibration tool uses `imu-tk <https://github.com/Kyle-ak/imu_tk.git>`_ ."
+"Calibrate the intrinsic IMU parameters:kalibr requires imu data to be "
+"calibrated by intrinsic parameters by default.The intrinsic parameters "
+"calibration tool uses `imu-tk <https://github.com/Kyle-ak/imu_tk.git>`_ ."
 
-#: ../../src/slam/how_to_use_kalibr.rst:66
+#: ../../src/slam/how_to_use_kalibr.rst:68
 msgid "**imu 统计数据参数**："
+msgstr "Count imu data parameter"
+
+#: ../../src/slam/how_to_use_kalibr.rst:67
+msgid "noise density"
 msgstr ""
-"Count imu data parameter"
+
+#: ../../src/slam/how_to_use_kalibr.rst:68
+msgid "bias random walk"
+msgstr ""
 
 #: ../../src/slam/how_to_use_kalibr.rst:70
-msgid "我们使用 Allan分析工具 `imu_utils <https://github.com/gaowenliang/imu_utils>`_ "
+msgid ""
+"我们使用 Allan分析工具 `imu_utils <https://github.com/gaowenliang/imu_utils>`_ "
 "得到上面的imu统计数据特性，并以 如下 ``imu.yaml`` 格式化输出："
 msgstr ""
-"Using Allan analyzing tool `imu_utils <https://github.com/gaowenliang/imu_utils>`_,"
-" We can get the characteristics of above imu data,and to format the output as `` imu.yaml`` "
-
-#: ../../src/slam/how_to_use_kalibr.rst:86
-msgid "标定左右目之间的位姿关系"
-msgstr ""
-"Calibrate the pose relationship between left and right camera"
+"Using Allan analyzing tool `imu_utils "
+"<https://github.com/gaowenliang/imu_utils>`_, We can get the "
+"characteristics of above imu data,and to format the output as ``imu.yaml`` "
 
 #: ../../src/slam/how_to_use_kalibr.rst:88
-msgid "收集标定图像：kalibr支持通过 ``rosbag`` 和采集离线图像两种方式收集所需要的标定图像，"
-"这里使用更加方便的 ``rosbag`` 的方式，采集图像的方式 `参考链接 <https://github.com/ethz-asl/kalibr/wiki/bag-format>`_ ."
+msgid ""
+"收集标定图像：kalibr支持通过 ``rosbag`` 和采集离线图像两种方式收集所需要的标定图像，这里使用更加方便的 ``rosbag`` "
+"的方式，采集图像的方式 `参考链接 <https://github.com/ethz-asl/kalibr/wiki/bag-format>`_ "
+"."
 msgstr ""
-"Collect calibration images: kalibr supports the collection of the required calibration images through two ways:"
-"by ``rosbag`` or collect offline images . Using ``rosbag`` here for convenience,Reference "
-"`link <https://github.com/ethz-asl/kalibr/wiki/bag-format>`_ for collecting images."
+"Collect calibration images: kalibr supports the collection of the "
+"required calibration images through two ways:by ``rosbag`` or collect "
+"offline images . Using ``rosbag`` here for convenience,Reference `link "
+"<https://github.com/ethz-asl/kalibr/wiki/bag-format>`_ for collecting "
+"images."
 
 #: ../../src/slam/how_to_use_kalibr.rst:89
 msgid "通过 ``rosbag`` 采集图像的方法：固定小觅相机，在相机视野中移动 ``aprilgrid`` 标定板."
 msgstr ""
-"Method of collecting images by ``rosbag`` :fix mynteye camera,move ``aprilgrid`` calibration board in the camera field of view"
+"Method of collecting images by ``rosbag`` :fix mynteye camera,move "
+"``aprilgrid`` calibration board in the camera field of view"
 
 #: ../../src/slam/how_to_use_kalibr.rst:90
-msgid "为了避免采集数据的冗余，增加标定的时间， 应尽量使用更低帧率的图像采集数据，kalibr推荐使用 ``4Hz`` 图像帧率,这里使用 ``10hz`` ."
+msgid ""
+"为了避免采集数据的冗余，增加标定的时间， 应尽量使用更低帧率的图像采集数据，kalibr推荐使用 ``4Hz`` 图像帧率,这里使用 "
+"``10hz`` ."
 msgstr ""
-"To increase the calibration time,try to use image acquisition data with lower frame rate,"
-"kalibr recommends using ``4Hz`` frame rate,here uses ``10hz`` ."
+"To increase the calibration time,try to use image acquisition data with "
+"lower frame rate,kalibr recommends using ``4Hz`` frame rate,here uses "
+"``10hz`` ."
 
 #: ../../src/slam/how_to_use_kalibr.rst:91
-msgid "小觅相机s系列提供最低10hz的图像，可以使用 `topic_tools <http://wiki.ros.org/topic_tools/throttle>`_ "
-"修改发布频率,因为使用10hz需要更多的标定时间."
+msgid ""
+"小觅相机s系列提供最低10hz的图像，可以使用 `topic_tools "
+"<http://wiki.ros.org/topic_tools/throttle>`_ 修改发布频率,因为使用10hz需要更多的标定时间."
 msgstr ""
-"MYNTEYE S series camera offers images at least 10Hz,You can use `topic_tools <http://wiki.ros.org/topic_tools/throttle>`_ "
-"to modify frequency,because using 10Hz requires more calibration time"
+"MYNTEYE S series camera offers images at least 10Hz,You can use "
+"`topic_tools <http://wiki.ros.org/topic_tools/throttle>`_ to modify "
+"frequency,because using 10Hz requires more calibration time"
 
 #: ../../src/slam/how_to_use_kalibr.rst:92
-msgid "录制 ``static.bag`` : 固定好小觅相机后，启动 `wrapper "
-"<https://github.com/slightech/MYNT-EYE-S-SDK>`_ ,录制左右图像的topic到 ``static.bag`` ."
+msgid ""
+"录制 ``static.bag`` : 固定好小觅相机后，启动 `wrapper <https://github.com/slightech"
+"/MYNT-EYE-S-SDK>`_ ,录制左右图像的topic到 ``static.bag`` ."
 msgstr ""
-"Record ``static.bag`` : After fix the mynteye camera,start `wrapper <https://github.com/slightech/MYNT-EYE-S-SDK>`_, "
-"record the topic of the left and right images to ``static.bag`` ."
-
-#: ../../src/slam/how_to_use_kalibr.rst:101
-msgid "$ rosbag record -O static_10hz /mynteye/left/image_raw /mynteye/right/image_raw #建议使用10hz,你也可以使用topic_tools发布4hz."
-msgstr ""
-"$ rosbag record -O static_10hz /mynteye/left/image_raw /mynteye/right/image_raw #It's "
-"recommended to use 10Hz,you can also use topic_tools to publish 4Hz."
+"Record ``static.bag`` : After fix the mynteye camera,start `wrapper "
+"<https://github.com/slightech/MYNT-EYE-S-SDK>`_, record the topic of the "
+"left and right images to ``static.bag`` ."
 
 #: ../../src/slam/how_to_use_kalibr.rst:103
 msgid "kalibr标定："
-msgstr ""
-"kalibr calibration:"
+msgstr "kalibr calibration:"
 
 #: ../../src/slam/how_to_use_kalibr.rst:109
 msgid "通过该命令帮助查看kalibr_calibrate_cameras参数意义："
-msgstr ""
-"View parameters' meanings by kalibr_calibrate_cameras command"
-
+msgstr "View parameters' meanings by kalibr_calibrate_cameras command"
 
 #: ../../src/slam/how_to_use_kalibr.rst:181
 msgid "标定完成后输出下面3个文件:"
+msgstr "Output the following three files after finish calibration"
+
+#: ../../src/slam/how_to_use_kalibr.rst:183
+msgid "``camchain-homezhangsbagstatic_10hz.yaml``"
 msgstr ""
-"Output the following three files after finish calibration"
+
+#: ../../src/slam/how_to_use_kalibr.rst:184
+msgid "``report-cam-homezhangsbagstatic_10hz.pdf``"
+msgstr ""
+
+#: ../../src/slam/how_to_use_kalibr.rst:185
+msgid "``results-cam-homezhangsbagstatic_10hz.txt``"
+msgstr ""
 
 #: ../../src/slam/how_to_use_kalibr.rst:189
-msgid "如果您在vins中使用相机参数，选择pinhole-equi 模型 或者 omni-radtan模型效果会更好, "
+msgid ""
+"如果您在vins中使用相机参数，选择pinhole-equi 模型 或者 omni-radtan模型效果会更好, "
 "如果您在maplab中使用相机参数，请选择pinhole-equi模型"
 msgstr ""
-"If you use camera parameters in Vins,it would be better to choose the  pinhole-equi model or the omni-radtan model."
-"If you use camera parameters in Maplab,please choose pinhole-equi model"
+"If you use camera parameters in Vins,it would be better to choose the  "
+"pinhole-equi model or the omni-radtan model.If you use camera parameters "
+"in Maplab,please choose pinhole-equi model"
 
 #: ../../src/slam/how_to_use_kalibr.rst:192
 msgid "标定相机和IMU坐标系之间的位姿关系"
-msgstr ""
-"Calibrate the pose relationship between camera and IMU coordinate system"
+msgstr "Calibrate the pose relationship between camera and IMU coordinate system"
 
-#: ../../src/slam/how_to_use_kalibr.rst:194
+#: ../../src/slam/how_to_use_kalibr.rst:198
 msgid "**收集标定数据**：跟上面标定相机之间的位姿关系一样，kalibr支持两种收集数据的方法,这里仍然使用 ``rosbag`` 的方式."
 msgstr ""
-"Collect calibration data: as calibrate the pose relationship of camera,Kalibr supports two ways to collect data,we still use ``rosbag`` here."
+"Collect calibration data: as calibrate the pose relationship of "
+"camera,Kalibr supports two ways to collect data,we still use ``rosbag`` "
+"here."
 
 #: ../../src/slam/how_to_use_kalibr.rst:195
 msgid "采集图像的方法： 固定 ``apilgrid`` 标定板,移动相机"
 msgstr ""
-"Method of collecting image: fix ``apilgrid`` calibration board, move camera"
+"Method of collecting image: fix ``apilgrid`` calibration board, move "
+"camera"
 
 #: ../../src/slam/how_to_use_kalibr.rst:196
 msgid "保证采集数据是良好的： 标定板亮度要适宜，太亮或太暗不能保证数据的质量, 同时也不要晃动太快，避免图像出现模糊."
 msgstr ""
-"Make sure that the data collected is good:the brightness of the calibration board should be appropriate,"
-"too bright or too dark can't guarantee the quality of data,meanwhile do not shake too fast to avoid blurring of the iamge."
+"Make sure that the data collected is good:the brightness of the "
+"calibration board should be appropriate,too bright or too dark can't "
+"guarantee the quality of data,meanwhile do not shake too fast to avoid "
+"blurring of the iamge."
 
 #: ../../src/slam/how_to_use_kalibr.rst:197
 msgid "设置imu发布频率为200Hz, 图像的发布频率为20hz（kalibr推荐）"
 msgstr ""
-"Set the imu publishing frequency to 200Hz,image to 20Hz(recommended by kalibr)"
+"Set the imu publishing frequency to 200Hz,image to 20Hz(recommended by "
+"kalibr)"
 
 #: ../../src/slam/how_to_use_kalibr.rst:198
 msgid "充分激励imu的每个轴，例如可以在每个轴上3个动作，然后在“８字型”运动"
 msgstr ""
-"Fully motivate each axis of the imu,for example ,3 actions on each axis,then in the "8-shaped" motion"
+"Fully motivate each axis of the imu,for example ,3 actions on each "
+"axis,then in the \"8-shaped\" motion"
 
 #: ../../src/slam/how_to_use_kalibr.rst:200
 msgid "录制相机与imu的bag为 ``dynamic.bag``"
-msgstr ""
-"Record camera and imu as ``dynamic.bag``."
-
-#: ../../src/slam/how_to_use_kalibr.rst:206
-msgid "$ rosbag record -O dynamic /mynteye/left/image_raw /mynteye/right/image_raw /mynteye/imu/data_raw "
-"#注意设置图像发布频率为20hz, imu发布频率为200hz"
-msgstr ""
-"$ rosbag record -O dynamic /mynteye/left/image_raw /mynteye/right/image_raw /mynteye/imu/data_raw "
-"#注意设置图像发布频率为20hz, imu发布频率为200hz# Note that the image publishing frequency should be set to 20Hz,imu publishing frequency to 200Hz"
+msgstr "Record camera and imu as ``dynamic.bag``."
 
 #: ../../src/slam/how_to_use_kalibr.rst:208
-msgid "* kalibr 标定："
-msgstr ""
-"Kalibr calibrate:"
+msgid "kalibr 标定："
+msgstr "kalibr calibration:"
 
 #: ../../src/slam/how_to_use_kalibr.rst:214
 msgid "通过该命令帮助查看kalibr_calibrate_imu_camera参数意义："
-msgstr ""
-"View the parameters' meanings by kalibr_calibrate_imu_camera command"
+msgstr "View the parameters' meanings by kalibr_calibrate_imu_camera command"
 
-#: ../../src/slam/how_to_use_kalibr.rst:296
+#: ../../src/slam/how_to_use_kalibr.rst:299
 msgid "标定完成后输出下面4个文件："
+msgstr "Output the follwing 4 files after finish calibration"
+
+#: ../../src/slam/how_to_use_kalibr.rst:297
+msgid "``camchain-imucam-homezhangsbagdynamic.yaml``"
 msgstr ""
-"Output the follwing 4 files after finish calibration"
+
+#: ../../src/slam/how_to_use_kalibr.rst:298
+msgid "``imu-homezhangsbagdynamatic.yaml``"
+msgstr ""
+
+#: ../../src/slam/how_to_use_kalibr.rst:299
+msgid "``report-imucam-homezhangsbagdynamic.pdf``"
+msgstr ""
+
+#: ../../src/slam/how_to_use_kalibr.rst:300
+msgid "``results-imucam-homezhangsbagdynamic.yaml``"
+msgstr ""
 
