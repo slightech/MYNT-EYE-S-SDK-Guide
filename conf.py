@@ -24,7 +24,7 @@ copyright = '2018, MYNTAI'
 author = 'MYNTAI'
 
 # The short X.Y version
-version = '2.2.4'
+version = '2.3.0'
 # The full version, including alpha/beta/rc tags
 release = '{}'.format(version)
 
@@ -157,7 +157,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'mynt-eye-s-sdk-guide.tex', u'MYNT® EYE S SDK Guide',
-     'JohnZhao', 'manual'),
+     'MYNTAI', 'manual'),
 ]
 
 
