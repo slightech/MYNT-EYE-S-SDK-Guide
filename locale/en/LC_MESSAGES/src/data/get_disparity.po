@@ -4,19 +4,20 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 21:54+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-02-18 16:17+0800\n"
+"PO-Revision-Date: 2019-02-18 16:25+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../src/data/get_disparity.rst:4
 msgid "获取视差图像"
@@ -24,42 +25,55 @@ msgstr "Get disparity image"
 
 #: ../../src/data/get_disparity.rst:6
 msgid ""
-"视差图像，属于上层合成数据。需要事先 ``EnableStreamData()`` 启用，然后 ``GetStreamData()`` "
-"获取。另外，判断不为空后再使用。"
+"视差图像，属于上层合成数据。需要事先 ``EnableStreamData()`` 启用，然后 "
+"``GetStreamData()`` 获取。另外，判断不为空后再使用。"
 msgstr ""
-"Disparity image belongs to the upper layer of synthetic data. You need to"
-" start the ``EnableStreamData()`` beforehand, to get it through "
+"Disparity image belongs to the upper layer of synthetic data. You need "
+"to start the ``EnableStreamData()`` beforehand, to get it through "
 "``GetStreamData()``. In addition, it should be check not be empty before "
 "use."
 
 #: ../../src/data/get_disparity.rst:8
-msgid "详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
+msgid ""
+"详细流程说明，请参阅 :ref:`get_stereo` :ref:`get_stereo_rectified` 。"
 msgstr ""
-"For detailed process description, please see :ref:`get_stereo` "
-":ref:`get_stereo_rectified` ."
+"For detailed process description, please see :ref:`get_stereo` :ref:"
+"`get_stereo_rectified` ."
 
 #: ../../src/data/get_disparity.rst:10
-msgid "另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。"
+msgid ""
+"另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参"
+"阅 :ref:`get_with_plugin` 。"
 msgstr ""
-"It is recommended to use plugin to calculate depth: the depth map will be"
-" better with a higher frame rate. Please see :ref:`get_with_plugin` ."
+"It is recommended to use plugin to calculate depth: the depth map will "
+"be better with a higher frame rate. Please see :ref:`get_with_plugin` ."
 
 #: ../../src/data/get_disparity.rst:12
 msgid "参考代码片段："
 msgstr "Reference code snippet:"
 
-#: ../../src/data/get_disparity.rst:55
-msgid "上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。"
+#: ../../src/data/get_disparity.rst:57
+msgid ""
+"上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程"
+"序。"
 msgstr ""
 "The above code uses OpenCV to display the image. Select the display "
 "window, press ``ESC/Q`` to exit in the program."
 
-#: ../../src/data/get_disparity.rst:57
+#: ../../src/data/get_disparity.rst:59
+msgid ""
+"其中 SetDisparityComputingMethodType 方法用于改变视差计算方式, 目前有 BM/"
+"SGBM 两种方式可供选择，sdk中默认使用SGBM。"
+msgstr ""
+"The SetDisparityComputingMethodType method is used to change disparity "
+"computing method. Currently, BM and SGBM are available, and SGBM is used "
+"by default in sdk."
+
+#: ../../src/data/get_disparity.rst:62
 msgid ""
 "完整代码样例，请见 `get_disparity.cc <https://github.com/slightech/MYNT-"
 "EYE-S-SDK/blob/master/samples/tutorials/data/get_disparity.cc>`_ 。"
 msgstr ""
-"Complete code examples, see `get_disparity.cc "
-"<https://github.com/slightech/MYNT-EYE-"
-"S-SDK/blob/master/samples/tutorials/data/get_disparity.cc>`_ ."
-
+"Complete code examples, see `get_disparity.cc <https://github.com/"
+"slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/"
+"get_disparity.cc>`_ ."
