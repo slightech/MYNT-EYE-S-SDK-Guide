@@ -18,6 +18,8 @@
   // api->EnableStreamData(Stream::DISPARITY);
   api->EnableStreamData(Stream::DISPARITY_NORMALIZED);
 
+  api->SetDisparityComputingMethodType(DisparityComputingMethod::BM);
+
   api->Start(Source::VIDEO_STREAMING);
 
   cv::namedWindow("frame");
@@ -53,5 +55,8 @@
   api->Stop(Source::VIDEO_STREAMING);
 
 上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。
+
+其中 SetDisparityComputingMethodType 方法用于改变视差计算方式,
+目前有 BM/SGBM 两种方式可供选择，sdk中默认使用SGBM。
 
 完整代码样例，请见 `get_disparity.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_disparity.cc>`_ 。
