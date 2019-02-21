@@ -11,7 +11,7 @@
 
   Firmwares/
   ├─Checksum.txt                 # file checksum
-  ├─MYNTEYE_S_2.0.0_rc0.img      # firmware
+  ├─MYNTEYE_S_2.2.0.img      # firmware
   ├─...
   └─setup.zip                    # MYNTEYE TOOL zip
 
@@ -21,7 +21,7 @@
 --------
 
 * 下载并解压 ``setup.zip``。
-* 下载固件，如 ``MYNTEYE_S_2.0.0_rc0.img`` 。
+* 下载固件，如 ``MYNTEYE_S_2.2.0.img`` 。
 
   * 请见 :ref:`firmware_applicable` 选择适合当前 SDK 版本的固件。
   * 请见 ``Checksum.txt`` 找到下载固件的校验码，如下获取并比对：

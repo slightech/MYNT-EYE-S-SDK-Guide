@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-18 17:42+0800\n"
-"PO-Revision-Date: 2018-12-18 17:44+0800\n"
+"POT-Creation-Date: 2019-02-21 13:03+0800\n"
+"PO-Revision-Date: 2019-02-21 13:23+0800\n"
 "Last-Translator: \n"
 "Language: en\n"
 "Language-Team: \n"
@@ -53,8 +53,8 @@ msgid "下载并解压 ``setup.zip``。"
 msgstr "Download and unzip ``setup.zip``"
 
 #: ../../src/firmware/upgrade.rst:24
-msgid "下载固件，如 ``MYNTEYE_S_2.0.0_rc0.img`` 。"
-msgstr "Download firmware, such as ``MYNTEYE_S_2.0.0_rc0.img`` "
+msgid "下载固件，如 ``MYNTEYE_S_2.2.0.img`` 。"
+msgstr "Download firmware, such as ``MYNTEYE_S_2.2.0_rc0.img`` "
 
 #: ../../src/firmware/upgrade.rst:26
 msgid "请见 :ref:`firmware_applicable` 选择适合当前 SDK 版本的固件。"
@@ -168,7 +168,7 @@ msgstr ""
 "\\[corresponding system folders](If it is more than win7, choose "
 "wlh)\\[system bits]`` ."
 
-#: ../../src/firmware/upgrade.rst:90
+#: ../../src/firmware/upgrade.rst:89
 msgid ""
 "以win 10 64位默认安装路径为例，需要选择的文件夹为 ``C:\\Program Files "
 "(x86)\\slightech\\MYNT EYE Camera Tool\\wlh\\x64`` 。"
@@ -177,18 +177,18 @@ msgstr ""
 "installed under the default path,you should select ``C:\\Program Files "
 "(x86)\\slightech\\MYNT EYE Camera Tool\\wlh\\x64``."
 
-#: ../../src/firmware/upgrade.rst:92
+#: ../../src/firmware/upgrade.rst:91
 msgid ""
 "安装驱动成功之后，可以在设备管理器中找到 ``Cypress USB BootLoader`` 设备。"
 msgstr ""
 "After the installation driver is successful, you can find the ``Cypress USB "
 "BootLoader`` device in the device manager."
 
-#: ../../src/firmware/upgrade.rst:96
+#: ../../src/firmware/upgrade.rst:95
 msgid "然后拔插摄像头，再次打开该应用进行升级。"
 msgstr "Then plug in the camera and open the application again to update."
 
-#: ../../src/firmware/upgrade.rst:100
+#: ../../src/firmware/upgrade.rst:99
 msgid ""
 "固件升级后，初次打开 MYNT® EYE 设备时，请静置 3 秒，其会有一个零漂补偿过程。或"
 "者，请主动调用控制接口 ``RunOptionAction(Option::ZERO_DRIFT_CALIBRATION)`` 来"

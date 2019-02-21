@@ -4,19 +4,20 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-13 11:24+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-02-21 13:03+0800\n"
+"PO-Revision-Date: 2019-02-21 13:22+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../src/firmware/applicable.rst:4
 msgid "固件与 SDK 适配性"
@@ -82,17 +83,32 @@ msgstr "MYNTEYE_S_2.0.0_alpha0.img"
 msgid "2.0.0-alpha0"
 msgstr "2.0.0-alpha0"
 
-#: ../../src/firmware/applicable.rst:18
-msgid ""
-"``Firmwares`` 表明固件文件名称。其在 `MYNTEYE_BOX "
-"<http://doc.myntai.com/mynteye/s/download>`_  的 ``Firmwares`` 目录内。"
-msgstr "``Firmwares`` indicates the firmware file name. It's in `MYNTEYE_BOX "
-"<http://doc.myntai.com/mynteye/s/download>`_ in the ``Firmwares`` directory."
+#: ../../src/firmware/applicable.rst:16
+msgid "MYNTEYE_S_2.2.2.img"
+msgstr "MYNTEYE_S_2.2.2.img"
+
+#: ../../src/firmware/applicable.rst:16
+msgid "2.3.0 (2.2.2-rc1 ~ 2.3.0)"
+msgstr "2.3.0 (2.2.2-rc1 ~ 2.3.0)"
 
 #: ../../src/firmware/applicable.rst:20
+msgid "S2100/S210A与此固件不兼容，请不要升级固件。"
+msgstr ""
+"This firmware doesn't support S2100/S210A, please do not upgrade when you "
+"use S2100/S210A."
+
+#: ../../src/firmware/applicable.rst:22
+msgid ""
+"``Firmwares`` 表明固件文件名称。其在 `MYNTEYE_BOX <http://doc.myntai.com/"
+"mynteye/s/download>`_  的 ``Firmwares`` 目录内。"
+msgstr ""
+"``Firmwares`` indicates the firmware file name. It's in `MYNTEYE_BOX "
+"<http://doc.myntai.com/mynteye/s/download>`_ in the ``Firmwares`` "
+"directory."
+
+#: ../../src/firmware/applicable.rst:24
 msgid "``SDK Version`` 表明该固件适配的 SDK 版本，括号内指可用版本范围。"
 msgstr ""
 "``SDK Version`` indicates the version of the SDK that the firmware is "
 "adapted to, and the range of available versions are indicated in "
 "parentheses."
-

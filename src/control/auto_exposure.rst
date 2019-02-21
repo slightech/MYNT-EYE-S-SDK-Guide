@@ -13,7 +13,7 @@
 * ``Option::MAX_EXPOSURE_TIME`` 最大曝光时间。
 * ``Option::DESIRED_BRIGHTNESS`` 期望亮度。
 
-以s210a为例，自动曝光可调节的设定有：
+以s2100/s210a为例，自动曝光可调节的设定有：
 
 * ``Option::MAX_GAIN`` 最大增益。
 * ``Option::MAX_EXPOSURE_TIME`` 最大曝光时间。
@@ -45,7 +45,7 @@ s1030：
   LOG(INFO) << "Set DESIRED_BRIGHTNESS to "
             << api->GetOptionValue(Option::DESIRED_BRIGHTNESS);
 
-s210a：
+s2100/s210a：
 
 .. code-block:: c++
 
@@ -97,7 +97,7 @@ s1030：
   I0513 14:07:58.521375 31845 auto_exposure.cc:41] Set DESIRED_BRIGHTNESS to 192
 
 
-s210a：
+s2100/s210a：
 
 .. code-block:: bash
 

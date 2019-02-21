@@ -9,6 +9,9 @@
 
 另外，推荐使用插件计算深度：深度图效果会更好，并且运算速度更快。具体请参阅 :ref:`get_with_plugin` 。
 
+.. tip::
+  其中 SetDisparityComputingMethodType 方法用于改变视差计算方式,目前有 BM/SGBM 两种方式可供选择，sdk中默认使用SGBM。
+
 参考代码片段：
 
 .. code-block:: c++
@@ -55,8 +58,5 @@
   api->Stop(Source::VIDEO_STREAMING);
 
 上述代码，用了 OpenCV 来显示图像。选中显示窗口时，按 ``ESC/Q`` 就会结束程序。
-
-其中 SetDisparityComputingMethodType 方法用于改变视差计算方式,
-目前有 BM/SGBM 两种方式可供选择，sdk中默认使用SGBM。
 
 完整代码样例，请见 `get_disparity.cc <https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_disparity.cc>`_ 。
