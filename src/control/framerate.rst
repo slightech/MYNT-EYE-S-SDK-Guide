@@ -13,7 +13,7 @@
   * 图像帧率有效值： 10, 15, 20, 25, 30, 35, 40, 45, 50, 55 。
   * IMU 频率有效值： 100, 200, 250, 333, 500 。
 
-以s210a为例,图像帧率需要在运行样例时选择，帧率和分辨率选择如下：
+以s2100/s210a为例,图像帧率需要在运行样例时选择，帧率和分辨率选择如下：
 
 .. code-block:: bash
 
@@ -46,7 +46,7 @@ s1030：
   LOG(INFO) << "Set IMU_FREQUENCY to "
             << api->GetOptionValue(Option::IMU_FREQUENCY);
 
-s210a：
+s2100/s210a：
 
 .. code-block:: c++
 
@@ -79,7 +79,7 @@ s1030：
   I0513 14:06:21.702388 31813 framerate.cc:85] Img count: 573, fps: 24.6122
   I0513 14:06:21.702404 31813 framerate.cc:87] Imu count: 11509, hz: 494.348
 
-s210a：
+s2100/s210a：
 
 .. code-block:: bash
 

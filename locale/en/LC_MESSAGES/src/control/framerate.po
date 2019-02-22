@@ -8,8 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-28 22:46+0800\n"
-"PO-Revision-Date: 2018-12-28 22:57+0800\n"
+"POT-Creation-Date: 2019-02-21 13:03+0800\n"
+"PO-Revision-Date: 2019-02-21 13:17+0800\n"
+"Last-Translator: \n"
 "Language: en\n"
 "Language-Team: en es.c@li.org\\n\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -17,8 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../src/control/framerate.rst:4
 msgid "设定图像帧率和 IMU 频率"
@@ -54,34 +54,34 @@ msgid "IMU 频率有效值： 100, 200, 250, 333, 500 。"
 msgstr "The effective frequency of IMU: 100, 200, 250, 333, 500"
 
 #: ../../src/control/framerate.rst:16
-msgid "以s210a为例,图像帧率需要在运行样例时选择，帧率和分辨率选择如下："
+msgid "以s2100/s210a为例,图像帧率需要在运行样例时选择，帧率和分辨率选择如下："
 msgstr ""
-"For mynteye s210a, the image frame rate should be selected when running the "
-"sample, and the frame rate and resolution are combined as follows:"
+"For mynteye s2100/s210a, the image frame rate should be selected when running "
+"the sample, and the frame rate and resolution are combined as follows:"
 
-#: ../../src/control/framerate.rst:20
+#: ../../src/control/framerate.rst:29
 msgid "参考代码片段："
 msgstr "Reference Code:"
 
-#: ../../src/control/framerate.rst:22 ../../src/control/framerate.rst:58
+#: ../../src/control/framerate.rst:31 ../../src/control/framerate.rst:67
 msgid "s1030："
 msgstr "s1030:"
 
-#: ../../src/control/framerate.rst:40 ../../src/control/framerate.rst:73
-msgid "s210a："
-msgstr "s210a:"
+#: ../../src/control/framerate.rst:49 ../../src/control/framerate.rst:82
+msgid "s2100/s210a："
+msgstr "s2100/s210a:"
 
-#: ../../src/control/framerate.rst:56
+#: ../../src/control/framerate.rst:65
 msgid "参考运行结果，于 Linux 上："
 msgstr "Reference running results on Linux:"
 
-#: ../../src/control/framerate.rst:79
+#: ../../src/control/framerate.rst:107
 msgid "样例程序按 ``ESC/Q`` 结束运行后，会输出计算得的图像帧率和 IMU 频率。"
 msgstr ""
 "After the sample program finishes running with ``ESC/Q``, it will output the "
 "calculated value of the frame rate of image & IMU frequency."
 
-#: ../../src/control/framerate.rst:81
+#: ../../src/control/framerate.rst:109
 msgid ""
 "完整代码样例，请见 `framerate.cc <https://github.com/slightech/MYNT-EYE-S-SDK/"
 "blob/master/samples/tutorials/control/framerate.cc>`_ 。"

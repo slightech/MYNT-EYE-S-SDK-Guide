@@ -26,18 +26,18 @@ PPA安装
 
 .. code-block:: bash
 
-  $ sudo add-apt-repository ppa:slightech/mynteye2
+  $ sudo add-apt-repository ppa:slightech/mynt-eye-s-sdk
   $ sudo apt-get update
-  $ sudo apt-get install mynteye2
+  $ sudo apt-get install mynt-eye-s-sdk
 
 运行样例
 ----------
 
 .. tip::
 
-  samples 路径: /opt/mynteye/samples; tools 路径: /opt/mynteye/tools
+  samples 路径: /opt/mynt-eye-s-sdk/samples; tools 路径: /opt/mynt-eye-s-sdk/tools
 
 .. code-block:: bash
 
-  $ cd /opt/mynteye/samples
+  $ cd /opt/mynt-eye-s-sdk/samples
   $ ./api/camera_a
