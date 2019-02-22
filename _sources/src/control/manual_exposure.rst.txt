@@ -13,7 +13,7 @@
 * ``Option::BRIGHTNESS`` 亮度，或者说曝光时间。
 * ``Option::CONTRAST`` 对比度，或者说黑电平校准。
 
-以s210a为例，手动曝光时，可调节的设定有：
+以s2100/s210a为例，手动曝光时，可调节的设定有：
 
 * ``Option::BRIGHTNESS`` 亮度，或者说曝光时间。
 
@@ -41,7 +41,7 @@ s1030：
   LOG(INFO) << "Set BRIGHTNESS to " << api->GetOptionValue(Option::BRIGHTNESS);
   LOG(INFO) << "Set CONTRAST to " << api->GetOptionValue(Option::CONTRAST);
 
-s210a：
+s2100/s210a：
 
 .. code-block:: c++
 
@@ -81,7 +81,7 @@ s1030：
   I0513 14:09:17.552958 31908 manual_exposure.cc:39] Set BRIGHTNESS to 120
   I0513 14:09:17.552963 31908 manual_exposure.cc:40] Set CONTRAST to 127
 
-s210a：
+s2100/s210a：
 
 .. code-block:: bash
 

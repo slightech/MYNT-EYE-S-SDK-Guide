@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set the range of accelerometer &amp; gyroscope &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>Set the range of accelerometer &amp; gyroscope &mdash; MYNT® EYE S SDK Guide 2.3.1 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.3.0
+                2.3.1
               </div>
             
           
@@ -177,7 +177,7 @@
 <li>The effective range of accelerometer(unit:g): 4, 8, 16, 32.</li>
 <li>Gyroscope Range Valid value (unit: DEG/S): 500, 1000, 2000, 4000.</li>
 </ul>
-<p>For mynteye s210a, the available settings are:</p>
+<p>For mynteye s2100/s210a, the available settings are:</p>
 <ul class="last simple">
 <li>The effective range of accelerometer(unit:g): 6, 12, 24, 32.</li>
 <li>The effective range of gyroscope(unit:deg/s): 250, 500, 1000, 2000, 4000.</li>
@@ -200,7 +200,7 @@
           <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">GYROSCOPE_RANGE</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>s210a:</p>
+<p>s2100/s210a:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">api</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 
@@ -234,7 +234,7 @@ I/imu_range.cc:84 Img count: <span class="m">363</span>, fps: <span class="m">25
 I/imu_range.cc:86 Imu count: <span class="m">2825</span>, hz: <span class="m">195</span>.312
 </pre></div>
 </div>
-<p>s210a:</p>
+<p>s2100/s210a:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_imu_range
 I/utils.cc:30 Detecting MYNT EYE devices
 I/utils.cc:40 MYNT EYE devices:

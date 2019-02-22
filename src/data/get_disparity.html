@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Get disparity image &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>Get disparity image &mdash; MYNT® EYE S SDK Guide 2.3.1 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.3.0
+                2.3.1
               </div>
             
           
@@ -179,11 +179,17 @@
 <p>Disparity image belongs to the upper layer of synthetic data. You need to start the <code class="docutils literal notranslate"><span class="pre">EnableStreamData()</span></code> beforehand, to get it through <code class="docutils literal notranslate"><span class="pre">GetStreamData()</span></code>. In addition, it should be check not be empty before use.</p>
 <p>For detailed process description, please see <a class="reference internal" href="get_stereo.html#get-stereo"><span class="std std-ref">Get original binocular image</span></a> <a class="reference internal" href="get_stereo_rectified.html#get-stereo-rectified"><span class="std std-ref">Get stereo camera correction image</span></a> .</p>
 <p>It is recommended to use plugin to calculate depth: the depth map will be better with a higher frame rate. Please see <a class="reference internal" href="get_with_plugin.html#get-with-plugin"><span class="std std-ref">Using the plugin to get data</span></a> .</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">The SetDisparityComputingMethodType method is used to change disparity computing method. Currently, BM and SGBM are available, and SGBM is used by default in sdk.</p>
+</div>
 <p>Reference code snippet:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
 <span class="c1">// api-&gt;EnableStreamData(Stream::DISPARITY);</span>
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">EnableStreamData</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">DISPARITY_NORMALIZED</span><span class="p">);</span>
+
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">SetDisparityComputingMethodType</span><span class="p">(</span><span class="n">DisparityComputingMethod</span><span class="o">::</span><span class="n">BM</span><span class="p">);</span>
 
 <span class="n">api</span><span class="o">-&gt;</span><span class="n">Start</span><span class="p">(</span><span class="n">Source</span><span class="o">::</span><span class="n">VIDEO_STREAMING</span><span class="p">);</span>
 

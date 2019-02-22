@@ -13,7 +13,7 @@
   * 加速度计量程有效值（单位：g）： 4, 8, 16, 32 。
   * 陀螺仪量程有效值（单位：deg/s）： 500, 1000, 2000, 4000 。
 
-  s210a有效值：
+  s2100/s210a有效值：
   
   * 加速度计量程有效值（单位：g）： 6, 12, 24, 32 。
   * 陀螺仪量程有效值（单位：deg/s）： 250, 500, 1000, 2000, 4000 。
@@ -38,7 +38,7 @@ s1030：
   LOG(INFO) << "Set GYROSCOPE_RANGE to "
             << api->GetOptionValue(Option::GYROSCOPE_RANGE);
 
-s210a：
+s2100/s210a：
 
 .. code-block:: c++
 
@@ -78,7 +78,7 @@ s1030：
   I/imu_range.cc:84 Img count: 363, fps: 25.0967
   I/imu_range.cc:86 Imu count: 2825, hz: 195.312
 
-s210a：
+s2100/s210a：
 
 .. code-block:: bash
 

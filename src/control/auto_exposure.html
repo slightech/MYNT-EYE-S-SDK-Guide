@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Enable auto exposure and its adjustment function &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>Enable auto exposure and its adjustment function &mdash; MYNT® EYE S SDK Guide 2.3.1 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.3.0
+                2.3.1
               </div>
             
           
@@ -176,7 +176,7 @@
 <li><code class="docutils literal notranslate"><span class="pre">Option::MAX_EXPOSURE_TIME</span></code> Maximum exposure time.</li>
 <li><code class="docutils literal notranslate"><span class="pre">Option::DESIRED_BRIGHTNESS</span></code> Expected brightness.</li>
 </ul>
-<p>For mynteye s210a, the settings available for adjustment during auto exposure are:</p>
+<p>For mynteye s2100/s210a, the settings available for adjustment during auto exposure are:</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">Option::MAX_GAIN</span></code> Maximum gain.</li>
 <li><code class="docutils literal notranslate"><span class="pre">Option::MAX_EXPOSURE_TIME</span></code> Maximum exposure time.</li>
@@ -205,7 +205,7 @@
           <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">DESIRED_BRIGHTNESS</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>s210a：</p>
+<p>s2100/s210a：</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 
 <span class="kt">bool</span> <span class="n">ok</span><span class="p">;</span>
@@ -250,7 +250,7 @@ I0513 <span class="m">14</span>:07:58.505131 <span class="m">31845</span> auto_e
 I0513 <span class="m">14</span>:07:58.521375 <span class="m">31845</span> auto_exposure.cc:41<span class="o">]</span> Set DESIRED_BRIGHTNESS to <span class="m">192</span>
 </pre></div>
 </div>
-<p>s210a：</p>
+<p>s2100/s210a：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_auto_exposure
 I/utils.cc:30 Detecting MYNT EYE devices
 I/utils.cc:40 MYNT EYE devices:

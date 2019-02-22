@@ -103,9 +103,6 @@ Ubuntu SDK 源码安装
 
 编译并安装：
 
-.. tip::
-  如果您所用相机为S2100或者S210A，由于畸变模型不同，需要编译第三方库，与S1030编译过程略有不同。请参照 :ref:`sdk_source_install_ubuntu_s210a` 进行编译。
-
 .. code-block:: bash
 
   cd <sdk>

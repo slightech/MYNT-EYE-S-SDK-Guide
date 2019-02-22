@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ubuntu SDK PPA Installation &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>Ubuntu SDK PPA Installation &mdash; MYNT® EYE S SDK Guide 2.3.1 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.3.0
+                2.3.1
               </div>
             
           
@@ -89,7 +89,6 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu SDK PPA Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exe_install_windows.html">Windows SDK exe Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="source_install_ubuntu.html">Ubuntu SDK Source Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source_install_ubuntu_s210a.html">Ubuntu SDK Source Installation (S2100/S210A)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="source_install_windows.html">Windows SDK Source Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
@@ -173,22 +172,28 @@
 <span id="sdk-ppa-install-ubuntu"></span><h1>Ubuntu SDK PPA Installation<a class="headerlink" href="#ubuntu-sdk-ppa" title="Permalink to this headline">¶</a></h1>
 <table border="1" class="docutils">
 <colgroup>
-<col width="100%" />
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Ubuntu 16.04</th>
+<tr class="row-odd"><th class="head">Ubuntu 14.04</th>
+<th class="head">Ubuntu 16.04</th>
+<th class="head">Ubuntu 18.04</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td><img alt="build_passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat" /></td>
+<td><img alt="build_passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat" /></td>
+<td><img alt="build_passing" src="https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat" /></td>
 </tr>
 </tbody>
 </table>
 <div class="section" id="ppa">
 <h2>PPA installation<a class="headerlink" href="#ppa" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo add-apt-repository ppa:slightech/mynteye2
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo add-apt-repository ppa:slightech/mynt-eye-s-sdk
 $ sudo apt-get update
-$ sudo apt-get install mynteye2
+$ sudo apt-get install mynt-eye-s-sdk
 </pre></div>
 </div>
 </div>
@@ -196,9 +201,9 @@ $ sudo apt-get install mynteye2
 <h2>Run samples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="admonition tip">
 <p class="first admonition-title">Tip</p>
-<p class="last">samples path: /opt/mynteye/samples; tools path: /opt/mynteye/tools</p>
+<p class="last">samples path: /opt/mynt-eye-s-sdk/samples; tools path:/opt/mynt-eye-s-sdk/tools</p>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /opt/mynteye/samples
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> /opt/mynt-eye-s-sdk/samples
 $ ./api/camera_a
 </pre></div>
 </div>

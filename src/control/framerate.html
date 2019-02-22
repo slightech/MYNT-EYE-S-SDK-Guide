@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>Set the frame rate of image &amp; IMU frequency &mdash; MYNT® EYE S SDK Guide 2.3.1 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.3.0
+                2.3.1
               </div>
             
           
@@ -178,7 +178,7 @@
 <li>The effective frequency of IMU: 100, 200, 250, 333, 500</li>
 </ul>
 </div>
-<p>For mynteye s210a, the image frame rate should be selected when running the sample, and the frame rate and resolution are combined as follows:</p>
+<p>For mynteye s2100/s210a, the image frame rate should be selected when running the sample, and the frame rate and resolution are combined as follows:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>index: <span class="m">0</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">10</span>
 index: <span class="m">1</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">20</span>
 index: <span class="m">2</span>, request: width: <span class="m">1280</span>, height: <span class="m">400</span>, format: Format::BGR888, fps: <span class="m">30</span>
@@ -205,7 +205,7 @@ index: <span class="m">6</span>, request: width: <span class="m">2560</span>, he
           <span class="o">&lt;&lt;</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetOptionValue</span><span class="p">(</span><span class="n">Option</span><span class="o">::</span><span class="n">IMU_FREQUENCY</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>s210a:</p>
+<p>s2100/s210a:</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
 <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">api</span><span class="p">)</span> <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 
@@ -231,7 +231,7 @@ I0513 <span class="m">14</span>:06:21.702388 <span class="m">31813</span> framer
 I0513 <span class="m">14</span>:06:21.702404 <span class="m">31813</span> framerate.cc:87<span class="o">]</span> Imu count: <span class="m">11509</span>, hz: <span class="m">494</span>.348
 </pre></div>
 </div>
-<p>s210a:</p>
+<p>s2100/s210a:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/ctrl_framerate
 I/utils.cc:30 Detecting MYNT EYE devices
 I/utils.cc:40 MYNT EYE devices:

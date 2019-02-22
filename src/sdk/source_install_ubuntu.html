@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ubuntu SDK Source Installation &mdash; MYNT® EYE S SDK Guide 2.3.0 documentation</title>
+  <title>Ubuntu SDK Source Installation &mdash; MYNT® EYE S SDK Guide 2.3.1 documentation</title>
   
 
   
@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Ubuntu SDK Source Installation (S2100/S210A)" href="source_install_ubuntu_s210a.html" />
+    <link rel="next" title="Windows SDK Source Installation" href="source_install_windows.html" />
     <link rel="prev" title="Windows SDK exe Installation" href="exe_install_windows.html" /> 
 
   
@@ -58,7 +58,7 @@
             
             
               <div class="version">
-                2.3.0
+                2.3.1
               </div>
             
           
@@ -89,7 +89,6 @@
 <li class="toctree-l2"><a class="reference internal" href="ppa_install_ubuntu.html">Ubuntu SDK PPA Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exe_install_windows.html">Windows SDK exe Installation</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Ubuntu SDK Source Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="source_install_ubuntu_s210a.html">Ubuntu SDK Source Installation (S2100/S210A)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="source_install_windows.html">Windows SDK Source Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_macos.html">MacOS Installation x</a></li>
 <li class="toctree-l2"><a class="reference internal" href="install_ros.html">ROS Installation</a></li>
@@ -273,10 +272,6 @@ $ sudo make install
 <p class="last">Otherwise, CMake will prompt cannot find OpenCV. If you need sdk without OpenCV, please read <a class="reference internal" href="without_opencv.html#sdk-without-opencv"><span class="std std-ref">OpenCV independency</span></a> .</p>
 </div>
 <p>Build and install:</p>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">If the device is S2100 or S210A, you need to compile third-party libraries because of different distortion models, which is slightly different from the compilation process of S1030. Please refer to <a class="reference internal" href="source_install_ubuntu_s210a.html#sdk-source-install-ubuntu-s210a"><span class="std std-ref">Ubuntu SDK Source Installation (S2100/S210A)</span></a> .</p>
-</div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk&gt;
 make install
 </pre></div>
@@ -322,7 +317,7 @@ sudo pip install -r requirements.txt
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="source_install_ubuntu_s210a.html" class="btn btn-neutral float-right" title="Ubuntu SDK Source Installation (S2100/S210A)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="source_install_windows.html" class="btn btn-neutral float-right" title="Windows SDK Source Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="exe_install_windows.html" class="btn btn-neutral" title="Windows SDK exe Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
