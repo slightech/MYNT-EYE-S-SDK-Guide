@@ -4,19 +4,20 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-18 16:17+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-02-27 14:18+0800\n"
+"PO-Revision-Date: 2019-02-27 14:19+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../src/sdk/source_install_ubuntu.rst:4
 msgid "Ubuntu SDK 源码安装"
@@ -42,12 +43,12 @@ msgstr "✓"
 
 #: ../../src/sdk/source_install_ubuntu.rst:26
 msgid ""
-"如果是其他 Linux 发行版，不是用的 ``apt-get`` 包管理工具，那你准备依赖时不能 ``make init`` "
-"自动安装，得自己手动安装了。必要安装项如下："
+"如果是其他 Linux 发行版，不是用的 ``apt-get`` 包管理工具，那你准备依赖时不能 "
+"``make init`` 自动安装，得自己手动安装了。必要安装项如下："
 msgstr ""
-"If you used any other Linux distributions without apt-get package "
-"manager, you need to install required packages manaully instead of using "
-"``make init``."
+"If you used any other Linux distributions without apt-get package manager, "
+"you need to install required packages manaully instead of using ``make "
+"init``."
 
 #: ../../src/sdk/source_install_ubuntu.rst:29
 msgid "Linux"
@@ -95,12 +96,11 @@ msgstr "`OpenCV <https://opencv.org/>`_"
 
 #: ../../src/sdk/source_install_ubuntu.rst:60
 msgid ""
-"OpenCV 如何编译安装，请见官方文档 `Installation in Linux "
-"<https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ "
-"。或参考如下命令："
+"OpenCV 如何编译安装，请见官方文档 `Installation in Linux <https://docs."
+"opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ 。或参考如下命令："
 msgstr ""
-"To build and install Opencv, Please refer to `Installation in Linux "
-"<https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ . "
+"To build and install Opencv, Please refer to `Installation in Linux <https://"
+"docs.opencv.org/master/d7/d9f/tutorial_linux_install.html>`_ . "
 "Alternatively, refer to the command below:"
 
 #: ../../src/sdk/source_install_ubuntu.rst:91
@@ -114,7 +114,9 @@ msgstr ""
 "version, you should set the path before building:"
 
 #: ../../src/sdk/source_install_ubuntu.rst:102
-msgid "不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:`sdk_without_opencv` 。"
+msgid ""
+"不然， CMake 会提示找不到 OpenCV 。如果不想依赖 OpenCV ，请阅读 :ref:"
+"`sdk_without_opencv` 。"
 msgstr ""
 "Otherwise, CMake will prompt cannot find OpenCV. If you need sdk without "
 "OpenCV, please read :ref:`sdk_without_opencv` ."
@@ -124,8 +126,8 @@ msgid "编译并安装："
 msgstr "Build and install:"
 
 #: ../../src/sdk/source_install_ubuntu.rst:111
-msgid "最终，默认会安装在 ``<sdk>/_install`` 目录。"
-msgstr "Finally, sdk will install in ``<sdk>/_install`` by default."
+msgid "最终，默认会安装在 ``/usr/local`` 目录。"
+msgstr "Finally, sdk will install in ``/usr/local`` by default."
 
 #: ../../src/sdk/source_install_ubuntu.rst:114
 msgid "编译样例"
@@ -157,22 +159,19 @@ msgstr "Conclusion"
 
 #: ../../src/sdk/source_install_ubuntu.rst:149
 msgid ""
-"工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` "
-"里的配置。不然，就是直接引入安装目录里的头文件和动态库。"
+"工程要引入 SDK 的话，CMake 可参考 ``samples/CMakeLists.txt`` 里的配置。不然，"
+"就是直接引入安装目录里的头文件和动态库。"
 msgstr ""
-"If your project will use SDK, you can refer to the settings in "
-"``samples/CMakeLists.txt`` for CMake. Alternatively, import the head file"
-" and dynamic library in the installation directory."
+"If your project will use SDK, you can refer to the settings in ``samples/"
+"CMakeLists.txt`` for CMake. Alternatively, import the head file and dynamic "
+"library in the installation directory."
 
 #~ msgid ""
-#~ "如果您所用相机为S2100或者S210A，由于畸变模型不同，需要编译第三方库，与S1030编译过程略有不同。请参照 "
-#~ ":ref:`sdk_source_install_ubuntu_s210a` 进行编译。"
+#~ "如果您所用相机为S2100或者S210A，由于畸变模型不同，需要编译第三方库，与"
+#~ "S1030编译过程略有不同。请参照 :ref:`sdk_source_install_ubuntu_s210a` 进行"
+#~ "编译。"
 #~ msgstr ""
-#~ "If the device is S2100 or S210A,"
-#~ " you need to compile third-party "
-#~ "libraries because of different distortion "
-#~ "models, which is slightly different from"
-#~ " the compilation process of S1030. "
-#~ "Please refer to "
-#~ ":ref:`sdk_source_install_ubuntu_s210a` ."
-
+#~ "If the device is S2100 or S210A, you need to compile third-party "
+#~ "libraries because of different distortion models, which is slightly "
+#~ "different from the compilation process of S1030. Please refer to :ref:"
+#~ "`sdk_source_install_ubuntu_s210a` ."

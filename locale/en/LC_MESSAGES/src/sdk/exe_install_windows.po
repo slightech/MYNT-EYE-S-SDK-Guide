@@ -4,19 +4,20 @@
 # package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-31 09:30+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2019-02-27 14:18+0800\n"
+"PO-Revision-Date: 2019-02-27 14:19+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ../../src/sdk/exe_install_windows.rst:4
 msgid "Windows SDK exe 安装"
@@ -41,24 +42,24 @@ msgstr "Download and install SDK"
 
 #: ../../src/sdk/exe_install_windows.rst:29
 msgid ""
-"下载地址： mynteye-s-2.2.4-win-x64-opencv-3.4.3.exe `Google Drive "
-"<https://drive.google.com/open?id=1PYC_5Mh2pzLFVXkYlkllEzPnr50EbKht>`_ "
-"`百度网盘 <https://pan.baidu.com/s/1s4KIcuYkO5i_9E1pG5blQA>`_ 。"
+"下载地址： mynteye-s-2.3.2-win-x64-opencv-3.4.3.exe `Google Drive <https://"
+"drive.google.com/open?id=1PYC_5Mh2pzLFVXkYlkllEzPnr50EbKht>`_ `百度网盘 "
+"<https://pan.baidu.com/s/1s4KIcuYkO5i_9E1pG5blQA>`_ 。"
 msgstr ""
-"Download here: mynteye-s-2.2.4-win-x64-opencv-3.4.3.exe `Google Drive "
+"Download here: mynteye-s-2.3.2-win-x64-opencv-3.4.3.exe `Google Drive "
 "<https://drive.google.com/open?id=1PYC_5Mh2pzLFVXkYlkllEzPnr50EbKht>`_ "
 "`Baidu Pan <https://pan.baidu.com/s/1s4KIcuYkO5i_9E1pG5blQA>`_ ."
 
 #: ../../src/sdk/exe_install_windows.rst:31
 msgid "安装完 SDK 的 exe 安装包后，桌面会生成 SDK 根目录的快捷方式。"
 msgstr ""
-"After you install the win pack of SDK, there will be a shortcut to the "
-"SDK root directory on your desktop."
+"After you install the win pack of SDK, there will be a shortcut to the SDK "
+"root directory on your desktop."
 
 #: ../../src/sdk/exe_install_windows.rst:33
 msgid ""
-"进入 ``<SDK_ROOT_DIR>\\bin\\samples\\tutorials`` 目录，双击 ``get_stereo.exe`` "
-"运行，即可看到双目实时画面。"
+"进入 ``<SDK_ROOT_DIR>\\bin\\samples\\tutorials`` 目录，双击 ``get_stereo."
+"exe`` 运行，即可看到双目实时画面。"
 msgstr ""
 "Goto the ``<SDK_ROOT_DIR>\\bin\\samples\\tutorials`` directory and click "
 "``get_stereo.exe`` to run."
@@ -72,23 +73,24 @@ msgid ""
 "首先，安装好 `Visual Studio 2017 <https://visualstudio.microsoft.com/>`_ 和 "
 "`CMake <https://cmake.org/>`_ 。"
 msgstr ""
-"First, you should install `Visual Studio 2017 "
-"<https://visualstudio.microsoft.com/>`_ and `CMake <https://cmake.org/>`_"
-" ."
+"First, you should install `Visual Studio 2017 <https://visualstudio."
+"microsoft.com/>`_ and `CMake <https://cmake.org/>`_ ."
 
 #: ../../src/sdk/exe_install_windows.rst:40
-msgid "接着，进入 ``<SDK_ROOT_DIR>\\samples`` 目录， 双击 ``generate.bat`` 即可生成样例工程。"
+msgid ""
+"接着，进入 ``<SDK_ROOT_DIR>\\samples`` 目录， 双击 ``generate.bat`` 即可生成"
+"样例工程。"
 msgstr ""
-"Second, goto the ``<SDK_ROOT_DIR>\\samples`` directory and click "
-"``generate.bat`` to generate project."
+"Second, goto the ``<SDK_ROOT_DIR>\\samples`` directory and click ``generate."
+"bat`` to generate project."
 
 #: ../../src/sdk/exe_install_windows.rst:42
 msgid ""
-"p.s. 样例教程，可见 `SDK <https://slightech.github.io/MYNT-EYE-S-SDK/>`_ 主页给出的 "
-"Guide 文档。"
+"p.s. 样例教程，可见 `SDK <https://slightech.github.io/MYNT-EYE-S-SDK/>`_ 主"
+"页给出的 Guide 文档。"
 msgstr ""
-"The tutorials of samples are here: https://slightech.github.io/MYNT-EYE-S"
-"-SDK-Guide/src/data/contents.html."
+"The tutorials of samples are here: https://slightech.github.io/MYNT-EYE-S-"
+"SDK-Guide/src/data/contents.html."
 
 #: ../../src/sdk/exe_install_windows.rst:45
 msgid "如何于 Visual Studio 2017 下使用 SDK"
@@ -97,4 +99,3 @@ msgstr "Start using SDK with Visual Studio 2017"
 #: ../../src/sdk/exe_install_windows.rst:47
 msgid "进入 ``<SDK_ROOT_DIR>\\projects\\vs2017`` ，见 ``README.md`` 说明。"
 msgstr "Goto the ``<SDK_ROOT_DIR>\\projects\\vs2017``, see the ``README.md``."
-
