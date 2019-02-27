@@ -1,6 +1,6 @@
 # MYNT® EYE S SDK Guide
 
-[![](https://img.shields.io/badge/MYNT%20EYE%20S%20SDK%20Guide-2.3.1-brightgreen.svg?style=flat)](https://github.com/slightech/MYNT-EYE-S-SDK-Guide)
+[![](https://img.shields.io/badge/MYNT%20EYE%20S%20SDK%20Guide-2.3.2-brightgreen.svg?style=flat)](https://github.com/slightech/MYNT-EYE-S-SDK-Guide)
 
 MYNT® EYE S SDK Guide is the documentation about how to install and start using the SDK.
 
