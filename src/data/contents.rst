@@ -14,6 +14,7 @@ MYNT® EYE 数据
    get_depth
    get_points
    get_imu
+   get_imu_correspondence
    get_from_callbacks
    get_with_plugin
    save_params

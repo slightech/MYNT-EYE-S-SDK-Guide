@@ -8,17 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MYNT® EYE SDK Guide 2.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-22 11:20+0800\n"
+"POT-Creation-Date: 2019-02-28 08:26+0800\n"
 "PO-Revision-Date: 2019-02-22 11:22+0800\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"X-Generator: Poedit 2.0.8\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: en_US\n"
 
 #: ../../src/sdk/ppa_install_ubuntu.rst:4
 msgid "Ubuntu SDK PPA 安装"
@@ -26,8 +25,18 @@ msgstr "Ubuntu SDK PPA Installation"
 
 #: ../../src/sdk/ppa_install_ubuntu.rst:9
 #: ../../src/sdk/ppa_install_ubuntu.rst:19
+msgid "Ubuntu 14.04"
+msgstr ""
+
+#: ../../src/sdk/ppa_install_ubuntu.rst:9
+#: ../../src/sdk/ppa_install_ubuntu.rst:19
 msgid "Ubuntu 16.04"
-msgstr "Ubuntu 16.04"
+msgstr ""
+
+#: ../../src/sdk/ppa_install_ubuntu.rst:9
+#: ../../src/sdk/ppa_install_ubuntu.rst:19
+msgid "Ubuntu 18.04"
+msgstr ""
 
 #: ../../src/sdk/ppa_install_ubuntu.rst:11
 msgid "|build_passing|"
@@ -47,8 +56,9 @@ msgstr "Run samples"
 
 #: ../../src/sdk/ppa_install_ubuntu.rst:38
 msgid ""
-"samples 路径: /opt/mynt-eye-s-sdk/samples; tools 路径: /opt/mynt-eye-s-"
-"sdk/tools"
+"samples 路径: /opt/mynt-eye-s-sdk/samples; tools 路径: /opt/mynt-"
+"eye-s-sdk/tools"
 msgstr ""
-"samples path: /opt/mynt-eye-s-sdk/samples; tools path:/opt/mynt-eye-s-"
-"sdk/tools"
+"samples path: /opt/mynt-eye-s-sdk/samples; tools path:/opt/mynt-"
+"eye-s-sdk/tools"
+
