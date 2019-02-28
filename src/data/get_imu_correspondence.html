@@ -1,0 +1,339 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Get IMU data with timestamp correspondence &mdash; MYNT® EYE S SDK Guide 2.3.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Get data from callbacks" href="get_from_callbacks.html" />
+    <link rel="prev" title="Get IMU data" href="get_imu.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MYNT® EYE S SDK Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.3.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../mynteye/contents.html">MYNT® EYE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sdk/contents.html">MYNT® EYE SDK</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/contents.html">MYNT® EYE Firmware</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="contents.html">MYNT® EYE Data</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="get_device_info.html">Get device information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_img_params.html">Get image calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu_params.html">Get IMU calibration parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo.html">Get original binocular image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_stereo_rectified.html">Get stereo camera correction image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_disparity.html">Get disparity image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_depth.html">Get depth image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_points.html">Get point image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_imu.html">Get IMU data</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Get IMU data with timestamp correspondence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_from_callbacks.html">Get data from callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_with_plugin.html">Using the plugin to get data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save_params.html">Save device infomation and parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_img_params.html">Write image parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write_imu_params.html">Write IMU parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../control/contents.html">MYNT® EYE Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../log/contents.html">Running log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapper/contents.html">Wrapper interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analytics/contents.html">Data Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../slam/contents.html">SLAM</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MYNT® EYE S SDK Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="contents.html">MYNT® EYE Data</a> &raquo;</li>
+        
+      <li>Get IMU data with timestamp correspondence</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/data/get_imu_correspondence.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="imu">
+<span id="get-imu-correspondence"></span><h1>Get IMU data with timestamp correspondence<a class="headerlink" href="#imu" title="Permalink to this headline">¶</a></h1>
+<p>If wanna get image with timestamp in the middle of IMU datas, you could call <cite>EnableTimestampCorrespondence()`</cite> to enable this feature.</p>
+<p>Reference code snippet:</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">api</span> <span class="o">=</span> <span class="n">API</span><span class="o">::</span><span class="n">Create</span><span class="p">(</span><span class="n">argc</span><span class="p">,</span> <span class="n">argv</span><span class="p">);</span>
+
+<span class="c1">// Enable motion datas with timestamp correspondence of some stream</span>
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">EnableTimestampCorrespondence</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">);</span>
+
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">Start</span><span class="p">(</span><span class="n">Source</span><span class="o">::</span><span class="n">ALL</span><span class="p">);</span>
+
+<span class="n">cv</span><span class="o">::</span><span class="n">namedWindow</span><span class="p">(</span><span class="s">&quot;frame&quot;</span><span class="p">);</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">api</span><span class="o">-&gt;</span><span class="n">WaitForStreams</span><span class="p">();</span>
+
+  <span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">left_data</span> <span class="o">=</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetStreamData</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">LEFT</span><span class="p">);</span>
+  <span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">right_data</span> <span class="o">=</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetStreamData</span><span class="p">(</span><span class="n">Stream</span><span class="o">::</span><span class="n">RIGHT</span><span class="p">);</span>
+
+  <span class="k">auto</span> <span class="n">img_stamp</span> <span class="o">=</span> <span class="n">left_data</span><span class="p">.</span><span class="n">img</span><span class="o">-&gt;</span><span class="n">timestamp</span><span class="p">;</span>
+  <span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Img timestamp: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">img_stamp</span>
+      <span class="o">&lt;&lt;</span> <span class="s">&quot;, diff_prev=&quot;</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">img_stamp</span> <span class="o">-</span> <span class="n">prev_img_stamp</span><span class="p">);</span>
+  <span class="n">prev_img_stamp</span> <span class="o">=</span> <span class="n">img_stamp</span><span class="p">;</span>
+
+  <span class="n">cv</span><span class="o">::</span><span class="n">Mat</span> <span class="n">img</span><span class="p">;</span>
+  <span class="n">cv</span><span class="o">::</span><span class="n">hconcat</span><span class="p">(</span><span class="n">left_data</span><span class="p">.</span><span class="n">frame</span><span class="p">,</span> <span class="n">right_data</span><span class="p">.</span><span class="n">frame</span><span class="p">,</span> <span class="n">img</span><span class="p">);</span>
+
+  <span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="n">motion_datas</span> <span class="o">=</span> <span class="n">api</span><span class="o">-&gt;</span><span class="n">GetMotionDatas</span><span class="p">();</span>
+  <span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Imu count: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">motion_datas</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+  <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="o">&amp;&amp;</span><span class="nl">data</span> <span class="p">:</span> <span class="n">motion_datas</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">auto</span> <span class="n">imu_stamp</span> <span class="o">=</span> <span class="n">data</span><span class="p">.</span><span class="n">imu</span><span class="o">-&gt;</span><span class="n">timestamp</span><span class="p">;</span>
+    <span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Imu timestamp: &quot;</span> <span class="o">&lt;&lt;</span> <span class="n">imu_stamp</span>
+        <span class="o">&lt;&lt;</span> <span class="s">&quot;, diff_prev=&quot;</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="n">imu_stamp</span> <span class="o">-</span> <span class="n">prev_imu_stamp</span><span class="p">)</span>
+        <span class="o">&lt;&lt;</span> <span class="s">&quot;, diff_img=&quot;</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="mf">1.f</span> <span class="o">+</span> <span class="n">imu_stamp</span> <span class="o">-</span> <span class="n">img_stamp</span><span class="p">);</span>
+    <span class="n">prev_imu_stamp</span> <span class="o">=</span> <span class="n">imu_stamp</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="n">LOG</span><span class="p">(</span><span class="n">INFO</span><span class="p">);</span>
+
+  <span class="n">cv</span><span class="o">::</span><span class="n">imshow</span><span class="p">(</span><span class="s">&quot;frame&quot;</span><span class="p">,</span> <span class="n">img</span><span class="p">);</span>
+
+  <span class="kt">char</span> <span class="n">key</span> <span class="o">=</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">cv</span><span class="o">::</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">key</span> <span class="o">==</span> <span class="mi">27</span> <span class="o">||</span> <span class="n">key</span> <span class="o">==</span> <span class="sc">&#39;q&#39;</span> <span class="o">||</span> <span class="n">key</span> <span class="o">==</span> <span class="sc">&#39;Q&#39;</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// ESC/Q</span>
+    <span class="k">break</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">api</span><span class="o">-&gt;</span><span class="n">Stop</span><span class="p">(</span><span class="n">Source</span><span class="o">::</span><span class="n">ALL</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Reference result on Linux:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./samples/_output/bin/tutorials/get_imu_correspondence
+I/utils.cc:30 Detecting MYNT EYE devices
+I/utils.cc:40 MYNT EYE devices:
+I/utils.cc:43   index: <span class="m">0</span>, name: MYNT-EYE-S1030, sn: <span class="m">0281351000090807</span>
+I/utils.cc:51 Only one MYNT EYE device, <span class="k">select</span> index: <span class="m">0</span>
+I/synthetic.cc:126 camera calib model: kannala_brandt
+I/utils.cc:79 MYNT EYE devices:
+I/utils.cc:82   index: <span class="m">0</span>, request: width: <span class="m">752</span>, height: <span class="m">480</span>, format: Format::YUYV, fps: <span class="m">60</span>
+I/utils.cc:87 Only one stream request, <span class="k">select</span> index: <span class="m">0</span>
+I/get_imu_correspondence.cc:50 Img timestamp: <span class="m">171323050</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">39990</span>
+I/get_imu_correspondence.cc:58 Imu count: <span class="m">13</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171318710</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">171318710</span>, <span class="nv">diff_img</span><span class="o">=</span>-4352
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171320730</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-2320
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171322750</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-304
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171324770</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">1712</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171326790</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">3728</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171328800</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">5744</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171330810</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">7760</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171332840</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2030</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">9776</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171334860</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">11808</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171336880</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">13824</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171338900</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">15840</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171340920</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">17872</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171342930</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">19872</span>
+I/get_imu_correspondence.cc:66
+I/get_imu_correspondence.cc:50 Img timestamp: <span class="m">171403040</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">79990</span>
+I/get_imu_correspondence.cc:58 Imu count: <span class="m">20</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171383310</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">40380</span>, <span class="nv">diff_img</span><span class="o">=</span>-19728
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171385330</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-17712
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171387350</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-15696
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171389370</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-13664
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171391380</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span>-11664
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171393390</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span>-9648
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171395420</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2030</span>, <span class="nv">diff_img</span><span class="o">=</span>-7616
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171397440</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-5600
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171399460</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-3584
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171401480</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span>-1568
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171403500</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">464</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171405510</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">2464</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171407520</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">4480</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171409540</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">6496</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171411570</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2030</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">8528</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171413590</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">10544</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171415610</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">12576</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171417630</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">14592</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171419650</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2020</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">16608</span>
+I/get_imu_correspondence.cc:61 Imu timestamp: <span class="m">171421660</span>, <span class="nv">diff_prev</span><span class="o">=</span><span class="m">2010</span>, <span class="nv">diff_img</span><span class="o">=</span><span class="m">18624</span>
+</pre></div>
+</div>
+<p>Complete code examples, see <a class="reference external" href="https://github.com/slightech/MYNT-EYE-S-SDK/blob/master/samples/tutorials/data/get_imu_correspondence.cc">get_imu_correspondence.cc</a> .</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="get_from_callbacks.html" class="btn btn-neutral float-right" title="Get data from callbacks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="get_imu.html" class="btn btn-neutral" title="Get IMU data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, MYNTAI
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

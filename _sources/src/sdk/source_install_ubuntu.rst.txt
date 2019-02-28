@@ -108,7 +108,7 @@ Ubuntu SDK 源码安装
   cd <sdk>
   make install
 
-最终，默认会安装在 ``<sdk>/_install`` 目录。
+最终，默认会安装在 ``/usr/local`` 目录。
 
 编译样例
 --------
